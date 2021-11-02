@@ -10,20 +10,20 @@ import {
     SidebarMenu
 } from './SidebarElements'
 
-export const Sidebar = () => {
+export const Sidebar = ({isOpen, toggle}) => {
     return (
-        <SidebarContainer>
-            <Icon>
+        <SidebarContainer isOpen={isOpen} onClick={toggle}>
+            <Icon onClick={toggle}>
                 <CloseIcon/>
             </Icon>
             <SidebarWrapper>
                 <SidebarMenu>
-                    <SidebarLink to="art">Art</SidebarLink>
-                    <SidebarLink to="tutorials">Tutorials</SidebarLink>
-                    <SidebarLink to="about">About</SidebarLink>
+                    <SidebarLink to='art' onClick={toggle}>Art</SidebarLink>
+                    <SidebarLink to='tutorials' onClick={toggle}>Tutorials</SidebarLink>
+                    <SidebarLink to='about' onClick={toggle}>About</SidebarLink>
                 </SidebarMenu>
                 <SideBtnWrap>
-                    <SidebarRoute to="/signin">Sign In</SidebarRoute>
+                    <SidebarRoute to='/signin'>Sign In</SidebarRoute>
                 </SideBtnWrap>
             </SidebarWrapper>
         </SidebarContainer>
