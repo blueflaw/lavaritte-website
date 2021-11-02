@@ -17,32 +17,31 @@ export const Nav = styled.nav `
     @media screen and (max-width: 960px) {
         transition: 0.8s all ease;
     }
-`
+`;
 
 export const NavbarContainer = styled.div `
     display: flex;
     justify-content: space-between;
     height: 80px;
     z-index: 1;
-    width 100%;
+    width: 100%;
     padding: 0 24px;
     max-width: 1100px;
-`
+`;
 
-export const NavLogo = styled(LinkRouter)
-`
+export const NavLogo = styled(LinkRouter)`
     color: #ffffff;
     justify-self: flex-start;
-    coursor: pointer;
+    cursor: pointer;
     font-size: 0.9rem;
     display: flex;
     align-items: center;
     margin-left: 24px;
     font-weight: 10;
-    letter-spacing: 0.15555555555555556rem;
+    letter-spacing: 0.16rem;
     text-decoration: none;
     text-transform: uppercase;
-`
+`;
 
 export const MobileIcon = styled.div `
     display: none;
@@ -55,37 +54,69 @@ export const MobileIcon = styled.div `
         transform: translate(-100%, 60%);
         font-size: 1.8rem;
         cursor: pointer;
+        color: #ffffff;
     }
-`
+`;
 
 export const NavMenu = styled.ul `
     display: flex;
     align-items: center;
     list-style: none;
     text-align: center;
-    margin-right -22px;
-
+    margin-right: -22px;
+    cursor: pointer;
     @media screen and (max-width: 768px){
         display: none;
     }
-`
+`;
 
 export const NavItem = styled.li `
     height: 80px;
-`
+`;
 
-export const NavLinks = styled(LinkScroll)
-`
+export const NavLinks = styled(LinkScroll)`
     color: #ffffff;
     display: flex;
-    alighn-item: center;
+    align-items: center;
     text-decoration: none;
     padding: 0 1rem;
     height: 100%;
-    coursor: pointer;
-
+    font-size: 0.9rem;
+    cursor: pointer;
+    letter-spacing: 0.16rem;
+    text-transform: uppercase;
     &.active{
         border-bottom: 3px solid #000000;
     }
-    // not sure about this might delete later
-`
+    
+`;
+
+export const NavBtn = styled.nav`
+    display: flex;
+    align-items: center;
+
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
+`;
+
+export const NavBtnLink = styled(LinkRouter)`
+    background: transparent;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    white-space: nowrap;
+    padding: 10px 22px;
+    cursor: pointer;
+    font-weight: 10;
+    letter-spacing: 0.16rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+        transition: all 0.2s ease-in-out;
+        background: #ffffff;
+        color: #000000;
+    }
+`;
