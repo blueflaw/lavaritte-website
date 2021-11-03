@@ -12,7 +12,16 @@ export const HeroContainer = styled.div`
     position: relative;
     z-index: 1;
 
-    /* todo: Add before styles */
+    /* ::before{
+        content: '';
+        top: 0%;
+        left: 0%;
+        right: 0%;
+        bottom: 0%;
+        background: linear-gradient(180deg, rgba(0,0,0,0.3) 2%, rgba(0,0,0,0.3) 100%),
+                    linear-gradient(180deg, rgba(0,0,0,0.3) 2%, transparent 20%);
+        z-index: 2;
+    } */
 `;
 
 export const HeroBg = styled.div`
@@ -42,7 +51,7 @@ export const HeroContent = styled.div`
     padding: 8px 24px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
 `;
 
 export const HeroH1 = styled.h1`

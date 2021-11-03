@@ -22,9 +22,9 @@ export const Navbar = ({ toggle }) => {
                             <NavLinks to='about'>About</NavLinks>
                         </NavItem>
                     </NavMenu>
-                    <NavBtn>
+                    {/* <NavBtn>
                         <NavBtnLink to ='/signin'>Sign In</NavBtnLink>
-                    </NavBtn>
+                    </NavBtn> */}
                 </NavbarContainer>
             </Nav>
         </>
