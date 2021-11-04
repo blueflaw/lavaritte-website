@@ -1,0 +1,16 @@
+export const homeObOne = {
+    id: 'about',
+    lightBg: false,
+    lightText: true,
+    lightTextDesc: true,
+    topLine: 'Top Line Text',
+    headline: 'Headline Text Sample',
+    description: 'Sample Description',
+    buttonLabel: 'Button Label',
+    imgStart: false,
+    img: require('../../images/allard-lavaritte-bb-small.jpg'),
+    alt: 'alt',
+    dark: true,
+    primary: true,
+    darkText: false,
+}
