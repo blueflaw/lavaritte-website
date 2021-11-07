@@ -14,15 +14,15 @@ import { InfoContainer,
          ImgWrap 
         } from './InfoElements'
 
-const InfoSection = ({lightBg, id, imgStart, topLine, lightText, headline, description, buttonLabel, img, alt, primary, dark2}) => {
+const InfoSection = ({lightBg, id, imgStart, topLine, lightText, headline, description, buttonLabel, img, alt, primary, dark2, imgbg}) => {
     return (
         <>
-            <InfoContainer lightBg={lightBg} id={id}>
+            <InfoContainer id={id}>
                 <InfoWrapper>
                     <InfoRow imgStart={imgStart}>
                         <Column1>
                             <TextWrapper>
-                                <TopLine>{topLine}</TopLine>
+                                {/* <TopLine>{topLine}</TopLine> */}
                                 <Heading lightText={lightText}>{headline}</Heading>
                                 <Subtitle lightText={description}>{description}</Subtitle>
                                 <BtnWrap>
