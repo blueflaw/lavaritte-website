@@ -1,11 +1,25 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import {FaBars} from 'react-icons/fa'
 import {Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, NavBtn, NavBtnLink} from './NavbarElements';
 
 export const Navbar = ({ toggle }) => {
+    const [scrollNav, setScrollNav] = useState(false)
+
+    const changeNav= () => {
+        if(window.scrollY >= 80){
+            setScrollNav(true)
+        } else {
+            setScrollNav(false)
+        }
+    }
+
+    useEffect(() => {
+        window.addEventListener('scroll', changeNav)
+    }, [])
+
     return (
         <>
-            <Nav>
+            <Nav scrollNav={scrollNav}>
                 <NavbarContainer>
                     <NavLogo to='home'>Allard Lavaritte</NavLogo>
                     <MobileIcon onClick={toggle}>
@@ -13,13 +27,13 @@ export const Navbar = ({ toggle }) => {
                     </MobileIcon>
                     <NavMenu>
                         <NavItem>
-                            <NavLinks to='art'>Art</NavLinks>
+                            <NavLinks to='art' smooth={true} duration={500} spy={true} exact="true" offset={-80}>Art</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to='tutorials'>Tutorials</NavLinks>
+                            <NavLinks to='tutorials' smooth={true} duration={500} spy={true} exact="true" offset={-80}>Tutorials</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to='about'>About</NavLinks>
+                            <NavLinks to='about' smooth={true} duration={500} spy={true} exact="true" offset={-80}>About</NavLinks>
                         </NavItem>
                     </NavMenu>
                     {/* <NavBtn>
