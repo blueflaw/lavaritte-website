@@ -7,7 +7,7 @@ export const Navbar = ({ toggle }) => {
         <>
             <Nav>
                 <NavbarContainer>
-                    <NavLogo to='/'>Allard Lavaritte</NavLogo>
+                    <NavLogo to='home'>Allard Lavaritte</NavLogo>
                     <MobileIcon onClick={toggle}>
                         <FaBars />
                     </MobileIcon>

@@ -20,12 +20,14 @@ export const ArtWrapper = styled.div`
 
 export const ArtRow = styled.div`
     display: grid;
-    grid-auto-columns: minmax(auto, 1fr);
+    /* grid-auto-columns: minmax(auto, 1fr);  */
+    grid-template-columns: repeat(5, 1fr);
     align-items: center;
     grid-template-areas: ${({imgStart}) => (imgStart ? `'col2 col1` : `'col1 col2'`)};
     grid-gap: var(--auto-grid-gap, 0);
     padding: 0;
     @media screen and (max-width: 768px){
+        grid-template-columns: repeat(3, 1fr);
         grid-template-areas: ${({imgStart}) => (imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`)};
     }
 `;
@@ -95,12 +97,6 @@ export const Column2 = styled.div`
     grid-area: col2;
 `;
 
-export const TextWrapper = styled.div`
-    max-width: 540px;
-    padding-top: 0px;
-    padding-bottom: 60px;
-`;
-
 export const ArtTitle = styled.h1`
     color: ${({lightText}) => (lightText ? '#ffffff' : '#000000')};
     font-size: 1.5rem;
@@ -145,18 +141,16 @@ export const RowPoster = styled.div`
 
 export const ImageContainer = styled.div`
     position: relative;
-    &:hover {
+    margin-bottom: -4px;
+    /* &:hover {
         opacity: 1;
-    }
+    } */
 `;
 
 export const Overlay = styled.div`
     display: flex;
     position: absolute;
     top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
     height: 100%;
     width: 100%;
     opacity: 0;
@@ -164,17 +158,27 @@ export const Overlay = styled.div`
     background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.8));
 `;
 
+export const TextWrapper = styled.div`
+    position: absolute;
+    bottom: -80%;
+    padding-left: 20px;
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+    transition: .5s ease;
+`;
+
 export const OverlayTitile = styled.div`
     color: white;
     position: absolute;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
     text-align: left;
     font-size: 0.8rem;
-    text-align: center;
+    height: 100%;
+    width: 100%;
+    text-align: left;
     letter-spacing: 0.2rem;
     text-transform: uppercase;
+
 `;
 
 export const OverlaySubTitile = styled.div`
