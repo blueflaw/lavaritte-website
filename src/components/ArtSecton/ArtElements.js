@@ -142,3 +142,41 @@ export const RowPoster = styled.div`
     overflow: hidden;
     padding: 0px;
 `;
+
+export const ImageContainer = styled.div`
+    position: relative;
+    &:hover {
+        opacity: 1;
+    }
+`;
+
+export const Overlay = styled.div`
+    display: flex;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.8));
+`;
+
+export const OverlayTitile = styled.div`
+    color: white;
+    position: absolute;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: left;
+    font-size: 0.8rem;
+    text-align: center;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+`;
+
+export const OverlaySubTitile = styled.div`
+
+`;
