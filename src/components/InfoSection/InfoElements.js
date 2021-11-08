@@ -50,7 +50,7 @@ export const Column2 = styled.div`
 
 export const TextWrapper = styled.div`
     min-width: 640px;
-    padding-top: 0px;
+    padding-top: 60px;
     padding-bottom: 60px;
     align-items: flex-start;
     text-align: left;

@@ -38,11 +38,6 @@ const InfoSection = ({lightBg, id, imgStart, topLine, lightText, headline, descr
                                 </BtnWrap>
                             </TextWrapper>
                         </Column1>
-                        <Column2>
-                            <ImgWrap>
-                                <Img src={img.default} alt={alt}/>
-                            </ImgWrap>
-                        </Column2>
                     </InfoRow>
                 </InfoWrapper>
             </InfoContainer>
