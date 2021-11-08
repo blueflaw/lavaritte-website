@@ -5,7 +5,6 @@ import Sidebar from '../components/Sidebar'
 import InfoSection from '../components/InfoSection';
 import { homeObOne} from '../components/InfoSection/Data';
 import ArtSection from '../components/ArtSecton';
-import { Art1 } from '../components/ArtSecton/Data';
 
 export const Home = () => {
     const [isOpen, setIsOpen] = useState(false)
@@ -19,8 +18,9 @@ export const Home = () => {
             <Sidebar isOpen={isOpen} toggle={toggle} />
             <Navbar toggle={toggle}/>
             <HeroSection/>
+            <ArtSection/>
             <InfoSection {...homeObOne}/>
-            <ArtSection {...Art1}/>
+            
         </>
     );
 };

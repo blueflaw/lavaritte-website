@@ -1,20 +1,19 @@
-import React from 'react'
-import {ArtContaner, ArtWrapper, ArtRow, Column1, Column2, TextWrapper, ArtTitle, Subtile, Img} from './ArtElements'
+import React, {Component} from 'react'
+import {ArtContaner, ArtWrapper, RowPoster, Poster} from './ArtElements'
+import {ArtData} from './ArtData'
 
-export const ArtSection = ({title, subtile, img, alt}) => {
+export const ArtSection = () => {
     return (
         <>
-            <ArtContaner>
+            <ArtContaner id="art">
                 <ArtWrapper>
-                    <ArtRow>
-                        <Column1>
-                            <TextWrapper to={'tutorials'}>
-                                <ArtTitle>{title}</ArtTitle>
-                                <Subtile>{subtile}</Subtile>
-                                <Img src={img.default} alt={alt}></Img>
-                            </TextWrapper>
-                        </Column1>
-                    </ArtRow>
+                    <RowPoster>
+                        {ArtData.map((artDetail) =>{
+                            return <>
+                                <Poster src={artDetail.path} alt={artDetail.alt}/>
+                                </>
+                        })}
+                    </RowPoster>
                 </ArtWrapper>
             </ArtContaner>
         </>

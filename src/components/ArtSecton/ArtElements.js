@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const ArtContaner = styled.div`
     color: #ffffff;
     width: 100%;
-    height: 600px;
+    background: #000000;
     --flow-space: 2em;
 `;
 
@@ -111,4 +111,34 @@ export const ArtTitle = styled.h1`
     @media screen and (max-width: 480px){
         font-size: 0.7rem;
     }
+`;
+
+export const RowTitle = styled.h2`
+    color: ${({lightText}) => (lightText ? '#ffffff' : '#000000')};
+    font-size: 1.5rem;
+    text-align: center;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+
+    @media screen and (max-width: 480px){
+        font-size: 0.7rem;
+    }
+`;
+
+export const Poster = styled.img`
+    object-fit: contain;
+    width: 100%;
+    max-height: 500px;
+    margin: 0%;
+    transition: transform 450ms;
+
+    &:hover{
+        transform: scale(1.08);
+    }
+`;
+
+export const RowPoster = styled.div`
+    display: flex; 
+    overflow: hidden;
+    padding: 0px;
 `;
