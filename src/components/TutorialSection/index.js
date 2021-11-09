@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactYouTube from '../ReactYoutube/ReactYoutube'
-import { TextWrapper, TutorialContainer,TutorialContainer2, TutorialWrapper, Heading, Subtitle, TutorialVidContainer, Tutorialrapper, TutorialRow, Column1, Column2} from './TutorialElements'
+import { TextWrapper, TutorialContainer,TutorialContainer2, TutorialWrapper, Heading, Subtitle, TutorialVidContainer, TutorialRow, Column1, Column2} from './TutorialElements'
 import { TutorialsData1, TutorialsData2 } from './TutorialsData'
 const TutorialSection = () => {
     return (

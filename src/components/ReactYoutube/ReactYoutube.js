@@ -1,12 +1,9 @@
 import React, { Component } from 'react'
 import YouTube from 'react-youtube'
-import styled from 'styled-components';
 
 class ReactYouTube extends Component {
   videoOnReady (event) {
       event.target.pauseVideo();
-  }
-  videoOnPlay(event){
       event.target.setVolume(100);
   }
   render () {
@@ -22,7 +19,6 @@ class ReactYouTube extends Component {
     return (
       <YouTube
         videoId={videoId}
-        onReady={this.videoOnPlay}
         opts={opts}
         onReady={this.videoOnReady}
         

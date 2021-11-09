@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import {ArtContaner, ArtWrapper, RowPoster, ImageContainer, Poster, Overlay, OverlayTitile, TextWrapper, ArtRow, Column1} from './ArtElements'
+import {ArtContaner, ArtWrapper, RowPoster, ImageContainer, Poster, Overlay, OverlayTitile, TextWrapper, ArtRow} from './ArtElements'
 import {ArtData} from './ArtData'
 
 export const ArtSection = () => {
@@ -9,6 +9,9 @@ export const ArtSection = () => {
     function setOpacity0(e) {
         e.target.style.opacity = 0;
     }
+    // function setScale(e) {
+    //     e.target.style.transform = `scale(1.08)`;
+    // }
     return (
         <>
             <ArtContaner id="art">
@@ -17,7 +20,7 @@ export const ArtSection = () => {
                         <ArtRow>
                             {ArtData.map((artDetail) =>{
                                 return <>
-                                    <ImageContainer>
+                                    <ImageContainer key={artDetail.id}>
                                     <Poster src={artDetail.path} alt={artDetail.alt}/>
                                         <Overlay onMouseOver={setOpacity1} onMouseLeave={setOpacity0}>
                                             <TextWrapper><OverlayTitile>{artDetail.title}</OverlayTitile></TextWrapper>

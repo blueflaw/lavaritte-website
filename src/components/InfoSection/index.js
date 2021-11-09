@@ -1,20 +1,16 @@
 import React from 'react'
 import { Button } from '../ButtonElements'
 import { InfoContainer, 
-         Column2, 
          InfoWrapper, 
          InfoRow,
          Column1,
          TextWrapper, 
-         TopLine,
          Heading,
          Subtitle,
          BtnWrap,
-         Img, 
-         ImgWrap 
         } from './InfoElements'
 
-const InfoSection = ({lightBg, id, imgStart, topLine, lightText, headline, description, buttonLabel, img, alt, primary, dark2, imgbg}) => {
+const InfoSection = ({id, imgStart, lightText, headline, description, buttonLabel}) => {
     return (
         <>
             <InfoContainer id={id}>
