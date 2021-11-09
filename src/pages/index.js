@@ -4,6 +4,7 @@ import Navbar from '../components/Navbar'
 import Sidebar from '../components/Sidebar'
 import ArtSection from '../components/ArtSecton';
 import TutorialSection from '../components/TutorialSection';
+import Footer from '../components/Footer';
 
 export const Home = () => {
     const [isOpen, setIsOpen] = useState(false)
@@ -19,6 +20,8 @@ export const Home = () => {
             <HeroSection/>
             <ArtSection/>
             <TutorialSection/>
+
+            <Footer/>        
         </>
     );
 };
