@@ -105,7 +105,7 @@ export const TutorialRow = styled.div`
     margin: -4px;
 
     
-    @media screen and (max-width: 768px){
+    @media screen and (max-width: 1024px){
         flex-direction: column;
     }
 
@@ -118,13 +118,14 @@ export const Column1 = styled.div`
     width: 50vw;
     position: relative;
     overflow: hidden;
-
-    @media screen and (max-width: 768px){
+    text-align: center;
+    @media screen and (max-width: 1024px){
         width: 100vw;
     }
 
     @media screen and (max-width: 480px){
         width: 100vw;
+        height: auto;
     }
 `;
 
@@ -132,8 +133,8 @@ export const Column2 = styled.div`
     width: 50vw;
     position: relative;
     overflow: hidden;
-
-    @media screen and (max-width: 768px){
+    text-align: center;
+    @media screen and (max-width: 1024px){
         width: 100vw;
     }
 

@@ -33,6 +33,9 @@ export const Navbar = ({ toggle }) => {
                             <NavLinks to='tutorials' smooth={true} duration={500} spy={true} exact="true" offset={-80}>Tutorials</NavLinks>
                         </NavItem>
                         <NavItem>
+                            <NavLinks to='blogs' smooth={true} duration={500} spy={true} exact="true" offset={-80}>Blogs</NavLinks>
+                        </NavItem>
+                        <NavItem>
                             <NavLinks to='about' smooth={true} duration={500} spy={true} exact="true" offset={-80}>About</NavLinks>
                         </NavItem>
                     </NavMenu>

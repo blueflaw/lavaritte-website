@@ -37,10 +37,13 @@ export const NavLogo = styled(LinkRouter)`
     display: flex;
     align-items: center;
     margin-left: 24px;
-    font-weight: 10;
+    font-weight: 300;
     letter-spacing: 0.16rem;
     text-decoration: none;
     text-transform: uppercase;
+    &:hover{
+        color: #00a2ff;
+    }
 `;
 
 export const MobileIcon = styled.div `
@@ -82,16 +85,17 @@ export const NavLinks = styled(LinkScroll)`
     padding: 0 1rem;
     height: 100%;
     font-size: 0.9rem;
-    font-weight: 10;
+    font-weight: 300;
     cursor: pointer;
     letter-spacing: 0.16rem;
     text-transform: uppercase;
     &.active{
-        border-bottom: 3px solid #ffffff;
+        border-bottom: 3px solid #00a2ff;
+        color: #00a2ff;
     }
     &:hover{
         transition: 0.8s all ease;
-        color: #aaaaaa;
+        color: #00a2ff;
     }
 `;
 

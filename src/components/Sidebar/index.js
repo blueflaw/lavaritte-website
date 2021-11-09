@@ -20,6 +20,7 @@ export const Sidebar = ({isOpen, toggle}) => {
                 <SidebarMenu>
                     <SidebarLink to='art' onClick={toggle}>Art</SidebarLink>
                     <SidebarLink to='tutorials' onClick={toggle}>Tutorials</SidebarLink>
+                    <SidebarLink to='blogs' onClick={toggle}>Blogs</SidebarLink>
                     <SidebarLink to='about' onClick={toggle}>About</SidebarLink>
                 </SidebarMenu>
                 {/* <SideBtnWrap>

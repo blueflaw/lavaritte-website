@@ -1,4 +1,4 @@
-import React, {Component} from 'react'
+import React from 'react'
 import {ArtContaner, ArtWrapper, RowPoster, ImageContainer, Poster, Overlay, OverlayTitile, TextWrapper, ArtRow} from './ArtElements'
 import {ArtData} from './ArtData'
 
