@@ -4,7 +4,7 @@ import YouTube from 'react-youtube'
 class ReactYouTube extends Component {
   videoOnReady (event) {
       event.target.pauseVideo();
-      event.target.setVolume(100);
+      // event.target.setVolume(100);
   }
   render () {
     const opts = {

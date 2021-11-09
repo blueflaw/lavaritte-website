@@ -9,7 +9,12 @@ export const TutorialContainer = styled.div`
     display: flex;
     height: 40vh;
     @media screen and (max-width: 768px){
-        height: 40vh;
+        height: 100%;
+        padding: 0 30px;
+    }
+    @media screen and (max-width: 480px){
+        height: 100%;
+        padding: 0 30px;
     }
     &::before {
         /* content: " 🦄"; */
@@ -22,7 +27,18 @@ export const TutorialContainer = styled.div`
         -webkit-transition: all 0.4s ease-in-out;
         transition: all 0.4s ease-in-out;
         opacity: 0.4;
-    }
+
+            @media screen and (max-width: 768px){
+                    height: 100%;
+                    width: 100%;
+                    left: 0;
+                }
+            @media screen and (max-width: 480px){
+                height: 100%;
+                width: 100%;
+                left: 0;
+            }
+        }
 `;
 
 export const TutorialContainer2 = styled.div`
@@ -47,6 +63,17 @@ export const TutorialContainer2 = styled.div`
         -webkit-transition: all 0.4s ease-in-out;
         transition: all 0.4s ease-in-out;
         opacity: 0.4;
+    }
+
+    @media screen and (max-width: 768px){
+        height: 40vh;
+        width: 100%;
+        left: 0;
+    }
+    @media screen and (max-width: 480px){
+        height: 40vh;
+        width: 100%;
+        left: 0;
     }
 `;
 

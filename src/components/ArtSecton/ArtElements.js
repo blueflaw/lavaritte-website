@@ -105,7 +105,7 @@ export const ArtTitle = styled.h1`
     text-transform: uppercase;
 
     @media screen and (max-width: 480px){
-        font-size: 0.7rem;
+        font-size: 0.5rem;
     }
 `;
 
@@ -163,6 +163,10 @@ export const TextWrapper = styled.div`
     width: 100%;
     opacity: 1;
     transition: .5s ease;
+
+    @media screen and (max-width: 480px){
+        padding-left: 5px;
+    }
 `;
 
 export const OverlayTitile = styled.div`
@@ -176,6 +180,9 @@ export const OverlayTitile = styled.div`
     letter-spacing: 0.2rem;
     text-transform: uppercase;
 
+    @media screen and (max-width: 480px){
+        font-size: 0.5rem;
+    }
 `;
 
 export const OverlaySubTitile = styled.div`
