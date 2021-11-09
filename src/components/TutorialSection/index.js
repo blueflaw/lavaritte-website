@@ -1,19 +1,39 @@
 import React from 'react'
-import { TextWrapper, TutorialContainer, TutorialWrapper, Heading, Subtitle } from './TutorialElements'
-
+import ReactYouTube from '../ReactYoutube/ReactYoutube'
+import { TextWrapper, TutorialContainer,TutorialContainer2, TutorialWrapper, Heading, Subtitle, TutorialVidContainer, Tutorialrapper, TutorialRow, Column1, Column2} from './TutorialElements'
+import { TutorialsData1, TutorialsData2 } from './TutorialsData'
 const TutorialSection = () => {
     return (
-        <>
-            <TutorialContainer id='tutorials'>
+        <div id='tutorials'>
+            <TutorialContainer>
             <TutorialWrapper></TutorialWrapper>
                 <TutorialWrapper>
                     <TextWrapper>
-                        <Heading>COURSES FROM THE INDUSTRY VETERAN</Heading>
-                        <Subtitle>Over almost two decades of working in entertainment and design with world reknown clinets, I've made every mistake in the books and crafted my courses and tutorials so that you don't have to repeat those mistakes. My library offers quick bite-size affordable tutorials as well as fully fleshed out courses from which you can learn step by step on how I successfully made a living as an artist and art director in entertainment industry.</Subtitle>
+                        <Heading>{TutorialsData1.headline}</Heading>
+                        <Subtitle>{TutorialsData1.description}</Subtitle>
                     </TextWrapper>
                 </TutorialWrapper>
             </TutorialContainer>
-        </>
+            <TutorialVidContainer>
+                <TutorialRow>
+                    <Column1>
+                        <ReactYouTube videoId={TutorialsData1.videoId}/>
+                    </Column1>
+                    <Column2>
+                        <ReactYouTube videoId={TutorialsData2.videoId}/>
+                    </Column2>
+                </TutorialRow>
+            </TutorialVidContainer>
+            <TutorialContainer2>
+                <TutorialWrapper>
+                    <TextWrapper>
+                    <Subtitle/>
+                        <Heading>{TutorialsData2.headline}</Heading>
+                    </TextWrapper>
+                </TutorialWrapper>
+                <TutorialWrapper></TutorialWrapper>
+            </TutorialContainer2>
+        </div>
     )
 }
 

@@ -7,9 +7,9 @@ export const TutorialContainer = styled.div`
     -o-background-size: cover;
     background-size: cover;
     display: flex;
-    height: 445px;
+    height: 40vh;
     @media screen and (max-width: 768px){
-        padding: 100px 0px;
+        height: 40vh;
     }
     &::before {
         /* content: " 🦄"; */
@@ -18,10 +18,100 @@ export const TutorialContainer = styled.div`
         position: absolute;
         display: block;
         width: 100%;
-        height: 445px;
+        height: 40vh;
         -webkit-transition: all 0.4s ease-in-out;
         transition: all 0.4s ease-in-out;
         opacity: 0.4;
+    }
+`;
+
+export const TutorialContainer2 = styled.div`
+    background: #000000 url("https://cdnb.artstation.com/p/assets/images/images/042/698/143/large/allard-lavaritte-dualmonitorwallpaper.jpg?1635215819") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: flex;
+    height: 40vh;
+    @media screen and (max-width: 768px){
+        height: 40vh;
+    }
+    &::before {
+        /* content: " 🦄"; */
+        content: "";
+        background-color: #000000;
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 40vh;
+        -webkit-transition: all 0.4s ease-in-out;
+        transition: all 0.4s ease-in-out;
+        opacity: 0.4;
+    }
+`;
+
+export const TutorialVidContainer = styled.div`
+    display: flex;
+    flex-direction: row;
+    background: #000000;
+    padding: 0%;
+    margin: 0%;
+    overflow: hidden;
+`;
+
+export const Tutorialrapper = styled.div`
+    display: grid;
+    width: 100%;
+    max-width: 1100px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0%;
+    margin: 0%;
+    justify-content: center;
+`;
+
+export const TutorialRow = styled.div`
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    overflow: hidden;
+    margin: -4px;
+
+    
+    @media screen and (max-width: 768px){
+        flex-direction: column;
+    }
+
+    @media screen and (max-width: 480px){
+        flex-direction: column;
+    }
+`;
+
+export const Column1 = styled.div`
+    width: 50vw;
+    position: relative;
+    overflow: hidden;
+
+    @media screen and (max-width: 768px){
+        width: 100vw;
+    }
+
+    @media screen and (max-width: 480px){
+        width: 100vw;
+    }
+`;
+
+export const Column2 = styled.div`
+    width: 50vw;
+    position: relative;
+    overflow: hidden;
+
+    @media screen and (max-width: 768px){
+        width: 100vw;
+    }
+
+    @media screen and (max-width: 480px){
+        width: 100vw;
     }
 `;
 
@@ -41,6 +131,16 @@ export const TextWrapper = styled.div`
     vertical-align: middle;
     margin: 0;
     color: #ffffff;
+
+    @media screen and (max-width: 768px){
+        max-width: 768px;
+        padding: 20px;
+    }
+
+    @media screen and (max-width: 480px){
+        max-width: 480px;
+        padding: 10px;
+    }
 `;
 
 export const Heading = styled.h1`

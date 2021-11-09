@@ -21,7 +21,7 @@ export const Navbar = ({ toggle }) => {
         <>
             <Nav scrollNav={scrollNav}>
                 <NavbarContainer>
-                    <NavLogo to='home'>Allard Lavaritte</NavLogo>
+                    <NavLogo to='/'>Allard Lavaritte</NavLogo>
                     <MobileIcon onClick={toggle}>
                         <FaBars />
                     </MobileIcon>
