@@ -7,7 +7,7 @@ export const HeroContainer = styled.div`
     justify-content: center;
     align-items: center;
     padding: 0 30px;
-    height: 1000px;
+    height: 100vh;
     position: relative;
     z-index: 1;
     background: #000000 url("https://cdna.artstation.com/p/assets/images/images/019/381/052/large/allard-lavaritte-the-archer-no-eyeglass.jpg") no-repeat fixed center center;;
@@ -48,21 +48,22 @@ export const VideoBg = styled.video`
 
 export const HeroContent = styled.div`
     z-index: 3;
-    max-width: 1200px;
-    position: absolute;
-    padding: 8px 24px;
     display: flex;
+    width: 100vw;
+    height: 10vh;
+    margin-top: 30%;
+    margin-left: 22%;
     flex-direction: column;
     align-items: left;
+    text-align: left;
+    opacity: 1;
 `;
 
 export const HeroH1 = styled.h1`
     color: #ffffff;
     font-size: 1.5rem;
-    text-align: center;
     letter-spacing: 0.2rem;
     text-transform: uppercase;
-
     @media screen and (max-width: 768px){
         font-size: 0.8rem;
     }
@@ -72,9 +73,7 @@ export const HeroP = styled.p`
     color: #ffffff;
     font-size: 0.9rem;
     text-transform: uppercase;
-    text-align: center;
     letter-spacing: 0.16rem;
-    text-align: center;
     max-width: 600px;
 `;
 
@@ -82,7 +81,7 @@ export const HeroBtnWrapper = styled.div`
     margin-top: 32px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
 `;
 
 export const ArrowForward = styled(MdArrowForward)`
