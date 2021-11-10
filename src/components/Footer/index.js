@@ -1,9 +1,13 @@
-import React from 'react'
-import { FaArtstation, FaFacebook, FaInstagram, FaTwitch, FaTwitter, FaYoutube } from 'react-icons/fa'
+import React from 'react';
+import { animateScroll as scroll } from 'react-scroll';
+import { FaArtstation, FaFacebook, FaInstagram, FaTwitch, FaTwitter, FaYoutube } from 'react-icons/fa';
 import { FooterConainer, FooterWrap, FooterLinksContainer, FooterLinksWrapper, FooterLinkItems, FooterQuotes, FooterQuoteContainer,
-            FooterLinkTitle, FooterLink, SocialLogo, WebsiteRights, SocialIcons, SocialIconLink, SocialMediaWrap, SocialMedia} from './FooterElements'
+            FooterLinkTitle, FooterLink, SocialLogo, WebsiteRights, SocialIcons, SocialIconLink, SocialMediaWrap, SocialMedia} from './FooterElements';
 
 const Footer = () => {
+    const toggleHome = () => {
+        scroll.scrollToTop();
+    };
     return (
         <FooterConainer>
             <FooterWrap>
@@ -13,30 +17,34 @@ const Footer = () => {
                         <FooterLinkItems>
                             <FooterLinkTitle>Connect</FooterLinkTitle>
                             <FooterLink to="/signin">allard_lavaritte@icloud.com</FooterLink>
-                            <FooterLink to="/signin">Terms of Service</FooterLink>
                         </FooterLinkItems>
                         <FooterLinkItems>
-                            <FooterLinkTitle>About us</FooterLinkTitle>
-                            <FooterLink to="/signin">Info</FooterLink>
+                            <FooterLinkTitle>Info</FooterLinkTitle>
+                            <FooterLink to="/signin">Biography</FooterLink>
+                            <FooterLink to="/signin">The Creation of this website</FooterLink>
                             <FooterLink to="/signin">Terms of Service</FooterLink>
                         </FooterLinkItems>
                     </FooterLinksWrapper>
                     <FooterLinksWrapper>
                         <FooterLinkItems>
-                            <FooterLinkTitle>About us</FooterLinkTitle>
-                            <FooterLink to="/signin">Info</FooterLink>
-                            <FooterLink to="/signin">Terms of Service</FooterLink>
+                            <FooterLinkTitle>Services</FooterLinkTitle>
+                            <FooterLink to="/">Creative Direction</FooterLink>
+                            <FooterLink to="/">Concept Art</FooterLink>
+                            <FooterLink to="/">Graphic Design</FooterLink>
+                            <FooterLink to="/">UI/UX</FooterLink>
+                            <FooterLink to="/">Illustration</FooterLink>
+                            <FooterLink to="/">Cinematography</FooterLink>
+                            <FooterLink to="/">Animation</FooterLink>
                         </FooterLinkItems>
                         <FooterLinkItems>
-                            <FooterLinkTitle>About us</FooterLinkTitle>
-                            <FooterLink to="/signin">Info</FooterLink>
-                            <FooterLink to="/signin">Terms of Service</FooterLink>
+                            <FooterLinkTitle>Director</FooterLinkTitle>
+                            <FooterLink to="/">Allard Lavaritte</FooterLink>
                         </FooterLinkItems>
                     </FooterLinksWrapper>
                 </FooterLinksContainer>
                 <SocialMedia>
                     <SocialMediaWrap>
-                        <SocialLogo to="/">Allard Lavaritte</SocialLogo>
+                        <SocialLogo to="/" onClick={toggleHome}>Allard Lavaritte</SocialLogo>
                         <WebsiteRights>Allard Lavaritte © {new Date().getFullYear()} All rights reserved.</WebsiteRights>
                         <SocialIcons>
                             <SocialIconLink href="//www.facebook.com/blueflaw.art" target="_blank" aria-label="Facebook"><FaFacebook/></SocialIconLink>

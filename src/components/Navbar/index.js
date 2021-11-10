@@ -1,5 +1,6 @@
-import React, {useState, useEffect} from 'react'
-import {FaBars} from 'react-icons/fa'
+import React, {useState, useEffect} from 'react';
+import {FaBars} from 'react-icons/fa';
+import { animateScroll as scroll } from 'react-scroll';
 import {Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks} from './NavbarElements';
 
 export const Navbar = ({ toggle }) => {
@@ -15,13 +16,17 @@ export const Navbar = ({ toggle }) => {
 
     useEffect(() => {
         window.addEventListener('scroll', changeNav)
-    }, [])
+    }, []);
+
+    const toggleHome = () => {
+        scroll.scrollToTop();
+    };
 
     return (
         <>
             <Nav scrollNav={scrollNav}>
                 <NavbarContainer>
-                    <NavLogo to='/'>Allard Lavaritte</NavLogo>
+                    <NavLogo to='/' onClick={toggleHome}>Allard Lavaritte</NavLogo>
                     <MobileIcon onClick={toggle}>
                         <FaBars />
                     </MobileIcon>
