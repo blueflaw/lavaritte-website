@@ -3,15 +3,14 @@ import {ArtContaner, ArtWrapper, RowPoster, ImageContainer, Poster, Overlay, Ove
 import {ArtData} from './ArtData'
 
 export const ArtSection = () => {
+
     function setOpacity1(e) {
         e.target.style.opacity = 1;
     }
     function setOpacity0(e) {
         e.target.style.opacity = 0;
     }
-    // function setScale(e) {
-    //     e.target.style.transform = `scale(1.08)`;
-    // }
+    
     return (
         <>
             <ArtContaner id="art">

@@ -128,7 +128,7 @@ export const Poster = styled.img`
     margin: 0%;
     transition: transform 450ms;
 
-    &:hover{
+    :hover{
         transform: scale(1.08);
     }
 `;

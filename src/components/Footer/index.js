@@ -11,8 +11,8 @@ const Footer = () => {
                 <FooterLinksContainer>
                     <FooterLinksWrapper>
                         <FooterLinkItems>
-                            <FooterLinkTitle>About us</FooterLinkTitle>
-                            <FooterLink to="/signin">Info</FooterLink>
+                            <FooterLinkTitle>Connect</FooterLinkTitle>
+                            <FooterLink to="/signin">allard_lavaritte@icloud.com</FooterLink>
                             <FooterLink to="/signin">Terms of Service</FooterLink>
                         </FooterLinkItems>
                         <FooterLinkItems>
