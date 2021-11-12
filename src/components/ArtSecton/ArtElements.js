@@ -127,7 +127,7 @@ export const Poster = styled.img`
     max-height: 500px;
     margin: 0%;
     transition: transform 450ms;
-
+    overflow: hidden;
     :hover{
         transform: scale(1.08);
     }
