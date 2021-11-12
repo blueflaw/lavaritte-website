@@ -24,7 +24,7 @@ export const ArtSection = () => {
                                         <Overlay onMouseOver={setOpacity1} onMouseLeave={setOpacity0}>
                                             <TextWrapper><OverlayTitile>{artDetail.title}</OverlayTitile></TextWrapper>
                                         </Overlay>
-                                        </ImageContainer>
+                                    </ImageContainer>
                                     </>
                             })}
                         </ArtRow>
