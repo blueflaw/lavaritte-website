@@ -17,8 +17,7 @@ const Footer = () => {
                     <FooterLinksWrapper>
                         <FooterLinkItems>
                             <FooterLinkTitle>Connect</FooterLinkTitle>
-                            {/* <FooterLink mailto="allard_lavaritte@icloud.com">allard_lavaritte@icloud.com</FooterLink> */}
-                            <ButtonMailto label="me@lavaritte.com" mailto="mailto:allard_lavaritte@icloud.com" />
+                            <ButtonMailto label="me@lavaritte.com" mailto="mailto:no-reply@example.com" />
                         </FooterLinkItems>
                         <FooterLinkItems>
                             <FooterLinkTitle>Info</FooterLinkTitle>
@@ -54,7 +53,6 @@ const Footer = () => {
                             <SocialIconLink href="//www.artstation.com/blueflaw" target="_blank" aria-label="ArtStation"><FaArtstation/></SocialIconLink>
                             <SocialIconLink href="//www.youtube.com/channel/UCQ6-hj3JK97f2wxIJ9tYkTg" target="_blank" aria-label="Youtube"><FaYoutube/></SocialIconLink>
                             <SocialIconLink href="//twitter.com/NotAllard" target="_blank" aria-label="Twitter"><FaTwitter/></SocialIconLink>
-                            {/* <SocialIconLink href="/" target="_blank" aria-label="Linkedin"><FaLinkedin/></SocialIconLink> */}
                             <SocialIconLink href="//www.twitch.tv/blueflaw_" target="_blank" aria-label="Twitch"><FaTwitch/></SocialIconLink>
                         </SocialIcons>
                     </SocialMediaWrap>

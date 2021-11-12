@@ -1,0 +1,9 @@
+.ButtonMailto {
+    text-decoration: none;
+    color: #ffffff;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+.ButtonMailto:hover{
+    color: #00a2ff;
+}
