@@ -6,6 +6,7 @@ import ArtSection from '../components/ArtSecton';
 import TutorialSection from '../components/TutorialSection';
 import Footer from '../components/Footer';
 import TheWebsite from '../components/AboutSection/TheWebsite/Index';
+import ScrollUp from '../components/ScrollUp/Index';
 
 export const Home = () => {
     const [isOpen, setIsOpen] = useState(false)
@@ -22,7 +23,8 @@ export const Home = () => {
             <ArtSection/>
             <TutorialSection/>
             <TheWebsite/>
-            <Footer/>        
+            <Footer/>
+            <ScrollUp/>        
         </>
     );
 };
