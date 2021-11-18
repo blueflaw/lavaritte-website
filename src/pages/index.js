@@ -7,6 +7,7 @@ import TutorialSection from '../components/TutorialSection';
 import Footer from '../components/Footer';
 import TheWebsite from '../components/AboutSection/TheWebsite/Index';
 import ScrollUp from '../components/ScrollUp/Index';
+import BlogsSection from '../components/Blogs';
 
 export const Home = () => {
     const [isOpen, setIsOpen] = useState(false)
@@ -22,6 +23,7 @@ export const Home = () => {
             <HeroSection/>
             <ArtSection/>
             <TutorialSection/>
+            <BlogsSection/>
             <TheWebsite/>
             <Footer/>
             <ScrollUp/>        
