@@ -184,7 +184,3 @@ export const OverlayTitile = styled.div`
         font-size: 0.5rem;
     }
 `;
-
-export const OverlaySubTitile = styled.div`
-
-`;

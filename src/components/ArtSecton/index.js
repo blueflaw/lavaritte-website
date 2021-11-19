@@ -8,7 +8,7 @@ export const ArtSection = () => {
     PosterRef.current = [];
 
     useEffect(() => {
-        console.log(PosterRef);
+        //console.log(PosterRef);
     }, [PosterRef])
 
     function setOpacity1(e) {
@@ -25,7 +25,7 @@ export const ArtSection = () => {
         if(el && !PosterRef.current.includes(el)){
             PosterRef.current.push(el);
         }
-        console.log(PosterRef.current);
+        //console.log(PosterRef.current);
     }
     
     return (
