@@ -6,7 +6,13 @@ import { TextWrapper, TutorialContainer,TutorialContainer2, TutorialWrapper, Hea
 import { TutorialsData1, TutorialsData2 } from './TutorialsData'
 const TutorialSection = () => {
     useEffect(() => {
-        Aos.init({duration: 1500});
+        Aos.init({
+            duration: 2000,
+            // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+            once: false, // whether animation should happen only once - while scrolling down
+            mirror: true, // whether elements should animate out while scrolling past them
+        });
+       
     }, [])
     return (
         <div id='tutorials'>
