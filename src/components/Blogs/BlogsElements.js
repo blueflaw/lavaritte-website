@@ -6,6 +6,7 @@ export const BlogsContaner = styled.div`
     width: 100%;
     background: #ffffff;
     --flow-space: 2em;
+    padding: 5% 0;
 `;
 
 export const BlogsWrapper = styled.div`
@@ -101,7 +102,7 @@ export const BlogThumbnail = styled.img`
     margin: 0%;
     transition: transform 450ms;
     overflow: hidden;
-    filter: grayscale(20%);
+    filter: grayscale(30%);
     :hover{
         transform: scale(1.08);
         filter: grayscale(0%);
