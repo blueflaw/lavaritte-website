@@ -1,14 +1,19 @@
-import React from 'react'
+import React, {useEffect} from 'react'
+import Aos from 'aos'
+import "aos/dist/aos.css"
 import ReactYouTube from '../ReactYoutube/ReactYoutube'
 import { TextWrapper, TutorialContainer,TutorialContainer2, TutorialWrapper, Heading, Subtitle, TutorialVidContainer, TutorialRow, Column1, Column2} from './TutorialElements'
 import { TutorialsData1, TutorialsData2 } from './TutorialsData'
 const TutorialSection = () => {
+    useEffect(() => {
+        Aos.init({duration: 1500});
+    }, [])
     return (
         <div id='tutorials'>
             <TutorialContainer>
             <TutorialWrapper></TutorialWrapper>
                 <TutorialWrapper>
-                    <TextWrapper>
+                    <TextWrapper data-aos="fade-left">
                         <Heading>{TutorialsData1.headline}</Heading>
                         <Subtitle>{TutorialsData1.description}</Subtitle>
                     </TextWrapper>
@@ -26,9 +31,9 @@ const TutorialSection = () => {
             </TutorialVidContainer>
             <TutorialContainer2>
                 <TutorialWrapper>
-                    <TextWrapper>
-                    <Subtitle/>
-                        <Heading>{TutorialsData2.headline}</Heading>
+                    <TextWrapper  data-aos="fade-right">
+                        <Subtitle></Subtitle>
+                        <Heading >{TutorialsData2.headline}</Heading>
                     </TextWrapper>
                 </TutorialWrapper>
                 <TutorialWrapper></TutorialWrapper>
