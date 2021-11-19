@@ -1,7 +1,8 @@
 import React from 'react'
 import { BlogsData } from './BlogsData'
+import { FaAngleDoubleRight } from 'react-icons/fa';
 import { BlogsContaner, BlogsWrapper, RowPoster, BlogsRow, BlogPost, BlogThumbnail, BlogTumbnailWrapper, 
-            BlogHeader, TextWrapper, BlogMeta, BlogEntry, Preview, TextWrap, BlogPostWrap} from './BlogsElements'
+            BlogHeader, TextWrapper, BlogMeta, BlogEntry, Preview, TextWrap, BlogPostWrap, Readmore} from './BlogsElements'
 
 const BlogsSection = () => {
     return (
@@ -18,8 +19,9 @@ const BlogsSection = () => {
                                         <TextWrapper>
                                             <TextWrap>
                                             <BlogHeader>{BlogsDetail.title}</BlogHeader>
-                                            <BlogMeta>By&nbsp;&nbsp;| 23 November | 3 Comments</BlogMeta>
-                                            <BlogEntry><Preview>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</Preview></BlogEntry>
+                                            <BlogMeta>{BlogsDetail.meta}</BlogMeta>
+                                            <BlogEntry><Preview>{BlogsDetail.preview}</Preview></BlogEntry>
+                                            <Readmore>Read More <FaAngleDoubleRight/></Readmore>
                                             </TextWrap>
                                         </TextWrapper>
                                     </BlogPost>

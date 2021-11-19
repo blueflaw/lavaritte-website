@@ -133,6 +133,7 @@ export const TextWrap = styled.div`
 `;
 
 export const BlogMeta = styled.div`
+    padding-top: 5px;
     font-size: 0.8rem;
 `;
 
@@ -146,4 +147,15 @@ export const BlogEntry = styled.div`
 export const Preview = styled.div`
     font-size: 0.9rem;
     justify-content: left;
+    color: #5c5c5c;
+`;
+
+export const Readmore = styled.p`
+    font-size: 0.9rem;
+    justify-content: left;
+    color: #5c5c5c;
+    padding-top: 5px;
+    &:hover{
+        color: #00a2ff;
+    }
 `;
