@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import { Button } from '../ButtonElements'
+import { ButtonShowreel } from '../ButtonElements'
 import Video from '../../videos/FirstContact.mp4'
 import { HeroContainer, HeroBg, VideoBg, HeroContent, HeroH1, HeroP, HeroBtnWrapper, ArrowForward, ArrowRight} from './HeroElements'
 
@@ -20,11 +20,11 @@ const HeroSection = () => {
                 <HeroH1>Welcome to A.L. Creative</HeroH1>
                 <HeroP>Where the world of abstract meets reality.</HeroP>
                 <HeroBtnWrapper>
-                    <Button to='showreel' 
+                    <ButtonShowreel to='showreel' 
                             onMouseEnter={onHover} 
                             onMouseLeave={onHover}>
                                 view the showreel {hover ? <ArrowForward /> : <ArrowRight/>}
-                    </Button>
+                    </ButtonShowreel>
                 </HeroBtnWrapper>
             </HeroContent>
         </HeroContainer>
