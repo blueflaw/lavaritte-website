@@ -139,7 +139,7 @@ export const BlogMeta = styled.div`
 
 export const BlogEntry = styled.div`
     border-top: 1px solid #000000;
-    padding-top: 20px;
+    padding-top: 10px;
     margin-top: 10px;
     width: 100%;
 `;
