@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const InfoContainer = styled.div`
     color: #ffffff;
-    background: ${({lightBg}) => (lightBg ? '#000000': '#ffffff')};
+    background: ${({ lightBg }) => (lightBg ? '#ffffff' : '#000000')};
     @media screen and (max-width: 768px){
         padding: 100px 0px;
     }
@@ -50,7 +50,7 @@ export const TextWrapper = styled.div`
 `;
 
 export const TopLine = styled.p`
-    color: #ffffff;
+    color: ${({ lightText }) => (lightText ? '#ffffff' : '#000000')};
     font-size: 0.9rem;
     text-transform: uppercase;
     letter-spacing: 0.16rem;
@@ -59,7 +59,7 @@ export const TopLine = styled.p`
 
 export const Heading = styled.h1`
     margin-bottom: 24px;
-    color: ${({lightText}) => (lightText ? '#ffffff' : '#000000')};
+    color: ${({lightText}) => (lightText ? '#000000' : '#ffffff')};
     font-size: 1.5rem;
     letter-spacing: 0.3rem;
     text-transform: uppercase;
@@ -70,7 +70,7 @@ export const Heading = styled.h1`
 `;
 
 export const Subtitle = styled.p`
-    color: ${({darkText}) => (darkText ? '#000000' : '#ffffff')};
+    color: ${({lightText}) => (lightText ? '#ffffff' : '#000000')};
     vertical-align: baseline;
     padding-top: 10px;
     font-size: 0.9rem;
@@ -80,7 +80,6 @@ export const Subtitle = styled.p`
     max-width: 440px;
     line-height: 24px;
     margin-bottom: 35px;
-    text-align: justify;
 `;
 
 export const BtnWrap = styled.div`

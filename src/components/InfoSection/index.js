@@ -14,24 +14,24 @@ import { InfoContainer,
          Img,
         } from './InfoElements'
 
-const InfoSection = () => {
+const InfoSection = ({lightBg, imgStart, topLine, headline, description, buttonLabel, img, alt}) => {
     return (
         <React.Fragment>
-            <InfoContainer>
+            <InfoContainer lightBg={lightBg}>
                 <InfoWrapper>
-                    <InfoRow>
+                    <InfoRow imgStart={imgStart}>
                         <Column1>
                             <TextWrapper>
-                                <TopLine>Topline</TopLine>
-                                <Heading>Heading</Heading>
-                                <Subtitle>Subtitle</Subtitle>
+                                <TopLine>{topLine}</TopLine>
+                                <Heading>{headline}</Heading>
+                                <Subtitle>{description}</Subtitle>
                                 <BtnWrap>
-                                    <Button to='home'>Button</Button>
+                                    <Button to='home'>{buttonLabel}</Button>
                                 </BtnWrap>
                             </TextWrapper>
                         </Column1>
                         <Column2>
-                            <ImgWrap><Img /></ImgWrap>
+                            <ImgWrap><Img src={img.default} alt={alt}/></ImgWrap>
                         </Column2>
                     </InfoRow>
                 </InfoWrapper>

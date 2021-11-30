@@ -2,6 +2,7 @@ import React from 'react'
 import {AboutContainer, WebsiteContainer, WebsiteContent, ContentH1, ContentP, DP, ContentLocation, ContentLink} from './TheWebsiteElements'
 import { FaMapMarkedAlt, FaExternalLinkAlt } from 'react-icons/fa';
 import InfoSection from '../../InfoSection';
+import { About1, About2 } from './Data';
 
 const TheWebsite = () => {
     return (
@@ -15,7 +16,8 @@ const TheWebsite = () => {
                 <ContentLink href="//www.artstation.com/blueflaw" target="_blank" aria-label="ArtStation">blueflaw.artstation.com <FaExternalLinkAlt/></ContentLink>
             </WebsiteContent>
         </WebsiteContainer>
-        <InfoSection/>
+        <InfoSection {...About1}/>
+        <InfoSection {...About2}/>
         </AboutContainer>
         
     )
