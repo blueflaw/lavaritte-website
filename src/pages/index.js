@@ -17,7 +17,7 @@ export const Home = () => {
     }
 
     return (
-        <>
+        <React.Fragment>
             <Sidebar isOpen={isOpen} toggle={toggle} />
             <Navbar toggle={toggle}/>
             <HeroSection/>
@@ -27,7 +27,7 @@ export const Home = () => {
             <TheWebsite/>
             <Footer/>
             <ScrollUp/>        
-        </>
+        </React.Fragment>
     );
 };
 

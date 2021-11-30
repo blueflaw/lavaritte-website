@@ -12,21 +12,21 @@ const BlogsSection = () => {
                         <BlogsRow>
                             {/* use this template */}
                             {BlogsData.map((BlogsDetail) =>{
-                                return <>
-                                <BlogPostWrap to={BlogsDetail.link}>
-                                    <BlogPost key={BlogsDetail.id}>
-                                        <BlogTumbnailWrapper><BlogThumbnail src={BlogsDetail.path} alt={BlogsDetail.alt}/></BlogTumbnailWrapper>
-                                        <TextWrapper>
-                                            <TextWrap>
-                                            <BlogHeader>{BlogsDetail.title}</BlogHeader>
-                                            <BlogMeta>{BlogsDetail.meta}</BlogMeta>
-                                            <BlogEntry><Preview>{BlogsDetail.preview}</Preview></BlogEntry>
-                                            <Readmore>Read More <FaAngleDoubleRight/></Readmore>
-                                            </TextWrap>
-                                        </TextWrapper>
-                                    </BlogPost>
-                                </BlogPostWrap>
-                                </>
+                                return <React.Fragment>
+                                    <BlogPostWrap to={BlogsDetail.link}>
+                                        <BlogPost key={BlogsDetail.id}>
+                                            <BlogTumbnailWrapper><BlogThumbnail src={BlogsDetail.path} alt={BlogsDetail.alt}/></BlogTumbnailWrapper>
+                                            <TextWrapper>
+                                                <TextWrap>
+                                                <BlogHeader>{BlogsDetail.title}</BlogHeader>
+                                                <BlogMeta>{BlogsDetail.meta}</BlogMeta>
+                                                <BlogEntry><Preview>{BlogsDetail.preview}</Preview></BlogEntry>
+                                                <Readmore>Read More <FaAngleDoubleRight/></Readmore>
+                                                </TextWrap>
+                                            </TextWrapper>
+                                        </BlogPost>
+                                    </BlogPostWrap>
+                                </React.Fragment>
                             })}
                         </BlogsRow>
                     </RowPoster>

@@ -23,7 +23,7 @@ export const Navbar = ({ toggle }) => {
     };
 
     return (
-        <>
+        <React.Fragment>
             <Nav scrollNav={scrollNav}>
                 <NavbarContainer>
                     <NavLogo to='/' onClick={toggleHome}>Allard Lavaritte</NavLogo>
@@ -33,6 +33,9 @@ export const Navbar = ({ toggle }) => {
                     <NavMenu>
                         <NavItem>
                             <NavLinks to='art' smooth={true} duration={500} spy={true} exact="true" offset={-80}>Art</NavLinks>
+                        </NavItem>
+                        <NavItem>
+                            <NavLinks to='store' smooth={true} duration={500} spy={true} exact="true" offset={-80}>Store</NavLinks>
                         </NavItem>
                         <NavItem>
                             <NavLinks to='tutorials' smooth={true} duration={500} spy={true} exact="true" offset={-80}>Tutorials</NavLinks>
@@ -49,7 +52,7 @@ export const Navbar = ({ toggle }) => {
                     </NavBtn> */}
                 </NavbarContainer>
             </Nav>
-        </>
+        </React.Fragment>
     )
 }
 

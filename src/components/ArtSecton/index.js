@@ -29,26 +29,26 @@ export const ArtSection = () => {
     }
     
     return (
-        <>
+        <React.Fragment>
             <ArtContaner id="art">
                 <ArtWrapper>
                     <RowPoster>
                         <ArtRow>
                             {ArtData.map((artDetail) =>{
-                                return <>
+                                return <React.Fragment>
                                     <ImageContainer key={artDetail.id}>
                                     <Poster ref={addToRefs} src={artDetail.path} alt={artDetail.alt}/>
                                         <Overlay onMouseEnter={setOpacity1} onMouseLeave={setOpacity0}>
                                             <TextWrapper><OverlayTitile>{artDetail.title}</OverlayTitile></TextWrapper>
                                         </Overlay>
                                     </ImageContainer>
-                                    </>
+                                    </React.Fragment>
                             })}
                         </ArtRow>
                     </RowPoster>
                 </ArtWrapper>
             </ArtContaner>
-        </>
+        </React.Fragment>
     )
 }
 
