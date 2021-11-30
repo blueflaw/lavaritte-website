@@ -1,28 +1,26 @@
 export const About1 = {
     lightBg: true,
     lightText: false,
-    lightTextDesc: true,
-    topLine: 'Top Line Text',
-    headline: 'COURSES FROM THE INDUSTRY VETERAN',
-    description: 'Over almost two decades of working in entertainment and design with world reknown clinets, I\'ve made every mistake in the books and crafted my courses and tutorials so that you don\'t have to repeat those mistakes. My library offers quick bite-size affordable tutorials as well as fully fleshed out courses from which you can learn step by step on how I successfully made a living as an artist and art director in entertainment industry.',
-    buttonLabel: 'Button Label',
+    topLine: 'this website is created using',
+    headline: 'React',
+    description: 'React makes it painless to create interactive UIs. Design simple views for each state in your application, and React will efficiently update and render just the right components when your data changes. Declarative views make your code more predictable and easier to debug.',
+    buttonLabel: 'Get Started',
     imgStart: false,
     img: require('../../../images/react.svg'),
     alt: 'alt',
-    dark: true,
-    primary: true
+    pathLink: "//reactjs.org/docs/getting-started.html",
+    dark: true
 }
 export const About2 = {
     lightBg: false,
     lightText: true,
-    lightTextDesc: false,
-    topLine: 'Top Line Text',
-    headline: 'COURSES FROM THE INDUSTRY VETERAN',
-    description: 'Over almost two decades of working in entertainment and design with world reknown clinets, I\'ve made every mistake in the books and crafted my courses and tutorials so that you don\'t have to repeat those mistakes. My library offers quick bite-size affordable tutorials as well as fully fleshed out courses from which you can learn step by step on how I successfully made a living as an artist and art director in entertainment industry.',
-    buttonLabel: 'Button Label',
-    imgStart: false,
-    img: require('../../../images/react.svg'),
+    topLine: 'download my code',
+    headline: 'GitHub',
+    description: 'The "clone" command downloads an existing Git repository to your local computer. You will then have a full-blown, local version of that Git repo and can start working on the project.',
+    buttonLabel: 'View on GitHub',
+    imgStart : true,
+    img: require('../../../images/git.svg'),
     alt: 'alt',
-    dark: true,
-    primary: true
+    pathLink: "https://github.com/blueflaw/lavaritte-website",
+    dark: false
 }
