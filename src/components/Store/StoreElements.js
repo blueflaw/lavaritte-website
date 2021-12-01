@@ -1,6 +1,4 @@
 import styled from "styled-components";
-import {Link} from 'react-router-dom'
-
 export const StoreContaner = styled.div`
     color: #000000;
     width: 100%;
@@ -78,6 +76,17 @@ export const StorePostWrap = styled.a`
     padding: 12px;
     text-decoration: none;
     color: #000000;
+    
+    &:hover {
+         & span{
+            transform: scale(1.08);
+            filter: grayscale(0%);
+        }
+        
+        & h1{
+            background: #00a2ff;
+        }
+    } 
 `;
 
 export const RowPoster = styled.div`
@@ -86,14 +95,16 @@ export const RowPoster = styled.div`
     padding: 0px;
 `;
 
-export const StoreTumbnailWrapper = styled.div`
+export const StoreTumbnailWrapper = styled.span`
     //margin: 0 0 20px;
     display: flex;
     overflow: hidden;
+    transition: transform 450ms;
 `;
 
 export const StorePost = styled.div`
     position: static;
+    overflow: hidden;
 `;
 
 export const StoreThumbnail = styled.img`
@@ -104,10 +115,10 @@ export const StoreThumbnail = styled.img`
     transition: transform 450ms;
     overflow: hidden;
     filter: grayscale(30%);
-    :hover{
+    /* :hover{
         transform: scale(1.08);
         filter: grayscale(0%);
-    }
+    } */
 `;
 
 export const StoreHeader = styled.div`
@@ -161,9 +172,12 @@ export const AuthorName = styled.p`
     padding: 5px;
 `;
 
-export const Prize = styled.div`
+export const Prize = styled.h1`
     background: #171717;
     color: #fff;
     padding: 10px;
     font-size: 1rem;
+    :hover{
+        background: #00a2ff;
+    }
 `;
