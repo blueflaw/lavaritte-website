@@ -142,9 +142,20 @@ export const RowPoster = styled.div`
 export const ImageContainer = styled.div`
     position: relative;
     margin-bottom: -4px;
+    overflow: hidden;
+    &:hover {
+        & img{
+            transform: scale(1.08);
+            filter: grayscale(0%);
+        }
+        & span{
+            opacity: 1;
+        }
+
+    } 
 `;
 
-export const Overlay = styled.div`
+export const Overlay = styled.span`
     display: flex;
     position: absolute;
     top: 0;
