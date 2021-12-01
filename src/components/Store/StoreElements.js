@@ -73,11 +73,12 @@ export const StoreCard = styled.img`
 export const StorePostWrap = styled.a`
     display: flex;
     flex-direction: column;
-    padding: 12px;
+    margin: 12px;
     text-decoration: none;
     color: #000000;
     
     &:hover {
+        //box-shadow: 0 4px 8px 0 rgba(0, 162, 255, 0.2), 0 6px 20px 0 rgba(0, 162, 255, 0.19);
          & span{
             transform: scale(1.08);
             filter: grayscale(0%);

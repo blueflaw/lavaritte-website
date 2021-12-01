@@ -28,7 +28,16 @@ export const WebsiteContainer = styled.div`
         opacity: 0.4;
     }
 `;
-
+export const WebsiteContainerBio = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 30px;
+    height: 50vh;
+    position: relative;
+    z-index: 1;
+    background: #222222;
+`;
 export const WebsiteContent = styled.div`
     z-index: 3;
     display: flex;
@@ -40,11 +49,20 @@ export const WebsiteContent = styled.div`
     opacity: 1;
 `;
 
+export const WebsiteContentBio = styled.div`
+    display: flex;
+    width: 100vw;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    opacity: 1;
+`;
+
 export const ContentH1 = styled.h1`
     color: #ffffff;
     font-size: 1.5rem;
     letter-spacing: 0.2rem;
-    padding-top: 20px;
+    padding-bottom: 20px;
     text-transform: uppercase;
 `;
 
@@ -56,7 +74,15 @@ export const ContentP = styled.p`
     max-width: 600px;
     text-transform: uppercase;
 `;
-
+export const ContentBio = styled.p`
+    padding-top: 10px;
+    color: #ffffff;
+    font-size: 1.1rem;
+    font-weight: 100;
+    letter-spacing: 0.18rem;
+    max-width: 50vw;
+    text-align: left;
+`;
 export const ContentLocation = styled.p`
     padding-top: 5px;
     color: #ffffff;
@@ -73,6 +99,7 @@ export const DP = styled.img`
     vertical-align: middle;
     border-top: 0;
     aspect-ratio: auto 120/120;
+    padding-bottom: 10px;
 `;
 
 export const ContentLink = styled.a`

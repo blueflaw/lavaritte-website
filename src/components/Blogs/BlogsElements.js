@@ -2,7 +2,6 @@ import styled from "styled-components";
 export const BlogsContaner = styled.div`
     color: #000000;
     width: 100%;
-    background: #ffffff;
     --flow-space: 2em;
     padding: 5% 0;
     background: #171717;
@@ -72,12 +71,17 @@ export const BlogsCard = styled.img`
 
 export const BlogsPostWrap = styled.a`
     display: flex;
+    margin: 12px;
+    overflow: hidden;
     flex-direction: column;
-    padding: 12px;
     text-decoration: none;
     color: #000000;
+    border-radius: 15px;
+    //border: 2px solid transparent;
     
     &:hover {
+        //border: 1px solid #00a2ff;
+        box-shadow: 0 4px 8px 0 rgba(0, 162, 255, 0.2), 0 6px 20px 0 rgba(0, 162, 255, 0.19);
          & span{
             transform: scale(1.08);
             filter: grayscale(0%);
