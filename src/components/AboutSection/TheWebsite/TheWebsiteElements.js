@@ -33,9 +33,8 @@ export const WebsiteContainerBio = styled.div`
     justify-content: center;
     align-items: center;
     padding: 0 30px;
-    height: 50vh;
+    height: 50%;
     position: relative;
-    z-index: 1;
     background: #222222;
 `;
 export const WebsiteContent = styled.div`
@@ -51,11 +50,16 @@ export const WebsiteContent = styled.div`
 
 export const WebsiteContentBio = styled.div`
     display: flex;
+    margin: 3% 0px;
     width: 100vw;
     flex-direction: column;
     align-items: center;
     text-align: center;
     opacity: 1;
+
+    @media only screen and (max-width: 768px) {
+    
+    }
 `;
 
 export const ContentH1 = styled.h1`
@@ -80,8 +84,12 @@ export const ContentBio = styled.p`
     font-size: 1.1rem;
     font-weight: 100;
     letter-spacing: 0.18rem;
-    max-width: 50vw;
+    max-width: 55%;
     text-align: left;
+
+    @media only screen and (max-width: 768px){
+        max-width: 90%;
+    }
 `;
 export const ContentLocation = styled.p`
     padding-top: 5px;
