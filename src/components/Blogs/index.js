@@ -1,8 +1,8 @@
 import React from 'react'
 import { BlogsData } from './BlogsData'
 import { FaAngleDoubleRight } from 'react-icons/fa';
-import { BlogsContaner, BlogsWrapper, RowPoster, BlogsRow, BlogPost, BlogThumbnail, BlogTumbnailWrapper, 
-            BlogHeader, TextWrapper, BlogMeta, BlogEntry, Preview, TextWrap, BlogPostWrap, Readmore} from './BlogsElements'
+import { BlogsContaner, BlogsWrapper, RowPoster, BlogsRow, BlogsPostWrap, BlogsPost, BlogTumbnailWrapper, Prize, BlogInfoHeader,
+         BlogsThumbnail, TextWrapper, BlogsHeader, BlogsInfoRow, AuthorWrap, TextWrap, AuthorDisplayPicture, AuthorName, Category, CardTime} from './BlogsElements'
 
 const BlogsSection = () => {
     return (
@@ -13,19 +13,31 @@ const BlogsSection = () => {
                             {/* use this template */}
                             {BlogsData.map((BlogsDetail) =>{
                                 return <React.Fragment>
-                                    <BlogPostWrap to={BlogsDetail.link}>
-                                        <BlogPost key={BlogsDetail.id}>
-                                            <BlogTumbnailWrapper><BlogThumbnail src={BlogsDetail.path} alt={BlogsDetail.alt}/></BlogTumbnailWrapper>
+                                    <BlogsPostWrap to={BlogsDetail.link}>
+                                        <BlogsPost key={BlogsDetail.id}>
+                                            <BlogTumbnailWrapper><BlogsThumbnail key={BlogsDetail.id} src={BlogsDetail.path} alt={BlogsDetail.alt}/></BlogTumbnailWrapper>
                                             <TextWrapper>
                                                 <TextWrap>
-                                                <BlogHeader>{BlogsDetail.title}</BlogHeader>
-                                                <BlogMeta>{BlogsDetail.meta}</BlogMeta>
-                                                <BlogEntry><Preview>{BlogsDetail.preview}</Preview></BlogEntry>
-                                                <Readmore>Read More <FaAngleDoubleRight/></Readmore>
+                                                <BlogsInfoRow>
+                                                    <BlogInfoHeader>
+                                                        <Category>{BlogsDetail.category}</Category>
+                                                    </BlogInfoHeader>
+                                                    <BlogInfoHeader>
+                                                        <CardTime>{BlogsDetail.time}</CardTime>
+                                                    </BlogInfoHeader>
+                                                </BlogsInfoRow>
+                                                <BlogsHeader>{BlogsDetail.title}</BlogsHeader>
+                                                <BlogsInfoRow>
+                                                    <AuthorWrap>
+                                                        <AuthorDisplayPicture src="https://cdnb.artstation.com/p/users/avatars/000/190/863/medium/02dbe259f43d1792bc174f3c536c8d4e.jpg" alt="author"/>
+                                                        <AuthorName>by {BlogsDetail.author}</AuthorName>
+                                                    </AuthorWrap>
+                                                    {/* <Prize>Read More <FaAngleDoubleRight/></Prize> */}
+                                                </BlogsInfoRow>
                                                 </TextWrap>
                                             </TextWrapper>
-                                        </BlogPost>
-                                    </BlogPostWrap>
+                                        </BlogsPost>
+                                    </BlogsPostWrap>
                                 </React.Fragment>
                             })}
                         </BlogsRow>

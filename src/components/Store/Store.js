@@ -14,9 +14,7 @@ const Store = () => {
                                 return <React.Fragment>
                                     <StorePostWrap href={StoreDetail.link} target="_blank">
                                         <StorePost key={StoreDetail.id}>
-                                            <StoreTumbnailWrapper><StoreThumbnail key={StoreDetail.id} src={StoreDetail.imagePath.default} alt={StoreDetail.alt} onMouseEnter={
-                                                console.log(StoreDetail.imagePath)
-                                            }/></StoreTumbnailWrapper>
+                                            <StoreTumbnailWrapper><StoreThumbnail key={StoreDetail.id} src={StoreDetail.imagePath.default} alt={StoreDetail.alt}/></StoreTumbnailWrapper>
                                             <TextWrapper>
                                                 <TextWrap>
                                                 <StoreHeader>{StoreDetail.title}</StoreHeader>

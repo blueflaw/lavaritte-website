@@ -1,12 +1,11 @@
 import styled from "styled-components";
-import {Link} from 'react-router-dom'
-
 export const BlogsContaner = styled.div`
     color: #000000;
     width: 100%;
     background: #ffffff;
     --flow-space: 2em;
     padding: 5% 0;
+    background: #171717;
 `;
 
 export const BlogsWrapper = styled.div`
@@ -59,7 +58,7 @@ export const RowTitle = styled.h2`
     }
 `;
 
-export const BlogCard = styled.img`
+export const BlogsCard = styled.img`
     object-fit: contain;
     width: 100%;
     max-height: 500px;
@@ -71,12 +70,23 @@ export const BlogCard = styled.img`
     cursor: pointer;
 `;
 
-export const BlogPostWrap = styled(Link)`
+export const BlogsPostWrap = styled.a`
     display: flex;
     flex-direction: column;
     padding: 12px;
     text-decoration: none;
     color: #000000;
+    
+    &:hover {
+         & span{
+            transform: scale(1.08);
+            filter: grayscale(0%);
+        }
+        
+        & h1{
+            color: #00a2ff;
+        }
+    } 
 `;
 
 export const RowPoster = styled.div`
@@ -85,17 +95,19 @@ export const RowPoster = styled.div`
     padding: 0px;
 `;
 
-export const BlogTumbnailWrapper = styled.div`
-    margin: 0 0 20px;
+export const BlogTumbnailWrapper = styled.span`
+    //margin: 0 0 20px;
     display: flex;
+    overflow: hidden;
+    transition: transform 450ms;
+`;
+
+export const BlogsPost = styled.div`
+    position: static;
     overflow: hidden;
 `;
 
-export const BlogPost = styled.div`
-    position: relative;
-`;
-
-export const BlogThumbnail = styled.img`
+export const BlogsThumbnail = styled.img`
     object-fit: contain;
     width: auto;
     max-height: 300px;
@@ -103,59 +115,91 @@ export const BlogThumbnail = styled.img`
     transition: transform 450ms;
     overflow: hidden;
     filter: grayscale(30%);
-    :hover{
+    /* :hover{
         transform: scale(1.08);
         filter: grayscale(0%);
-    }
+    } */
 `;
 
-export const BlogHeader = styled.div`
+export const BlogsHeader = styled.h1`
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: 500;
     padding-top: 10px;
+    font-size: 1rem;
+    color: #ffffff;
 `;
 
 export const TextWrapper = styled.div`
     display: inline-block;
-    position: absolute;
+    position: relative;
     bottom: 0;
-    height: 50%;
+    height: 35%;
     width: 100%;
     opacity: 1;
-    color: #000000;
     transition: .5s ease;
-    background: #ffffff;
+    background: #222222;
 `;
 
 export const TextWrap = styled.div`
     padding: 10px;
 `;
 
-export const BlogMeta = styled.div`
-    padding-top: 5px;
-    font-size: 0.8rem;
-`;
-
-export const BlogEntry = styled.div`
-    border-top: 1px solid #000000;
+export const BlogsInfoRow = styled.div`
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     padding-top: 10px;
-    margin-top: 10px;
-    width: 100%;
 `;
 
-export const Preview = styled.div`
-    font-size: 0.9rem;
-    justify-content: left;
-    color: #5c5c5c;
-`;
-
-export const Readmore = styled.p`
-    font-size: 0.9rem;
-    justify-content: left;
-    color: #5c5c5c;
+export const AuthorWrap = styled.div`
+    display: flex;
+    flex-direction: row;
     padding-top: 5px;
-    &:hover{
-        color: #00a2ff;
+    justify-content: space-between;
+`;
+
+export const BlogInfoHeader = styled.div`
+    display: flex;
+    flex-direction: row;
+    padding-top: 5px;
+    justify-content: space-between;
+`;
+
+export const Category = styled.h6`
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #878787;
+`;
+
+export const CardTime = styled.h6`
+    font-style: italic;
+    color: #707070;
+    font-size: 11px;
+    position: relative;
+`;
+
+export const AuthorDisplayPicture = styled.img`
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    display: block;
+`;
+
+export const AuthorName = styled.p`
+    color: #bbb;
+    white-space: nowrap;
+    font-size: 0.9rem;
+    padding: 5px;
+`;
+
+export const Prize = styled.h1`
+    background: #171717;
+    color: #fff;
+    padding: 10px;
+    font-size: 1rem;
+    :hover{
+        background: #00a2ff;
     }
 `;
