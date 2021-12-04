@@ -1,10 +1,9 @@
 import React from 'react'
 import { BlogsData } from './BlogsData'
-import { FaAngleDoubleRight } from 'react-icons/fa';
-import { BlogsContaner, BlogsWrapper, RowPoster, BlogsRow, BlogsPostWrap, BlogsPost, BlogTumbnailWrapper, Prize, BlogInfoHeader,
+import { BlogsContaner, BlogsWrapper, RowPoster, BlogsRow, BlogsPostWrap, BlogsPost, BlogTumbnailWrapper, BlogInfoHeader,
          BlogsThumbnail, TextWrapper, BlogsHeader, BlogsInfoRow, AuthorWrap, TextWrap, AuthorDisplayPicture, AuthorName, Category, CardTime} from './BlogsElements'
-
 const BlogsSection = () => {
+    
     return (
         <BlogsContaner id="blogs">
                 <BlogsWrapper>
@@ -13,7 +12,13 @@ const BlogsSection = () => {
                             {/* use this template */}
                             {BlogsData.map((BlogsDetail) =>{
                                 return <React.Fragment>
-                                    <BlogsPostWrap to={BlogsDetail.link}>
+                                    {/* <animated.div onMouseEnter={
+                                            ({ clientX: x, clientY: y }) => {set({ xys: calc(x, y) });
+                                            console.log('this card');
+                                        }}
+                                        onMouseLeave={() => set({ xys: [0, 0, 1] })}
+                                        style={{ transform: props.xys.interpolate(trans) }}> */}
+                                    <BlogsPostWrap to={BlogsDetail.link} >
                                         <BlogsPost key={BlogsDetail.id}>
                                             <BlogTumbnailWrapper><BlogsThumbnail key={BlogsDetail.id} src={BlogsDetail.path} alt={BlogsDetail.alt}/></BlogTumbnailWrapper>
                                             <TextWrapper>
@@ -38,6 +43,7 @@ const BlogsSection = () => {
                                             </TextWrapper>
                                         </BlogsPost>
                                     </BlogsPostWrap>
+                                    {/* </animated.div> */}
                                 </React.Fragment>
                             })}
                         </BlogsRow>

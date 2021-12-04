@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import styles from "./ButtonMailto.css";
+import "./ButtonMailto.css";
 
 const ButtonMailto = ({ mailto, label }) => {
     return (

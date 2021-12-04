@@ -1,5 +1,9 @@
 import React from 'react'
-import {AboutContainer, WebsiteContainer, WebsiteContent, ContentH1, ContentP, DP, ContentLocation, ContentLink, WebsiteContentBio, WebsiteContainerBio, ContentBio} from './TheWebsiteElements'
+
+import {
+    AboutContainer, WebsiteContainer, WebsiteContent, ContentH1, ContentP, DP, ContentLocation, ContentLink, WebsiteContentBio, WebsiteContainerBio, 
+    ContentBio, WebsiteContentIlike, WebsiteContainerIlike, Listwrapper, List
+} from './TheWebsiteElements'
 import { FaMapMarkedAlt, FaExternalLinkAlt } from 'react-icons/fa';
 import InfoSection from '../../InfoSection';
 import { About1, About2 } from './Data';
@@ -30,6 +34,14 @@ const TheWebsite = () => {
             </ContentBio>
             </WebsiteContentBio>
         </WebsiteContainerBio>
+        <WebsiteContainerIlike>
+            <WebsiteContentIlike>
+            <ContentH1>I LIKE</ContentH1>
+            <Listwrapper>
+                <List>A</List>
+            </Listwrapper>
+            </WebsiteContentIlike>
+        </WebsiteContainerIlike>
         <InfoSection {...About1}/>
         <InfoSection {...About2}/>
         </AboutContainer>
