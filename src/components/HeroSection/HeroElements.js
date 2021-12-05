@@ -29,6 +29,7 @@ export const HeroContainer = styled.div`
 
 export const HeroBg = styled.div`
     position: absolute;
+    opacity: 1;
     top: 0;
     right: 0;
     bottom: 0;
@@ -61,16 +62,21 @@ export const HeroContent = styled.div`
 
 export const HeroH1 = styled.h1`
     color: #ffffff;
+    opacity: 0;
+    transform: translateX(-50vw);
     font-size: 1.5rem;
     letter-spacing: 0.2rem;
     text-transform: uppercase;
     @media screen and (max-width: 768px){
-        font-size: 0.8rem;
+        font-size: 1.3rem;
+        padding-bottom: 10px;
     }
 `;
 
 export const HeroP = styled.p`
     color: #ffffff;
+    opacity: 1;
+    transform: translateX(-50vw);
     font-size: 0.9rem;
     text-transform: uppercase;
     letter-spacing: 0.16rem;
@@ -82,6 +88,8 @@ export const HeroBtnWrapper = styled.div`
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    opacity: 0;
+    transform: translateX(-100px);
 `;
 
 export const ArrowForward = styled(MdArrowForward)`

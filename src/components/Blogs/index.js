@@ -9,15 +9,8 @@ const BlogsSection = () => {
                 <BlogsWrapper>
                     <RowPoster>
                         <BlogsRow>
-                            {/* use this template */}
                             {BlogsData.map((BlogsDetail) =>{
                                 return <React.Fragment>
-                                    {/* <animated.div onMouseEnter={
-                                            ({ clientX: x, clientY: y }) => {set({ xys: calc(x, y) });
-                                            console.log('this card');
-                                        }}
-                                        onMouseLeave={() => set({ xys: [0, 0, 1] })}
-                                        style={{ transform: props.xys.interpolate(trans) }}> */}
                                     <BlogsPostWrap to={BlogsDetail.link} >
                                         <BlogsPost key={BlogsDetail.id}>
                                             <BlogTumbnailWrapper><BlogsThumbnail key={BlogsDetail.id} src={BlogsDetail.path} alt={BlogsDetail.alt}/></BlogTumbnailWrapper>
@@ -37,13 +30,11 @@ const BlogsSection = () => {
                                                         <AuthorDisplayPicture src="https://cdnb.artstation.com/p/users/avatars/000/190/863/medium/02dbe259f43d1792bc174f3c536c8d4e.jpg" alt="author"/>
                                                         <AuthorName>by {BlogsDetail.author}</AuthorName>
                                                     </AuthorWrap>
-                                                    {/* <Prize>Read More <FaAngleDoubleRight/></Prize> */}
                                                 </BlogsInfoRow>
                                                 </TextWrap>
                                             </TextWrapper>
                                         </BlogsPost>
                                     </BlogsPostWrap>
-                                    {/* </animated.div> */}
                                 </React.Fragment>
                             })}
                         </BlogsRow>
