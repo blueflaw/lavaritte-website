@@ -25,7 +25,7 @@ const TutorialSection = () => {
     const fadeIn =  element => {
         gsap.to(element, 1, {
             opacity: 1,
-            x: -20,
+            x: 0,
             stagger: { amount: 0.3}
         });
     };
@@ -33,9 +33,8 @@ const TutorialSection = () => {
     //Animation for fading out
     const fadeOut = element => {
         gsap.to(element, 1, {
-            outlineOffset: -20,
             opacity: 0,
-            x: +20,
+            x: 90,
             ease: 'power4.out'
         });
     };
@@ -47,11 +46,11 @@ const TutorialSection = () => {
         <div id='tutorials'>
             <TutorialContainer>
             <TutorialWrapper></TutorialWrapper>
-                <TutorialWrapper>
-                    <TextWrapper className="section1" ref={sectionRef1}>
-                        <Heading>{TutorialsData1.headline}</Heading>
-                        <Subtitle>{TutorialsData1.description}</Subtitle>
-                    </TextWrapper>
+                <TutorialWrapper ref={sectionRef1}>
+                        <TextWrapper className="section1" >
+                            <Heading>{TutorialsData1.headline}</Heading>
+                            <Subtitle>{TutorialsData1.description}</Subtitle>
+                        </TextWrapper>
                 </TutorialWrapper>
             </TutorialContainer>
             <TutorialVidContainer>
@@ -65,8 +64,8 @@ const TutorialSection = () => {
                 </TutorialRow>
             </TutorialVidContainer>
             <TutorialContainer2>
-                <TutorialWrapper>
-                    <TextWrapper className="section2" ref={sectionRef2}>
+                <TutorialWrapper ref={sectionRef2}>
+                    <TextWrapper className="section2" >
                         <Subtitle></Subtitle>
                         <Heading >{TutorialsData2.headline}</Heading>
                     </TextWrapper>
