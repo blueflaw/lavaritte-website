@@ -46,8 +46,8 @@ const TutorialSection = () => {
         <div id='tutorials'>
             <TutorialContainer>
             <TutorialWrapper></TutorialWrapper>
-                <TutorialWrapper ref={sectionRef1}>
-                        <TextWrapper className="section1" >
+                <TutorialWrapper>
+                        <TextWrapper className="section1" ref={sectionRef1}>
                             <Heading>{TutorialsData1.headline}</Heading>
                             <Subtitle>{TutorialsData1.description}</Subtitle>
                         </TextWrapper>
@@ -64,8 +64,8 @@ const TutorialSection = () => {
                 </TutorialRow>
             </TutorialVidContainer>
             <TutorialContainer2>
-                <TutorialWrapper ref={sectionRef2}>
-                    <TextWrapper className="section2" >
+                <TutorialWrapper>
+                    <TextWrapper className="section2" ref={sectionRef2}>
                         <Subtitle></Subtitle>
                         <Heading >{TutorialsData2.headline}</Heading>
                     </TextWrapper>

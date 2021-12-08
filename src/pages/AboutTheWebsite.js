@@ -3,6 +3,7 @@ import TheWebsite from '../components/AboutSection/TheWebsite/Index';
 import Navbar from '../components/Navbar';
 import Sidebar from '../components/Sidebar';
 import Footer from '../components/Footer';
+import ScrollToTop from '../components/ScrollToTop';
 
 const AboutTheWebsite = () => {
     const [isOpen, setIsOpen] = useState(false)
@@ -11,14 +12,15 @@ const AboutTheWebsite = () => {
         setIsOpen (!isOpen)
     }
     return (
-        <div>
+        <>
+            <ScrollToTop/>
             <Sidebar isOpen={isOpen} toggle={toggle} />
             <Navbar toggle={toggle}/>
             <TheWebsite/>
 
             <Footer/>     
             
-        </div>
+        </>
     )
 }
 

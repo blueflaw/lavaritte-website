@@ -153,6 +153,7 @@ export const TutorialWrapper = styled.div`
 
 export const TextWrapper = styled.div`
     opacity: 1;
+    overflow: hidden;
     max-width: 680px;
     margin-right: auto;
     margin-left: auto;
