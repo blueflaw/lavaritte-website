@@ -1,6 +1,6 @@
 import styled from 'styled-components'
-import { Link as LinkRouter } from 'react-router-dom'
-import { Link as LinkScroll } from 'react-scroll'
+import { Link } from 'react-router-dom'
+// import { Link as LinkPage} from 'react-router-dom';
 
 export const Nav = styled.nav `
     background: ${({ scrollNav}) => (scrollNav ? '#000000' : 'transparent')};
@@ -29,7 +29,7 @@ export const NavbarContainer = styled.div `
     max-width: 1100px;
 `;
 
-export const NavLogo = styled(LinkRouter)`
+export const NavLogo = styled(Link)`
     color: #ffffff;
     justify-self: flex-start;
     cursor: pointer;
@@ -77,7 +77,29 @@ export const NavItem = styled.li `
     height: 80px;
 `;
 
-export const NavLinks = styled(LinkScroll)`
+export const NavScroll = styled(Link)`
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0 1rem;
+    height: 100%;
+    font-size: 0.9rem;
+    font-weight: 300;
+    cursor: pointer;
+    letter-spacing: 0.16rem;
+    text-transform: uppercase;
+    &.active{
+        border-bottom: 3px solid #00a2ff;
+        color: #00a2ff;
+    }
+    &:hover{
+        transition: 0.8s all ease;
+        color: #00a2ff;
+    }
+`;
+
+export const NavLinks = styled(Link)`
     color: #ffffff;
     display: flex;
     align-items: center;
@@ -108,7 +130,7 @@ export const NavBtn = styled.nav`
     }
 `;
 
-export const NavBtnLink = styled(LinkRouter)`
+export const NavBtnLink = styled(Link)`
     background: transparent;
     color: #ffffff;
     border: 1px solid #ffffff;
