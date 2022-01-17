@@ -38,10 +38,10 @@ export const Navbar = ({ toggle }) => {
                             <NavLinks to="/store" smooth={true} duration={500} spy={true} exact="true" offset={-80}>Store</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to="/tutorials" smooth={true} duration={500} spy={true} exact="true" offset={-80}>Tutorial</NavLinks>
+                            <NavLinks to="/tutorial" smooth={true} duration={500} spy={true} exact="true" offset={-80}>Tutorial</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to="/Blogs" smooth={true} duration={500} spy={true} exact="true" offset={-80}>Blog</NavLinks>
+                            <NavLinks to="/blog" smooth={true} duration={500} spy={true} exact="true" offset={-80}>Blog</NavLinks>
                         </NavItem>
                         <NavItem>
                             <NavLinks to='/aboutthewebsite' smooth={true} duration={500} spy={true} exact="true" offset={-80}>About</NavLinks>

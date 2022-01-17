@@ -23,10 +23,10 @@ const Home = () => {
             <Navbar toggle={toggle}/>
             <HeroSection/>
             <ArtSection/>
-            <Store/>
+            {/* <Store/>
             <TutorialSection/>
             <BlogsSection/>
-            <TheWebsite/>
+            <TheWebsite/> */}
             <Footer/>
             <ScrollUp/>        
         </React.Fragment>
