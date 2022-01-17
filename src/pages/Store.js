@@ -6,7 +6,7 @@ import Store from '../components/Store/Store';
 import Footer from '../components/Footer';
 import ScrollToTop from '../components/ScrollToTop';
 
-const StorePage = () => {
+export const StorePage = () => {
     const [isOpen, setIsOpen] = useState(false)
 
     const toggle = () => {

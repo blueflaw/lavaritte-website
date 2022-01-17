@@ -100,7 +100,7 @@ export const NavScroll = styled(Link)`
 `;
 
 export const NavLinks = styled(Link)`
-    color: #ffffff;
+    color: ${({ activeNav}) => (activeNav ? '#00a2ff' : '#ffffff')};
     display: flex;
     align-items: center;
     text-decoration: none;

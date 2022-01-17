@@ -21,7 +21,7 @@ export const Navbar = ({ toggle }) => {
     const toggleHome = () => {
         scroll.scrollToTop();
     };
-
+    
     return (
         <React.Fragment>
             <Nav scrollNav={scrollNav}>
@@ -35,7 +35,7 @@ export const Navbar = ({ toggle }) => {
                             <NavLinks to='/' onClick={toggleHome}>Art</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to="/store" smooth={true} duration={500} spy={true} exact="true" offset={-80}>Store</NavLinks>
+                            <NavLinks to="/store" smooth={true} duration={500} spy={true} exact="true" offset={-80} >Store</NavLinks>
                         </NavItem>
                         <NavItem>
                             <NavLinks to="/tutorial" smooth={true} duration={500} spy={true} exact="true" offset={-80}>Tutorial</NavLinks>
