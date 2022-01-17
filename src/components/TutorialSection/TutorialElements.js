@@ -14,16 +14,6 @@ export const HeroContainer = styled.div`
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    ::before{
-        content: '';
-        top: 0%;
-        left: 0%;
-        right: 0%;
-        bottom: 0%;
-        background: linear-gradient(180deg, rgba(0,0,0,0.5) 2%, rgba(0,0,0,0.5) 100%),
-                    linear-gradient(180deg, rgba(0,0,0,0.5) 2%, transparent 20%);
-        z-index: 2;
-    }
 `;
 export const HeroH1 = styled.h1`
     color: #ffffff;
@@ -31,6 +21,7 @@ export const HeroH1 = styled.h1`
     text-align: center;
     letter-spacing: 0.2rem;
     padding-top: 50vh;
+    width: 100vw;
     text-transform: uppercase;
     @media screen and (max-width: 768px){
         font-size: 1.3rem;
