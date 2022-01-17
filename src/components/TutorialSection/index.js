@@ -2,7 +2,8 @@ import React, {useRef} from 'react'
 import { useIntersection } from 'react-use';
 import gsap from 'gsap';
 import ReactYouTube from '../ReactYoutube/ReactYoutube'
-import { TextWrapper, TutorialContainer,TutorialContainer2, TutorialWrapper, Heading, Subtitle, TutorialVidContainer, TutorialRow, Column1, Column2} from './TutorialElements'
+import { TextWrapper, TutorialContainer,TutorialContainer2, TutorialWrapper, Heading, Subtitle, TutorialVidContainer, TutorialRow, Column1, 
+         Column2, HeroContainer, HeroContent, HeroH1} from './TutorialElements'
 import { TutorialsData1, TutorialsData2 } from './TutorialsData'
 
 const TutorialSection = () => {
@@ -42,8 +43,15 @@ const TutorialSection = () => {
     // checking to see when the viewport is visible to the user
     intersection && intersection.intersectionRatio < treshold ? fadeOut(".section1") : fadeIn(".section1");
     intersection2 && intersection2.intersectionRatio < treshold ? fadeOut(".section2") : fadeIn(".section2");
+    
     return (
         <div id='tutorials'>
+            <HeroContainer>
+                <HeroContent>
+                    <HeroH1 >learn. practice. make a living</HeroH1>
+                </HeroContent>
+            </HeroContainer>
+
             <TutorialContainer>
             <TutorialWrapper></TutorialWrapper>
                 <TutorialWrapper>

@@ -1,5 +1,54 @@
 import styled from "styled-components";
 
+export const HeroContainer = styled.div`
+    /* not sure yet about this color might change later */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 30px;
+    height: 100vh;
+    position: relative;
+    z-index: 1;
+    background: #000000 url("https://cdnb.artstation.com/p/assets/images/images/022/843/339/large/allard-lavaritte-sunlight-small.jpg?1576885899") no-repeat fixed center top;;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    ::before{
+        content: '';
+        top: 0%;
+        left: 0%;
+        right: 0%;
+        bottom: 0%;
+        background: linear-gradient(180deg, rgba(0,0,0,0.5) 2%, rgba(0,0,0,0.5) 100%),
+                    linear-gradient(180deg, rgba(0,0,0,0.5) 2%, transparent 20%);
+        z-index: 2;
+    }
+`;
+export const HeroH1 = styled.h1`
+    color: #ffffff;
+    font-size: 1.5rem;
+    text-align: center;
+    letter-spacing: 0.2rem;
+    padding-top: 50vh;
+    text-transform: uppercase;
+    @media screen and (max-width: 768px){
+        font-size: 1.3rem;
+        padding-bottom: 10px;
+    }
+`;
+export const HeroContent = styled.div`
+    z-index: 3;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
+    opacity: 1;
+    background: rgba(0,0,0,0.3);
+`;
+
 export const TutorialContainer = styled.div`
     background: #000000 url("https://cdnb.artstation.com/p/assets/images/images/019/380/861/medium/allard-lavaritte-untitled-1.jpg?1563235858") no-repeat center center;
     -webkit-background-size: cover;

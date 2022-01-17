@@ -128,11 +128,17 @@ export const SocialIcons = styled.div`
     justify-content: space-between;
     align-items: center;
     width: 240px;
+    @media screen and (max-width: 768px){
+        padding-top: 20px;
+    }
 `;
 
 export const WebsiteRights = styled.small`
     color: #ffffff;
     text-transform: uppercase;
+    @media screen and (max-width: 768px){
+        padding-top: 20px;
+    }
 `;
 
 export const SocialIconLink = styled.a`
@@ -141,5 +147,9 @@ export const SocialIconLink = styled.a`
 
     :hover{
         color: #00a2ff;
+    }
+
+    @media screen and (max-width: 768px){
+        padding-bottom: 20px;
     }
 `;

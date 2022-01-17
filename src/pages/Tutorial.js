@@ -14,7 +14,7 @@ export const TutorialsPage = () => {
     }
     return (
         <>
-        <ScrollToTop/>
+        <ScrollToTop />
         <Sidebar isOpen={isOpen} toggle={toggle} />
         <Navbar toggle={toggle}/>
         <TutorialSection/>
