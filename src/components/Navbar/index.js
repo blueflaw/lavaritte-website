@@ -4,6 +4,7 @@ import { animateScroll as scroll } from 'react-scroll';
 import {Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks} from './NavbarElements';
 
 export const Navbar = ({ toggle }) => {
+
     const [scrollNav, setScrollNav] = useState(false)
 
     const changeNav= () => {
@@ -20,6 +21,11 @@ export const Navbar = ({ toggle }) => {
 
     const toggleHome = () => {
         scroll.scrollToTop();
+        window.isNavStoreActive = false;
+        window.isNavAboutActive = false;
+        window.isNavTutorialsActive = false;
+        window.isNavBlogctive = false;
+        window.isNavHomeActive = true;
     };
     
     return (
@@ -32,19 +38,43 @@ export const Navbar = ({ toggle }) => {
                     </MobileIcon>
                     <NavMenu>
                         <NavItem>
-                            <NavLinks to='/' onClick={toggleHome}>Art</NavLinks>
+                            <NavLinks activeNav={window.isNavHomeActive} onClick={toggleHome} to='/'>Art</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to="/store" smooth={true} duration={500} spy={true} exact="true" offset={-80} >Store</NavLinks>
+                            <NavLinks activeNav={window.isNavStoreActive} onClick={() => {
+                                window.isNavStoreActive = true;
+                                window.isNavAboutActive = false;
+                                window.isNavTutorialsActive = false;
+                                window.isNavBlogctive = false;
+                                window.isNavHomeActive = false;
+                            }} to="/store" smooth={true} duration={500} spy={true} exact="true" offset={-80} >Store</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to="/tutorial" smooth={true} duration={500} spy={true} exact="true" offset={-80}>Tutorial</NavLinks>
+                            <NavLinks activeNav={window.isNavTutorialsActive} onClick={() => {
+                                window.isNavStoreActive = false;
+                                window.isNavAboutActive = false;
+                                window.isNavTutorialsActive = true;
+                                window.isNavBlogctive = false;
+                                window.isNavHomeActive = false;
+                            }} to="/tutorial" smooth={true} duration={500} spy={true} exact="true" offset={-80}>Tutorial</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to="/blog" smooth={true} duration={500} spy={true} exact="true" offset={-80}>Blog</NavLinks>
+                            <NavLinks activeNav={window.isNavBlogctive} onClick={() => {
+                                window.isNavStoreActive = false;
+                                window.isNavAboutActive = false;
+                                window.isNavTutorialsActive = false;
+                                window.isNavBlogctive = true;
+                                window.isNavHomeActive = false;
+                            }} to="/blog" smooth={true} duration={500} spy={true} exact="true" offset={-80}>Blog</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to='/aboutthewebsite' smooth={true} duration={500} spy={true} exact="true" offset={-80}>About</NavLinks>
+                            <NavLinks activeNav={window.isNavAboutActive} onClick={() => {
+                                window.isNavStoreActive = false;
+                                window.isNavAboutActive = true;
+                                window.isNavTutorialsActive = false;
+                                window.isNavBlogctive = false;
+                                window.isNavHomeActive = false;
+                            }} to='/aboutthewebsite' smooth={true} duration={500} spy={true} exact="true" offset={-80}>About</NavLinks>
                         </NavItem>
                     </NavMenu>
                     {/* <NavBtn>
