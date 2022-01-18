@@ -112,14 +112,7 @@ export const NavLinks = styled(Link)`
     cursor: pointer;
     letter-spacing: 0.16rem;
     text-transform: uppercase;
-    .current {
-        border-bottom: 3px solid #00a2ff;
-        color: #00a2ff;
-    }
-    &.active{
-        border-bottom: 3px solid #00a2ff;
-        color: #00a2ff;
-    }
+    border-bottom: ${({ activeNav}) => (activeNav ? '3px solid #00a2ff' : '0px solid #00a2ff')};
     &:hover{
         transition: 0.8s all ease;
         color: #00a2ff;
