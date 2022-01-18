@@ -8,6 +8,11 @@ import ButtonMailto from '../ButtonMailto';
 const Footer = () => {
     const toggleHome = () => {
         scroll.scrollToTop();
+        window.isNavStoreActive = false;
+        window.isNavAboutActive = false;
+        window.isNavTutorialsActive = false;
+        window.isNavBlogctive = false;
+        window.isNavHomeActive = true;
     };
     return (
         <FooterConainer>
