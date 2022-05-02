@@ -6,6 +6,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
+In the TERMINAL
+
+type in "npx create-react-app ." without the Double Quotes
 ### `npm start`
 
 Runs the app in the development mode.\
