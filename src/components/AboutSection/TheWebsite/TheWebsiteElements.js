@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import {Link} from 'react-router-dom'
 
 export const AboutContainer  = styled.div``;
 
@@ -40,6 +41,7 @@ export const WebsiteContainerIlike = styled.div`
 `;
 
 export const Listwrapper = styled.ul`
+    display: flex;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -63,6 +65,15 @@ export const List = styled.li`
         height: 25px;
         justify-content: center;
     }
+`;
+
+export const ListP = styled.p`
+    padding-top: 10px;
+    color: #ffffff;
+    font-size: 0.9rem;
+    letter-spacing: 0.16rem;
+    max-width: 400px;
+    text-transform: uppercase;
 `;
 
 export const WebsiteContainerBio = styled.div`
@@ -115,9 +126,16 @@ export const WebsiteContentIlike = styled.div`
 
 export const ContentH1 = styled.h1`
     color: #ffffff;
-    font-size: 1.5rem;
+    font-size: 3rem;
     letter-spacing: 0.2rem;
     padding-bottom: 20px;
+`;
+
+export const ContentH4 = styled.h4`
+    color: #ffffff;
+    font-size: 1.1rem;
+    letter-spacing: 0.2rem;
+    padding: 20px 0px;
     text-transform: uppercase;
 `;
 
@@ -131,13 +149,16 @@ export const ContentP = styled.p`
 `;
 export const ContentBio = styled.p`
     padding-top: 10px;
+    font-size: 1rem;
     color: #ffffff;
-    font-size: 1.1rem;
-    font-weight: 100;
-    letter-spacing: 0.18rem;
+    letter-spacing: 0.16rem;
+    word-wrap: break-word;
+    max-width: 440px;
+    line-height: 24px;
     max-width: 55%;
     text-align: left;
-
+    border-bottom: 1px solid #ffffff;
+    padding: 15px 0;
     @media only screen and (max-width: 768px){
         max-width: 90%;
     }
@@ -167,4 +188,172 @@ export const ContentLink = styled.a`
     color: #00a2ff;
     font-size: 1rem;
     max-width: 600px;
+`;
+
+export const AboutQuoteContainer = styled.div`
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 5% 0;
+`;
+
+export const AboutQuotes = styled.h1`
+    display: block;
+    color: #000;
+    text-align: center;
+    letter-spacing: 0.16rem;
+    font-size: 3rem;
+`;
+
+export const AboutQuotesWriter = styled.h6`
+    display: block;
+    color: #000;
+    text-align: center;
+    font-style: italic;
+    letter-spacing: 0.16rem;
+    font-size: 1.5rem;
+`;
+
+export const BtnWrap = styled.div`
+    display: flex;
+    justify-content: center;
+    padding: 1% 0px;
+`;
+
+export const DonateButton = styled.a`
+    background: ${({dark}) => (dark ? 'transparent' : 'transparent')};
+    white-space: nowrap;
+    color: ${({dark}) => (dark ? '#ffc439' : '#ffc439')};
+    border: 1px solid ${({dark}) => (dark ? '#ffc439' : '#ffffff')};
+    white-space: nowrap;
+    padding: ${({big}) => (big ? '14px 48px' : '10px 22px')};
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: 900;
+    letter-spacing: 0.16rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: ${({fontBig}) => (fontBig ? '1rem' : '0.9rem')};
+    outline: none;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+        transition: all 0.2s ease-in-out;
+        background: ${({dark}) => (dark ? '#ffc439' : '#ffffff')};
+        color: ${({dark}) => (dark ? '#ffffff' : '#000000')};
+        font-weight: 900;
+    }
+`;
+
+export const GetInTouchWrapper = styled.div`
+    display: flex;
+    flex-direction: row;
+    padding: 20px 22vw;
+    width: 100%;
+    max-width: 1100px;
+`;
+
+export const SocialWrapper = styled.div`
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 20px;
+`;
+
+export const ImagelWrapper = styled.div`
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    padding: 20px;
+`;
+
+export const GetInTouchLink = styled.a`
+    padding: 10px 0;
+    color: #000;
+    font-size: 0.9rem;
+    text-align: left;
+    letter-spacing: 0.16rem;
+    text-decoration: none;
+    max-width: 400px;
+    text-transform: uppercase;
+    text-align: left;
+
+    &:hover {
+        color: #00a2ff;
+    }
+`;
+
+export const CreatedBy = styled.p`
+    border-top: 1px solid #000;
+    margin-top: 30px;
+    padding-top: 10px;
+    color: #000;
+    font-size: 0.9rem;
+    text-align: left;
+    letter-spacing: 0.16rem;
+    text-decoration: none;
+    max-width: 400px;
+    text-transform: uppercase;
+`;
+
+export const SocialLogo = styled(Link)`
+    color: #000;
+    cursor: pointer;
+    letter-spacing: 0.16rem;
+    text-decoration: none;
+
+    :hover{
+        color: #00a2ff;
+    }
+`;
+
+export const Gotinspired = styled.p`
+    border-top: 1px solid #000;
+    max-width: 70vw;
+    padding: 10px 0;
+    color: #000;
+    font-size: 0.9rem;
+    text-align: left;
+    letter-spacing: 0.16rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    align-self: center;
+`;
+
+export const GetInTouchRow = styled.div`
+    display: grid;
+    grid-auto-columns: minmax(auto, 1fr);
+    padding: 0 5vw;
+    align-items: center;
+    grid-template-areas: ${({ imgStart }) => (imgStart ? `'col2 col1'` : `'col1 col2'`)};
+
+    @media screen and (max-width: 768px){
+        grid-template-areas: ${({ imgStart }) => (imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`)};
+    }
+`;
+
+export const Column1 = styled.div`
+    padding: 0 15px;
+    grid-area: col1;
+    max-width: 100%;
+`;
+
+export const Column2 = styled.div`
+    padding: 0 15px;
+    grid-area: col2;
+    max-width: 100%;
+`;
+
+export const ImgWrap = styled.div`
+    height: 100%;
+    text-align: right;
+`;
+
+export const Img = styled.img`
+    margin: 0;
+    max-width: 60%;
 `;
