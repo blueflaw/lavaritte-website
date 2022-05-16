@@ -11,6 +11,7 @@ In the project directory, you can run:
 
 If it gives an error `react-scripts' is not recognized as an internal or external command`
 
+you can install react-scripts:
 ### `npm install react-scripts --save`
 
 Runs the app in the development mode.\
