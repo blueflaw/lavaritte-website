@@ -353,5 +353,5 @@ export const ImgWrap = styled.div`
 
 export const Img = styled.img`
     margin: 0;
-    width: 70%;
+    width: 50%;
 `;
