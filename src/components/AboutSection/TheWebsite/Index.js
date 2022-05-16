@@ -1,7 +1,7 @@
 import React from 'react'
 import { FaArtstation, FaFacebook, FaInstagram, FaTwitch, FaTwitter, FaYoutube } from 'react-icons/fa';
 import { animateScroll as scroll } from 'react-scroll';
-import Icon from '../../../images/git.svg';
+import Icon from '../../../images/LogoInverted.gif';
 import {
     AboutContainer, WebsiteContainer, WebsiteContent, ContentH1, ContentP, DP, ContentLocation, ContentLink, WebsiteContentBio, WebsiteContainerBio, 
     ContentBio, WebsiteContentIlike, WebsiteContainerIlike, Listwrapper, List, AboutQuoteContainer, AboutQuotes, AboutQuotesWriter, ContentH4, ListP, 

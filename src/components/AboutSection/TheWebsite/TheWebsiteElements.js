@@ -35,7 +35,7 @@ export const WebsiteContainerIlike = styled.div`
     justify-content: flex-start;
     align-items: left;
     padding: 0 30px;
-    height: 50%;
+    height: 60vh;
     position: relative;
     background: #222222;
 `;
@@ -81,7 +81,7 @@ export const WebsiteContainerBio = styled.div`
     justify-content: center;
     align-items: center;
     padding: 0 30px;
-    height: 50%;
+    height: 50vh;
     position: relative;
     background: #222222;
 `;
@@ -266,8 +266,7 @@ export const SocialWrapper = styled.div`
 export const ImagelWrapper = styled.div`
     display: flex;
     flex-direction: row;
-    text-align: center;
-    padding: 20px;
+    text-align: right;
 `;
 
 export const GetInTouchLink = styled.a`
@@ -349,11 +348,10 @@ export const Column2 = styled.div`
 `;
 
 export const ImgWrap = styled.div`
-    height: 100%;
-    text-align: right;
+    width: 100%;
 `;
 
 export const Img = styled.img`
     margin: 0;
-    max-width: 60%;
+    width: 70%;
 `;
