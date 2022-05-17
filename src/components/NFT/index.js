@@ -1,9 +1,11 @@
 import React, {useRef} from 'react'
 import { useIntersection } from 'react-use';
 import gsap from 'gsap';
-import ReactYouTube from '../ReactYoutube/ReactYoutube'
-import { TextWrapper, NFTContainer,NFTContainer2, NFTWrapper, Heading, Subtitle, NFTVidContainer, NFTRow, Column1, 
-         Column2, HeroContainer, HeroContent, HeroH1} from './NFTElements'
+import { NFTCollectionData } from './NFTCollectionData';
+import { FaEthereum } from 'react-icons/fa';
+import { TextWrapper, NFTContainer,NFTContainer2, NFTWrapper, Heading, Subtitle, NFTCollectionWrapper, HeroContainer, HeroContent, HeroH1, RowPoster, NFTCollectionRow,
+         NFTCollectionPostWrap, NFTCollectionPost, NFTCollectionTextWrapper, NFTCollectionTextWrap, NFTCollectionInfoRow, NFTInfoHeader, Category, PriceTag, NFTCollectionHeader,
+         AuthorWrap, NFTTumbnailWrapper, AuthorDisplayPicture, AuthorName, NFTCollectionThumbnail } from './NFTElements'
 import { NFTsData1, NFTsData2 } from './NFTData'
 
 const NFTSection = () => {
@@ -48,7 +50,7 @@ const NFTSection = () => {
         <div id='NFT'>
             <HeroContainer>
                 <HeroContent>
-                    <HeroH1 >learn. practice. make a living</HeroH1>
+                    <HeroH1 >NFT RELEASES</HeroH1>
                 </HeroContent>
             </HeroContainer>
 
@@ -61,16 +63,42 @@ const NFTSection = () => {
                         </TextWrapper>
                 </NFTWrapper>
             </NFTContainer>
-            <NFTVidContainer>
-                <NFTRow>
-                    <Column1>
-                        <ReactYouTube videoId={NFTsData1.videoId}/>
-                    </Column1>
-                    <Column2>
-                        <ReactYouTube videoId={NFTsData2.videoId}/>
-                    </Column2>
-                </NFTRow>
-            </NFTVidContainer>
+
+            <NFTCollectionWrapper>
+                <RowPoster>
+                    <NFTCollectionRow>
+                        {NFTCollectionData.map((NFTCollectionDetail) =>{
+                            return <React.Fragment>
+                                <NFTCollectionPostWrap href={NFTCollectionDetail.link} target="_blank">
+                                    <NFTCollectionPost key={NFTCollectionDetail.id}>
+                                        <NFTTumbnailWrapper><NFTCollectionThumbnail key={NFTCollectionDetail.id} src={NFTCollectionDetail.path} alt={NFTCollectionDetail.alt}/></NFTTumbnailWrapper>
+                                        <NFTCollectionTextWrapper>
+                                            <NFTCollectionTextWrap>
+                                            <NFTCollectionInfoRow>
+                                                <NFTInfoHeader>
+                                                    <Category>{NFTCollectionDetail.category}</Category>
+                                                </NFTInfoHeader>
+                                                <NFTInfoHeader>
+                                                    <PriceTag><FaEthereum/>{NFTCollectionDetail.price}</PriceTag>
+                                                </NFTInfoHeader>
+                                            </NFTCollectionInfoRow>
+                                            <NFTCollectionHeader>{NFTCollectionDetail.title}</NFTCollectionHeader>
+                                            <NFTCollectionInfoRow>
+                                                <AuthorWrap>
+                                                    <AuthorDisplayPicture src={NFTCollectionDetail.authorDP} alt={NFTCollectionDetail.authorALT}/>
+                                                    <AuthorName>by {NFTCollectionDetail.author}</AuthorName>
+                                                </AuthorWrap>
+                                            </NFTCollectionInfoRow>
+                                            </NFTCollectionTextWrap>
+                                        </NFTCollectionTextWrapper>
+                                    </NFTCollectionPost>
+                                </NFTCollectionPostWrap>
+                            </React.Fragment>
+                        })}
+                    </NFTCollectionRow>
+                </RowPoster>
+            </NFTCollectionWrapper>
+
             <NFTContainer2>
                 <NFTWrapper>
                     <TextWrapper className="section2" ref={sectionRef2}>

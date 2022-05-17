@@ -41,7 +41,8 @@ export const HeroContent = styled.div`
 `;
 
 export const NFTContainer = styled.div`
-    background: #000000 url("https://cdnb.artstation.com/p/assets/images/images/019/380/861/medium/allard-lavaritte-untitled-1.jpg?1563235858") no-repeat center center;
+    //background: #000000 url("https://cdnb.artstation.com/p/assets/images/images/019/380/861/medium/allard-lavaritte-untitled-1.jpg?1563235858") no-repeat center center;
+    background: #000000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -82,7 +83,8 @@ export const NFTContainer = styled.div`
 `;
 
 export const NFTContainer2 = styled.div`
-    background: #000000 url("https://cdnb.artstation.com/p/assets/images/images/042/698/143/large/allard-lavaritte-dualmonitorwallpaper.jpg?1635215819") no-repeat center center;
+    //background: #000000 url("https://cdnb.artstation.com/p/assets/images/images/042/698/143/large/allard-lavaritte-dualmonitorwallpaper.jpg?1635215819") no-repeat center center;
+    background: #000000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -194,7 +196,7 @@ export const NFTWrapper = styled.div`
 export const TextWrapper = styled.div`
     opacity: 1;
     overflow: hidden;
-    max-width: 680px;
+    max-width: 780px;
     margin-right: auto;
     margin-left: auto;
     padding: 10% 0;
@@ -234,7 +236,7 @@ export const Subtitle = styled.p`
     word-wrap: break-word;
     margin-bottom: 16px;
     margin-bottom: 35px;
-    text-align: justify;
+    text-align: left;
 `;
 
 export const BtnWrap = styled.div`
@@ -252,3 +254,159 @@ export const Img = styled.img`
     margin: 0px 0px 10px 0px;
     padding-right: 0px;
 `;
+
+export const NFTCollectionWrapper = styled.div`
+    background-color: #eee;
+    display: grid;
+    z-index: 1;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 10vh 0;
+    justify-content: center;
+`;
+
+export const RowPoster = styled.div`
+    display: flex; 
+    overflow: hidden;
+    padding: 0px;
+`;
+
+
+export const NFTCollectionRow = styled.div`
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    grid-gap: var(--auto-grid-gap, 0);
+    padding: 0;
+
+    @media screen and (max-width: 768px){
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: var(--auto-grid-gap, 0);
+    }
+    @media screen and (max-width: 425px){
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: var(--auto-grid-gap, 0);
+    }
+`;
+
+
+export const NFTCollectionPostWrap = styled.a`
+    display: flex;
+    margin: 12px;
+    overflow: hidden;
+    flex-direction: column;
+    text-decoration: none;
+    color: #000000;
+    border-radius: 15px;
+    //border: 2px solid transparent;
+    
+    &:hover {
+        //border: 1px solid #00a2ff;
+        box-shadow: 0 4px 8px 0 rgba(0, 162, 255, 0.2), 0 6px 20px 0 rgba(0, 162, 255, 0.19);
+         & span{
+            transform: scale(1.08);
+            filter: grayscale(0%);
+        }
+        
+        & h1{
+            color: #00a2ff;
+        }
+    } 
+`;
+
+
+export const NFTCollectionPost = styled.div`
+    position: static;
+    overflow: hidden;
+`;
+
+export const NFTTumbnailWrapper = styled.span`
+    display: flex;
+    overflow: hidden;
+    transition: transform 450ms;
+`;
+
+export const NFTCollectionThumbnail = styled.img`
+    object-fit: contain;
+    width: auto;
+    max-height: 300px;
+    margin: 0%;
+    transition: transform 450ms;
+    overflow: hidden;
+    filter: grayscale(30%);
+`;
+
+export const NFTCollectionTextWrapper = styled.div`
+    display: inline-block;
+    position: relative;
+    bottom: 0;
+    height: 35%;
+    width: 100%;
+    opacity: 1;
+    transition: .5s ease;
+    background: #fff;
+`;
+
+export const NFTCollectionTextWrap = styled.div`
+    padding: 10px;
+`;
+
+export const NFTCollectionInfoRow = styled.div`
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 10px;
+`;
+
+export const NFTInfoHeader = styled.div`
+    display: flex;
+    flex-direction: row;
+    padding-top: 5px;
+    justify-content: space-between;
+`;
+
+
+export const Category = styled.h6`
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #878787;
+`;
+
+export const PriceTag = styled.h6`
+    font-weight: bold;
+    color: #00a2ff;
+    font-size: 1rem;
+    position: relative;
+`;
+
+export const NFTCollectionHeader = styled.h1`
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    padding-top: 10px;
+    font-size: 1rem;
+    color: #000;
+`;
+
+export const AuthorWrap = styled.div`
+    display: flex;
+    flex-direction: row;
+    padding-top: 5px;
+    justify-content: space-between;
+`;
+
+export const AuthorDisplayPicture = styled.img`
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    display: block;
+`;
+
+export const AuthorName = styled.p`
+    color: #bbb;
+    white-space: nowrap;
+    font-size: 0.9rem;
+    padding: 5px;
+`;
+
