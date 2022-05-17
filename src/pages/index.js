@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import HeroSection from '../components/HeroSection';
-import Navbar from '../components/Navbar'
-import Sidebar from '../components/Sidebar'
+import Navbar from '../components/Navbar';
+import Sidebar from '../components/Sidebar';
 import ArtSection from '../components/ArtSecton';
 import Footer from '../components/Footer';
 import ScrollUp from '../components/ScrollUp/Index';

@@ -19,6 +19,8 @@ export const Sidebar = ({isOpen, toggle}) => {
             <SidebarWrapper>
                 <SidebarMenu>
                     <SidebarLink to='/' onClick={toggle}>Art</SidebarLink>
+                    <SidebarLink to='/NFT' onClick={toggle}>NFT</SidebarLink>
+                    <SidebarLink to='/Store' onClick={toggle}>Store</SidebarLink>
                     <SidebarLink to='/tutorial' onClick={toggle}>Tutorials</SidebarLink>
                     <SidebarLink to='/blog' onClick={toggle}>Blogs</SidebarLink>
                     <SidebarLink to='/aboutthewebsite' onClick={toggle}>About</SidebarLink>

@@ -102,7 +102,7 @@ const TheWebsite = () => {
         </AboutQuoteContainer>
 
         <AboutQuoteContainer>
-            <Gotinspired>Got inspired? Copied the theme? Or do you just like the website? No problem, just buy me a beer and make me happy!</Gotinspired>
+            <Gotinspired>Got inspired? Copied the theme? Or do you just like the website? No problem, just buy me a Burger and make me happy!</Gotinspired>
             <BtnWrap><DonateButton href={'https://www.paypal.com/donate/?hosted_button_id=ZB7H6RJ7UZSN8'} target="_blank" dark={'dark'} big={'big'}>Donate</DonateButton></BtnWrap>
         </AboutQuoteContainer>
         </AboutContainer>

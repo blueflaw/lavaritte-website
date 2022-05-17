@@ -21,6 +21,7 @@ export const Navbar = ({ toggle }) => {
 
     const toggleHome = () => {
         scroll.scrollToTop();
+        window.isNavNFTActive = false;
         window.isNavStoreActive = false;
         window.isNavAboutActive = false;
         window.isNavTutorialsActive = false;
@@ -41,7 +42,18 @@ export const Navbar = ({ toggle }) => {
                             <NavLinks activeNav={window.isNavHomeActive} onClick={toggleHome} to='/'>Art</NavLinks>
                         </NavItem>
                         <NavItem>
+                            <NavLinks activeNav={window.isNavNFTActive} onClick={() => {
+                                window.isNavNFTActive = true;
+                                window.isNavStoreActive = false;
+                                window.isNavAboutActive = false;
+                                window.isNavTutorialsActive = false;
+                                window.isNavBlogctive = false;
+                                window.isNavHomeActive = false;
+                            }} to="/NFT" smooth={true} duration={500} spy={true} exact="true" offset={-80} >NFT</NavLinks>
+                        </NavItem>
+                        <NavItem>
                             <NavLinks activeNav={window.isNavStoreActive} onClick={() => {
+                                window.isNavNFTActive = false;
                                 window.isNavStoreActive = true;
                                 window.isNavAboutActive = false;
                                 window.isNavTutorialsActive = false;
@@ -51,6 +63,7 @@ export const Navbar = ({ toggle }) => {
                         </NavItem>
                         <NavItem>
                             <NavLinks activeNav={window.isNavTutorialsActive} onClick={() => {
+                                window.isNavNFTActive = false;
                                 window.isNavStoreActive = false;
                                 window.isNavAboutActive = false;
                                 window.isNavTutorialsActive = true;
@@ -60,6 +73,7 @@ export const Navbar = ({ toggle }) => {
                         </NavItem>
                         <NavItem>
                             <NavLinks activeNav={window.isNavBlogctive} onClick={() => {
+                                window.isNavNFTActive = false;
                                 window.isNavStoreActive = false;
                                 window.isNavAboutActive = false;
                                 window.isNavTutorialsActive = false;
@@ -69,6 +83,7 @@ export const Navbar = ({ toggle }) => {
                         </NavItem>
                         <NavItem>
                             <NavLinks activeNav={window.isNavAboutActive} onClick={() => {
+                                window.isNavNFTActive = false;
                                 window.isNavStoreActive = false;
                                 window.isNavAboutActive = true;
                                 window.isNavTutorialsActive = false;

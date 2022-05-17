@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import App from './App';
 
 window.isNavStoreActive = false;
+window.isNavNFTActive = false;
 window.isNavAboutActive = false;
 window.isNavTutorialsActive = false;
 window.isNavBlogctive = false;
