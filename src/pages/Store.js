@@ -5,6 +5,7 @@ import ScrollUp from '../components/ScrollUp/Index';
 import Store from '../components/Store/Store';
 import Footer from '../components/Footer';
 import ScrollToTop from '../components/ScrollToTop';
+import { SliderData } from '../components/Store/SliderData';
 
 export const StorePage = () => {
     const [isOpen, setIsOpen] = useState(false)
@@ -18,7 +19,7 @@ export const StorePage = () => {
             <ScrollToTop/>
             <Sidebar isOpen={isOpen} toggle={toggle} />
             <Navbar toggle={toggle}/>
-            <Store/>
+            <Store slides={SliderData}/>
             <Footer/>
             <ScrollUp/>        
         </React.Fragment>
