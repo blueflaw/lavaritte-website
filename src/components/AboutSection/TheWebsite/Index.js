@@ -5,7 +5,7 @@ import Icon from '../../../images/LogoInverted.gif';
 import {
     AboutContainer, WebsiteContainer, WebsiteContent, ContentH1, ContentP, DP, ContentLocation, ContentLink, WebsiteContentBio, WebsiteContainerBio, 
     ContentBio, WebsiteContentIlike, WebsiteContainerIlike, Listwrapper, List, AboutQuoteContainer, AboutQuotes, AboutQuotesWriter, ContentH4, ListP, 
-    BtnWrap, DonateButton, GetInTouchWrapper, GetInTouchLink, SocialWrapper, CreatedBy, SocialLogo, Gotinspired, GetInTouchRow, Column1, Column2, ImgWrap, Img, ImagelWrapper
+    BtnWrap, DonateButton, GetInTouchWrapper, GetInTouchLink, SocialWrapper, CreatedBy, SocialLogo, Gotinspired, GetInTouchRow, Column1, Column2, ImgWrap, Img, ImagelWrapper, ContentH3
 } from './TheWebsiteElements'
 import { FaMapMarkedAlt, FaExternalLinkAlt } from 'react-icons/fa';
 import InfoSection from '../../InfoSection';
@@ -39,9 +39,9 @@ const TheWebsite = () => {
 
         <WebsiteContainerBio>
             <WebsiteContentBio>
-            <ContentH1>Intro</ContentH1>
+            <ContentH3>Intro</ContentH3>
             <ContentBio>
-                Allard Lavaritte is a web designer / Freelance Artist Based in the Philippines. 
+                <SocialLogo to="/" onClick={toggleHome}>Allard Lavaritte</SocialLogo> is a web designer / Freelance Artist Based in the Philippines. 
                 Allard has established his artistic style and process, merging cutting-edge 3D graphics with traditional art and 
                 animation aesthetics that result in a unique visual experience.His innovative approach to artistic medium expressed both in his works 
                 and educational materials have led a wave of artistic styles that quickly became mainstream in the entertainment industry.

@@ -77,13 +77,11 @@ export const ListP = styled.p`
 `;
 
 export const WebsiteContainerBio = styled.div`
-    display: flex;
-    justify-content: center;
+    text-align: center;
     align-items: center;
     padding: 0 30px;
     height: 50vh;
-    position: relative;
-    background: #222222;
+    background: #fff;
 `;
 export const WebsiteContent = styled.div`
     z-index: 3;
@@ -97,11 +95,8 @@ export const WebsiteContent = styled.div`
 `;
 
 export const WebsiteContentBio = styled.div`
-    display: flex;
     margin: 3% 0px;
-    width: 100vw;
-    flex-direction: column;
-    align-items: center;
+    max-width: 1100px;
     text-align: center;
     opacity: 1;
 
@@ -131,6 +126,15 @@ export const ContentH1 = styled.h1`
     padding-bottom: 20px;
 `;
 
+export const ContentH3 = styled.h4`
+    color: #121212;
+    font-size: 1.4rem;
+    letter-spacing: 0.2rem;
+    text-align: left;
+    padding: 20px 0px;
+    text-transform: uppercase;
+`;
+
 export const ContentH4 = styled.h4`
     color: #ffffff;
     font-size: 1.1rem;
@@ -150,7 +154,7 @@ export const ContentP = styled.p`
 export const ContentBio = styled.p`
     padding-top: 10px;
     font-size: 1rem;
-    color: #ffffff;
+    color: #121212;
     letter-spacing: 0.16rem;
     word-wrap: break-word;
     max-width: 440px;
