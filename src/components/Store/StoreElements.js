@@ -138,6 +138,35 @@ export const ButtonStore = styled(Link)`
     }
 `;
 
+
+export const ButtonDark = styled.a`
+    color: #fff;
+    margin: 16px;
+    background-image: linear-gradient(90deg, #000 50%, transparent 50%);
+    background-size: 300%;
+    //transition: all 0.2s ease-in-out;
+    text-transform: uppercase;
+    position: relative;
+    text-decoration: none;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border: 1.5px solid #000;
+    font-size: 0.75rem;
+    font-weight: 500;
+    cursor: pointer;
+    letter-spacing: 0.2rem;
+    transition: all 0.6s;
+    max-width: fit-content;
+    padding: 14px;
+    &:hover {
+        color: #000000;
+        background-position: 99%;
+        overflow: hidden;
+        transform: translateX(0.5rem);
+    }
+`;
+
 export const StoreHeroP = styled.p`
     color: #ffffff;
     padding: 16px;
@@ -170,10 +199,8 @@ export const StoreHeroH1 = styled.h1`
 export const StoreContaner = styled.div`
     color: #000000;
     width: 100%;
-    background: #ffffff;
     --flow-space: 2em;
-    padding: 5% 0;
-    background: #171717;
+    //padding: 5% 0;
 `;
 
 export const StoreWrapper = styled.div`
@@ -183,6 +210,25 @@ export const StoreWrapper = styled.div`
     margin-left: auto;
     padding: 0%;
     justify-content: center;
+    background-color: #efefef;
+`;
+
+export const QuotesWrapper = styled.div`
+    display: flex;
+    padding: 30px;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    background-color: #efefef;
+`;
+
+
+export const ViewAllWrapper = styled.div`
+    display: flex;
+    padding: 30px;
+    justify-content: center;
+    text-align: center;
+    position: relative;
 `;
 
 export const StoreRow = styled.div`
@@ -253,7 +299,7 @@ export const StorePostWrap = styled.a`
         }
         
         & h1{
-            background: #00a2ff;
+            color: #00a2ff;
         }
     } 
 `;
@@ -283,7 +329,7 @@ export const StoreThumbnail = styled.img`
     margin: 0%;
     transition: transform 450ms;
     overflow: hidden;
-    filter: grayscale(30%);
+    //filter: grayscale(30%);
     /* :hover{
         transform: scale(1.08);
         filter: grayscale(0%);
@@ -295,7 +341,7 @@ export const StoreHeader = styled.div`
     letter-spacing: 2px;
     font-weight: 500;
     padding-top: 10px;
-    color: #ffffff;
+    color: #fff;
 `;
 
 export const TextWrapper = styled.div`
@@ -306,7 +352,45 @@ export const TextWrapper = styled.div`
     width: 100%;
     opacity: 1;
     transition: .5s ease;
-    background: #222222;
+    background-color: #222;
+`;
+
+
+export const Heading = styled.h1`
+    color: '#ffffff';
+    font-size: 1.5rem;
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
+    @media screen and (max-width: 480px){
+        font-size: 0.7rem;
+    }
+`;
+
+export const Subtitle = styled.p`
+    color: '#ffffff';
+    max-width: 1100px;
+    padding-top: 10px;
+    font-size: 0.9rem;
+    letter-spacing: 0.16rem;
+    word-wrap: break-word;
+    margin-bottom: 16px;
+`;
+
+export const StoreQuotesTextWrapper = styled.div`
+    opacity: 1;
+    overflow: hidden;
+    max-width: 580px;
+    color: #000;
+
+    @media screen and (max-width: 768px){
+        max-width: 768px;
+        padding: 20px;
+    }
+
+    @media screen and (max-width: 480px){
+        max-width: 480px;
+        padding: 10px;
+    }
 `;
 
 export const TextWrap = styled.div`
@@ -342,11 +426,8 @@ export const AuthorName = styled.p`
 `;
 
 export const Prize = styled.h1`
-    background: #171717;
+    
     color: #fff;
     padding: 10px;
     font-size: 1rem;
-    :hover{
-        background: #00a2ff;
-    }
 `;

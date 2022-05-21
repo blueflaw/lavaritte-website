@@ -1,27 +1,36 @@
-import Image1 from '../../images/store/image1.jpg';
-import Image2 from '../../images/store/image2.jpg';
-import Image3 from '../../images/store/image3.jpg';
+import Image1 from '../../images/store/store1.jpg';
+import Image2 from '../../images/store/store2.jpg';
+import Image3 from '../../images/store/store3.jpg';
+import Image4 from '../../images/store/store4.jpg';
 
 export const SliderData = [
     {
-        topLine: 'top line 1',
-        title: 'Little Things we all Need',
+        topLine: 'Posters',
+        title: 'Make your walls awesome',
         buttonText: 'buy',
         buttonLink: '/',
-        image: Image1,
-        alt: 'Image One'
+        image: Image4,
+        alt: 'Image four'
     },
     {
-        topLine: 'top line 2',
-        title: 'Little Things we all Need',
+        topLine: 'my eternity',
+        title: 'Official Posters',
         buttonText: 'buy',
         buttonLink: '/',
         image: Image2,
         alt: 'Image Two'
     },
     {
-        topLine: 'top line 3',
-        title: 'Little Things we all Need',
+        topLine: 'original design',
+        title: 'clothing',
+        buttonText: 'buy',
+        buttonLink: '/',
+        image: Image1,
+        alt: 'Image One'
+    },
+    {
+        topLine: 'Its the little things in life',
+        title: 'we all Need',
         buttonText: 'buy',
         buttonLink: '/',
         image: Image3,
