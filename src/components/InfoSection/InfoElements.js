@@ -59,28 +59,25 @@ export const TopLine = styled.p`
 `;
 
 export const Heading = styled.h1`
+    //color: #00a2ff;
+    font-size: 3rem;
+    text-align: left;
+    letter-spacing: 0.2rem;
     margin-bottom: 24px;
-    color: ${({ lightText }) => (lightText ? '#ffffff' : '#000000')};
-    font-size: 1.5rem;
-    letter-spacing: 0.3rem;
-    text-transform: uppercase;
-    font-weight: 500;
+    color: ${({ lightText }) => (lightText ? '#ffffff' : '#00a2ff')};
     @media screen and (max-width: 480px){
-        font-size: 0.7rem;
+        font-size: 2rem;
     }
 `;
 
 export const Subtitle = styled.p`
-    color: ${({ lightText }) => (lightText ? '#ffffff' : '#000000')};
-    vertical-align: baseline;
-    padding-top: 10px;
-    font-size: 0.9rem;
+    color: ${({ lightText }) => (lightText ? '#ffffff' : '#121212')};
+    font-size: 1rem;
+    //color: #121212;
     letter-spacing: 0.16rem;
     word-wrap: break-word;
-    margin-bottom: 16px;
-    max-width: 440px;
     line-height: 24px;
-    margin-bottom: 35px;
+    text-align: left;
 `;
 
 export const BtnWrap = styled.div`

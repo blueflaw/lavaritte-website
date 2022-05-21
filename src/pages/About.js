@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import TheWebsite from '../components/AboutSection/TheWebsite/Index';
+import TheWebsite from '../components/AboutSection/Index';
 import Navbar from '../components/Navbar';
 import Sidebar from '../components/Sidebar';
 import Footer from '../components/Footer';
