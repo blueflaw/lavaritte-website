@@ -89,7 +89,7 @@ export const Navbar = ({ toggle }) => {
                                 window.isNavTutorialsActive = false;
                                 window.isNavBlogctive = false;
                                 window.isNavHomeActive = false;
-                            }} to='/aboutthewebsite' smooth={true} duration={500} spy={true} exact="true" offset={-80}>About</NavLinks>
+                            }} to='/about' smooth={true} duration={500} spy={true} exact="true" offset={-80}>About</NavLinks>
                         </NavItem>
                     </NavMenu>
                     {/* <NavBtn>

@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 import Home from './pages'
-import AboutTheWebsite from './pages/AboutTheWebsite';
+import About from './pages/About';
 import NFT from './pages/NFT';
 import Store from './pages/Store';
 import TutorialsPage from './pages/Tutorial';
@@ -17,7 +17,7 @@ function App() {
         <Route path="/store" component={Store} exact/>
         <Route path="/tutorial" component={TutorialsPage} exact/>
         <Route path="/blog" component={BlogPage} exact/>
-        <Route path="/aboutthewebsite" component={AboutTheWebsite} exact/>
+        <Route path="/about" component={About} exact/>
       </Switch>
     </Router>
   );
