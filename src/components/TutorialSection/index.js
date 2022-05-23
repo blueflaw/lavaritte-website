@@ -1,10 +1,9 @@
 import React, {useRef} from 'react'
 import { useIntersection } from 'react-use';
 import gsap from 'gsap';
-import ReactYouTube from '../ReactYoutube/ReactYoutube'
-import { TextWrapper, TutorialContainer,TutorialContainer2, TutorialWrapper, Heading, Subtitle, TutorialVidContainer, TutorialRow, Column1, 
-         Column2, HeroContainer, HeroContent, HeroH1} from './TutorialElements'
-import { TutorialsData1, TutorialsData2 } from './TutorialsData'
+import { TextWrapper, TutorialContainer,TutorialContainer2, TutorialWrapper, Heading, Subtitle, HeroContainer, HeroContent, HeroH1, DonateButton} from './TutorialElements'
+import { TutorialsData1, TutorialsData2, TutorialsDataMap } from './TutorialsData'
+import { DataMap } from '../DataMap/DataMap';
 
 const TutorialSection = () => {
     const treshold = 0.9;
@@ -57,11 +56,12 @@ const TutorialSection = () => {
                 <TutorialWrapper>
                         <TextWrapper className="section1" ref={sectionRef1}>
                             <Heading>{TutorialsData1.headline}</Heading>
-                            <Subtitle>{TutorialsData1.description}</Subtitle>
+                            <Subtitle>{TutorialsData1.description} <DonateButton href={'https://www.paypal.com/donate/?hosted_button_id=ZB7H6RJ7UZSN8'} target="_blank" dark={'dark'} big={'big'}>paypal</DonateButton></Subtitle>
                         </TextWrapper>
                 </TutorialWrapper>
             </TutorialContainer>
-            <TutorialVidContainer>
+
+            {/* <TutorialVidContainer>
                 <TutorialRow>
                     <Column1>
                         <ReactYouTube videoId={TutorialsData1.videoId}/>
@@ -70,7 +70,9 @@ const TutorialSection = () => {
                         <ReactYouTube videoId={TutorialsData2.videoId}/>
                     </Column2>
                 </TutorialRow>
-            </TutorialVidContainer>
+            </TutorialVidContainer> */}
+            <DataMap Data={TutorialsDataMap} />
+
             <TutorialContainer2>
                 <TutorialWrapper>
                     <TextWrapper className="section2" ref={sectionRef2}>

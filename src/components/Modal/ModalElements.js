@@ -42,7 +42,7 @@ export const CloseModalButton = styled(FaTimes)`
 export const ShowReel = styled.video`
     width: 100%;
     height: 100%;
-    /* -o-object-fit: cover;
-    object-fit: cover; */
+    -o-object-fit: cover;
+    object-fit: cover;
     background: #000000;
 `;

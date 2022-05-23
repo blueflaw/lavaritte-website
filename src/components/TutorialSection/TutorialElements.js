@@ -237,6 +237,19 @@ export const Subtitle = styled.p`
     text-align: justify;
 `;
 
+export const DonateButton = styled.a`
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 900;
+    vertical-align: baseline;
+    font-size: 0.9rem;
+    letter-spacing: 0.16rem;
+    text-align: justify;
+    &:hover{
+        color: #ffc439;
+    }
+`;
+
 export const BtnWrap = styled.div`
     display: flex;
     justify-content: flex-start;
