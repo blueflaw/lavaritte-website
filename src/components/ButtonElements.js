@@ -39,6 +39,7 @@ export const ButtonShowreel = styled(Link)`
     justify-content: center;
     border: 1.5px solid #ffffff;
     padding: 1rem 2rem;
+    cursor: pointer;
     font-size: ${({fontBig}) => (fontBig ? '1rem' : '0.9rem')};
     transition: all 0.6s;
 
