@@ -1,24 +1,52 @@
 import styled from "styled-components";
 
-export const DataMapContaner = styled.div`
-    color: #000000;
-    width: 100%;
-    --flow-space: 2em;
-    padding: 5% 0;
-    background: #eee;
+export const ButtonDark = styled.a`
+    color: #fff;
+    margin: 16px;
+    background-image: linear-gradient(90deg, #000 50%, transparent 50%);
+    background-size: 300%;
+    //transition: all 0.2s ease-in-out;
+    text-transform: uppercase;
+    position: relative;
+    text-decoration: none;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border: 1.5px solid #000;
+    font-size: 0.75rem;
+    font-weight: 500;
+    cursor: pointer;
+    letter-spacing: 0.2rem;
+    transition: all 0.6s;
+    max-width: fit-content;
+    padding: 14px;
+    &:hover {
+        color: #000000;
+        background-position: 99%;
+        overflow: hidden;
+        transform: translateX(0.5rem);
+    }
 `;
 
-export const DataMapWrapper = styled.div`
+export const StoreWrapper = styled.div`
     display: grid;
     z-index: 1;
     margin-right: auto;
     margin-left: auto;
-    padding: 10px 0;
+    padding: 0%;
     justify-content: center;
-    background-color: ${({dark}) => (dark ? '#171717' : '#eeeeee')};
+    background-color: #efefef;
 `;
 
-export const DataMapRow = styled.div`
+export const ViewAllWrapper = styled.div`
+    display: flex;
+    padding: 30px;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+`;
+
+export const StoreRow = styled.div`
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
@@ -35,7 +63,7 @@ export const DataMapRow = styled.div`
     }
 `;
 
-export const DataMapTitle = styled.h1`
+export const StoreTitle = styled.h1`
     color: ${({lightText}) => (lightText ? '#ffffff' : '#000000')};
     font-size: 1.5rem;
     text-align: center;
@@ -59,7 +87,7 @@ export const RowTitle = styled.h2`
     }
 `;
 
-export const DataMapCard = styled.img`
+export const StoreCard = styled.img`
     object-fit: contain;
     width: 100%;
     max-height: 500px;
@@ -71,19 +99,15 @@ export const DataMapCard = styled.img`
     cursor: pointer;
 `;
 
-export const DataMapPostWrap = styled.a`
+export const StorePostWrap = styled.a`
     display: flex;
-    margin: 12px;
-    overflow: hidden;
     flex-direction: column;
+    margin: 12px;
     text-decoration: none;
     color: #000000;
-    border-radius: 15px;
-    //border: 2px solid transparent;
     
     &:hover {
-        //border: 1px solid #00a2ff;
-        box-shadow: 0 4px 8px 0 rgba(0, 162, 255, 0.2), 0 6px 20px 0 rgba(0, 162, 255, 0.19);
+        //box-shadow: 0 4px 8px 0 rgba(0, 162, 255, 0.2), 0 6px 20px 0 rgba(0, 162, 255, 0.19);
          & span{
             transform: scale(1.08);
             filter: grayscale(0%);
@@ -101,41 +125,38 @@ export const RowPoster = styled.div`
     padding: 0px;
 `;
 
-export const BlogTumbnailWrapper = styled.span`
+export const StoreTumbnailWrapper = styled.span`
     //margin: 0 0 20px;
     display: flex;
-    width: 100%;
     overflow: hidden;
     transition: transform 450ms;
 `;
 
-export const DataMapPost = styled.div`
+export const StorePost = styled.div`
     position: static;
     overflow: hidden;
 `;
 
-export const DataMapThumbnail = styled.img`
+export const StoreThumbnail = styled.img`
     object-fit: contain;
     width: auto;
     max-height: 300px;
-    width: 100%;
     margin: 0%;
     transition: transform 450ms;
     overflow: hidden;
-    /* filter: grayscale(30%); */
+    //filter: grayscale(30%);
     /* :hover{
         transform: scale(1.08);
         filter: grayscale(0%);
     } */
 `;
 
-export const DataMapHeader = styled.h1`
+export const StoreHeader = styled.div`
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: 500;
     padding-top: 10px;
-    font-size: 1rem;
-    color: ${({dark}) => (dark ? '#ffffff' : '#222222')};
+    color: #fff;
 `;
 
 export const TextWrapper = styled.div`
@@ -146,14 +167,14 @@ export const TextWrapper = styled.div`
     width: 100%;
     opacity: 1;
     transition: .5s ease;
-    background: ${({dark}) => (dark ? '#222222' : '#ffffff')};
+    background-color: #222;
 `;
 
 export const TextWrap = styled.div`
     padding: 10px;
 `;
 
-export const DataMapInfoRow = styled.div`
+export const StoreInfoRow = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -167,27 +188,6 @@ export const AuthorWrap = styled.div`
     justify-content: space-between;
 `;
 
-export const BlogInfoHeader = styled.div`
-    display: flex;
-    flex-direction: row;
-    padding-top: 5px;
-    justify-content: space-between;
-`;
-
-export const Category = styled.h6`
-    font-size: 0.8rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    color: #878787;
-`;
-
-export const CardTime = styled.h6`
-    font-style: italic;
-    color: #707070;
-    font-size: 11px;
-    position: relative;
-`;
-
 export const AuthorDisplayPicture = styled.img`
     width: 26px;
     height: 26px;
@@ -195,19 +195,15 @@ export const AuthorDisplayPicture = styled.img`
     display: block;
 `;
 
-export const AuthorName = styled.p`
+export const Type = styled.p`
     color: #bbb;
     white-space: nowrap;
     font-size: 0.9rem;
-    padding: 5px;
 `;
 
 export const Prize = styled.h1`
-    background: #171717;
+    
     color: #fff;
     padding: 10px;
     font-size: 1rem;
-    :hover{
-        background: #00a2ff;
-    }
 `;

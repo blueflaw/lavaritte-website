@@ -71,7 +71,7 @@ const TutorialSection = () => {
                     </Column2>
                 </TutorialRow>
             </TutorialVidContainer> */}
-            <DataMap Data={TutorialsDataMap} />
+            <DataMap Data={TutorialsDataMap} Dark='dark'/>
 
             <TutorialContainer2>
                 <TutorialWrapper>

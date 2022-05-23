@@ -6,12 +6,13 @@ export const StoreData1 = [
         imagePath: require('../../images/store/file1.jpg'),
         alt : "BlueFlaws Basic Brush",
         author : "Allard Lavaritte",
+        type : "Brushes",
         prize : "$52.54",
         link : "https://artstn.co/m/n706y"
     },
 ];
 
-export const StoreData = [
+export const Clothing = [
     {
         id: "001",
         title: "BlueFlaw, good manners",
