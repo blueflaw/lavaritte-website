@@ -1,4 +1,34 @@
 
+export const StoreDataCard = [
+    {
+        id: "001",
+        topline: "T-SHIRTS, HOODIES, SWEATSHIRTS",
+        header: "Clothing",
+        imagepath: require('../../images/store/storecard1.jpg'),
+        alt: 'Clothing',
+        buttontext: "view products",
+        link: "https://www.redbubble.com/people/blueflaw/shop?asc=u&asc=u&iaCode=u-clothing"
+    },
+    {
+        id: "002",
+        topline: "ART PRINTS AND POSTERS",
+        header: "Posters",
+        imagepath: require('../../images/store/storecard2.jpg'),
+        alt: 'Clothing',
+        buttontext: "view products",
+        link: "https://www.redbubble.com/people/blueflaw/shop?&asc=u&iaCode=u-prints"
+    },
+    {
+        id: "003",
+        topline: "COFFEE MUGS AND MORE",
+        header: "ACCESSORIES",
+        imagepath: require('../../images/store/storecard3.jpg'),
+        alt: 'Clothing',
+        buttontext: "view products",
+        link: "https://www.redbubble.com/people/blueflaw/shop?asc=u&asc=u&iaCode=u-accessories"
+    },
+];
+
 export const StoreData1 = [
     {
         id: "001",

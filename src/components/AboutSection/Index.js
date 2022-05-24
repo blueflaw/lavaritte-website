@@ -6,7 +6,7 @@ import { animateScroll as scroll } from 'react-scroll';
 import Icon from '../../images/LogoInverted.gif';
 import {
     AboutContainer, WebsiteContainer, WebsiteContent, ContentH1, ContentP, DP, ContentLocation, ContentLink, WebsiteContentBio, WebsiteContainerBio, IbuildContentLeft, 
-    IbuildContentRight, ContentBio, WebsiteContentIlike, WebsiteContainerIlike, AboutQuoteContainer, AboutQuotes, AboutQuotesWriter, ContentH4, 
+    IbuildContentRight, ContentBio, WebsiteContentIlike, WebsiteContainerIlike, AboutQuoteContainer, ContentH4, 
     BtnWrap, DonateButton, GetInTouchLink, SocialWrapper, CreatedBy, SocialLogo, Gotinspired, GetInTouchRow, Column1, Column2, ImgWrap, ButtonDownload,
     Img, ImagelWrapper, DarkContentH1, IContainer, BlueContentH1, IbuildWrapper, ButtonAbout,
 } from './AboutElements';
