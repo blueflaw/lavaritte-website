@@ -11,5 +11,18 @@ export const NFTCollectionData = [
         authorALT : "Author is Blueflaw",
         preview:"A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.",
         link : "https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/57299097137705958046449614652159903705385239610405719711659610994377056321537"
+    },
+    {
+        id: "001",
+        title: "The Collector",
+        path : "https://cdna.artstation.com/p/assets/images/images/049/791/162/20220523151501/smaller_square/allard-lavaritte-the-collector.jpg?1653336902",    
+        alt : "The Collector",
+        category : "Price:",
+        price : "TBA",
+        author : "blueflaw",
+        authorDP : "https://lh3.googleusercontent.com/6UatxVtoWM86sjAAkzi2GtOUBYCQpPjNpihisZTqvStIByTYpSlgI8TxB0zYidXIOHp6CrJKiOgXLEzw3LJhYn8nxlx6liaA0PHs=s0",
+        authorALT : "Author is Blueflaw",
+        preview:"A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.",
+        link : "https://opensea.io/assets/ethereum/0x495f947276749ce646f68ac8c248420045cb7b5e/57299097137705958046449614652159903705385239610405719711659610995476567949313/"
     }
 ];

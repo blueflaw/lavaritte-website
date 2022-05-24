@@ -139,7 +139,7 @@ export const StorePost = styled.div`
 
 export const StoreThumbnail = styled.img`
     object-fit: contain;
-    width: auto;
+    width: 400px;
     max-height: 300px;
     margin: 0%;
     transition: transform 450ms;

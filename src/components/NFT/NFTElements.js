@@ -9,7 +9,7 @@ export const HeroContainer = styled.div`
     height: 100vh;
     position: relative;
     z-index: 1;
-    background: #000000 url("https://cdna.artstation.com/p/assets/images/images/031/522/650/large/allard-lavaritte-faceless-void-f2.jpg?1603865155") no-repeat fixed center top;;
+    background: #000000 url("https://cdna.artstation.com/p/assets/images/images/049/791/162/large/allard-lavaritte-the-collector.jpg?1653336902") no-repeat fixed center top;;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -328,7 +328,8 @@ export const NFTTumbnailWrapper = styled.span`
 
 export const NFTCollectionThumbnail = styled.img`
     object-fit: contain;
-    width: auto;
+    width: 300px;
+    height: 300px;
     max-height: 300px;
     margin: 0%;
     transition: transform 450ms;

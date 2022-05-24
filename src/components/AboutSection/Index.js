@@ -145,8 +145,8 @@ const TheWebsite = () => {
             </IbuildWrapper>
         </IContainer>
 
-        <InfoSection {...About3}/>
-        <InfoSection {...About4}/>
+        <InfoSection {...About3} />
+        <InfoSection {...About4} />
 
         <AboutQuoteContainer>
             <DarkContentH1>Think we're a good fit? get in touch ^-^</DarkContentH1>

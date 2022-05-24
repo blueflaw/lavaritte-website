@@ -7,7 +7,7 @@ export const StoreData1 = [
         alt : "BlueFlaws Basic Brush",
         author : "Allard Lavaritte",
         type : "Brushes",
-        prize : "$52.54",
+        prize : "$2.00",
         link : "https://artstn.co/m/n706y"
     },
 ];
