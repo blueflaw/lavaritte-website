@@ -8,15 +8,15 @@ export const SliderData = [
         topLine: 'Posters',
         title: 'Make your walls awesome',
         buttonText: 'buy',
-        buttonLink: '/',
+        buttonLink: 'wallart',
         image: Image4,
-        alt: 'Image four'
+        alt: 'Image four',
     },
     {
         topLine: 'my eternity',
         title: 'Official Posters',
         buttonText: 'buy',
-        buttonLink: '/',
+        buttonLink: 'wallart',
         image: Image2,
         alt: 'Image Two'
     },
@@ -24,7 +24,7 @@ export const SliderData = [
         topLine: 'original design',
         title: 'clothing',
         buttonText: 'buy',
-        buttonLink: '/',
+        buttonLink: 'clothing',
         image: Image1,
         alt: 'Image One'
     },
@@ -32,7 +32,7 @@ export const SliderData = [
         topLine: 'Its the little things in life',
         title: 'we all Need',
         buttonText: 'buy',
-        buttonLink: '/',
+        buttonLink: 'accessories',
         image: Image3,
         alt: 'Image Three'
     },

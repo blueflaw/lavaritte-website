@@ -56,7 +56,7 @@ export const Slider = ({slides}) => {
                                     <SliderHeroContent>
                                         <SliderHeroP>{slide.topLine}</SliderHeroP>
                                         <SliderHeroH1>{slide.title}</SliderHeroH1>
-                                        <ButtonSlider>{slide.buttonText}</ButtonSlider>
+                                        <ButtonSlider to={slide.buttonLink} smooth={true} duration={500} spy={true} exact="true" offset={-80}>{slide.buttonText}</ButtonSlider>
                                     </SliderHeroContent>
                                 </SliderHeroSlider>
                             )}

@@ -1,5 +1,5 @@
 import styled, {css} from "styled-components";
-import {Link} from 'react-scroll'
+import {Link as LinkS} from 'react-scroll'
 import { FaAngleLeft,  FaAngleRight} from 'react-icons/fa';
 
 export const SliderHeroSection = styled.div`
@@ -109,7 +109,7 @@ export const NextArrow = styled(FaAngleRight)`
 `;
 
 
-export const ButtonSlider = styled(Link)`
+export const ButtonSlider = styled(LinkS)`
     color: #000;
     margin: 16px;
     background-image: linear-gradient(90deg, #ffffff 50%, transparent 50%);
@@ -128,7 +128,7 @@ export const ButtonSlider = styled(Link)`
     letter-spacing: 0.2rem;
     transition: all 0.6s;
     max-width: fit-content;
-    padding: 14px;
+    padding: 14px 20px;
     &:hover {
         color: #000000;
         background-position: 99%;

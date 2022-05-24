@@ -2,7 +2,7 @@ import React from 'react';
 import { StoreWrapper, RowPoster, StoreRow, StorePostWrap, StorePost, Prize,StoreTumbnailWrapper, StoreThumbnail, 
     TextWrapper, TextWrap, StoreHeader, StoreInfoRow, Type, AuthorWrap,  ButtonDark, ViewAllWrapper} from './StoreDataMapperElements';
 
-export default function StoreDataMapper({StoreData, GenLink}) {
+export default function StoreDataMapper({StoreData, GenLink, ButtonLabel}) {
   return (
     <StoreWrapper>
         <RowPoster>
@@ -31,7 +31,7 @@ export default function StoreDataMapper({StoreData, GenLink}) {
             </StoreRow>
         </RowPoster>
         <ViewAllWrapper>
-            <ButtonDark href={GenLink} target="_blank">view all products</ButtonDark>
+            <ButtonDark href={GenLink} target="_blank">{ButtonLabel}</ButtonDark>
         </ViewAllWrapper>
         
     </StoreWrapper>

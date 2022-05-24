@@ -2,7 +2,7 @@ import React, {useRef} from 'react';
 import { useIntersection } from 'react-use';
 import { Slider } from '../Slider/Slider';
 import gsap from 'gsap';
-import { Clothing, StoreData1, StoreDataCard } from './StoreData';
+import { Clothing, Accessories, StoreDataCard, WallArt } from './StoreData';
 import { SliderData } from '../Slider/SliderData';
 import { StoreContaner, StoreQuotesTextWrapper, QuotesWrapper, Heading, Subtitle} from './StoreElements';
 import StoreDataMapper from './StoreComponents/StoreDataMapper';
@@ -14,6 +14,8 @@ const Store = () => {
     const sectionRef2 = useRef(null);
 
     const ClothingLink = 'https://www.redbubble.com/people/blueflaw/shop?asc=u&asc=u&iaCode=u-clothing';
+    const AccessoriesLink = 'https://www.redbubble.com/people/blueflaw/shop?asc=u&asc=u&iaCode=u-accessories';
+    const WallAretLink = 'https://www.redbubble.com/people/blueflaw/shop?&asc=u&iaCode=u-prints';
 
     const intersection = useIntersection(sectionRef1,{
         root: null,
@@ -51,23 +53,31 @@ const Store = () => {
     return (
         <StoreContaner id="store">
         <Slider slides={SliderData}/>
-        <QuotesWrapper>
+        <QuotesWrapper id='clothing'>
                 <StoreQuotesTextWrapper className="section1" ref={sectionRef1}>
                     <Subtitle>FEATURED COLLECTION</Subtitle>
                     <Heading>CLOTHING</Heading>
                 </StoreQuotesTextWrapper>
         </QuotesWrapper>
 
-        <StoreDataMapper StoreData={Clothing}  GenLink={ClothingLink}/>
+        <StoreDataMapper StoreData={Clothing}  GenLink={ClothingLink} ButtonLabel={'View All Product'}/>
         <StoreCardMapper CardData={StoreDataCard}/>
 
-        <QuotesWrapper>
+        <QuotesWrapper id='wallart'>
                 <StoreQuotesTextWrapper className="section2" ref={sectionRef2}>
                     <Subtitle>FEATURED COLLECTION</Subtitle>
                     <Heading>Posters</Heading>
                 </StoreQuotesTextWrapper>
         </QuotesWrapper>
-        <StoreDataMapper StoreData={StoreData1}  GenLink={ClothingLink}/>
+        <StoreDataMapper StoreData={WallArt}  GenLink={WallAretLink} ButtonLabel={'View All Wall Art'}/>
+
+        <QuotesWrapper id='accessories'>
+                <StoreQuotesTextWrapper className="section2" ref={sectionRef2}>
+                    <Subtitle>FEATURED COLLECTION</Subtitle>
+                    <Heading>ACCESSORIES</Heading>
+                </StoreQuotesTextWrapper>
+        </QuotesWrapper>
+        <StoreDataMapper StoreData={Accessories} GenLink={AccessoriesLink} ButtonLabel={'shop'}/>
 
         </StoreContaner>
     )

@@ -26,25 +26,25 @@ const Footer = () => {
                         </FooterLinkItems>
                         <FooterLinkItems>
                             <FooterLinkTitle>Info</FooterLinkTitle>
-                            <FooterLink to="/" onClick={toggleHome}>Biography</FooterLink>
+                            <FooterLink to="/">Biography</FooterLink>
                             <FooterLink to="/about">The Creation of this website</FooterLink>
-                            <FooterLink to="/" onClick={toggleHome}>Terms of Service</FooterLink>
+                            <FooterLink to="/">Terms of Service</FooterLink>
                         </FooterLinkItems>
                     </FooterLinksWrapper>
                     <FooterLinksWrapper>
                         <FooterLinkItems>
                             <FooterLinkTitle>Services</FooterLinkTitle>
-                            <FooterLink to="/" onClick={toggleHome}>Creative Direction</FooterLink>
-                            <FooterLink to="/" onClick={toggleHome}>Concept Art</FooterLink>
-                            <FooterLink to="/" onClick={toggleHome}>Graphic Design</FooterLink>
-                            <FooterLink to="/" onClick={toggleHome}>UI/UX</FooterLink>
-                            <FooterLink to="/" onClick={toggleHome}>Illustration</FooterLink>
-                            <FooterLink to="/" onClick={toggleHome}>Cinematography</FooterLink>
-                            <FooterLink to="/" onClick={toggleHome}>Animation</FooterLink>
+                            <FooterLink to="/">Creative Direction</FooterLink>
+                            <FooterLink to="/">Concept Art</FooterLink>
+                            <FooterLink to="/">Graphic Design</FooterLink>
+                            <FooterLink to="/">UI/UX</FooterLink>
+                            <FooterLink to="/">Illustration</FooterLink>
+                            <FooterLink to="/">Cinematography</FooterLink>
+                            <FooterLink to="/">Animation</FooterLink>
                         </FooterLinkItems>
                         <FooterLinkItems>
                             <FooterLinkTitle>Director</FooterLinkTitle>
-                            <FooterLink to="/" onClick={toggleHome}>Allard Lavaritte</FooterLink>
+                            <FooterLink to="/">Allard Lavaritte</FooterLink>
                         </FooterLinkItems>
                     </FooterLinksWrapper>
                 </FooterLinksContainer>
