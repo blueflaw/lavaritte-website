@@ -1,20 +1,33 @@
 import styled from "styled-components";
+import {Link as LinkS} from "react-scroll";
 
 export const HeroContainer = styled.div`
     /* not sure yet about this color might change later */
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0 30px;
     height: 100vh;
+    width: 100%;
     position: relative;
-    z-index: 1;
     background: #000000 url("https://cdna.artstation.com/p/assets/images/images/049/791/162/large/allard-lavaritte-the-collector.jpg?1653336902") no-repeat fixed center top;;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
 `;
+
+export const ButtonDown = styled(LinkS)`
+    color: #ffffff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    text-align: center;
+    padding: 10px;
+
+    &:hover{
+        color: #00a2ff;
+    }
+`;
+
 export const HeroH1 = styled.h1`
     color: #ffffff;
     font-size: 1.5rem;
@@ -29,10 +42,9 @@ export const HeroH1 = styled.h1`
     }
 `;
 export const HeroContent = styled.div`
-    z-index: 3;
     display: flex;
-    width: 100vw;
     height: 100vh;
+    width: 100%;
     flex-direction: column;
     align-items: left;
     text-align: left;
@@ -41,82 +53,15 @@ export const HeroContent = styled.div`
 `;
 
 export const NFTContainer = styled.div`
-    //background: #000000 url("https://cdnb.artstation.com/p/assets/images/images/019/380/861/medium/allard-lavaritte-untitled-1.jpg?1563235858") no-repeat center center;
-    background: #000000;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    overflow: hidden;
+    background-color: #000;
     display: flex;
-    height: 40vh;
-    @media screen and (max-width: 768px){
-        height: 100%;
-        padding: 0 30px;
-    }
-    @media screen and (max-width: 480px){
-        height: 100%;
-        padding: 0 30px;
-    }
-    &::before {
-        /* content: " 🦄"; */
-        content: "";
-        background-color: #000000;
-        position: absolute;
-        display: block;
-        width: 100%;
-        height: 40vh;
-        -webkit-transition: all 0.4s ease-in-out;
-        transition: all 0.4s ease-in-out;
-        opacity: 0.4;
-
-            @media screen and (max-width: 768px){
-                    height: 100%;
-                    width: 100%;
-                    left: 0;
-                }
-            @media screen and (max-width: 480px){
-                height: 100%;
-                width: 100%;
-                left: 0;
-            }
-        }
-`;
-
-export const NFTContainer2 = styled.div`
-    //background: #000000 url("https://cdnb.artstation.com/p/assets/images/images/042/698/143/large/allard-lavaritte-dualmonitorwallpaper.jpg?1635215819") no-repeat center center;
-    background: #000000;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    display: flex;
-    height: 40vh;
-    @media screen and (max-width: 768px){
-        height: 40vh;
-    }
-    &::before {
-        /* content: " 🦄"; */
-        content: "";
-        background-color: #000000;
-        position: absolute;
-        display: block;
-        width: 100%;
-        height: 40vh;
-        -webkit-transition: all 0.4s ease-in-out;
-        transition: all 0.4s ease-in-out;
-        opacity: 0.4;
-    }
-
-    @media screen and (max-width: 768px){
-        height: 40vh;
-        width: 100%;
-        left: 0;
-    }
-    @media screen and (max-width: 480px){
-        height: 40vh;
-        width: 100%;
-        left: 0;
-    }
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    align-self: center;
+    flex-direction: column;
+    padding: 4% 40px;
 `;
 
 export const NFTVidContainer = styled.div`
@@ -186,57 +131,36 @@ export const Column2 = styled.div`
 `;
 
 export const NFTWrapper = styled.div`
-    margin-right: auto;
-    margin-left: auto;
-    padding: 60px 0;
+    text-align: left;
+    width: 100%;
+    max-width: 1100px;
+    padding: 0 40px;
     justify-content: center;
-    position: relative;
-`;
-
-export const TextWrapper = styled.div`
-    opacity: 1;
-    overflow: hidden;
-    max-width: 780px;
-    margin-right: auto;
-    margin-left: auto;
-    padding: 10% 0;
-    vertical-align: middle;
-    margin: 0;
-    color: #ffffff;
-
-    @media screen and (max-width: 768px){
-        max-width: 768px;
-        padding: 20px;
-    }
-
-    @media screen and (max-width: 480px){
-        max-width: 480px;
-        padding: 10px;
+    @media only screen and (max-width: 768px) {
+        padding: 0 10px;
     }
 `;
 
 export const Heading = styled.h1`
-    color: '#ffffff';
+    color: #ffffff;
     font-size: 1.5rem;
     letter-spacing: 0.3rem;
     text-transform: uppercase;
     display: inline-block;
-    @media screen and (max-width: 480px){
-        font-size: 0.7rem;
+    @media screen and (max-width: 768px){
+        font-size: 1rem;
     }
 `;
 
 export const Subtitle = styled.p`
-    color: '#ffffff';
-    vertical-align: baseline;
-    max-width: 1100px;
-    padding-top: 10px;
-    font-size: 0.9rem;
+    font-size: 1rem;
+    color: #fff;
     letter-spacing: 0.16rem;
+    max-width: 1100px;
     word-wrap: break-word;
-    margin-bottom: 16px;
-    margin-bottom: 35px;
+    line-height: 24px;
     text-align: left;
+    padding: 10px 0;
 `;
 
 export const BtnWrap = styled.div`

@@ -4,9 +4,9 @@ import {FaTimes} from 'react-icons/fa'
 
 export const SidebarContainer = styled.aside`
     position: fixed;
-    z-index: 999;
-    height: 100%;
-    width: 100%;
+    z-index: 20;
+    height: 100vh;
+    width: 100vw;
     background-color: #000000;
     display: grid;
     align-items: center;

@@ -23,7 +23,7 @@ export const Sidebar = ({isOpen, toggle}) => {
                     <SidebarLink to='/Store' onClick={toggle}>Store</SidebarLink>
                     <SidebarLink to='/tutorial' onClick={toggle}>Tutorials</SidebarLink>
                     <SidebarLink to='/blog' onClick={toggle}>Blogs</SidebarLink>
-                    <SidebarLink to='/aboutthewebsite' onClick={toggle}>About</SidebarLink>
+                    <SidebarLink to='/about' onClick={toggle}>About</SidebarLink>
                 </SidebarMenu>
                 {/* <SideBtnWrap>
                     <SidebarRoute to='/signin'>Sign In</SidebarRoute>

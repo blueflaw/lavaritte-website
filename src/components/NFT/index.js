@@ -3,10 +3,11 @@ import { useIntersection } from 'react-use';
 import gsap from 'gsap';
 import { NFTCollectionData } from './NFTCollectionData';
 import { FaEthereum, FaAngleRight, FaArrowRight } from 'react-icons/fa';
-import { TextWrapper, NFTContainer,NFTContainer2, NFTWrapper, Heading, Subtitle, NFTCollectionWrapper, HeroContainer, HeroContent, HeroH1, RowPoster, NFTCollectionRow,
+import { NFTContainer, NFTWrapper, Heading, Subtitle, NFTCollectionWrapper, HeroContainer, HeroContent, HeroH1, RowPoster, NFTCollectionRow,
          NFTCollectionPostWrap, NFTCollectionPost, NFTCollectionTextWrapper, NFTCollectionTextWrap, NFTCollectionInfoRow, NFTInfoHeader, Category, PriceTag, NFTCollectionHeader,
-         AuthorWrap, NFTTumbnailWrapper, AuthorDisplayPicture, AuthorName, NFTCollectionThumbnail, ButtonWrapper, ButtonViewCollection } from './NFTElements';
+         AuthorWrap, NFTTumbnailWrapper, AuthorDisplayPicture, AuthorName, NFTCollectionThumbnail, ButtonWrapper, ButtonViewCollection, ButtonDown } from './NFTElements';
 import { NFTsData1, NFTsData2 } from './NFTData';
+import { FaChevronDown} from 'react-icons/fa';
 
 const NFTSection = () => {
     const treshold = 0.9;
@@ -56,20 +57,18 @@ const NFTSection = () => {
             <HeroContainer>
                 <HeroContent>
                     <HeroH1 >NFT RELEASES</HeroH1>
+                    <ButtonDown to={'NFTCollection'} smooth={true} duration={500} spy={true} exact="true" offset={-80} ><FaChevronDown/></ButtonDown>
                 </HeroContent>
             </HeroContainer>
 
             <NFTContainer>
-            <NFTWrapper></NFTWrapper>
-                <NFTWrapper>
-                        <TextWrapper className="section1" ref={sectionRef1}>
-                            <Heading>{NFTsData1.headline}</Heading>
-                            <Subtitle>{NFTsData1.description}</Subtitle>
-                        </TextWrapper>
+                <NFTWrapper className="section1" ref={sectionRef1}>
+                        <Heading>{NFTsData1.headline}</Heading>
+                        <Subtitle>{NFTsData1.description}</Subtitle>
                 </NFTWrapper>
             </NFTContainer>
 
-            <NFTCollectionWrapper>
+            <NFTCollectionWrapper id='NFTCollection'>
                 <RowPoster>
                     <NFTCollectionRow>
                         {NFTCollectionData.map((NFTCollectionDetail) =>{
@@ -111,16 +110,11 @@ const NFTSection = () => {
                     </ButtonViewCollection>
                 </ButtonWrapper>
             </NFTCollectionWrapper>
-
-            <NFTContainer2>
-                <NFTWrapper>
-                    <TextWrapper className="section2" ref={sectionRef2}>
-                        <Subtitle></Subtitle>
-                        <Heading >{NFTsData2.headline}</Heading>
-                    </TextWrapper>
+            <NFTContainer>
+                <NFTWrapper className="section2" ref={sectionRef2}>
+                        <Heading>{NFTsData2.headline}</Heading>
                 </NFTWrapper>
-                <NFTWrapper></NFTWrapper>
-            </NFTContainer2>
+            </NFTContainer>
         </div>
     )
 }
