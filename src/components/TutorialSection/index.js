@@ -1,8 +1,10 @@
 import React, {useRef} from 'react'
 import { useIntersection } from 'react-use';
 import gsap from 'gsap';
-import { TextWrapper, TutorialContainer,TutorialContainer2, TutorialWrapper, Heading, Subtitle, HeroContainer, HeroContent, HeroH1, DonateButton} from './TutorialElements'
-import { TutorialsData1, TutorialsData2, TutorialsDataMap } from './TutorialsData'
+import { TutorialContainer,TutorialContainer2, TutorialWrapper, Heading, Subtitle, HeroContainer, HeroContent, HeroH1, DonateButton, DonateButton2} from './TutorialElements';
+import { ButtonDown } from '../NFT/NFTElements';
+import { FaChevronDown} from 'react-icons/fa';
+import { TutorialsData1, TutorialsData2, TutorialsDataMap } from './TutorialsData';
 import { DataMap } from '../DataMap/DataMap';
 
 const TutorialSection = () => {
@@ -48,39 +50,25 @@ const TutorialSection = () => {
             <HeroContainer>
                 <HeroContent>
                     <HeroH1 >learn. practice. make a living</HeroH1>
+                    <ButtonDown to={'tutorialscollection'} smooth={true} duration={500} spy={true} exact="true" offset={-80} ><FaChevronDown/></ButtonDown>
                 </HeroContent>
             </HeroContainer>
 
             <TutorialContainer>
-            <TutorialWrapper></TutorialWrapper>
-                <TutorialWrapper>
-                        <TextWrapper className="section1" ref={sectionRef1}>
-                            <Heading>{TutorialsData1.headline}</Heading>
-                            <Subtitle>{TutorialsData1.description} <DonateButton href={'https://www.paypal.com/donate/?hosted_button_id=ZB7H6RJ7UZSN8'} target="_blank" dark={'dark'} big={'big'}>paypal</DonateButton></Subtitle>
-                        </TextWrapper>
+                <TutorialWrapper className="section1" ref={sectionRef1} id='tutorialscollection'>
+                    <Heading>{TutorialsData1.headline}</Heading>
+                    <Subtitle>{TutorialsData1.description} <DonateButton href={'https://www.paypal.com/donate/?hosted_button_id=ZB7H6RJ7UZSN8'} target="_blank" dark={'dark'} big={'big'}>paypal</DonateButton></Subtitle>
                 </TutorialWrapper>
             </TutorialContainer>
 
-            {/* <TutorialVidContainer>
-                <TutorialRow>
-                    <Column1>
-                        <ReactYouTube videoId={TutorialsData1.videoId}/>
-                    </Column1>
-                    <Column2>
-                        <ReactYouTube videoId={TutorialsData2.videoId}/>
-                    </Column2>
-                </TutorialRow>
-            </TutorialVidContainer> */}
-            <DataMap Data={TutorialsDataMap} Dark='dark'/>
+            <DataMap Data={TutorialsDataMap} Dark='dark' />
 
             <TutorialContainer2>
-                <TutorialWrapper>
-                    <TextWrapper className="section2" ref={sectionRef2}>
-                        <Subtitle></Subtitle>
-                        <Heading >{TutorialsData2.headline}</Heading>
-                    </TextWrapper>
+                <TutorialWrapper className="section2" ref={sectionRef2}>
+                    <Heading >{TutorialsData2.headline}</Heading>
+                    <Subtitle>{TutorialsData2.description}</Subtitle>
+                    <DonateButton2 href={'https://www.paypal.com/donate/?hosted_button_id=ZB7H6RJ7UZSN8'} target="_blank">paypal</DonateButton2>
                 </TutorialWrapper>
-                <TutorialWrapper></TutorialWrapper>
             </TutorialContainer2>
         </div>
     )

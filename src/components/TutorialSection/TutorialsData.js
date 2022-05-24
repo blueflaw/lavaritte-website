@@ -7,7 +7,7 @@ export const TutorialsData1 = {
 
 export const TutorialsData2 = {
     headline: 'TRANSLATING THOUGHTS TO ART',
-    description: '',
+    description: 'Got inspired? Copied the theme? Or do you just like the website? No problem, just buy me a Burger and make me happy!',
     videoId: 'd-GWdmU6_74'
 }
 

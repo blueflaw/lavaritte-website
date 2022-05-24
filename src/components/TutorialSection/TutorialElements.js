@@ -41,80 +41,27 @@ export const HeroContent = styled.div`
 `;
 
 export const TutorialContainer = styled.div`
-    background: #000000 url("https://cdnb.artstation.com/p/assets/images/images/019/380/861/medium/allard-lavaritte-untitled-1.jpg?1563235858") no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    overflow: hidden;
+    background-color: #000;
     display: flex;
-    height: 40vh;
-    @media screen and (max-width: 768px){
-        height: 100%;
-        padding: 0 30px;
-    }
-    @media screen and (max-width: 480px){
-        height: 100%;
-        padding: 0 30px;
-    }
-    &::before {
-        /* content: " 🦄"; */
-        content: "";
-        background-color: #000000;
-        position: absolute;
-        display: block;
-        width: 100%;
-        height: 40vh;
-        -webkit-transition: all 0.4s ease-in-out;
-        transition: all 0.4s ease-in-out;
-        opacity: 0.4;
-
-            @media screen and (max-width: 768px){
-                    height: 100%;
-                    width: 100%;
-                    left: 0;
-                }
-            @media screen and (max-width: 480px){
-                height: 100%;
-                width: 100%;
-                left: 0;
-            }
-        }
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    align-self: center;
+    flex-direction: column;
+    padding: 4% 40px;
 `;
 
 export const TutorialContainer2 = styled.div`
-    background: #000000 url("https://cdnb.artstation.com/p/assets/images/images/042/698/143/large/allard-lavaritte-dualmonitorwallpaper.jpg?1635215819") no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    overflow: hidden;
+    background-color: #000;
     display: flex;
-    height: 40vh;
-    @media screen and (max-width: 768px){
-        height: 40vh;
-    }
-    &::before {
-        /* content: " 🦄"; */
-        content: "";
-        background-color: #000000;
-        position: absolute;
-        display: block;
-        width: 100%;
-        height: 40vh;
-        -webkit-transition: all 0.4s ease-in-out;
-        transition: all 0.4s ease-in-out;
-        opacity: 0.4;
-    }
-
-    @media screen and (max-width: 768px){
-        height: 40vh;
-        width: 100%;
-        left: 0;
-    }
-    @media screen and (max-width: 480px){
-        height: 40vh;
-        width: 100%;
-        left: 0;
-    }
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    align-self: center;
+    flex-direction: column;
+    padding: 4% 40px;
 `;
 
 export const TutorialVidContainer = styled.div`
@@ -184,37 +131,18 @@ export const Column2 = styled.div`
 `;
 
 export const TutorialWrapper = styled.div`
-    margin-right: auto;
-    margin-left: auto;
-    padding: 60px 0;
+   text-align: left;
+    width: 100%;
+    max-width: 1100px;
+    padding: 0 40px;
     justify-content: center;
-    position: relative;
-`;
-
-export const TextWrapper = styled.div`
-    opacity: 1;
-    overflow: hidden;
-    max-width: 680px;
-    margin-right: auto;
-    margin-left: auto;
-    padding: 10% 0;
-    vertical-align: middle;
-    margin: 0;
-    color: #ffffff;
-
-    @media screen and (max-width: 768px){
-        max-width: 768px;
-        padding: 20px;
-    }
-
-    @media screen and (max-width: 480px){
-        max-width: 480px;
-        padding: 10px;
+    @media only screen and (max-width: 768px) {
+        padding: 0 10px;
     }
 `;
 
 export const Heading = styled.h1`
-    color: '#ffffff';
+    color: #ffffff;
     font-size: 1.5rem;
     letter-spacing: 0.3rem;
     text-transform: uppercase;
@@ -225,7 +153,7 @@ export const Heading = styled.h1`
 `;
 
 export const Subtitle = styled.p`
-    color: '#ffffff';
+    color: #ffffff;
     vertical-align: baseline;
     max-width: 1100px;
     padding-top: 10px;
@@ -235,6 +163,34 @@ export const Subtitle = styled.p`
     margin-bottom: 16px;
     margin-bottom: 35px;
     text-align: justify;
+`;
+
+export const DonateButton2 = styled.a`
+    background: ${({dark}) => (dark ? '#ffc439' : 'transparent')};
+    white-space: nowrap;
+    color: ${({dark}) => (dark ? '#ffffff' : '#ffc439')};
+    border: 1px solid ${({dark}) => (dark ? '#ffffff' : '#ffc439')};
+    white-space: nowrap;
+    padding: ${({big}) => (big ? '14px 48px' : '10px 22px')};
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: 900;
+    letter-spacing: 0.16rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: ${({fontBig}) => (fontBig ? '1rem' : '0.9rem')};
+    outline: none;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+        transition: all 0.2s ease-in-out;
+        background: ${({dark}) => (dark ? 'transparent' : '#ffc439')};
+        color: ${({dark}) => (dark ? '#ffc439' : '#fff')};
+        font-weight: 900;
+        border: 1px solid ${({dark}) => (dark ? '#ffc439' : '#ffc439')};
+    }
 `;
 
 export const DonateButton = styled.a`
