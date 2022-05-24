@@ -271,6 +271,37 @@ export const RowPoster = styled.div`
     padding: 0px;
 `;
 
+export const ButtonWrapper = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10% 0;
+`;
+export const ButtonViewCollection = styled.a`
+    color: #ffffff;
+    background-image: linear-gradient(-90deg, #ffffff 50%, #000 50%);
+    background-size: 300%;
+    transition: all 0.2s ease-in-out;
+    text-transform: uppercase;
+    position: relative;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1.5px solid #ffffff;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    font-size: ${({fontBig}) => (fontBig ? '1rem' : '0.9rem')};
+    transition: all 0.6s;
+
+    &:hover {
+        color: #000000;
+        background-position: 99%;
+        overflow: hidden;
+        transform: translateX(0.5rem);
+    }
+`;
 
 export const NFTCollectionRow = styled.div`
     display: grid;

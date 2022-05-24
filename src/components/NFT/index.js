@@ -1,12 +1,12 @@
-import React, {useRef} from 'react'
+import React, {useRef, useState} from 'react'
 import { useIntersection } from 'react-use';
 import gsap from 'gsap';
 import { NFTCollectionData } from './NFTCollectionData';
-import { FaEthereum } from 'react-icons/fa';
+import { FaEthereum, FaAngleRight, FaArrowRight } from 'react-icons/fa';
 import { TextWrapper, NFTContainer,NFTContainer2, NFTWrapper, Heading, Subtitle, NFTCollectionWrapper, HeroContainer, HeroContent, HeroH1, RowPoster, NFTCollectionRow,
          NFTCollectionPostWrap, NFTCollectionPost, NFTCollectionTextWrapper, NFTCollectionTextWrap, NFTCollectionInfoRow, NFTInfoHeader, Category, PriceTag, NFTCollectionHeader,
-         AuthorWrap, NFTTumbnailWrapper, AuthorDisplayPicture, AuthorName, NFTCollectionThumbnail } from './NFTElements'
-import { NFTsData1, NFTsData2 } from './NFTData'
+         AuthorWrap, NFTTumbnailWrapper, AuthorDisplayPicture, AuthorName, NFTCollectionThumbnail, ButtonWrapper, ButtonViewCollection } from './NFTElements';
+import { NFTsData1, NFTsData2 } from './NFTData';
 
 const NFTSection = () => {
     const treshold = 0.9;
@@ -45,6 +45,11 @@ const NFTSection = () => {
     // checking to see when the viewport is visible to the user
     intersection && intersection.intersectionRatio < treshold ? fadeOut(".section1") : fadeIn(".section1");
     intersection2 && intersection2.intersectionRatio < treshold ? fadeOut(".section2") : fadeIn(".section2");
+
+    const [hover, setHover] = useState(false)
+    const onHover = () => {
+        setHover(!hover)
+    }
     
     return (
         <div id='NFT'>
@@ -97,6 +102,14 @@ const NFTSection = () => {
                         })}
                     </NFTCollectionRow>
                 </RowPoster>
+                <ButtonWrapper>
+                    <ButtonViewCollection 
+                        href='https://opensea.io/blueflaw' 
+                        target='_blank'
+                        onMouseEnter={onHover} 
+                        onMouseLeave={onHover}>View All Collection &nbsp;&nbsp; {hover ? <FaAngleRight /> : <FaArrowRight/>}
+                    </ButtonViewCollection>
+                </ButtonWrapper>
             </NFTCollectionWrapper>
 
             <NFTContainer2>

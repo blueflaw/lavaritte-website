@@ -13,7 +13,7 @@ export const NFTCollectionData = [
         link : "https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/57299097137705958046449614652159903705385239610405719711659610994377056321537"
     },
     {
-        id: "001",
+        id: "002",
         title: "The Collector",
         path : "https://cdna.artstation.com/p/assets/images/images/049/791/162/20220523151501/smaller_square/allard-lavaritte-the-collector.jpg?1653336902",    
         alt : "The Collector",
