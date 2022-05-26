@@ -3,6 +3,8 @@ import Navbar from '../components/Navbar';
 import Sidebar from '../components/Sidebar';
 import Footer from '../components/Footer';
 import ScrollToTop from '../components/ScrollToTop';
+import { FAQs } from '../components/FAQs/FAQs';
+import ScrollUp from '../components/ScrollUp/Index';
 
 const FAQ = () => {
     const [isOpen, setIsOpen] = useState(false)
@@ -15,8 +17,8 @@ const FAQ = () => {
             <ScrollToTop/>
             <Sidebar isOpen={isOpen} toggle={toggle} />
             <Navbar toggle={toggle}/>
-            <h1>Hello this is FAQ page</h1>
-
+            <FAQs/>
+            <ScrollUp/> 
             <Footer/>     
             
         </>
