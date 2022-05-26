@@ -2,17 +2,27 @@ import React from 'react';
 import { animateScroll as scroll } from 'react-scroll';
 import { FaArtstation, FaFacebook, FaInstagram, FaTwitch, FaTwitter, FaYoutube } from 'react-icons/fa';
 import { FooterConainer, FooterWrap, FooterLinksContainer, FooterLinksWrapper, FooterLinkItems, FooterQuotes, FooterQuoteContainer,
-            FooterLinkTitle, FooterLink, SocialLogo, WebsiteRights, SocialIcons, SocialIconLink, SocialMediaWrap, SocialMedia} from './FooterElements';
+            FooterLinkTitle, FooterLink, SocialLogo, WebsiteRights, SocialIcons, SocialIconLink, SocialMediaWrap, SocialMedia, FooterServices} from './FooterElements';
 import ButtonMailto from '../ButtonMailto';
 
 const Footer = () => {
+    const bio = 700;
     const toggleHome = () => {
         scroll.scrollToTop();
+        window.isNavNFTActive = false;
         window.isNavStoreActive = false;
         window.isNavAboutActive = false;
         window.isNavTutorialsActive = false;
         window.isNavBlogctive = false;
         window.isNavHomeActive = true;
+    };
+    const toAbout = () => {
+        window.isNavNFTActive = false;
+        window.isNavStoreActive = false;
+        window.isNavAboutActive = true;
+        window.isNavTutorialsActive = false;
+        window.isNavBlogctive = false;
+        window.isNavHomeActive = false;
     };
     return (
         <FooterConainer>
@@ -26,25 +36,31 @@ const Footer = () => {
                         </FooterLinkItems>
                         <FooterLinkItems>
                             <FooterLinkTitle>Info</FooterLinkTitle>
-                            <FooterLink to="/">Biography</FooterLink>
-                            <FooterLink to="/about">The Creation of this website</FooterLink>
-                            <FooterLink to="/">Terms of Service</FooterLink>
+                            <FooterLink to="/about" smooth={true} duration={500} spy={true} exact="true" offset={-80} onClick={()=>{
+                                scroll.scrollTo(bio);
+                                toAbout();
+                            }}>Biography</FooterLink>
+                            <FooterLink to="/about" smooth={true} duration={500} spy={true} exact="true" offset={-80} onClick={() =>{
+                                scroll.scrollToTop();
+                                toAbout();
+                            }}>The Creation of this website</FooterLink>
+                            <FooterLink to="/faq">FAQ</FooterLink>
                         </FooterLinkItems>
                     </FooterLinksWrapper>
                     <FooterLinksWrapper>
                         <FooterLinkItems>
                             <FooterLinkTitle>Services</FooterLinkTitle>
-                            <FooterLink to="/">Creative Direction</FooterLink>
-                            <FooterLink to="/">Concept Art</FooterLink>
-                            <FooterLink to="/">Graphic Design</FooterLink>
-                            <FooterLink to="/">UI/UX</FooterLink>
-                            <FooterLink to="/">Illustration</FooterLink>
-                            <FooterLink to="/">Cinematography</FooterLink>
-                            <FooterLink to="/">Animation</FooterLink>
+                            <FooterServices >Creative Direction</FooterServices>
+                            <FooterServices >Concept Art</FooterServices>
+                            <FooterServices >Graphic Design</FooterServices>
+                            <FooterServices >UI/UX</FooterServices>
+                            <FooterServices >Illustration</FooterServices>
+                            <FooterServices >Cinematography</FooterServices>
+                            <FooterServices >Animation</FooterServices>
                         </FooterLinkItems>
                         <FooterLinkItems>
                             <FooterLinkTitle>Director</FooterLinkTitle>
-                            <FooterLink to="/">Allard Lavaritte</FooterLink>
+                            <FooterLink to="/" onClick={toggleHome}>Allard Lavaritte</FooterLink>
                         </FooterLinkItems>
                     </FooterLinksWrapper>
                 </FooterLinksContainer>

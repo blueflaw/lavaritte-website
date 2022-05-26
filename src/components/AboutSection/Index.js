@@ -82,7 +82,7 @@ const TheWebsite = () => {
             <AboutQuotesWriter>- Benjamin Franklin</AboutQuotesWriter>
         </AboutQuoteContainer> */}
 
-        <WebsiteContainerBio>
+        <WebsiteContainerBio id='bio'>
             <WebsiteContentBio>
                 <DarkContentH1>About Me</DarkContentH1>
                 <ContentH4>Summary</ContentH4>

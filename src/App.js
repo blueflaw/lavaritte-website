@@ -7,6 +7,7 @@ import NFT from './pages/NFT';
 import Store from './pages/Store';
 import TutorialsPage from './pages/Tutorial';
 import BlogPage from './pages/Blog';
+import FAQ from './pages/FAQ';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/tutorial" component={TutorialsPage} exact/>
         <Route path="/blog" component={BlogPage} exact/>
         <Route path="/about" component={About} exact/>
+        <Route path="/faq" component={FAQ} exact/>
       </Switch>
     </Router>
   );
