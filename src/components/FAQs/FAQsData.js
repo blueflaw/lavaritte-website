@@ -2,7 +2,7 @@ export const FAQsData = [
     {
         id: '001',
         q: 'Why do you call yourself \'BlueFlaw\', and what does it mean?',
-        a: 'BlueFlaw is the username I chose when I first Github account. Flaw means a mark, fault, or other imperfection. All beings are flawed, but I strive to be a better version of myself than I was yesterday; I believe there is beauty in imperfection. And my favorite hue is blue.'
+        a: 'When I originally made a Github account, I picked the username BlueFlaw. A Flaw means a mark, fault, or other imperfection. All beings are flawed, but I strive to be a better version of myself than I was yesterday; I believe there is beauty in imperfection. And my favorite hue is blue.'
     },
     {
         id: '002',
