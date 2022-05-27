@@ -8,7 +8,7 @@ export const BlogsData = [
         "time" : "4 hours ago",
         "author" : "Allard Lavaritte",
         "preview":"A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.",
-        "link" : "/"
+        "link" : "/blog/Painting変態を入らないで"
     },
     {
         "id": "002",
@@ -18,7 +18,7 @@ export const BlogsData = [
         "category" : "General",
         "time" : "4 hours ago",
         "author" : "Allard Lavaritte",
-        "link" : "/"
+        "link" : "/about"
     },
     {
         "id": "003",

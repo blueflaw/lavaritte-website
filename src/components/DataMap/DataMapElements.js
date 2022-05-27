@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 export const DataMapContaner = styled.div`
     color: #000000;
@@ -71,7 +72,7 @@ export const DataMapCard = styled.img`
     cursor: pointer;
 `;
 
-export const DataMapPostWrap = styled.a`
+export const DataMapPostWrap = styled(Link)`
     display: flex;
     margin: 12px;
     overflow: hidden;

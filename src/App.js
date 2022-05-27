@@ -9,6 +9,8 @@ import TutorialsPage from './pages/Tutorial';
 import BlogPage from './pages/Blog';
 import FAQ from './pages/FAQ';
 
+import { Painting変態を入らないで } from './pages/BlogPages/Painting変態を入らないで';
+
 function App() {
   return (
     <Router>
@@ -20,6 +22,8 @@ function App() {
         <Route path="/blog" component={BlogPage} exact/>
         <Route path="/about" component={About} exact/>
         <Route path="/faq" component={FAQ} exact/>
+
+        <Route path="/blog/Painting変態を入らないで" component={Painting変態を入らないで} exact/>
       </Switch>
     </Router>
   );

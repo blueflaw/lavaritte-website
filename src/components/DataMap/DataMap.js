@@ -1,9 +1,18 @@
 import React from 'react'
-
+import { animateScroll as scroll } from 'react-scroll';
 import { DataMapWrapper, RowPoster, DataMapRow, DataMapPostWrap, DataMapPost, BlogTumbnailWrapper, BlogInfoHeader,
     DataMapThumbnail, TextWrapper, DataMapHeader, DataMapInfoRow, AuthorWrap, TextWrap, AuthorDisplayPicture, AuthorName, Category, CardTime} from './DataMapElements'
 
 export const DataMap = ({Data, Dark}) => {
+    const toggleBlog = () => {
+        scroll.scrollToTop();
+        window.isNavNFTActive = false;
+        window.isNavStoreActive = false;
+        window.isNavAboutActive = false;
+        window.isNavTutorialsActive = false;
+        window.isNavBlogctive = true;
+        window.isNavHomeActive = false;
+    };
   return (
       <React.Fragment>
         <DataMapWrapper dark={Dark}>
@@ -11,7 +20,9 @@ export const DataMap = ({Data, Dark}) => {
                 <DataMapRow>
                     {Data.map((DataDetail) =>{
                         return <React.Fragment>
-                            <DataMapPostWrap to={DataDetail.link} >
+                            <DataMapPostWrap to={DataDetail.link} onClick={() => {
+                                toggleBlog();
+                            }} smooth={true} duration={500} spy={true} exact="true" offset={-80}>
                                 <DataMapPost key={DataDetail.id}>
                                     <BlogTumbnailWrapper><DataMapThumbnail key={DataDetail.id} src={DataDetail.path} alt={DataDetail.alt}/></BlogTumbnailWrapper>
                                     <TextWrapper dark={Dark}>
