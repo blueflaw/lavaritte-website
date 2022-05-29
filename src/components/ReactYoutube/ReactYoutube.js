@@ -9,7 +9,7 @@ class ReactYouTube extends Component {
   render () {
     const opts = {
         height: '535',
-        width: '960',
+        width: '1100',
         playerVars: {
             'playsinline': 1, 'controls' : 1
           }
