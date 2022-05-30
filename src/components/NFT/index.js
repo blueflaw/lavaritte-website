@@ -1,6 +1,6 @@
-import React, {useRef, useState} from 'react'
-import { useIntersection } from 'react-use';
-import gsap from 'gsap';
+import React, { useRef, useState, useEffect } from 'react';
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { NFTCollectionData } from './NFTCollectionData';
 import { FaEthereum, FaAngleRight, FaArrowRight } from 'react-icons/fa';
 import { NFTContainer, NFTWrapper, Heading, Subtitle, NFTCollectionWrapper, HeroContainer, HeroContent, HeroH1, RowPoster, NFTCollectionRow,
@@ -10,42 +10,31 @@ import { NFTsData1, NFTsData2 } from './NFTData';
 import { FaChevronDown} from 'react-icons/fa';
 
 const NFTSection = () => {
-    const treshold = 0.9;
-    // ref for our element
+    gsap.registerPlugin(ScrollTrigger);
     const sectionRef1 = useRef(null);
-    const sectionRef2 = useRef(null);
-    // All the ref to be observed
-    const intersection = useIntersection(sectionRef1,{
-        root: null,
-        rootMargin: "0px",
-        threshold: treshold
-    });
-    const intersection2 = useIntersection(sectionRef2,{
-        root: null,
-        rootMargin: "0px",
-        threshold: treshold
-    });
-    //Animation for fading in
-    const fadeIn =  element => {
-        gsap.to(element, 1, {
-            opacity: 1,
-            x: 0,
-            stagger: { amount: 0.3}
-        });
-    };
-
-    //Animation for fading out
-    const fadeOut = element => {
-        gsap.to(element, 1, {
-            opacity: 0,
-            x: 90,
-            ease: 'power4.out'
-        });
-    };
-
-    // checking to see when the viewport is visible to the user
-    intersection && intersection.intersectionRatio < treshold ? fadeOut(".section1") : fadeIn(".section1");
-    intersection2 && intersection2.intersectionRatio < treshold ? fadeOut(".section2") : fadeIn(".section2");
+    const sectiontrigger = useRef(null);
+   
+    useEffect(() => {
+        const el = sectionRef1.current;
+        const trig = sectiontrigger.current;
+        gsap.fromTo(
+            el,
+            {
+              opacity: 0,
+              xPercent: -20
+            },
+            {
+              opacity: 1,
+              xPercent: 0,
+              scrollTrigger: {
+                trigger: trig,
+                start: "top top",
+                end: "bottom center",
+                scrub: true
+              }
+            }
+          );
+    }, []);
 
     const [hover, setHover] = useState(false)
     const onHover = () => {
@@ -53,16 +42,16 @@ const NFTSection = () => {
     }
     
     return (
-        <div id='NFT'>
-            <HeroContainer>
+        <div id='NFT' >
+            <HeroContainer ref={sectiontrigger}>
                 <HeroContent>
-                    <HeroH1 >NFT RELEASES</HeroH1>
+                    <HeroH1>NFT RELEASES</HeroH1>
                     <ButtonDown to={'NFTCollection'} smooth="true" duration={500} spy={true} exact="true" offset={-80} ><FaChevronDown/></ButtonDown>
                 </HeroContent>
             </HeroContainer>
 
-            <NFTContainer>
-                <NFTWrapper className="section1" ref={sectionRef1}>
+            <NFTContainer >
+                <NFTWrapper ref={sectionRef1}>
                         <Heading>{NFTsData1.headline}</Heading>
                         <Subtitle>{NFTsData1.description}</Subtitle>
                 </NFTWrapper>
@@ -111,7 +100,7 @@ const NFTSection = () => {
                 </ButtonWrapper>
             </NFTCollectionWrapper>
             <NFTContainer>
-                <NFTWrapper className="section2" ref={sectionRef2}>
+                <NFTWrapper>
                         <Heading>{NFTsData2.headline}</Heading>
                 </NFTWrapper>
             </NFTContainer>
