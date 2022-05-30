@@ -4,7 +4,6 @@ import { animateScroll as scroll } from 'react-scroll';
 import {Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks} from './NavbarElements';
 
 export const Navbar = ({ toggle }) => {
-
     const [scrollNav, setScrollNav] = useState(false)
 
     const changeNav= () => {
@@ -39,10 +38,10 @@ export const Navbar = ({ toggle }) => {
                     </MobileIcon>
                     <NavMenu>
                         <NavItem>
-                            <NavLinks activeNav={window.isNavHomeActive} onClick={toggleHome} to='/'>Art</NavLinks>
+                            <NavLinks $activeNav={window.isNavHomeActive} onClick={toggleHome} to='/'>Art</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks activeNav={window.isNavNFTActive} onClick={() => {
+                            <NavLinks $activeNav={window.isNavNFTActive} onClick={() => {
                                 window.isNavNFTActive = true;
                                 window.isNavStoreActive = false;
                                 window.isNavAboutActive = false;
@@ -52,7 +51,7 @@ export const Navbar = ({ toggle }) => {
                             }} to="/NFT" smooth="true" duration={500} spy="true" exact="true" offset={-80} >NFT</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks activeNav={window.isNavStoreActive} onClick={() => {
+                            <NavLinks $activeNav={window.isNavStoreActive} onClick={() => {
                                 window.isNavNFTActive = false;
                                 window.isNavStoreActive = true;
                                 window.isNavAboutActive = false;
@@ -62,7 +61,7 @@ export const Navbar = ({ toggle }) => {
                             }} to="/store" smooth="true" duration={500} spy="true" exact="true" offset={-80} >Store</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks activeNav={window.isNavTutorialsActive} onClick={() => {
+                            <NavLinks $activeNav={window.isNavTutorialsActive} onClick={() => {
                                 window.isNavNFTActive = false;
                                 window.isNavStoreActive = false;
                                 window.isNavAboutActive = false;
@@ -72,7 +71,7 @@ export const Navbar = ({ toggle }) => {
                             }} to="/tutorial" smooth="true" duration={500} spy="true" exact="true" offset={-80}>Tutorial</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks activeNav={window.isNavBlogctive} onClick={() => {
+                            <NavLinks $activeNav={window.isNavBlogctive} onClick={() => {
                                 window.isNavNFTActive = false;
                                 window.isNavStoreActive = false;
                                 window.isNavAboutActive = false;
@@ -82,7 +81,7 @@ export const Navbar = ({ toggle }) => {
                             }} to="/blog" smooth="true" duration={500} spy="true" exact="true" offset={-80}>Blog</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks activeNav={window.isNavAboutActive} onClick={() => {
+                            <NavLinks $activeNav={window.isNavAboutActive} onClick={() => {
                                 window.isNavNFTActive = false;
                                 window.isNavStoreActive = false;
                                 window.isNavAboutActive = true;
