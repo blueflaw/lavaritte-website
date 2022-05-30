@@ -100,7 +100,7 @@ export const NavScroll = styled(Link)`
 `;
 
 export const NavLinks = styled(Link)`
-    color: ${({ activeNav}) => (activeNav ? '#00a2ff' : '#ffffff')};
+    color: ${({ $activeNav}) => ($activeNav ? '#00a2ff' : '#ffffff')};
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -111,7 +111,7 @@ export const NavLinks = styled(Link)`
     cursor: pointer;
     letter-spacing: 0.16rem;
     text-transform: uppercase;
-    border-bottom: ${({ activeNav}) => (activeNav ? '3px solid #00a2ff' : '0px solid #00a2ff')};
+    border-bottom: ${({ $activeNav}) => ($activeNav ? '3px solid #00a2ff' : '0px solid #00a2ff')};
     &:hover{
         transition: 0.8s all ease;
         color: #00a2ff;
