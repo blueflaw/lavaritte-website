@@ -4,9 +4,9 @@ import Sidebar from '../../components/Sidebar';
 import Footer from '../../components/Footer';
 import ScrollToTop from '../../components/ScrollToTop';
 import ScrollUp from '../../components/ScrollUp/Index';
-import { PaintingBB } from '../../components/Blogs/BlogPages/PaintingBB';
+import { PaintingJettfromValorant } from '../../components/Blogs/BlogPages/PaintingJett';
 
-export const Painting変態を入らないでPage = () => {
+export const PaintingJettPage = () => {
     const [isOpen, setIsOpen] = useState(false)
 
     const toggle = () => {
@@ -17,7 +17,7 @@ export const Painting変態を入らないでPage = () => {
             <ScrollToTop/>
             <Sidebar isOpen={isOpen} toggle={toggle} />
             <Navbar toggle={toggle}/>
-            <PaintingBB/>
+            <PaintingJettfromValorant/>
             <ScrollUp/> 
             <Footer/>     
             

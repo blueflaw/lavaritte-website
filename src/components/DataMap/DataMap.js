@@ -10,7 +10,7 @@ export const DataMap = ({Data, Dark}) => {
         window.isNavStoreActive = false;
         window.isNavAboutActive = false;
         window.isNavTutorialsActive = false;
-        window.isNavBlogctive = true;
+        window.isNavBlogctive = false;
         window.isNavHomeActive = false;
     };
   return (
