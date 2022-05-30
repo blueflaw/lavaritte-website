@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import {FaBars} from 'react-icons/fa';
 import { animateScroll as scroll } from 'react-scroll';
+import ScrollUp from '../ScrollUp/Index';
 import {Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks} from './NavbarElements';
 
 export const Navbar = ({ toggle }) => {
@@ -15,7 +16,10 @@ export const Navbar = ({ toggle }) => {
     }
 
     useEffect(() => {
-        window.addEventListener('scroll', changeNav)
+        window.addEventListener('scroll', changeNav);
+        return () => {
+            setScrollNav(null);
+        }
     }, []);
 
     const toggleHome = () => {
@@ -96,6 +100,7 @@ export const Navbar = ({ toggle }) => {
                     </NavBtn> */}
                 </NavbarContainer>
             </Nav>
+            <ScrollUp/>
         </React.Fragment>
     )
 }

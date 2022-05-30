@@ -14,16 +14,20 @@ const ScrollUp = () => {
         }
     }
 
-    useEffect(() => {
-        window.addEventListener('scroll', changeNav)
-    }, []);
-
     const toggleHome = () => {
         scroll.scrollToTop();
     };
 
+    useEffect(() => {
+        window.addEventListener('scroll', changeNav);
+
+        return () => {
+            setScrollNav(null)
+        }
+    }, []);
+
     return (
-        <ScrollBackToTop to='/' onClick={toggleHome} scrollNav={scrollNav}><FaChevronUp/></ScrollBackToTop>
+        <ScrollBackToTop onClick={toggleHome} scrollNav={scrollNav}><FaChevronUp/></ScrollBackToTop>
     )
 }
 
