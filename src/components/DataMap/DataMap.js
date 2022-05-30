@@ -19,12 +19,12 @@ export const DataMap = ({Data, Dark}) => {
             <RowPoster>
                 <DataMapRow>
                     {Data.map((DataDetail) =>{
-                        return <React.Fragment>
+                        return <React.Fragment key={DataDetail.id}>
                             <DataMapPostWrap to={DataDetail.link} onClick={() => {
                                 toggleBlog();
-                            }} smooth={true} duration={500} spy={true} exact="true" offset={-80}>
-                                <DataMapPost key={DataDetail.id}>
-                                    <BlogTumbnailWrapper><DataMapThumbnail key={DataDetail.id} src={DataDetail.path} alt={DataDetail.alt}/></BlogTumbnailWrapper>
+                            }} smooth="true" duration={500} spy="true" exact="true" offset={-80}>
+                                <DataMapPost>
+                                    <BlogTumbnailWrapper><DataMapThumbnail src={DataDetail.path} alt={DataDetail.alt}/></BlogTumbnailWrapper>
                                     <TextWrapper dark={Dark}>
                                         <TextWrap>
                                         <DataMapInfoRow>

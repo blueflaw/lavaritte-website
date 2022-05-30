@@ -5,6 +5,7 @@ import Image4 from '../../images/store/store4.jpg';
 
 export const SliderData = [
     {
+        id: 'SD001',
         topLine: 'Posters',
         title: 'Make your walls awesome',
         buttonText: 'buy',
@@ -13,6 +14,7 @@ export const SliderData = [
         alt: 'Image four',
     },
     {
+        id: 'SD002',
         topLine: 'my eternity',
         title: 'Official Posters',
         buttonText: 'buy',
@@ -21,6 +23,7 @@ export const SliderData = [
         alt: 'Image Two'
     },
     {
+        id: 'SD003',
         topLine: 'original design',
         title: 'clothing',
         buttonText: 'buy',
@@ -29,6 +32,7 @@ export const SliderData = [
         alt: 'Image One'
     },
     {
+        id: 'SD004',
         topLine: 'Its the little things in life',
         title: 'we all Need',
         buttonText: 'buy',

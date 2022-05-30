@@ -57,7 +57,7 @@ const NFTSection = () => {
             <HeroContainer>
                 <HeroContent>
                     <HeroH1 >NFT RELEASES</HeroH1>
-                    <ButtonDown to={'NFTCollection'} smooth={true} duration={500} spy={true} exact="true" offset={-80} ><FaChevronDown/></ButtonDown>
+                    <ButtonDown to={'NFTCollection'} smooth="true" duration={500} spy={true} exact="true" offset={-80} ><FaChevronDown/></ButtonDown>
                 </HeroContent>
             </HeroContainer>
 
@@ -72,10 +72,10 @@ const NFTSection = () => {
                 <RowPoster>
                     <NFTCollectionRow>
                         {NFTCollectionData.map((NFTCollectionDetail) =>{
-                            return <React.Fragment>
+                            return <React.Fragment key={NFTCollectionDetail.id}>
                                 <NFTCollectionPostWrap href={NFTCollectionDetail.link} target="_blank">
-                                    <NFTCollectionPost key={NFTCollectionDetail.id}>
-                                        <NFTTumbnailWrapper><NFTCollectionThumbnail key={NFTCollectionDetail.id} src={NFTCollectionDetail.path} alt={NFTCollectionDetail.alt}/></NFTTumbnailWrapper>
+                                    <NFTCollectionPost >
+                                        <NFTTumbnailWrapper><NFTCollectionThumbnail src={NFTCollectionDetail.path} alt={NFTCollectionDetail.alt}/></NFTTumbnailWrapper>
                                         <NFTCollectionTextWrapper>
                                             <NFTCollectionTextWrap>
                                             <NFTCollectionInfoRow>

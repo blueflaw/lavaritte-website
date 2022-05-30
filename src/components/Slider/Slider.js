@@ -49,14 +49,14 @@ export const Slider = ({slides}) => {
             <SliderHeroWrapper>
                 {slides.map((slide, index) => {
                     return(
-                        <SliderHeroSlide key={index}>
+                        <SliderHeroSlide key={slide.id}>
                             {index === current && (
                                 <SliderHeroSlider>
                                     <SliderHeroImage src={slide.image} alt={slide.alt}/>
                                     <SliderHeroContent>
                                         <SliderHeroP>{slide.topLine}</SliderHeroP>
                                         <SliderHeroH1>{slide.title}</SliderHeroH1>
-                                        <ButtonSlider to={slide.buttonLink} smooth={true} duration={500} spy={true} exact="true" offset={-80}>{slide.buttonText}</ButtonSlider>
+                                        <ButtonSlider to={slide.buttonLink} smooth="true" duration={500} spy={true} exact="true" offset={-80}>{slide.buttonText}</ButtonSlider>
                                     </SliderHeroContent>
                                 </SliderHeroSlider>
                             )}

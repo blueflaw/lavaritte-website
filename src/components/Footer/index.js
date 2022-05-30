@@ -36,11 +36,11 @@ const Footer = () => {
                         </FooterLinkItems>
                         <FooterLinkItems>
                             <FooterLinkTitle>Info</FooterLinkTitle>
-                            <FooterLink to="/about" smooth={true} duration={500} spy={true} exact="true" offset={-80} onClick={()=>{
+                            <FooterLink to="/about" smooth="true" duration={500} spy="true" exact="true" offset={-80} onClick={()=>{
                                 scroll.scrollTo(bio);
                                 toAbout();
                             }}>Biography</FooterLink>
-                            <FooterLink to="/about" smooth={true} duration={500} spy={true} exact="true" offset={-80} onClick={() =>{
+                            <FooterLink to="/about" smooth="true" duration={500} spy="true" exact="true" offset={-80} onClick={() =>{
                                 scroll.scrollToTop();
                                 toAbout();
                             }}>The Creation of this website</FooterLink>

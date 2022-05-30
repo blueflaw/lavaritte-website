@@ -9,10 +9,10 @@ export default function StoreDataMapper({StoreData, GenLink, ButtonLabel}) {
             <StoreRow>
                 {/* use this template */}
                 {StoreData.map((StoreDetail) =>{
-                    return <React.Fragment>
+                    return <React.Fragment key={StoreDetail.id}>
                         <StorePostWrap href={StoreDetail.link} target="_blank">
-                            <StorePost key={StoreDetail.id}>
-                                <StoreTumbnailWrapper><StoreThumbnail key={StoreDetail.id} src={StoreDetail.imagePath.default} alt={StoreDetail.alt}/></StoreTumbnailWrapper>
+                            <StorePost>
+                                <StoreTumbnailWrapper><StoreThumbnail src={StoreDetail.imagePath.default} alt={StoreDetail.alt}/></StoreTumbnailWrapper>
                                 <TextWrapper>
                                     <TextWrap>
                                     <StoreHeader>{StoreDetail.title}</StoreHeader>

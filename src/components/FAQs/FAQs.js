@@ -19,8 +19,8 @@ export const FAQs = () => {
             <FAQBodyWrapper>
                 <FAQTextBodyWrapper>
                     {FAQsData.map((DataDetail) =>{
-                        return <React.Fragment>
-                             <QandAWrapper key={DataDetail.id}>
+                        return <React.Fragment key={DataDetail.id}>
+                             <QandAWrapper>
                                 <FAQQuestion ><strong>Q:&nbsp;</strong>{DataDetail.q}</FAQQuestion>
                                 <FAQAnswer>
                                     <strong>A:&nbsp;</strong>

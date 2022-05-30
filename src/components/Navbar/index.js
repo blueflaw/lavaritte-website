@@ -49,7 +49,7 @@ export const Navbar = ({ toggle }) => {
                                 window.isNavTutorialsActive = false;
                                 window.isNavBlogctive = false;
                                 window.isNavHomeActive = false;
-                            }} to="/NFT" smooth={true} duration={500} spy={true} exact="true" offset={-80} >NFT</NavLinks>
+                            }} to="/NFT" smooth="true" duration={500} spy="true" exact="true" offset={-80} >NFT</NavLinks>
                         </NavItem>
                         <NavItem>
                             <NavLinks activeNav={window.isNavStoreActive} onClick={() => {
@@ -59,7 +59,7 @@ export const Navbar = ({ toggle }) => {
                                 window.isNavTutorialsActive = false;
                                 window.isNavBlogctive = false;
                                 window.isNavHomeActive = false;
-                            }} to="/store" smooth={true} duration={500} spy={true} exact="true" offset={-80} >Store</NavLinks>
+                            }} to="/store" smooth="true" duration={500} spy="true" exact="true" offset={-80} >Store</NavLinks>
                         </NavItem>
                         <NavItem>
                             <NavLinks activeNav={window.isNavTutorialsActive} onClick={() => {
@@ -69,7 +69,7 @@ export const Navbar = ({ toggle }) => {
                                 window.isNavTutorialsActive = true;
                                 window.isNavBlogctive = false;
                                 window.isNavHomeActive = false;
-                            }} to="/tutorial" smooth={true} duration={500} spy={true} exact="true" offset={-80}>Tutorial</NavLinks>
+                            }} to="/tutorial" smooth="true" duration={500} spy="true" exact="true" offset={-80}>Tutorial</NavLinks>
                         </NavItem>
                         <NavItem>
                             <NavLinks activeNav={window.isNavBlogctive} onClick={() => {
@@ -79,7 +79,7 @@ export const Navbar = ({ toggle }) => {
                                 window.isNavTutorialsActive = false;
                                 window.isNavBlogctive = true;
                                 window.isNavHomeActive = false;
-                            }} to="/blog" smooth={true} duration={500} spy={true} exact="true" offset={-80}>Blog</NavLinks>
+                            }} to="/blog" smooth="true" duration={500} spy="true" exact="true" offset={-80}>Blog</NavLinks>
                         </NavItem>
                         <NavItem>
                             <NavLinks activeNav={window.isNavAboutActive} onClick={() => {
@@ -89,7 +89,7 @@ export const Navbar = ({ toggle }) => {
                                 window.isNavTutorialsActive = false;
                                 window.isNavBlogctive = false;
                                 window.isNavHomeActive = false;
-                            }} to='/about' smooth={true} duration={500} spy={true} exact="true" offset={-80}>About</NavLinks>
+                            }} to='/about' smooth="true" duration={500} spy="true" exact="true" offset={-80}>About</NavLinks>
                         </NavItem>
                     </NavMenu>
                     {/* <NavBtn>

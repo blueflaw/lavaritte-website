@@ -11,9 +11,9 @@ export const ArtSection = () => {
                     <RowPoster>
                         <ArtRow>
                             {ArtData.map((artDetail) =>{
-                                return <React.Fragment>
+                                return <React.Fragment key={artDetail.id}>
                                     <ImageContainer>
-                                    <Poster key={artDetail.id} src={artDetail.path} alt={artDetail.alt}/>
+                                    <Poster src={artDetail.path} alt={artDetail.alt}/>
                                         <Overlay>
                                             <TextWrapper><OverlayTitile>{artDetail.title}</OverlayTitile></TextWrapper>
                                         </Overlay>
