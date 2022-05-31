@@ -3,12 +3,12 @@ import { SliderHeroP, SliderHeroSection, SliderHeroWrapper, SliderHeroH1, Slider
     SliderButtons, PrevArrow, NextArrow, ButtonSlider} from './SliderElements';
 
 export const Slider = ({slides}) => {
-    
     const [current, setCurrent] = useState(0)
     const length  = slides.length;
     
     const timeout = useRef(null);
     useEffect(() =>{
+        //console.log(current );
         const carouselNext =() => {
             setCurrent(current => (current === length - 1 ? 0 : current + 1))
         }
@@ -29,6 +29,7 @@ export const Slider = ({slides}) => {
             clearTimeout(timeout.current)
         }
         setCurrent( current === length - 1 ? 0 : current + 1)
+        
     }
 
     //carousel prev

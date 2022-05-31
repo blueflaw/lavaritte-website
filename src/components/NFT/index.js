@@ -12,11 +12,34 @@ import { FaChevronDown} from 'react-icons/fa';
 const NFTSection = () => {
     gsap.registerPlugin(ScrollTrigger);
     const sectionRef1 = useRef(null);
+    const sectionRef2 = useRef(null);
     const sectiontrigger = useRef(null);
-   
+    const sectiontrigger2 = useRef(null);
+
     useEffect(() => {
         const el = sectionRef1.current;
         const trig = sectiontrigger.current;
+        gsap.fromTo(
+            el,
+            {
+              opacity: 0,
+              xPercent: -20
+            },
+            {
+              opacity: 1,
+              xPercent: 0,
+              scrollTrigger: {
+                trigger: trig,
+                start: "top top",
+                end: "bottom center",
+                scrub: true
+              }
+            }
+          );
+    }, []);
+    useEffect(() => {
+        const el = sectionRef2.current;
+        const trig = sectiontrigger2.current;
         gsap.fromTo(
             el,
             {
@@ -57,7 +80,7 @@ const NFTSection = () => {
                 </NFTWrapper>
             </NFTContainer>
 
-            <NFTCollectionWrapper id='NFTCollection'>
+            <NFTCollectionWrapper id='NFTCollection' ref={sectiontrigger2}>
                 <RowPoster>
                     <NFTCollectionRow>
                         {NFTCollectionData.map((NFTCollectionDetail) =>{
@@ -91,7 +114,7 @@ const NFTSection = () => {
                     </NFTCollectionRow>
                 </RowPoster>
                 <ButtonWrapper>
-                    <ButtonViewCollection 
+                    <ButtonViewCollection
                         href='https://opensea.io/blueflaw' 
                         target='_blank'
                         onMouseEnter={onHover} 
@@ -100,7 +123,7 @@ const NFTSection = () => {
                 </ButtonWrapper>
             </NFTCollectionWrapper>
             <NFTContainer>
-                <NFTWrapper>
+                <NFTWrapper ref={sectionRef2}>
                         <Heading>{NFTsData2.headline}</Heading>
                 </NFTWrapper>
             </NFTContainer>
