@@ -12,7 +12,7 @@ export const ArtSection = () => {
                         <ArtRow>
                             {ArtData.map((artDetail) =>{
                                 return <React.Fragment key={artDetail.id}>
-                                    <ImageContainer>
+                                    <ImageContainer href={artDetail.link}>
                                     <Poster src={artDetail.path} alt={artDetail.alt}/>
                                         <Overlay>
                                             <TextWrapper><OverlayTitile>{artDetail.title}</OverlayTitile></TextWrapper>

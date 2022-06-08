@@ -139,7 +139,7 @@ export const RowPoster = styled.div`
     padding: 0px;
 `;
 
-export const ImageContainer = styled.div`
+export const ImageContainer = styled.a`
     position: relative;
     margin-bottom: -4px;
     overflow: hidden;
