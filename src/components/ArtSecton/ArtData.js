@@ -46,7 +46,7 @@ export const ArtData = [
         title: 'Faceless Void',
         path : 'https://cdna.artstation.com/p/assets/images/images/031/522/650/20201028010555/smaller_square/allard-lavaritte-faceless-void-f2.jpg',    
         alt : 'Faceless Void',
-        link : '/artwork/Nx8ln5'
+        link : '/artwork/F48ENol'
     },
     {
         id: '008',

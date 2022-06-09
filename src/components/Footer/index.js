@@ -32,7 +32,7 @@ const Footer = () => {
                     <FooterLinksWrapper>
                         <FooterLinkItems>
                             <FooterLinkTitle>Connect</FooterLinkTitle>
-                            <ButtonMailto label="me@lavaritte.com" mailto="mailto:no-reply@example.com" />
+                            <ButtonMailto label="me@lavaritte.com" mailto="mailto:me@lavaritte.com" />
                         </FooterLinkItems>
                         <FooterLinkItems>
                             <FooterLinkTitle>Info</FooterLinkTitle>

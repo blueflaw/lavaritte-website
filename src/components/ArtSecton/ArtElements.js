@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 export const ArtContaner = styled.div`
     color: #ffffff;
@@ -139,7 +140,7 @@ export const RowPoster = styled.div`
     padding: 0px;
 `;
 
-export const ImageContainer = styled.a`
+export const ImageContainer = styled(Link)`
     position: relative;
     margin-bottom: -4px;
     overflow: hidden;

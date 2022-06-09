@@ -13,6 +13,9 @@ export const FooterWrap = styled.div`
     max-width: 1100px;
     margin: 0 auto;
     height: 90vh;
+    @media screen and (max-width: 820px){
+        height: 100%;
+    }
 `;
 
 export const FooterLinksContainer = styled.div`
@@ -46,6 +49,10 @@ export const FooterQuotes = styled.h1`
     padding: 10% 0;
     letter-spacing: 0.16rem;
     font-size: 3rem;
+    @media screen and (max-width: 375px){
+        font-size: 1.6rem;
+        margin-top: 20%;
+    }
 `;
 
 export const FooterLinkItems = styled.div`
@@ -102,7 +109,6 @@ export const FooterLink = styled(Link)`
 export const SocialMedia = styled.section`
     max-width: 1000px;
     width: 100%;
-    
 `;
 
 export const SocialMediaWrap = styled.div`
@@ -115,6 +121,10 @@ export const SocialMediaWrap = styled.div`
     border-top: 1px solid #ffffff;
     @media screen and (max-width: 820px){
         flex-direction: column;
+    }
+    @media screen and (max-width: 375px){
+        flex-direction: column;
+        margin: 10%;
     }
 `;
 

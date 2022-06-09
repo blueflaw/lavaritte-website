@@ -21,7 +21,7 @@ export const ArtSection = () => {
                         <ArtRow>
                             {ArtData.map((artDetail) =>{
                                 return <React.Fragment key={artDetail.id}>
-                                    <ImageContainer href={artDetail.link} onClick={toggleArt()}>
+                                    <ImageContainer to={artDetail.link} onClick={toggleArt()} smooth="true" duration={500} spy="true" exact="true" offset={-80}>
                                     <Poster src={artDetail.path} alt={artDetail.alt}/>
                                         <Overlay>
                                             <TextWrapper><OverlayTitile>{artDetail.title}</OverlayTitile></TextWrapper>

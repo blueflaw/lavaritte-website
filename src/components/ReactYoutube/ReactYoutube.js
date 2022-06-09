@@ -7,14 +7,21 @@ class ReactYouTube extends Component {
       // event.target.setVolume(100);
   }
   render () {
+    var vw = '1100';
+    if (window.innerWidth < 720) {
+      vw = '600';
+    } if (window.innerWidth < 375) {
+      vw = '0';
+    }
     const opts = {
-        height: '535',
-        width: '1100',
+        height: '375',
+        width: vw,
         playerVars: {
             'playsinline': 1, 'controls' : 1
           }
 
     }
+    
     const {videoId} = this.props
     return (
       <YouTube

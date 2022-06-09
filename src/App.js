@@ -13,6 +13,7 @@ import { Ga4ZRaPage } from './pages/ArtPages/Ga4ZRaPage';
 import { WKO6oNPage } from './pages/ArtPages/WKO6oNPage';
 import { MDNwl1Page } from './pages/ArtPages/MDNwl1Page';
 import { BQ6A0Page } from './pages/ArtPages/BQ6A0Page';
+import { F48ENolPage } from './pages/ArtPages/F48ENolPage';
 import { AYBzKJPage } from './pages/ArtPages/AYBzKJPage';
 import { Nx8ln5Page } from './pages/ArtPages/Nx8ln5Page';
 import { MDz9gdPage } from './pages/ArtPages/MDz9gdPage';
@@ -47,6 +48,7 @@ function App() {
         <Route path="/artwork/WKO6oN" component={WKO6oNPage} exact/>
         <Route path="/artwork/MDNwl1" component={MDNwl1Page} exact/>
         <Route path="/artwork/BQ6A0"  component={BQ6A0Page} exact/>
+        <Route path="/artwork/F48ENol"  component={F48ENolPage} exact/>
         <Route path="/artwork/AYBzKJ" component={AYBzKJPage} exact/>
         <Route path="/artwork/Nx8ln5" component={Nx8ln5Page} exact/>
         <Route path="/artwork/MDz9gd" component={MDz9gdPage} exact/>
