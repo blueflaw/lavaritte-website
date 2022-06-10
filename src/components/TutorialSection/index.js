@@ -46,7 +46,7 @@ const TutorialSection = () => {
     intersection2 && intersection2.intersectionRatio < treshold ? fadeOut(".section2") : fadeIn(".section2");
     
     return (
-        <div id='tutorials'>
+        <React.Fragment id='tutorials'>
             <HeroContainer>
                 <HeroContent>
                     <HeroH1 >learn. practice. make a living</HeroH1>
@@ -70,7 +70,7 @@ const TutorialSection = () => {
                     <DonateButton2 href={'https://www.paypal.com/donate/?hosted_button_id=ZB7H6RJ7UZSN8'} target="_blank">paypal</DonateButton2>
                 </TutorialWrapper>
             </TutorialContainer2>
-        </div>
+        </React.Fragment>
     )
 }
 

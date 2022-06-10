@@ -65,7 +65,7 @@ const NFTSection = () => {
     }
     
     return (
-        <div id='NFT' >
+        <React.Fragment id='NFT' >
             <HeroContainer ref={sectiontrigger}>
                 <HeroContent>
                     <HeroH1>NFT RELEASES</HeroH1>
@@ -127,7 +127,7 @@ const NFTSection = () => {
                         <Heading>{NFTsData2.headline}</Heading>
                 </NFTWrapper>
             </NFTContainer>
-        </div>
+        </React.Fragment>
     )
 }
 

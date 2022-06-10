@@ -1,6 +1,4 @@
-import React , {useState, useRef} from 'react'
-import { useIntersection } from 'react-use';
-import gsap from 'gsap';
+import React , {useState} from 'react'
 import { FaArtstation, FaFacebook, FaInstagram, FaTwitch, FaTwitter, FaYoutube, FaMapMarkedAlt, FaExternalLinkAlt, FaAngleRight, FaArrowRight} from 'react-icons/fa';
 import { animateScroll as scroll } from 'react-scroll';
 import Icon from '../../images/LogoInverted.gif';
@@ -29,42 +27,6 @@ const TheWebsite = () => {
         setHover(!hover)
     }
 
-    const treshold = 0.9;
-    // ref for our element
-    const sectionRef1 = useRef(null);
-    const sectionRef2 = useRef(null);
-    // All the ref to be observed
-    const intersection = useIntersection(sectionRef1,{
-        root: null,
-        rootMargin: "0px",
-        threshold: treshold
-    });
-    const intersection2 = useIntersection(sectionRef2,{
-        root: null,
-        rootMargin: "0px",
-        threshold: treshold
-    });
-    //Animation for fading in
-    const fadeIn =  element => {
-        gsap.to(element, 1, {
-            opacity: 1,
-            x: 0,
-            stagger: { amount: 0.3}
-        });
-    };
-
-    //Animation for fading out
-    const fadeOut = element => {
-        gsap.to(element, 1, {
-            opacity: 0,
-            x: 90,
-            ease: 'power4.out'
-        });
-    };
-
-    intersection && intersection.intersectionRatio < treshold ? fadeOut(".section1") : fadeIn(".section1");
-    intersection2 && intersection2.intersectionRatio < treshold ? fadeOut(".section2") : fadeIn(".section2");
-
     return (
         <AboutContainer id='about'>
         <WebsiteContainer>
@@ -86,7 +48,7 @@ const TheWebsite = () => {
             <WebsiteContentBio>
                 <DarkContentH1>About Me</DarkContentH1>
                 <ContentH4>Summary</ContentH4>
-                <ContentBio className="section1" ref={sectionRef1}>
+                <ContentBio>
                     <SocialLogo to="/" onClick={toggleHome}>Allard Lavaritte</SocialLogo> is a web designer / Freelance Artist Based in the Philippines. 
                     Allard has established his artistic style and process, merging cutting-edge 3D graphics with traditional art and 
                     animation aesthetics that result in a unique visual experience.His innovative approach to artistic medium expressed both in his works 
@@ -102,7 +64,7 @@ const TheWebsite = () => {
             <WebsiteContentIlike>
                 <DarkContentH1>Frontend Developer.</DarkContentH1>
                 <ContentH4>UI/UX</ContentH4>
-                <ContentBio className="section2" ref={sectionRef2}>
+                <ContentBio>
                     Highly skilled at progressive enhancement, design systems &amp; UI Engineering. <br/> 
                     Over a decade of experience building products for clients across several countries
                 </ContentBio>

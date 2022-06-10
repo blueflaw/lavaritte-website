@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const HeroContainer = styled.div`
-    /* not sure yet about this color might change later */
+    overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;

@@ -2,7 +2,7 @@ import styled from "styled-components";
 import {Link as LinkS} from "react-scroll";
 
 export const HeroContainer = styled.div`
-    /* not sure yet about this color might change later */
+    overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -132,6 +132,7 @@ export const Column2 = styled.div`
 
 export const NFTWrapper = styled.div`
     text-align: left;
+    overflow: hidden;
     width: 100%;
     max-width: 1100px;
     padding: 0 40px;
