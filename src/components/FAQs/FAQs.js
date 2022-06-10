@@ -1,7 +1,7 @@
 import React from 'react';
 import { FAQsData } from './FAQsData';
 import { FAQAnswer, FAQBodyWrapper, FAQContainer, FAQH1, FAQH4, FAQHeaderWrapper, FAQQuestion, FAQTextBodyWrapper, FAQTextWrapper, QandAWrapper } from './FAQElements';
-
+import ButtonMailto from '../ButtonMailto';
 export const FAQs = () => {
 
     return (
@@ -12,7 +12,7 @@ export const FAQs = () => {
                     <FAQH4>FAQs</FAQH4>
                     <FAQAnswer>
                         Here are some of the answers to the frequently asked questions about my art. If you have a question that's not answered here,
-                        please contact me at allard_lavaritte@icloud.com
+                        please contact me at <ButtonMailto label="me@lavaritte.com" mailto="mailto:me@lavaritte.com" />
                     </FAQAnswer>
                 </FAQTextWrapper>
             </FAQHeaderWrapper>
