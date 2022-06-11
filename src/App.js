@@ -29,6 +29,7 @@ import { Painting変態を入らないでPage } from './pages/BlogPages/Painting
 import { PaintingJettPage } from './pages/BlogPages/PaintingJett';
 import { PaintingFemaleBreachPage } from './pages/BlogPages/PaintingFemaleBreach';
 import { PaintingMemoriesPage } from './pages/BlogPages/PaintingMemoriesPage';
+import { BestCryptoPlatforms } from './pages/BlogPages/BestCryptoPlatforms';
 
 import { CloudTutorialPage } from './pages/TutorialPages/CloudTutorial';
 
@@ -48,7 +49,7 @@ function App() {
         <Route path="/artwork/WKO6oN" component={WKO6oNPage} exact/>
         <Route path="/artwork/MDNwl1" component={MDNwl1Page} exact/>
         <Route path="/artwork/BQ6A0"  component={BQ6A0Page} exact/>
-        <Route path="/artwork/F48ENol"  component={F48ENolPage} exact/>
+        <Route path="/artwork/F48ENol"component={F48ENolPage} exact/>
         <Route path="/artwork/AYBzKJ" component={AYBzKJPage} exact/>
         <Route path="/artwork/Nx8ln5" component={Nx8ln5Page} exact/>
         <Route path="/artwork/MDz9gd" component={MDz9gdPage} exact/>
@@ -64,6 +65,7 @@ function App() {
         <Route path="/blogs/PaintingJett" component={PaintingJettPage} exact/>
         <Route path="/blogs/PaintingFemaleBreach" component={PaintingFemaleBreachPage} exact/>
         <Route path="/blogs/memoriesofagoldenhour" component={PaintingMemoriesPage} exact/>
+        <Route path="/blogs/bestcryptoplatforms" component={BestCryptoPlatforms} exact/>
 
         <Route path="/tutorials/cloudtutorials" component={CloudTutorialPage} exact/>
       </Switch>
