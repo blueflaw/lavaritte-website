@@ -51,7 +51,7 @@ const TheWebsite = () => {
                 <ContentBio>
                     <SocialLogo to="/" onClick={toggleHome}>Allard Lavaritte</SocialLogo> is a web designer / Freelance Artist Based in the Philippines. 
                     Allard has established his artistic style and process, merging cutting-edge 3D graphics with traditional art and 
-                    animation aesthetics that result in a unique visual experience.His innovative approach to artistic medium expressed both in his works 
+                    animation aesthetics that result in a unique visual experience. His innovative approach to artistic medium expressed both in his works 
                     and educational materials have led a wave of artistic styles that quickly became mainstream in the entertainment industry.
                     <br/> <br/>
                     As a self-taught artist, Allard brought unique visual styles that defined world. His innovative approach to concept art helped build the visual identity of 

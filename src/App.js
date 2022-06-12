@@ -32,10 +32,25 @@ import { PaintingMemoriesPage } from './pages/BlogPages/PaintingMemoriesPage';
 import { BestCryptoPlatforms } from './pages/BlogPages/BestCryptoPlatforms';
 
 import { CloudTutorialPage } from './pages/TutorialPages/CloudTutorial';
+import { Helmet } from 'react-helmet';
 
 function App() {
   return (
     <Router>
+      <Helmet>
+        <title>Allard Lavaritte</title>
+        <meta name="theme-color" content="#000000" />
+        <meta name="robots" content="index, follow, Allard, Lavaritte, UI, UX, Digital, Artist, awesome, gwapo, webdesign, web, designer" />
+        <meta name="keywords" content="index, follow, Allard, Lavaritte, UI, UX, Digital, Artist, awesome, gwapo, webdesign, web, designer" />
+        <meta name='description' content='is a web designer / Freelance Artist Based in the Philippines. 
+                    Allard has established his artistic style and process, merging cutting-edge 3D graphics with traditional art and 
+                    animation aesthetics that result in a unique visual experience.'/>
+        <meta property="og:url"           content="https://www.lavaritte.com/" />
+        <meta property="og:type"          content="website" />
+        <meta property="og:title"         content="Allard Lavaritte" />
+        <meta property="og:description"   content="Allard Lavaritte is a web designer / Freelance Artist Based in the Philippines. Allard has established his artistic style and process, merging cutting-edge 3D graphics with traditional art and animation aesthetics that result in a unique visual experience.His innovative approach to artistic medium expressed both in his works and educational materials have led a wave of artistic styles that quickly became mainstream in the entertainment industry." />
+        <meta property="og:image"         content="https://cdnb.artstation.com/p/assets/images/images/019/380/861/20190715191058/smaller_square/allard-lavaritte-untitled-1.jpg?1563235858" />
+      </Helmet>
       <Switch>
         <Route path="/" component={Home} exact/>
         <Route path="/NFT" component={NFT} exact/>

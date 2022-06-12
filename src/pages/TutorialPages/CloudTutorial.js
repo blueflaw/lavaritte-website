@@ -5,6 +5,7 @@ import Footer from '../../components/Footer';
 import ScrollToTop from '../../components/ScrollToTop';
 import ScrollUp from '../../components/ScrollUp/Index';
 import { CloudTutorial } from '../../components/TutorialSection/TutorialPages/CloudTutorial'
+import { Helmet } from 'react-helmet';
 
 export const CloudTutorialPage = () => {
     const [isOpen, setIsOpen] = useState(false)
@@ -14,6 +15,10 @@ export const CloudTutorialPage = () => {
     }
   return (
       <React.Fragment>
+        <Helmet>
+          <meta name='description' content="Allard Lavaritte's Cloud Tutorial"/>
+          <meta name='keywords' content='Allard, Lavaritte, How to draw clouds'/> 
+        </Helmet>
         <ScrollToTop/>
         <Sidebar isOpen={isOpen} toggle={toggle} />
         <Navbar toggle={toggle}/>
