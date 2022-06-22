@@ -8,6 +8,7 @@ import Store from './pages/Store';
 import TutorialsPage from './pages/Tutorial';
 import BlogPage from './pages/Blog';
 import FAQ from './pages/FAQ';
+import PageNotFound from './pages/PageNotFound';
 
 import { Ga4ZRaPage } from './pages/ArtPages/Ga4ZRaPage';
 import { WKO6oNPage } from './pages/ArtPages/WKO6oNPage';
@@ -34,14 +35,19 @@ import { BestCryptoPlatforms } from './pages/BlogPages/BestCryptoPlatforms';
 import { CloudTutorialPage } from './pages/TutorialPages/CloudTutorial';
 import { Helmet } from 'react-helmet';
 
+import ReactGA from 'react-ga';
+import AppConfig from './App.config';
+ReactGA.initialize(AppConfig.GOOGLE.GA_TRACKING_CODE);
+
 function App() {
+  
   return (
     <Router>
       <Helmet>
         <title>Allard Lavaritte</title>
         <meta name="theme-color" content="#000000" />
         <meta name="robots" content="index, follow, Allard, Lavaritte, UI, UX, Digital, Artist, awesome, gwapo, webdesign, web, designer" />
-        <meta name="keywords" content="index, follow, Allard, Lavaritte, UI, UX, Digital, Artist, awesome, gwapo, webdesign, web, designer" />
+        <meta name="keywords" content="index, follow, Allard, Lavaritte, UI, UX, Digital, Artist, awesome, gwapo, webdesign, web, designer, Allard Lavaritte" />
         <meta name='description' content='is a web designer / Freelance Artist Based in the Philippines. 
                     Allard has established his artistic style and process, merging cutting-edge 3D graphics with traditional art and 
                     animation aesthetics that result in a unique visual experience.'/>
@@ -58,6 +64,7 @@ function App() {
         <Route path="/tutorial" component={TutorialsPage} exact/>
         <Route path="/blog" component={BlogPage} exact/>
         <Route path="/about" component={About} exact/>
+        <Route path="/faq" component={FAQ} exact/>
         <Route path="/faq" component={FAQ} exact/>
 
         <Route path="/artwork/Ga4ZRa" component={Ga4ZRaPage} exact/>
@@ -83,6 +90,8 @@ function App() {
         <Route path="/blogs/bestcryptoplatforms" component={BestCryptoPlatforms} exact/>
 
         <Route path="/tutorials/cloudtutorials" component={CloudTutorialPage} exact/>
+
+        <Route path="/404" component={ PageNotFound } />
       </Switch>
     </Router>
   );

@@ -101,7 +101,7 @@ export const BlogPageContentH6 = styled.h1`
 `;
 
 export const LogoWrapper = styled.div`
-    padding-top: 2%;
+    padding: 2%;
     text-align: center;
 `;
 

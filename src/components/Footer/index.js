@@ -1,12 +1,17 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { animateScroll as scroll } from 'react-scroll';
 import { FaArtstation, FaFacebook, FaInstagram, FaTwitch, FaTwitter, FaYoutube } from 'react-icons/fa';
 import { FooterConainer, FooterWrap, FooterLinksContainer, FooterLinksWrapper, FooterLinkItems, FooterQuotes, FooterQuoteContainer,
             FooterLinkTitle, FooterLink, SocialLogo, WebsiteRights, SocialIcons, SocialIconLink, SocialMediaWrap, SocialMedia, FooterServices} from './FooterElements';
 import ButtonMailto from '../ButtonMailto';
+import ReactGA from 'react-ga';
 
 const Footer = () => {
+    useEffect(() =>{
+        ReactGA.pageview(window.location.pathname + window.location.search);
+    }, [])
     const bio = 700;
+
     const toggleHome = () => {
         scroll.scrollToTop();
         window.isNavNFTActive = false;

@@ -1,14 +1,17 @@
 import React from 'react';
 import { BlogPageContentH1, BlogPageContentP, BlogPagesContainer, BlogPagesContent, BlogPageContentAuthor, BlogPageSocialAuthor, ShareWrapper, BlogImageThumbail, BlogPageContentH4, BlogPageContentH6, LogoWrapper, BlogImageLogo, ButtonOpenAccount } from './BlogPageElements';
 import { animateScroll as scroll } from 'react-scroll';
-import { FacebookShareButton, FacebookIcon, TwitterShareButton, TwitterIcon } from 'react-share';
+import { FacebookShareButton, FacebookIcon, TwitterShareButton, TwitterIcon, EmailShareButton, EmailIcon, LinkedinShareButton, LinkedinIcon, PinterestShareButton, PinterestIcon} from 'react-share';
 
 import imageBIT from '../../../images/INTO_THE_BIT.jpg';
 import binanceLogo from '../../../images/logos/Binance_logo.png';
 import coinbaseLogo from '../../../images/logos/Coinbase.png';
+import upholdLogo from '../../../images/logos/uphold_logo.png';
+import kucoinLogo from '../../../images/logos/Kucoin_Logo.png';
+import eToroLogo from '../../../images/logos/Etoro_logo.svg';
 
 export const CryptoExchangesPlatforms = () => {
-    const title = 'Best Crypto Exchanges & Platforms Of ' + new Intl.DateTimeFormat('en-US', {month: "long"}).format(new Date())  + ' ' + new Date().getFullYear();
+    const title = '5 Best Crypto Exchanges & Platforms Of ' + new Intl.DateTimeFormat('en-US', {month: "long"}).format(new Date())  + ' ' + new Date().getFullYear();
     const toggleHome = () => {
         scroll.scrollToTop();
         window.isNavStoreActive = false;
@@ -34,6 +37,20 @@ export const CryptoExchangesPlatforms = () => {
                     <TwitterShareButton url='https://lavaritte.com/blogs/bestcryptoplatforms' title={title}>
                         <TwitterIcon size={32} />
                     </TwitterShareButton>
+                    <LinkedinShareButton url='https://lavaritte.com/blogs/bestcryptoplatforms' title={title} summary='Investing in Bitcoin is all the rage but how exactly does a beginner get started? Do you need to already have Bitcoin to invest?'>
+                        <LinkedinIcon size={32} />
+                    </LinkedinShareButton>
+                    <PinterestShareButton media='https://lavaritte.com/static/media/INTO_THE_BIT.8b62c9e7.jpg'>
+                        <PinterestIcon size={32}/>
+                    </PinterestShareButton>
+                    <EmailShareButton url='https://lavaritte.com/blogs/bestcryptoplatforms'
+                                    subject={title} 
+                                    body='Investing in Bitcoin is all the rage but how exactly does a beginner get started? 
+                                        Do you need to already have Bitcoin to invest? Or do you transfer money from your bank account to somewhere and convert it to Bitcoin? What does that look like?
+                                        We’ll answer all of these questions and list 10 of the best cryptocurrency exchanges and platforms that allow you to buy Bitcoin and other tokens.
+                                        Going forward, we’ll use BTC, which is the symbol for Bitcoin on exchanges and trading platforms.'>
+                        <EmailIcon size={32} />
+                    </EmailShareButton>y
                 </ShareWrapper>
 
                 <BlogPageContentP>
@@ -96,6 +113,57 @@ export const CryptoExchangesPlatforms = () => {
                 <LogoWrapper><BlogImageLogo src={coinbaseLogo} width='200'/></LogoWrapper>
                 <LogoWrapper>
                     <ButtonOpenAccount href='https://www.coinbase.com/join/i43vrp'>Open An Account</ButtonOpenAccount>
+                </LogoWrapper>
+
+                <BlogPageContentH4>
+                    3. Uphold
+                </BlogPageContentH4>
+                <BlogPageContentP>
+                    Uphold provides a straightforward method for trading numerous assets: establish one account and trade multiple assets without returning to cash. 
+                    If you've ever traded cryptocurrency, you'll know that many currencies and tokens only trade in certain pairings, so you're always returning to BTC or ETH. 
+                    However, with Uphold, you may trade numerous assets simultaneously.
+                    <br/><br/>
+                    Furthermore, Uphold is one of the few exchanges that allows you to trade BAT, DOGE, and other cryptocurrencies.
+                </BlogPageContentP>
+                <LogoWrapper>
+                    <BlogImageLogo src={upholdLogo} width='200'/>
+                </LogoWrapper>
+                <LogoWrapper>
+                    <ButtonOpenAccount href='https://uphold.com/signup?referral=c2c11a53bb'>Open An Account</ButtonOpenAccount>
+                </LogoWrapper>
+
+                <BlogPageContentH4>
+                    4. Kucoin
+                </BlogPageContentH4>
+                <BlogPageContentP>
+                    KuCoin is a major cryptocurrency exchange that allows users to buy, sell, and trade cryptocurrencies. <br/>
+                    The platform provides margin, futures, and peer-to-peer (P2P) trading in addition to conventional trading choices. 
+                    Users can also earn incentives by staking or lending their cryptocurrency. KuCoin has lower trading costs than other of its competitors, 
+                    making it an appealing alternative.
+                </BlogPageContentP>
+                <LogoWrapper>
+                    <BlogImageLogo src={kucoinLogo} width='200'/>
+                </LogoWrapper>
+                <LogoWrapper>
+                    <ButtonOpenAccount href='https://www.kucoin.com/r/rf/rPST92Z'>Open An Account</ButtonOpenAccount>
+                </LogoWrapper>
+
+                <BlogPageContentH4>
+                    5. eToro
+                </BlogPageContentH4>
+                <BlogPageContentP>
+                    eToro has been in operation in the United Kingdom and throughout Europe for some time, 
+                    but they are now accepting traders from the United States. They provide a large selection of digital assets to buy and 
+                    sell on their platform, and even better, they feature a trial trading account so you can test it out before using real money.
+                    <br/><br/>
+                    eToro is also now providing a $10 bonus if you deposit and trade $100 in crypto-assets. 
+                    This deal is only accessible to users in the United States.
+                </BlogPageContentP>
+                <LogoWrapper>
+                    <BlogImageLogo src={eToroLogo} width='200'/>
+                </LogoWrapper>
+                <LogoWrapper>
+                    <ButtonOpenAccount href='https://etoro.tw/3NRdYRv'>Open An Account</ButtonOpenAccount>
                 </LogoWrapper>
 
                 <BlogPageContentH4>
