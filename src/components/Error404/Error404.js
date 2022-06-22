@@ -17,12 +17,12 @@ export const Error404 = () => {
     <ErrorContainer>
       <ErrorContent>
         <ErrorContentWrapper>
-        <ErrorH1>Have you lost your way?</ErrorH1>
+        <ErrorH1> What do you mean there was a mistake?</ErrorH1>
         <ErrorP>
-          The Page you're searching for is now beyond our reach.<br/>
-          Let's take you...
+          I made this website for people who love art.<br/>
+          
         </ErrorP>
-        <ErrorButtonHome to="/" onClick={toggleHome()}>Home</ErrorButtonHome>
+        <ErrorButtonHome to="/" onClick={toggleHome()}>Let's take you Home</ErrorButtonHome>
         <ErrorCode>Error Code <strong>404</strong></ErrorCode>
         </ErrorContentWrapper>
       </ErrorContent>

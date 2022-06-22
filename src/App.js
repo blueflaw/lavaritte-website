@@ -48,9 +48,7 @@ function App() {
         <meta name="theme-color" content="#000000" />
         <meta name="robots" content="index, follow, Allard, Lavaritte, UI, UX, Digital, Artist, awesome, gwapo, webdesign, web, designer" />
         <meta name="keywords" content="index, follow, Allard, Lavaritte, UI, UX, Digital, Artist, awesome, gwapo, webdesign, web, designer, Allard Lavaritte" />
-        <meta name='description' content='is a web designer / Freelance Artist Based in the Philippines. 
-                    Allard has established his artistic style and process, merging cutting-edge 3D graphics with traditional art and 
-                    animation aesthetics that result in a unique visual experience.'/>
+        <meta name='description' content="Allard Lavaritte is a creative director by day, and a freelance illustrator, graphic designer, UI/UX specialist, and cinematographer by night. I've worked with clients of all sizes to design and develop brand identities, print collateral, website interfaces and experiences, and more. I love working with people who want to bring their ideas to life—whether that means having me come up with the perfect logo or helping them come up with ideas for a video. You can contact me at me@lavaritte.com"/>
         <meta property="og:url"           content="https://www.lavaritte.com/" />
         <meta property="og:type"          content="website" />
         <meta property="og:title"         content="Allard Lavaritte" />
@@ -92,6 +90,7 @@ function App() {
         <Route path="/tutorials/cloudtutorials" component={CloudTutorialPage} exact/>
 
         <Route path="/404" component={ PageNotFound } />
+        <Route component={PageNotFound} />
       </Switch>
     </Router>
   );
