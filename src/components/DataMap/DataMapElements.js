@@ -168,6 +168,16 @@ export const AuthorWrap = styled.div`
     justify-content: space-between;
 `;
 
+export const Preview = styled.p`
+    font-size: 0.9rem;
+    font-weight: 600;
+    max-height: 90px;
+    height: 90px;
+    color: #878787;
+    max-width: 280px;
+    text-align: left;
+`;
+
 export const BlogInfoHeader = styled.div`
     display: flex;
     flex-direction: row;

@@ -50,7 +50,7 @@ export const CryptoExchangesPlatforms = () => {
                                         We’ll answer all of these questions and list 10 of the best cryptocurrency exchanges and platforms that allow you to buy Bitcoin and other tokens.
                                         Going forward, we’ll use BTC, which is the symbol for Bitcoin on exchanges and trading platforms.'>
                         <EmailIcon size={32} />
-                    </EmailShareButton>y
+                    </EmailShareButton>
                 </ShareWrapper>
 
                 <BlogPageContentP>

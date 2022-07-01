@@ -8,7 +8,7 @@ export const BlogsData = [
         category : "Digital Art",
         time : "Painting Process",
         author : "Allard Lavaritte",
-        preview:"A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.",
+        preview:"This project was created in collaboration with the animation director and animator of the show, who also happens to be a really smart guy.",
         link : "/blogs/Painting変態を入らないで"
     },
     {
@@ -19,17 +19,19 @@ export const BlogsData = [
         category : "Digital Art",
         time : "Painting Process",
         author : "Allard Lavaritte",
-        link : "/blogs/PaintingJett"
+        link : "/blogs/PaintingJett",
+        preview : "This is my Fan Art of Jett from Valorant. I do claim that it's fan art and nothing else but I just posted it online because it turned out to look so amazing and I wanted to share it with everyone, hope you like it! 🤗"
     },
     {
         id: "003",
         title: "Valorant Female Breach",
         path : "https://cdna.artstation.com/p/assets/images/images/039/733/768/20210720072652/smaller_square/allard-lavaritte-valorant-female-breach.jpg",    
         alt : "Valorant Female Breach",
-        category : "General",
+        category : "Digital Art",
         time : "Painting Process",
         author : "Allard Lavaritte",
-        link : "/blogs/PaintingFemaleBreach"
+        link : "/blogs/PaintingFemaleBreach",
+        preview : "Here's my fan art of the character Breach from Valorant. It was an absolute blast drawing this one and I'm always up for drawing some more if you guys have any requests 😊"
     },
     {
         id: "004",
@@ -39,7 +41,8 @@ export const BlogsData = [
         category : "General",
         time : "Painting Process",
         author : "Allard Lavaritte",
-        link : "/blogs/memoriesofagoldenhour"
+        link : "/blogs/memoriesofagoldenhour",
+        preview : "Photoshop and Blender made this 🍃 😍  Just submitted some art for a contest at Huion, hope you like it!"
     },
     {
         id: "005",
@@ -49,6 +52,7 @@ export const BlogsData = [
         category : "Finance",
         time : "Cryptocurrency",
         author : "Allard Lavaritte",
-        link : "/blogs/bestcryptoplatforms"
+        link : "/blogs/bestcryptoplatforms",
+        preview : "Here is our list of the top ten cryptocurrency exchanges and trading platforms. The cryptocurrency deals on this website are provided by firms from whom The College Investor gets income. "
     },
 ];

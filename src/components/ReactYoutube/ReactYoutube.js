@@ -9,7 +9,7 @@ class ReactYouTube extends Component {
   render () {
     var vw = window.innerWidth ;
     var vh = window.innerHeight;
-    console.log(vw)
+    //console.log(vw)
     if (window.innerWidth < '768') {
       vw = '600'; 
       vh = '300';

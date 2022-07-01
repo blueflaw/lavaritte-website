@@ -19,9 +19,9 @@ export const TutorialsDataMap = [
         "path" : cloudcover,    
         "alt" : "Cloud Tutorial",
         "category" : "General",
-        "time" : "4 hours ago",
+        "time" : "Tutorial",
         "author" : "Allard Lavaritte",
-        "preview":"A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.",
+        "preview":"Need some help to get started painting clouds? Follow these simple steps and we'll walk you through each step of the process, step-by-step.",
         "link" : "/tutorials/cloudtutorials"
     },
     

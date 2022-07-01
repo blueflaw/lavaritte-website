@@ -377,7 +377,7 @@ export const ButtonDownload = styled.a`
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1.5px solid #00a2ff;;
+    border: 1.5px solid #00a2ff;
     padding: 1rem 2rem;
     font-size: ${({fontBig}) => (fontBig ? '1rem' : '0.9rem')};
     transition: all 0.6s;

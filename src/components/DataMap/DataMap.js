@@ -1,7 +1,7 @@
 import React from 'react'
 import { animateScroll as scroll } from 'react-scroll';
 import { DataMapWrapper, RowPoster, DataMapRow, DataMapPostWrap, DataMapPost, BlogTumbnailWrapper, BlogInfoHeader,
-    DataMapThumbnail, TextWrapper, DataMapHeader, DataMapInfoRow, AuthorWrap, TextWrap, AuthorDisplayPicture, AuthorName, Category, CardTime} from './DataMapElements'
+    DataMapThumbnail, TextWrapper, DataMapHeader, DataMapInfoRow, AuthorWrap, TextWrap, AuthorDisplayPicture, AuthorName, Category, CardTime, Preview} from './DataMapElements'
 
 export const DataMap = ({Data, Dark}) => {
     const toggleBlog = () => {
@@ -39,9 +39,10 @@ export const DataMap = ({Data, Dark}) => {
                                         <DataMapInfoRow>
                                             <AuthorWrap>
                                                 <AuthorDisplayPicture src="https://cdnb.artstation.com/p/users/avatars/000/190/863/medium/02dbe259f43d1792bc174f3c536c8d4e.jpg" alt="author"/>
-                                                <AuthorName>by {DataDetail.author}</AuthorName>
+                                                <AuthorName>{DataDetail.author}</AuthorName>
                                             </AuthorWrap>
                                         </DataMapInfoRow>
+                                        <DataMapInfoRow><Preview>{DataDetail.preview}</Preview></DataMapInfoRow>
                                         </TextWrap>
                                     </TextWrapper>
                                 </DataMapPost>

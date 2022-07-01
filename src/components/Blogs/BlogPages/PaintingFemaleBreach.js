@@ -8,7 +8,7 @@ export const PaintingFemaleBreach = () => {
         <BlogPagesContent>
             <BlogPageContentH1>Valorant Female Breach</BlogPageContentH1>
             <BlogPageContentP>
-            Female gender bend of breach from valorant :)
+            Here's my fan art of the character Breach from Valorant. It was an absolute blast drawing this one and I'm always up for drawing some more if you guys have any requests <span role='img' aria-label='smilie'>😊</span>
             </BlogPageContentP>
             <BlogPageImgWrap>
                 <BlogsVidContainer>
