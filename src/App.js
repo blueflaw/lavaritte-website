@@ -25,6 +25,11 @@ import { Z5v2xZPage } from './pages/ArtPages/Z5v2xZPage';
 import { R99bDPage } from './pages/ArtPages/R99bDPage';
 import { AR5oBXPage } from './pages/ArtPages/AR5oBXPage';
 import { QAKJEePage } from './pages/ArtPages/QAKJEePage';
+import { VJYXROPage } from './pages/ArtPages/VJYXROPage';
+import { NGeZ6bPage } from './pages/ArtPages/NGeZ6bPage';
+import { F48AnqPage } from './pages/ArtPages/F48AnqPage';
+import { ZeZGewPage } from './pages/ArtPages/ZeZGewPage';
+import { Qq48KgPage } from './pages/ArtPages/Qq48KgPage';
 
 import { Painting変態を入らないでPage } from './pages/BlogPages/Painting変態を入らないで';
 import { PaintingJettPage } from './pages/BlogPages/PaintingJett';
@@ -80,6 +85,12 @@ function App() {
         <Route path="/artwork/R99bD"  component={R99bDPage} exact/>
         <Route path="/artwork/AR5oBX" component={AR5oBXPage} exact/>
         <Route path="/artwork/QAKJEe" component={QAKJEePage} exact/>
+        <Route path="/artwork/VJYXRO" component={VJYXROPage} exact/>
+        <Route path="/artwork/NGeZ6b" component={NGeZ6bPage} exact/>
+        <Route path="/artwork/F48Anq" component={F48AnqPage} exact/>
+        <Route path="/artwork/ZeZGew" component={ZeZGewPage} exact/>
+        <Route path="/artwork/Qq48Kg" component={Qq48KgPage} exact/>
+
 
         <Route path="/blogs/Painting変態を入らないで" component={Painting変態を入らないでPage} exact/>
         <Route path="/blogs/PaintingJett" component={PaintingJettPage} exact/>
