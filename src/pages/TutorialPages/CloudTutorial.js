@@ -16,7 +16,7 @@ export const CloudTutorialPage = () => {
   return (
       <React.Fragment>
         <Helmet>
-          <meta name='description' content="Allard Lavaritte's Cloud Tutorial"/>
+          <meta name='description' content="Allard Lavaritte's Cloud Tutorial || Anime cloud painting tutorial using Photoshop"/>
           <meta name='keywords' content='Allard, Lavaritte, How to draw clouds'/> 
         </Helmet>
         <ScrollToTop/>

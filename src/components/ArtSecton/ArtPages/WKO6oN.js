@@ -8,7 +8,7 @@ export const WKO6oN = () => {
         <ArtPagesContent>
             <ArtPageContentH1>Jett from valorant</ArtPageContentH1>
             <ArtPageContentP>
-            This is my fanart of Jett from valorant
+            This is my Fan Art of Jett from Valorant. I do claim that it's fan art and nothing else but I just posted it online because it turned out to look so amazing and I wanted to share it with everyone, hope you like it! <span role='img' aria-label='smilie'>🤗</span>
             </ArtPageContentP>
             <ArtPageImgWrap>
                 <ArtPageImg src='https://cdna.artstation.com/p/assets/images/images/040/077/016/large/allard-lavaritte-jetto.jpg?1627807423'/>

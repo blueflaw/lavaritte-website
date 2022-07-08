@@ -8,8 +8,8 @@ export const About3 = {
     imgStart : true,
     img: require('../../images/Design.svg'),
     alt: 'alt',
-    pathLink: "https://github.com/blueflaw/lavaritte-website",
-    dark: false
+    dark: true,
+    button: false
 }
 
 export const About4 = {
@@ -22,6 +22,6 @@ export const About4 = {
     imgStart : false,
     img: require('../../images/Engineering.svg'),
     alt: 'alt',
-    pathLink: "https://github.com/blueflaw/lavaritte-website",
-    dark: false
+    dark: false,
+    button: false
 }

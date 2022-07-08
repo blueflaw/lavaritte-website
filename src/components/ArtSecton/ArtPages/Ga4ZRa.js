@@ -8,7 +8,7 @@ export const Ga4ZRa = () => {
         <ArtPagesContent>
             <ArtPageContentH1>変態を入らないで</ArtPageContentH1>
             <ArtPageContentP>
-              Hello, this is my Illustration for an upcoming anime titled 変態を入らないで PERVERT DOES NOT DREAM OF ENTERING HEAVEN.
+            Hello, this is my Illustration for an upcoming anime titled 変態を入らないで PERVERT DOES NOT DREAM OF ENTERING HEAVEN. This project was created in collaboration with the animation director and animator of the show, who also happens to be a really smart guy.
             </ArtPageContentP>
             <ArtPageImgWrap>
                 <ArtPageImg src='https://cdnb.artstation.com/p/assets/images/images/042/229/393/large/allard-lavaritte-bb-small.jpg?1633950884'/>

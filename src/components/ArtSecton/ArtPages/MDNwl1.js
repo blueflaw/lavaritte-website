@@ -8,7 +8,7 @@ export const MDNwl1 = () => {
         <ArtPagesContent>
             <ArtPageContentH1>Valorant Female Breach</ArtPageContentH1>
             <ArtPageContentP>
-            Female gender bend of breach from valorant
+            Here's my fan art of the character Breach from Valorant. It was an absolute blast drawing this one and I'm always up for drawing some more if you guys have any requests <span role='img' aria-label='smilie'>😊</span>
             </ArtPageContentP>
             <ArtPageImgWrap>
                 <ArtPageImg src='https://cdna.artstation.com/p/assets/images/images/039/733/768/large/allard-lavaritte-valorant-female-breach.jpg?1626784012'/>

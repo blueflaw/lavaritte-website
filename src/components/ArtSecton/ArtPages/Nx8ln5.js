@@ -8,7 +8,8 @@ export const Nx8ln5 = () => {
         <ArtPagesContent>
             <ArtPageContentH1>Memories of a Golden Hour</ArtPageContentH1>
             <ArtPageContentP>
-            Simple Environment Design Using Blender
+              Hello, this is a painting from 2021 <br/>
+              Photoshop and Blender made this <span role='img' aria-label='green'>🍃</span> <span role='img' aria-label='heart'>😍</span>
             </ArtPageContentP>
             <ArtPageImgWrap>
                 <ArtPageImg src='https://cdna.artstation.com/p/assets/images/images/033/245/632/large/allard-lavaritte-there-is-no-place-like-home-f-small.jpg?1608901718'/>

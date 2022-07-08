@@ -1,5 +1,40 @@
 export const ArtData = [
     {
+        id: '018',
+        title: 'Sky Collection',
+        path : 'https://cdnb.artstation.com/p/assets/images/images/051/387/003/20220706211424/smaller_square/allard-lavaritte-cloud-collection-01.jpg?1657160064',    
+        alt : 'The Archer',
+        link : '/artwork/Qq48Kg'
+    },
+    {
+        id: '018',
+        title: 'Error 404',
+        path : 'https://cdnb.artstation.com/p/assets/images/images/050/886/865/20220622131724/smaller_square/allard-lavaritte-into-the-404.jpg?1655921844',    
+        alt : 'The Archer',
+        link : '/artwork/ZeZGew'
+    },
+    {
+        id: '017',
+        title: 'Spitfire',
+        path : 'https://cdnb.artstation.com/p/assets/images/images/043/819/981/smaller_square/allard-lavaritte-smoke.jpg?1638345208',    
+        alt : 'The Archer',
+        link : '/artwork/F48Anq'
+    },
+    {
+        id: '016',
+        title: 'The Collector',
+        path : 'https://cdna.artstation.com/p/assets/images/images/049/791/162/20220523151501/smaller_square/allard-lavaritte-the-collector.jpg?1653336902',    
+        alt : 'The Archer',
+        link : '/artwork/NGeZ6b'
+    },
+    {
+        id: '019',
+        title: 'Concept Art: The Chronicles of my Melancholic Existence',
+        path : 'https://cdnb.artstation.com/p/assets/images/images/047/257/631/20220313055453/smaller_square/allard-lavaritte-1stpage-recovered.jpg?1647168893',    
+        alt : 'The Archer',
+        link : '/artwork/VJYXRO'
+    },
+    {
         id: '001',
         title: '変態を入らないで',
         path : 'https://cdnb.artstation.com/p/assets/images/images/042/229/393/20211011061443/smaller_square/allard-lavaritte-bb-small.jpg',    

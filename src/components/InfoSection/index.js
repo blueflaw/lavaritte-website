@@ -14,7 +14,7 @@ import { InfoContainer,
          Img,
         } from './InfoElements'
 
-const InfoSection = ({lightBg, imgStart, topLine, headline, description, buttonLabel, img, alt, lightText, dark, pathLink}) => {
+const InfoSection = ({lightBg, imgStart, topLine, headline, description, buttonLabel, img, alt, lightText, dark, pathLink, button}) => {
     return (
         <React.Fragment>
             <InfoContainer lightBg={lightBg}>
@@ -25,7 +25,7 @@ const InfoSection = ({lightBg, imgStart, topLine, headline, description, buttonL
                                 <TopLine lightText={lightText}>{topLine}</TopLine>
                                 <Heading lightText={lightText}>{headline}</Heading>
                                 <Subtitle lightText={lightText}>{description}</Subtitle>
-                                <BtnWrap>
+                                <BtnWrap button={button}>
                                     <Button href={pathLink} target="_blank" dark={dark}>{buttonLabel}</Button>
                                 </BtnWrap>
                             </TextWrapper>

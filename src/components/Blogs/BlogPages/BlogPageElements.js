@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import {Link} from 'react-router-dom';
+import {Link as LinkS} from "react-scroll";
 
 export const BlogPagesContainer = styled.div`
     display: flex;
@@ -119,6 +120,16 @@ export const BlogPageSocialAuthor = styled(Link)`
     }
 `;
 
+export const ButtonScrollTo = styled(LinkS)`
+    color: #ffffff;
+    cursor: pointer;
+    text-align: center;
+
+    &:hover{
+        color: #00a2ff;
+    }
+`;
+
 export const BlogPageContentAuthor = styled.p`
     font-size: 1rem;
     color: #fff;
@@ -134,7 +145,7 @@ export const BlogPageContentAuthor = styled.p`
 
 export const BlogPageContentP = styled.p`
     font-size: 1rem;
-    color: #bbb;
+    color: ${({ lightText }) => (lightText ? '#fff' : '#bbb')};
     letter-spacing: 0.16rem;
     word-wrap: break-word;
     line-height: 24px;
@@ -146,7 +157,37 @@ export const BlogPageContentP = styled.p`
     }
 `;
 
+export const BlogPageContentUnorderedList = styled.ul`
+    font-size: 1rem;
+    color: ${({ lightText }) => (lightText ? '#fff' : '#bbb')};
+    letter-spacing: 0.16rem;
+    word-wrap: break-word;
+    line-height: 24px;
+    text-align: left;
+    //border-bottom: 1px solid #000;
+    padding: 5%;
+    @media only screen and (max-width: 768px){
+        max-width: 90%;
+    }
+`;
+
+export const BlogPageContentOrderedList = styled.ol`
+    font-size: 1rem;
+    color: ${({ lightText }) => (lightText ? '#fff' : '#bbb')};
+    letter-spacing: 0.16rem;
+    word-wrap: break-word;
+    line-height: 24px;
+    text-align: left;
+    //border-bottom: 1px solid #000;
+    padding: 5%;
+    @media only screen and (max-width: 768px){
+        max-width: 90%;
+    }
+`;
+
 export const BlogPageImgWrap = styled.div`
+    padding:  10px 30px;
+    text-align: center;
     max-width: 555px;
     height: 100%;
 `;

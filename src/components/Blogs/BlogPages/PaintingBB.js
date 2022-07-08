@@ -29,7 +29,7 @@ export const PaintingBB = () => {
           category : "Finance",
           time : "Cryptocurrency",
           author : "Allard Lavaritte",
-          link : "/blogs/Painting変態を入らないで",
+          link : "/blogs/bestcryptoplatforms",
           preview : "Here is our list of the top ten cryptocurrency exchanges and trading platforms. The cryptocurrency deals on this website are provided by firms from whom The College Investor gets income. "
       },
       {
@@ -57,10 +57,10 @@ export const PaintingBB = () => {
                     <TwitterShareButton url='https://lavaritte.com/blogs/Painting変態を入らないで' title={title}>
                         <TwitterIcon size={32} />
                     </TwitterShareButton>
-                    <LinkedinShareButton url='https://lavaritte.com/blogs/Painting変態を入らないで' title={title} summary='Investing in Bitcoin is all the rage but how exactly does a beginner get started? Do you need to already have Bitcoin to invest?'>
+                    <LinkedinShareButton url='https://lavaritte.com/blogs/Painting変態を入らないで' title={title} summary={body}>
                         <LinkedinIcon size={32} />
                     </LinkedinShareButton>
-                    <PinterestShareButton media='https://lavaritte.com/static/media/INTO_THE_BIT.8b62c9e7.jpg'>
+                    <PinterestShareButton media='https://cdnb.artstation.com/p/assets/images/images/042/229/393/large/allard-lavaritte-bb-small.jpg?1633950884'>
                         <PinterestIcon size={32}/>
                     </PinterestShareButton>
                     <EmailShareButton url='https://lavaritte.com/blogs/Painting変態を入らないで'
