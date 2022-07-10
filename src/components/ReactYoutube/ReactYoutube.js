@@ -46,19 +46,25 @@ class ReactYouTube extends Component {
           }
 
     }
+    if(window.innerWidth > 1024){ 
+      opts.width = '1100';
+      opts.height = '600';
+    }
+    if(window.innerWidth <= 1024 && window.innerWidth > 768){ 
+      opts.width = '750';
+      opts.height = '500';
+    }
     if(window.innerWidth <= 768 && window.innerWidth > 425){
       opts.width = '650';
       opts.height = '300';
-      console.log('this is inside if1')
     }
-    if(window.innerWidth <= 425){
+    if(window.innerWidth <= 425 && window.innerWidth > 375){
         opts.width = '350';
         opts.height = '200';
-        console.log('this is inside if2')
-    } else {
-      opts.width = '1100';
-      opts.height = '600';
-      console.log('this is inside else')
+    } 
+    if(window.innerWidth <= 375){
+      opts.width = '250';
+      opts.height = '150';
     }
     //console.log(window.innerWidth);
     var {videoId} = this.props
@@ -68,7 +74,6 @@ class ReactYouTube extends Component {
         opts={opts}
         onReady={this.videoOnReady}
         style={{
-          position: 'absolute',
           content: 'fit',
           top: '0',
           left: '0',

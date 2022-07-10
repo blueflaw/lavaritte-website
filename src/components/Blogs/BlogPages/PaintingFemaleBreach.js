@@ -2,7 +2,7 @@ import React from 'react';
 import imageBIT from '../../../images/INTO_THE_BIT.jpg';
 import { ReadMoreBlogs } from '../../ReadMore/ReadMoreBlogs';
 import ReactYouTube from '../../ReactYoutube/ReactYoutube';
-import { BlogPageContentH1, BlogPageContentP, BlogPageImgWrap, BlogPagesContainer, BlogPagesContent, BlogsVidContainer, ShareWrapper } from './BlogPageElements';
+import { BlogPageContentH1, BlogPageContentP, BlogPagesContainer, BlogPagesContent, BlogsVidContainer, ShareWrapper } from './BlogPageElements';
 import { FacebookShareButton, FacebookIcon, TwitterShareButton, TwitterIcon, EmailShareButton, EmailIcon, LinkedinShareButton, LinkedinIcon, PinterestShareButton, PinterestIcon} from 'react-share';
 
 export const PaintingFemaleBreach = () => {
@@ -70,11 +70,9 @@ export const PaintingFemaleBreach = () => {
             <BlogPageContentP>
             {body}<span role='img' aria-label='smilie'>😊</span>
             </BlogPageContentP>
-            <BlogPageImgWrap>
-                <BlogsVidContainer>
-                    <ReactYouTube videoId='FiMvC6r8BYM'/>
-                </BlogsVidContainer>
-            </BlogPageImgWrap>
+            <BlogsVidContainer>
+                <ReactYouTube videoId='FiMvC6r8BYM'/>
+            </BlogsVidContainer>
             
         </BlogPagesContent>
     </BlogPagesContainer>

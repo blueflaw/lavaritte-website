@@ -2,7 +2,7 @@ import React from 'react';
 import imageBIT from '../../../images/INTO_THE_BIT.jpg';
 import ReactYouTube from '../../ReactYoutube/ReactYoutube';
 import { ReadMoreBlogs } from '../../ReadMore/ReadMoreBlogs';
-import { BlogPageContentH1, BlogPageContentP, BlogPageImgWrap, BlogPagesContainer, BlogPagesContent, BlogsVidContainer, ShareWrapper } from './BlogPageElements';
+import { BlogPageContentH1, BlogPageContentP, BlogPagesContainer, BlogPagesContent, BlogsVidContainer, ShareWrapper } from './BlogPageElements';
 import { FacebookShareButton, FacebookIcon, TwitterShareButton, TwitterIcon, EmailShareButton, EmailIcon, LinkedinShareButton, LinkedinIcon, PinterestShareButton, PinterestIcon} from 'react-share';
 
 
@@ -72,11 +72,9 @@ export const PaintingJettfromValorant = () => {
               I do claim that it's fan art and nothing else but I just posted it online because it turned out to look so amazing and I wanted to share it with everyone, 
               hope you like it! <span role='img' aria-label='smilie'>🤗</span>
             </BlogPageContentP>
-            <BlogPageImgWrap>
-                <BlogsVidContainer>
-                    <ReactYouTube videoId='RF6c3IlWgfQ'/>
-                </BlogsVidContainer>
-            </BlogPageImgWrap>
+            <BlogsVidContainer>
+                <ReactYouTube videoId='RF6c3IlWgfQ'/>
+            </BlogsVidContainer>
             
         </BlogPagesContent>
         

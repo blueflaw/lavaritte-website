@@ -210,7 +210,10 @@ export const BlogsVidContainer = styled.div`
     margin: 0px 0px 10px 0px;
     overflow: hidden;
     padding-right: 0px;
+    @media only screen and (max-width: 1024px){
+        max-width: 900px;
+    }
     @media only screen and (max-width: 768px){
-        max-width: 90%;
+        max-width: 650px;
     }
 `;

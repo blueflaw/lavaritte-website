@@ -2,7 +2,7 @@ import React from 'react';
 import imageBIT from '../../../images/INTO_THE_BIT.jpg';
 import { ReadMoreBlogs } from '../../ReadMore/ReadMoreBlogs';
 import ReactYouTube from '../../ReactYoutube/ReactYoutube';
-import { BlogPageContentH1, BlogPageContentP, BlogPageImgWrap, BlogPagesContainer, BlogPagesContent, BlogsVidContainer, ShareWrapper } from './BlogPageElements';
+import { BlogPageContentH1, BlogPageContentP, BlogPagesContainer, BlogPagesContent, BlogsVidContainer, ShareWrapper } from './BlogPageElements';
 import { FacebookShareButton, FacebookIcon, TwitterShareButton, TwitterIcon, EmailShareButton, EmailIcon, LinkedinShareButton, LinkedinIcon, PinterestShareButton, PinterestIcon} from 'react-share';
 
 export const PaintingMemories = () => {
@@ -74,12 +74,9 @@ export const PaintingMemories = () => {
               Hello, this is a painting from 2021 <br/>
               Photoshop and Blender made this <span role='img' aria-label='green'>🍃</span> <span role='img' aria-label='heart'>😍</span>
             </BlogPageContentP>
-            <BlogPageImgWrap>
-                <BlogsVidContainer>
-                    <ReactYouTube videoId='2zvTeKoYcjs'/>
-                </BlogsVidContainer>
-            </BlogPageImgWrap>
-            
+            <BlogsVidContainer>
+                <ReactYouTube videoId='2zvTeKoYcjs'/>
+            </BlogsVidContainer>
         </BlogPagesContent>
     </BlogPagesContainer>
     <ReadMoreBlogs Data={BlogsData} />
