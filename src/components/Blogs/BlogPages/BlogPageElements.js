@@ -204,10 +204,11 @@ export const BlogPageImg = styled.img`
 `;
 
 export const BlogsVidContainer = styled.div`
+    align-items: center;
+    text-align: center;
     width:1100px;
     content: fit;
     max-width: 1100px;
-    margin: 0px 0px 10px 0px;
     overflow: hidden;
     padding-right: 0px;
     @media only screen and (max-width: 1024px){
@@ -215,5 +216,11 @@ export const BlogsVidContainer = styled.div`
     }
     @media only screen and (max-width: 768px){
         max-width: 650px;
+    }
+    @media only screen and (max-width: 425px){
+        max-width: 300px;
+    }
+    @media only screen and (max-width: 375px){
+        max-width: 200px;
     }
 `;
