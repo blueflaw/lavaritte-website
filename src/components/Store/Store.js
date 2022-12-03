@@ -2,7 +2,7 @@ import React, {useRef} from 'react';
 import { useIntersection } from 'react-use';
 import { Slider } from '../Slider/Slider';
 import gsap from 'gsap';
-import { Clothing, Accessories, StoreDataCard, WallArt } from './StoreData';
+import { Accessories, WallArt, Newchic, Clothing, StoreDataCard} from './StoreData';
 import { SliderData } from '../Slider/SliderData';
 import { StoreContaner, StoreQuotesTextWrapper, QuotesWrapper, Heading, Subtitle} from './StoreElements';
 import StoreDataMapper from './StoreComponents/StoreDataMapper';
@@ -12,7 +12,9 @@ const Store = () => {
     const treshold = 0.9;
     const sectionRef1 = useRef(null);
     const sectionRef2 = useRef(null);
+    const sectionRef3 = useRef(null);
 
+    const NewchicLink = '';
     const ClothingLink = 'https://www.redbubble.com/people/blueflaw/shop?asc=u&asc=u&iaCode=u-clothing';
     const AccessoriesLink = 'https://www.redbubble.com/people/blueflaw/shop?asc=u&asc=u&iaCode=u-accessories';
     const WallAretLink = 'https://www.redbubble.com/people/blueflaw/shop?&asc=u&iaCode=u-prints';
@@ -23,6 +25,11 @@ const Store = () => {
         threshold: treshold
     });
     const intersection2 = useIntersection(sectionRef2,{
+        root: null,
+        rootMargin: "0px",
+        threshold: treshold
+    });
+    const intersection3 = useIntersection(sectionRef3,{
         root: null,
         rootMargin: "0px",
         threshold: treshold
@@ -49,10 +56,20 @@ const Store = () => {
     // checking to see when the viewport is visible to the user
     intersection && intersection.intersectionRatio < treshold ? fadeOut(".section1") : fadeIn(".section1");
     intersection2 && intersection2.intersectionRatio < treshold ? fadeOut(".section2") : fadeIn(".section2");
+    intersection3 && intersection3.intersectionRatio < treshold ? fadeOut(".section3") : fadeIn(".section3");
 
     return (
         <StoreContaner id="store">
         <Slider slides={SliderData}/>
+
+        <QuotesWrapper id='clothing'>
+                <StoreQuotesTextWrapper className="section3" ref={sectionRef3}>
+                    <Subtitle>FEATURED COLLECTION</Subtitle>
+                    <Heading>CLOTHING</Heading>
+                </StoreQuotesTextWrapper>
+        </QuotesWrapper>
+        <StoreDataMapper StoreData={Newchic}  GenLink={NewchicLink} ButtonLabel={'View All Product'}/>
+
         <QuotesWrapper id='clothing'>
                 <StoreQuotesTextWrapper className="section1" ref={sectionRef1}>
                     <Subtitle>FEATURED COLLECTION</Subtitle>

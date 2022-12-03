@@ -75,7 +75,7 @@ const Footer = () => {
                         <WebsiteRights>Allard Lavaritte © {new Date().getFullYear()} All rights reserved.</WebsiteRights>
                         <SocialIcons>
                             <SocialIconLink href="//www.facebook.com/blueflaw.art" target="_blank" aria-label="Facebook"><FaFacebook/></SocialIconLink>
-                            <SocialIconLink href="//www.instagram.com/blueflaw_" target="_blank" aria-label="Instagram"><FaInstagram/></SocialIconLink>
+                            <SocialIconLink href="//www.instagram.com/waitoflaw" target="_blank" aria-label="Instagram"><FaInstagram/></SocialIconLink>
                             <SocialIconLink href="//www.artstation.com/blueflaw" target="_blank" aria-label="ArtStation"><FaArtstation/></SocialIconLink>
                             <SocialIconLink href="//www.youtube.com/channel/UCQ6-hj3JK97f2wxIJ9tYkTg" target="_blank" aria-label="Youtube"><FaYoutube/></SocialIconLink>
                             <SocialIconLink href="//twitter.com/NotAllard" target="_blank" aria-label="Twitter"><FaTwitter/></SocialIconLink>

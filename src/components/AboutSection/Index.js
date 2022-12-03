@@ -120,7 +120,7 @@ const TheWebsite = () => {
                 <Column1>
                 <SocialWrapper>
                     <GetInTouchLink href="//www.facebook.com/blueflaw.art" target="_blank" aria-label="Facebook"><FaFacebook/> facebook</GetInTouchLink>
-                    <GetInTouchLink href="//www.instagram.com/blueflaw_" target="_blank" aria-label="Instagram"><FaInstagram/> instagram</GetInTouchLink>
+                    <GetInTouchLink href="//www.instagram.com/waitoflaw" target="_blank" aria-label="Instagram"><FaInstagram/> instagram</GetInTouchLink>
                     <GetInTouchLink href="//www.artstation.com/blueflaw" target="_blank" aria-label="ArtStation"><FaArtstation/> artstation</GetInTouchLink>
                     <GetInTouchLink href="//www.youtube.com/channel/UCQ6-hj3JK97f2wxIJ9tYkTg" target="_blank" aria-label="Youtube"><FaYoutube/> youtube</GetInTouchLink>
                     <GetInTouchLink href="//twitter.com/NotAllard" target="_blank" aria-label="Twitter"><FaTwitter/> twitter</GetInTouchLink>

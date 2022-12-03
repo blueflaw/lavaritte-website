@@ -131,3 +131,60 @@ export const Clothing = [
         link : "https://www.redbubble.com/i/t-shirt/The-Black-Cat-by-blueflaw/108031233.UIV3X?asc=u"
     },
 ];
+
+export const Newchic = [
+    {
+        id: "NC001",
+        title: "Cartoon Cat",
+        imagePath: require('../../images/store/newchic/Cartoon-Cat.jpg'),
+        alt : "Newchic, Cartoon Cat",
+        type : "Cartoon Cat Graphic Hoodies",
+        prize : "₱1,051.52",
+        link : "https://Newchic.vip/13oXD"
+    },
+    {
+        id: "NC002",
+        title: "Drawstring Hooded Shirt With Pocket",
+        imagePath: require('../../images/store/newchic/Mens-Corduroy-Colorblock-Stitching-Drawstring-Hooded-Shirt-With-Pocket.jpg'),
+        alt : "Drawstring Hooded",
+        type : "Corduroy Colorblock Stitching Hooded Shirt",
+        prize : "₱1,121.15",
+        link : "https://Newchic.vip/13ppK"
+    },
+    {
+        id: "NC003",
+        title: "Cute Cat Sweatshirts",
+        imagePath: require('../../images/store/newchic/Cute-Cat-Sweatshirts.jpg'),
+        alt : "Cat Sweatshirts",
+        type : "Pullover Sweatshirts",
+        prize : "₱1,121.15",
+        link : "https://Newchic.vip/13pqb"
+    },
+    {
+        id: "NC004",
+        title: "Cherry Blossoms T-Shirts",
+        imagePath: require('../../images/store/newchic/Cherry-Blossoms-T-Shirts.jpg'),
+        alt : "Cherry Blossoms T-Shirts",
+        type : "Short Sleeve T-Shirts",
+        prize : "₱747.24",
+        link : "https://Newchic.vip/13pqI"
+    },
+    {
+        id: "NC005",
+        title: "Figure Japanese Print Hoodies",
+        imagePath: require('../../images/store/newchic/Figure-Japanese-Sleeve-Print-Hoodies.jpg'),
+        alt : "Figure Japanese Sleeve Print Hoodies",
+        type : "Short Sleeve T-Shirts",
+        prize : "₱1,419.11",
+        link : "https://Newchic.vip/13pqN"
+    },
+    {
+        id: "NC006",
+        title: "Cute Cat Short Sleeve Hooded T-Shirts",
+        imagePath: require('../../images/store/newchic/Cute-Cat-Japanese-Print-Hooded-T-Shirts.jpg'),
+        alt : "Cute Cat Japanese Print Short Sleeve Contrast Hooded T-Shirts",
+        type : "Hooded T-Shirts",
+        prize : "₱744.32",
+        link : "https://Newchic.vip/13pqO"
+    },
+];
