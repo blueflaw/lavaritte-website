@@ -157,7 +157,7 @@ export const Newchic = [
         imagePath: require('../../images/store/newchic/Cute-Cat-Sweatshirts.jpg'),
         alt : "Cat Sweatshirts",
         type : "Pullover Sweatshirts",
-        prize : "₱1,121.15",
+        prize : "₱945.88",
         link : "https://Newchic.vip/13pqb"
     },
     {
