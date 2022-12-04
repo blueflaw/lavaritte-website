@@ -1,8 +1,3 @@
-import Image1 from '../../images/store/store1.jpg';
-import Image2 from '../../images/store/store2.jpg';
-import Image3 from '../../images/store/store3.jpg';
-import Image4 from '../../images/store/store4.jpg';
-
 export const SliderData = [
     {
         id: 'SD001',
@@ -10,7 +5,7 @@ export const SliderData = [
         title: 'Make your walls awesome',
         buttonText: 'buy',
         buttonLink: 'wallart',
-        image: Image4,
+        image: 'https://upenandy.sirv.com/lavaritte.com/store/slider/store4.jpg',
         alt: 'Image four',
     },
     {
@@ -19,7 +14,7 @@ export const SliderData = [
         title: 'Official Posters',
         buttonText: 'buy',
         buttonLink: 'wallart',
-        image: Image2,
+        image: 'https://upenandy.sirv.com/lavaritte.com/store/slider/store2.jpg',
         alt: 'Image Two'
     },
     {
@@ -28,7 +23,7 @@ export const SliderData = [
         title: 'clothing',
         buttonText: 'buy',
         buttonLink: 'clothing',
-        image: Image1,
+        image: 'https://upenandy.sirv.com/lavaritte.com/store/slider/store1.jpg',
         alt: 'Image One'
     },
     {
@@ -37,7 +32,7 @@ export const SliderData = [
         title: 'we all Need',
         buttonText: 'buy',
         buttonLink: 'accessories',
-        image: Image3,
+        image: 'https://upenandy.sirv.com/lavaritte.com/store/slider/store3.jpg',
         alt: 'Image Three'
     },
 ];

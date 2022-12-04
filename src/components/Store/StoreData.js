@@ -4,7 +4,7 @@ export const StoreDataCard = [
         id: "SC001",
         topline: "T-SHIRTS, HOODIES, SWEATSHIRTS",
         header: "Clothing",
-        imagepath: require('../../images/store/storecard1.jpg'),
+        imagepath: 'https://upenandy.sirv.com/lavaritte.com/store/storecard/storecard1.jpg',
         alt: 'Clothing',
         buttontext: "view products",
         link: "https://www.redbubble.com/people/blueflaw/shop?asc=u&asc=u&iaCode=u-clothing"
@@ -13,7 +13,7 @@ export const StoreDataCard = [
         id: "SC002",
         topline: "ART PRINTS AND POSTERS",
         header: "Posters",
-        imagepath: require('../../images/store/storecard2.jpg'),
+        imagepath: 'https://upenandy.sirv.com/lavaritte.com/store/storecard/storecard2.jpg',
         alt: 'Clothing',
         buttontext: "view products",
         link: "https://www.redbubble.com/people/blueflaw/shop?&asc=u&iaCode=u-prints"
@@ -22,7 +22,7 @@ export const StoreDataCard = [
         id: "SC003",
         topline: "COFFEE MUGS AND MORE",
         header: "ACCESSORIES",
-        imagepath: require('../../images/store/storecard3.jpg'),
+        imagepath: 'https://upenandy.sirv.com/lavaritte.com/store/storecard/storecard3.jpg',
         alt: 'Clothing',
         buttontext: "view products",
         link: "https://www.redbubble.com/people/blueflaw/shop?asc=u&asc=u&iaCode=u-accessories"
@@ -33,7 +33,7 @@ export const Accessories = [
     {
         id: "A001",
         title: "BlueFlaws Basic Brush",
-        imagePath: require('../../images/store/brushset.jpg'),
+        imagePath: 'https://upenandy.sirv.com/lavaritte.com/store/redbubble/brushset.jpg',
         alt : "BlueFlaws Basic Brush",
         author : "Allard Lavaritte",
         type : "Brushes",
@@ -43,7 +43,7 @@ export const Accessories = [
     {
         id: "A002",
         title: "EVA 00 Mouse Pad",
-        imagePath: require('../../images/store/eva00_desk-mat.jpg'),
+        imagePath: 'https://upenandy.sirv.com/lavaritte.com/store/redbubble/eva00_desk-mat.jpg',
         alt : "EVA 00 Mouse Pad",
         author : "Allard Lavaritte",
         type : "Mouse Pad",
@@ -53,7 +53,8 @@ export const Accessories = [
     {
         id: "A003",
         title: "The Chronicles Mouse Pad",
-        imagePath: require('../../images/store/bb_desk-mat.jpg'),
+        // imagePath: require('../../images/store/bb_desk-mat.jpg'),
+        imagePath: 'https://upenandy.sirv.com/lavaritte.com/store/redbubble/bb_desk-mat.jpg',
         alt : "EVA 00 Mouse Pad",
         author : "Allard Lavaritte",
         type : "Mouse Pad",
@@ -66,7 +67,7 @@ export const WallArt = [
     {
         id: "WA001",
         title: "EVA 00 Framed Art Print",
-        imagePath: require('../../images/store/poster1.jpg'),
+        imagePath: 'https://upenandy.sirv.com/lavaritte.com/store/redbubble/poster1.jpg',
         alt : "EVA 00 Framed Art Print",
         author : "Allard Lavaritte",
         type : "Framed Art Print",
@@ -79,7 +80,7 @@ export const Clothing = [
     {
         id: "C001",
         title: "BlueFlaw, good manners",
-        imagePath: require('../../images/store/PulloverHoodie.jpg'),
+        imagePath: 'https://upenandy.sirv.com/lavaritte.com/store/redbubble/clothing/PulloverHoodie.jpg',
         alt : "BlueFlaw, good manners",
         type : "Pullover Hoodie",
         prize : "$52.54",
@@ -88,7 +89,7 @@ export const Clothing = [
     {
         id: "C002",
         title: "The Chronicles",
-        imagePath: require('../../images/store/Graphic-T-Shirt.jpg'),
+        imagePath: 'https://upenandy.sirv.com/lavaritte.com/store/redbubble/clothing/Graphic-T-Shirt.jpg',
         alt : "The Chronicles",
         type : "Graphic T-Shirt",
         prize : "$33.92",
@@ -97,7 +98,7 @@ export const Clothing = [
     {
         id: "C003",
         title: "BAKABAKABAKA",
-        imagePath: require('../../images/store/Graphic-T-ShirtBAKA.jpg'),
+        imagePath: 'https://upenandy.sirv.com/lavaritte.com/store/redbubble/clothing/Graphic-T-ShirtBAKA.jpg',
         alt : "BAKABAKABAKA",
         type : "Graphic T-Shirt",
         prize : "$33.92",
@@ -106,7 +107,7 @@ export const Clothing = [
     {
         id: "C004",
         title: "Mecha Girl",
-        imagePath: require('../../images/store/Active-T-shirt.jpg'),
+        imagePath: 'https://upenandy.sirv.com/lavaritte.com/store/redbubble/clothing/Active-T-shirt.jpg',
         alt : "Mecha Girl",
         type : "Active T-Shirt",
         prize : "$27.90",
@@ -115,7 +116,7 @@ export const Clothing = [
     {
         id: "C005",
         title: "Blue Blue Blue",
-        imagePath: require('../../images/store/Lightweight-Hoodie.jpg'),
+        imagePath: 'https://upenandy.sirv.com/lavaritte.com/store/redbubble/clothing/Lightweight-Hoodie.jpg',
         alt : "Blue Blue Blue",
         type : "Lightweight Hoodie",
         prize : "$51.00",
@@ -124,7 +125,7 @@ export const Clothing = [
     {
         id: "C006",
         title: "The Black Cat",
-        imagePath: require('../../images/store/Fitted-V-Neck-T-Shirt.jpg'),
+        imagePath: 'https://upenandy.sirv.com/lavaritte.com/store/redbubble/clothing/Fitted-V-Neck-T-Shirt.jpg',
         alt : "The Black Cat",
         type : "Fitted V-Neck T-Shirt",
         prize : "$27.19",
@@ -136,7 +137,7 @@ export const Newchic = [
     {
         id: "NC001",
         title: "Cartoon Cat",
-        imagePath: require('../../images/store/newchic/Cartoon-Cat.jpg'),
+        imagePath: 'https://upenandy.sirv.com/lavaritte.com/store/newchic/men/clothing/Cartoon-Cat.jpg',
         alt : "Newchic, Cartoon Cat",
         type : "Cartoon Cat Graphic Hoodies",
         prize : "₱1,051.52",
@@ -145,7 +146,7 @@ export const Newchic = [
     {
         id: "NC002",
         title: "Drawstring Hooded Shirt With Pocket",
-        imagePath: require('../../images/store/newchic/Mens-Corduroy-Colorblock-Stitching-Drawstring-Hooded-Shirt-With-Pocket.jpg'),
+        imagePath: 'https://upenandy.sirv.com/lavaritte.com/store/newchic/men/clothing/Mens-Corduroy-Colorblock-Stitching-Drawstring-Hooded-Shirt-With-Pocket.jpg',
         alt : "Drawstring Hooded",
         type : "Corduroy Colorblock Stitching Hooded Shirt",
         prize : "₱1,121.15",
@@ -154,7 +155,7 @@ export const Newchic = [
     {
         id: "NC003",
         title: "Cute Cat Sweatshirts",
-        imagePath: require('../../images/store/newchic/Cute-Cat-Sweatshirts.jpg'),
+        imagePath: 'https://upenandy.sirv.com/lavaritte.com/store/newchic/men/clothing/Cute-Cat-Sweatshirts.jpg',
         alt : "Cat Sweatshirts",
         type : "Pullover Sweatshirts",
         prize : "₱945.88",
@@ -163,7 +164,7 @@ export const Newchic = [
     {
         id: "NC004",
         title: "Cherry Blossoms T-Shirts",
-        imagePath: require('../../images/store/newchic/Cherry-Blossoms-T-Shirts.jpg'),
+        imagePath: 'https://upenandy.sirv.com/lavaritte.com/store/newchic/men/clothing/Cherry-Blossoms-T-Shirts.jpg',
         alt : "Cherry Blossoms T-Shirts",
         type : "Short Sleeve T-Shirts",
         prize : "₱747.24",
@@ -172,7 +173,7 @@ export const Newchic = [
     {
         id: "NC005",
         title: "Figure Japanese Print Hoodies",
-        imagePath: require('../../images/store/newchic/Figure-Japanese-Sleeve-Print-Hoodies.jpg'),
+        imagePath: 'https://upenandy.sirv.com/lavaritte.com/store/newchic/men/clothing/Figure-Japanese-Sleeve-Print-Hoodies.jpg',
         alt : "Figure Japanese Sleeve Print Hoodies",
         type : "Short Sleeve T-Shirts",
         prize : "₱1,419.11",
@@ -181,7 +182,7 @@ export const Newchic = [
     {
         id: "NC006",
         title: "Cute Cat Short Sleeve Hooded T-Shirts",
-        imagePath: require('../../images/store/newchic/Cute-Cat-Japanese-Print-Hooded-T-Shirts.jpg'),
+        imagePath: 'https://upenandy.sirv.com/lavaritte.com/store/newchic/men/clothing/Cute-Cat-Japanese-Print-Hooded-T-Shirts.jpg',
         alt : "Cute Cat Japanese Print Short Sleeve Contrast Hooded T-Shirts",
         type : "Hooded T-Shirts",
         prize : "₱744.32",
