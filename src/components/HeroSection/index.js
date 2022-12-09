@@ -2,7 +2,7 @@ import React, {useRef, useState, useEffect} from 'react'
 import { animateScroll as scroll } from 'react-scroll';
 import { TweenMax, Power3 } from 'gsap'
 import { ButtonShowreel } from '../ButtonElements'
-import Video from '../../videos/FirstContact.mp4'
+import Video from '../../videos/Eye-of-Winter.mp4'
 import { HeroContainer, HeroBg, VideoBg, HeroContent, HeroH1, HeroP, HeroBtnWrapper, ArrowForward, ArrowRight} from './HeroElements'
 import { Modal } from '../Modal/Modal'
 

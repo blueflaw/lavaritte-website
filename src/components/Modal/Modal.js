@@ -1,5 +1,5 @@
 import React, { useRef, useEffect, useCallback } from 'react';
-import Video from '../../videos/FirstContact.mp4'
+import Video from '../../videos/Eye-of-Winter.mp4'
 import { CloseModalButton, ModalBackground, ModalWrapper, ShowReel } from './ModalElements'
 
 

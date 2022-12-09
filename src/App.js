@@ -30,6 +30,9 @@ import { NGeZ6bPage } from './pages/ArtPages/NGeZ6bPage';
 import { F48AnqPage } from './pages/ArtPages/F48AnqPage';
 import { ZeZGewPage } from './pages/ArtPages/ZeZGewPage';
 import { Qq48KgPage } from './pages/ArtPages/Qq48KgPage';
+import { KlqrYdPage } from './pages/ArtPages/KlqrYdPage';
+import { D0ZmBePage } from './pages/ArtPages/D0ZmBePage';
+import { NGdnmbPage } from './pages/ArtPages/NGdnmbPage';
 
 import { Painting変態を入らないでPage } from './pages/BlogPages/Painting変態を入らないで';
 import { PaintingJettPage } from './pages/BlogPages/PaintingJett';
@@ -90,6 +93,9 @@ function App() {
         <Route path="/artwork/F48Anq" component={F48AnqPage} exact/>
         <Route path="/artwork/ZeZGew" component={ZeZGewPage} exact/>
         <Route path="/artwork/Qq48Kg" component={Qq48KgPage} exact/>
+        <Route path="/artwork/KlqrYd" component={KlqrYdPage} exact/>
+        <Route path="/artwork/D0ZmBe" component={D0ZmBePage} exact/>
+        <Route path="/artwork/NGdnmb" component={NGdnmbPage} exact/>
 
 
         <Route path="/blogs/Painting変態を入らないで" component={Painting変態を入らないでPage} exact/>

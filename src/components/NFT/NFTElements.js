@@ -9,7 +9,7 @@ export const HeroContainer = styled.div`
     height: 100vh;
     width: 100%;
     position: relative;
-    background: #000000 url("https://cdna.artstation.com/p/assets/images/images/049/791/162/large/allard-lavaritte-the-collector.jpg?1653336902") no-repeat fixed center top;;
+    background: #000000 url("https://cdnb.artstation.com/p/assets/images/images/056/930/265/large/allard-lavaritte-makima-f.jpg?1670427007") no-repeat fixed center top;;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;

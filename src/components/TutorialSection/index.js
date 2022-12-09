@@ -49,7 +49,7 @@ const TutorialSection = () => {
         <React.Fragment id='tutorials'>
             <HeroContainer>
                 <HeroContent>
-                    <HeroH1 >learn. practice. make a living</HeroH1>
+                    <HeroH1 >Learning never exhausts the mind.</HeroH1>
                     <ButtonDown to={'tutorialscollection'} smooth={true} duration={500} spy={true} exact="true" offset={-80} ><FaChevronDown/></ButtonDown>
                 </HeroContent>
             </HeroContainer>

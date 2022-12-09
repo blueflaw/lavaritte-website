@@ -1,37 +1,58 @@
 export const ArtData = [
     {
+        id: '021',
+        title: 'Darkness Devil',
+        path : 'https://cdnb.artstation.com/p/assets/images/images/056/930/243/20221207093023/smaller_square/allard-lavaritte-darkness-demon-final.jpg?1670427024',    
+        alt : 'Darkness Devil',
+        link : '/artwork/NGdnmb'
+    },
+    {
+        id: '020',
+        title: 'Flowers of Ember',
+        path : 'https://cdnb.artstation.com/p/assets/images/images/056/849/263/20221205084838/smaller_square/allard-lavaritte-flowers-of-ember-final.jpg?1670251719',    
+        alt : 'Flowers of Ember',
+        link : '/artwork/D0ZmBe'
+    },
+    {
+        id: '019',
+        title: 'The Silver Tree and The Gold Tree',
+        path : 'https://cdnb.artstation.com/p/assets/images/images/056/808/023/20221204064210/smaller_square/allard-lavaritte-telperion-and-laurelin-f.jpg?1670157731',    
+        alt : 'The Silver Tree and The Gold Tree',
+        link : '/artwork/KlqrYd'
+    },
+    {
         id: '018',
         title: 'Sky Collection',
         path : 'https://cdnb.artstation.com/p/assets/images/images/051/387/003/20220706211424/smaller_square/allard-lavaritte-cloud-collection-01.jpg?1657160064',    
-        alt : 'The Archer',
+        alt : 'Sky Collection',
         link : '/artwork/Qq48Kg'
     },
     {
         id: '018',
         title: 'Error 404',
         path : 'https://cdnb.artstation.com/p/assets/images/images/050/886/865/20220622131724/smaller_square/allard-lavaritte-into-the-404.jpg?1655921844',    
-        alt : 'The Archer',
+        alt : 'Error 404',
         link : '/artwork/ZeZGew'
     },
     {
         id: '017',
         title: 'Spitfire',
         path : 'https://cdnb.artstation.com/p/assets/images/images/043/819/981/smaller_square/allard-lavaritte-smoke.jpg?1638345208',    
-        alt : 'The Archer',
+        alt : 'Spitfire',
         link : '/artwork/F48Anq'
     },
     {
         id: '016',
         title: 'The Collector',
         path : 'https://cdna.artstation.com/p/assets/images/images/049/791/162/20220523151501/smaller_square/allard-lavaritte-the-collector.jpg?1653336902',    
-        alt : 'The Archer',
+        alt : 'The Collector',
         link : '/artwork/NGeZ6b'
     },
     {
         id: '019',
         title: 'Concept Art: The Chronicles of my Melancholic Existence',
         path : 'https://cdnb.artstation.com/p/assets/images/images/047/257/631/20220313055453/smaller_square/allard-lavaritte-1stpage-recovered.jpg?1647168893',    
-        alt : 'The Archer',
+        alt : 'Concept Art: The Chronicles of my Melancholic Existence',
         link : '/artwork/VJYXRO'
     },
     {
