@@ -1,6 +1,6 @@
 import React from 'react';
 import { StoreWrapper, RowPoster, StoreRow, StorePostWrap, StorePost, Prize,StoreTumbnailWrapper, StoreThumbnail, 
-    TextWrapper, TextWrap, StoreHeader, StoreInfoRow, Type, AuthorWrap,  ButtonDark, ViewAllWrapper} from './StoreDataMapperElements';
+    TextWrapper, TextWrap, StoreHeader, StoreInfoRow, Type, AuthorWrap,  ButtonDark, ViewAllWrapper} from '../StoreElements/StoreDataMapperElements';
 
 export default function StoreDataMapper({StoreData, GenLink, ButtonLabel}) {
   return (

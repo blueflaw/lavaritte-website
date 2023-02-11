@@ -33,6 +33,7 @@ import { Qq48KgPage } from './pages/ArtPages/Qq48KgPage';
 import { KlqrYdPage } from './pages/ArtPages/KlqrYdPage';
 import { D0ZmBePage } from './pages/ArtPages/D0ZmBePage';
 import { NGdnmbPage } from './pages/ArtPages/NGdnmbPage';
+import { G8bzAzPage } from './pages/ArtPages/G8bzAzPage';
 
 import { Painting変態を入らないでPage } from './pages/BlogPages/Painting変態を入らないで';
 import { PaintingJettPage } from './pages/BlogPages/PaintingJett';
@@ -41,6 +42,7 @@ import { PaintingMemoriesPage } from './pages/BlogPages/PaintingMemoriesPage';
 import { BestCryptoPlatforms } from './pages/BlogPages/BestCryptoPlatforms';
 
 import { CloudTutorialPage } from './pages/TutorialPages/CloudTutorial';
+import { MoonSurfacePage } from './pages/TutorialPages/MoonSurfacePage';
 import { Helmet } from 'react-helmet';
 
 import ReactGA from 'react-ga';
@@ -96,6 +98,7 @@ function App() {
         <Route path="/artwork/KlqrYd" component={KlqrYdPage} exact/>
         <Route path="/artwork/D0ZmBe" component={D0ZmBePage} exact/>
         <Route path="/artwork/NGdnmb" component={NGdnmbPage} exact/>
+        <Route path="/artwork/G8bzAz" component={G8bzAzPage} exact/>
 
 
         <Route path="/blogs/Painting変態を入らないで" component={Painting変態を入らないでPage} exact/>
@@ -105,6 +108,7 @@ function App() {
         <Route path="/blogs/bestcryptoplatforms" component={BestCryptoPlatforms} exact/>
 
         <Route path="/tutorials/cloudtutorials" component={CloudTutorialPage} exact/>
+        <Route path="/tutorials/moonsurfacetutorial" component={MoonSurfacePage} exact/>
 
         <Route path="/404" component={ PageNotFound } />
         <Route component={PageNotFound} />

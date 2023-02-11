@@ -182,7 +182,7 @@ export const CloudTutorial = () => {
             <BlogPageContentP lightText='lightText'>
               This is where the tutorial starts. You may paint along with the instructions if you download the free cloud brushes. Enjoy! :D
               <LogoWrapper>
-                  <ButtonOpenAccount href='https://shrinke.me/BlueFlaws_Sky_Brush_v2' target={'_blank'}>DOWNLOAD BLUEFLAW'S CLOUD BRUSHES</ButtonOpenAccount>
+                  <ButtonOpenAccount href='https://shrinke.me/BlueFlaws_Sky_Brush_v2' target={'_blank'}>DOWNLOAD BRUSH</ButtonOpenAccount>
               </LogoWrapper>
               <br/>
               <i>“If you’re nothing without the suit, then you shouldn’t have it.” - Tony Stark</i>
@@ -299,7 +299,7 @@ export const CloudTutorial = () => {
              
             </BlogPageContentP>
             <LogoWrapper>
-                  <ButtonOpenAccount href='https://shrinke.me/BlueFlaws_Sky_Brush_v2' target={'_blank'}>DOWNLOAD BLUEFLAW'S CLOUD BRUSHES</ButtonOpenAccount>
+                  <ButtonOpenAccount href='https://shrinke.me/BlueFlaws_Sky_Brush_v2' target={'_blank'}>DOWNLOAD BRUSH</ButtonOpenAccount>
               </LogoWrapper><br/><br/>
               <BlogsVidContainer id='speedpaint'>
                   <ReactYouTube videoId='eqshrWlAkTw'/>

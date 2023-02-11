@@ -14,6 +14,17 @@ export const TutorialsData2 = {
 
 export const TutorialsDataMap = [
     {
+        "id": "002",
+        "title": "Moon Surface Tutorial",
+        "path" : "https://cdnb.artstation.com/p/assets/images/images/056/930/243/20221207093023/smaller_square/allard-lavaritte-darkness-demon-final.jpg?1670427024",    
+        "alt" : "Moon Surface Tutorial",
+        "category" : "Blender",
+        "time" : "Tutorial",
+        "author" : "Allard Lavaritte",
+        "preview":"Today, we learn how to make the moon with only procedural textures in Blender!",
+        "link" : "/tutorials/moonsurfacetutorial"
+    },
+    {
         "id": "001",
         "title": "Cloud Tutorial",
         "path" : cloudcover,    

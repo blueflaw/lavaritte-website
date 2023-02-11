@@ -1,103 +1,159 @@
-import React, {useRef} from 'react';
-import { useIntersection } from 'react-use';
+import React, { Component } from 'react';
 import { Slider } from '../Slider/Slider';
-import gsap from 'gsap';
-import { Accessories, WallArt, Newchic, Clothing, StoreDataCard} from './StoreData';
 import { SliderData } from '../Slider/SliderData';
-import { StoreContaner, StoreQuotesTextWrapper, QuotesWrapper, Heading, Subtitle} from './StoreElements';
-import StoreDataMapper from './StoreComponents/StoreDataMapper';
-import { StoreCardMapper } from './StoreComponents/StoreCardMapper';
 
-const Store = () => {
-    const treshold = 0.9;
-    const sectionRef1 = useRef(null);
-    const sectionRef2 = useRef(null);
-    const sectionRef3 = useRef(null);
+import General from './Category/General';
+import Clothing from './Category/ClothingCategory';
+import PosterCategory from './Category/PosterCategory';
+import ThreeDModels from './Category/3dModels';
+import StockPhotos from './Category/StockPhotos';
 
-    const NewchicLink = '';
-    const ClothingLink = 'https://www.redbubble.com/people/blueflaw/shop?asc=u&asc=u&iaCode=u-clothing';
-    const AccessoriesLink = 'https://www.redbubble.com/people/blueflaw/shop?asc=u&asc=u&iaCode=u-accessories';
-    const WallAretLink = 'https://www.redbubble.com/people/blueflaw/shop?&asc=u&iaCode=u-prints';
+import { StoreContaner} from './StoreElements/StoreElements';
+import { StoreMenuContainer, MenuContainer, MenuListContainer, MenuItem, MenuLinks } from './StoreElements/StoreMenuElements';
+import AccessoriesCategory from './Category/AccessoriesCategory';
+import SoftwareBrushesCategory from './Category/SoftwareBrushesCategory';
 
-    const intersection = useIntersection(sectionRef1,{
-        root: null,
-        rootMargin: "0px",
-        threshold: treshold
-    });
-    const intersection2 = useIntersection(sectionRef2,{
-        root: null,
-        rootMargin: "0px",
-        threshold: treshold
-    });
-    const intersection3 = useIntersection(sectionRef3,{
-        root: null,
-        rootMargin: "0px",
-        threshold: treshold
-    });
+export class Store extends Component {
+    constructor(props) {
+        super (props) 
 
-    //Animation for fading in
-    const fadeIn =  element => {
-        gsap.to(element, 1, {
-            opacity: 1,
-            x: 0,
-            stagger: { amount: 0.3}
-        });
-    };
+        this.state = {
+            category : 'general'
+        }
+    }
 
-    //Animation for fading out
-    const fadeOut = element => {
-        gsap.to(element, 1, {
-            opacity: 0,
-            x: 90,
-            ease: 'power4.out'
-        });
-    };
+    toggleMe = (value) =>{
+        this.setState({
+            category: value
+        })
+    }
+    
+    isClothingActive = false;
+    isPosterActive = false;
+    isAccessoriesActive = false;
+    isBrushesActive = false;
+    is3dModelActive = false;
+    isStockPhotosActive = false;
+    isGeneralActive = true;
 
-    // checking to see when the viewport is visible to the user
-    intersection && intersection.intersectionRatio < treshold ? fadeOut(".section1") : fadeIn(".section1");
-    intersection2 && intersection2.intersectionRatio < treshold ? fadeOut(".section2") : fadeIn(".section2");
-    intersection3 && intersection3.intersectionRatio < treshold ? fadeOut(".section3") : fadeIn(".section3");
-
-    return (
-        <StoreContaner id="store">
-        <Slider slides={SliderData}/>
-
-        <QuotesWrapper id='clothing'>
-                <StoreQuotesTextWrapper className="section3" ref={sectionRef3}>
-                    <Subtitle>FEATURED COLLECTION</Subtitle>
-                    <Heading>CLOTHING</Heading>
-                </StoreQuotesTextWrapper>
-        </QuotesWrapper>
-        <StoreDataMapper StoreData={Newchic}  GenLink={NewchicLink} ButtonLabel={'View All Product'}/>
-
-        <QuotesWrapper id='clothing'>
-                <StoreQuotesTextWrapper className="section1" ref={sectionRef1}>
-                    <Subtitle>FEATURED COLLECTION</Subtitle>
-                    <Heading>CLOTHING</Heading>
-                </StoreQuotesTextWrapper>
-        </QuotesWrapper>
-
-        <StoreDataMapper StoreData={Clothing}  GenLink={ClothingLink} ButtonLabel={'View All Product'}/>
-        <StoreCardMapper CardData={StoreDataCard}/>
-
-        <QuotesWrapper id='wallart'>
-                <StoreQuotesTextWrapper className="section2" ref={sectionRef2}>
-                    <Subtitle>FEATURED COLLECTION</Subtitle>
-                    <Heading>Posters</Heading>
-                </StoreQuotesTextWrapper>
-        </QuotesWrapper>
-        <StoreDataMapper StoreData={WallArt}  GenLink={WallAretLink} ButtonLabel={'View All Wall Art'}/>
-
-        <QuotesWrapper id='accessories'>
-                <StoreQuotesTextWrapper className="section2" ref={sectionRef2}>
-                    <Subtitle>FEATURED COLLECTION</Subtitle>
-                    <Heading>ACCESSORIES</Heading>
-                </StoreQuotesTextWrapper>
-        </QuotesWrapper>
-        <StoreDataMapper StoreData={Accessories} GenLink={AccessoriesLink} ButtonLabel={'shop'}/>
-
-        </StoreContaner>
-    )
+    render () {
+        return (
+            <StoreContaner id="store">
+            <Slider slides={SliderData}/>
+            <StoreMenuContainer>
+                <MenuContainer>
+                    <MenuListContainer>
+                        <MenuItem>
+                            <MenuLinks $activeStoreMenu={this.isGeneralActive} onClick={() => {
+                                this.toggleMe('general')
+                                this.isClothingActive = false;
+                                this.isPosterActive = false;
+                                this.isAccessoriesActive = false;
+                                this.isBrushesActive = false;
+                                this.is3dModelActive = false;
+                                this.isStockPhotosActive = false;
+                                this.isGeneralActive = true;
+                            }}>Browse all</MenuLinks>
+                        </MenuItem>
+                        <MenuItem>
+                            <MenuLinks $activeStoreMenu={this.isClothingActive} onClick={() => {
+                                this.toggleMe('clothing')
+                                this.isClothingActive = true;
+                                this.isPosterActive = false;
+                                this.isAccessoriesActive = false;
+                                this.isBrushesActive = false;
+                                this.is3dModelActive = false;
+                                this.isStockPhotosActive = false;
+                                this.isGeneralActive = false;
+                                }}>Clothing</MenuLinks>
+                        </MenuItem>
+                        <MenuItem>
+                            <MenuLinks $activeStoreMenu={this.isPosterActive} onClick={() => {
+                                this.toggleMe('poster')
+                                this.isClothingActive = false;
+                                this.isPosterActive = true;
+                                this.isAccessoriesActive = false;
+                                this.isBrushesActive = false;
+                                this.is3dModelActive = false;
+                                this.isStockPhotosActive = false;
+                                this.isGeneralActive = false;
+                                }}>Posters</MenuLinks>
+                        </MenuItem>
+                        <MenuItem>
+                            <MenuLinks $activeStoreMenu={this.isAccessoriesActive} onClick={() => {
+                                this.toggleMe('accessories')
+                                this.isClothingActive = false;
+                                this.isPosterActive = false;
+                                this.isAccessoriesActive = true;
+                                this.isBrushesActive = false;
+                                this.is3dModelActive = false;
+                                this.isStockPhotosActive = false;
+                                this.isGeneralActive = false;
+                                }}>Accessories</MenuLinks>
+                        </MenuItem>
+                        <MenuItem>
+                            <MenuLinks $activeStoreMenu={this.isBrushesActive} onClick={() => {
+                                this.toggleMe('brushes')
+                                this.isClothingActive = false;
+                                this.isPosterActive = false;
+                                this.isAccessoriesActive = false;
+                                this.isBrushesActive = true;
+                                this.is3dModelActive = false;
+                                this.isStockPhotosActive = false;
+                                this.isGeneralActive = false;
+                                }}>Software Brushes</MenuLinks>
+                        </MenuItem>
+                        <MenuItem>
+                            <MenuLinks $activeStoreMenu={this.is3dModelActive} onClick={() => {
+                                this.toggleMe('3dmodel')
+                                this.isClothingActive = false;
+                                this.isPosterActive = false;
+                                this.isAccessoriesActive = false;
+                                this.isBrushesActive = false;
+                                this.is3dModelActive = true;
+                                this.isStockPhotosActive = false;
+                                this.isGeneralActive = false;
+                                }}>3d Models</MenuLinks>
+                        </MenuItem>
+                        <MenuItem>
+                            <MenuLinks $activeStoreMenu={this.isStockPhotosActive} onClick={() => {
+                                this.toggleMe('stockphotos')
+                                this.isClothingActive = false;
+                                this.isPosterActive = false;
+                                this.isAccessoriesActive = false;
+                                this.isBrushesActive = false;
+                                this.is3dModelActive = false;
+                                this.isStockPhotosActive = true;
+                                this.isGeneralActive = false;
+                                }}>Stock Photos</MenuLinks>
+                        </MenuItem>
+                    </MenuListContainer>
+                </MenuContainer>
+          </StoreMenuContainer>
+          {
+            this.state.category === 'general' && <General/>
+          }
+          {
+            this.state.category === 'clothing' && <Clothing/>
+          }
+          {
+            this.state.category === 'poster' && <PosterCategory/>
+          }
+          {
+            this.state.category === 'accessories' && <AccessoriesCategory/>
+          }
+          {
+            this.state.category === 'brushes' && <SoftwareBrushesCategory/>
+          }
+          {
+            this.state.category === '3dmodel' && <ThreeDModels/>
+          }
+          {
+            this.state.category === 'stockphotos' && <StockPhotos/>
+          }
+          </StoreContaner>
+        )
+    }
 }
 
 export default Store

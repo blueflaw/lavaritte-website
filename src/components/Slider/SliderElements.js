@@ -3,7 +3,7 @@ import {Link as LinkS} from 'react-scroll'
 import { FaAngleLeft,  FaAngleRight} from 'react-icons/fa';
 
 export const SliderHeroSection = styled.div`
-    height: 100vh;
+    height: 70vh;
     max-height: 1100px;
     position: relative;
     overflow: hidden;

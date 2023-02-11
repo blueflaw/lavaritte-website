@@ -17,7 +17,9 @@ export const CloudTutorialPage = () => {
       <React.Fragment>
         <Helmet>
           <meta name='description' content="Allard Lavaritte's Cloud Tutorial || Anime cloud painting tutorial using Photoshop"/>
-          <meta name='keywords' content='Allard, Lavaritte, How to draw clouds'/> 
+          <meta name='keywords'    content='Allard, Lavaritte, How to draw clouds'/>
+          <meta name="image"       content="https://cdnb.artstation.com/p/assets/images/images/051/387/003/20220706211424/smaller_square/allard-lavaritte-cloud-collection-01.jpg?1657160064" />
+          <meta name='keywords'    content='Allard, Lavaritte, Cloud, Best, Photoshop, Anime, anime clouds, how to draw,'/>
         </Helmet>
         <ScrollToTop/>
         <Sidebar isOpen={isOpen} toggle={toggle} />

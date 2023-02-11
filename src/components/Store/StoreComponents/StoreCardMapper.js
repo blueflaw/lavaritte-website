@@ -1,6 +1,6 @@
 import React from 'react'
 import {StoreCardsContainer, StoreCardsbuildWrapper, StoreCardContentH1, 
-    StoreCardContentH4, StorePoster, TextOverlay, TextWrapper, StoreImageContainer, OverlayViewAllWrapper, ButtonWhite, StorePosterCard} from '../StoreElements';
+    StoreCardContentH4, StorePoster, TextOverlay, TextWrapper, StoreImageContainer, OverlayViewAllWrapper, ButtonWhite, StorePosterCard} from '../StoreElements/StoreElements';
 
 export const StoreCardMapper = ({CardData}) => {
   return (

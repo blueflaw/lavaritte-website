@@ -43,6 +43,14 @@ export const QuotesWrapper = styled.div`
     background-color: #efefef;
 `;
 
+export const LookingForQuotesWrapper = styled.div`
+    display: flex;
+    padding: 30px 0px;
+    justify-content: left;
+    text-align: left;
+    position: relative;
+`;
+
 
 export const ViewAllWrapper = styled.div`
     display: flex;
@@ -133,6 +141,16 @@ export const StoreCardsContainer = styled.div`
     margin-left: auto;
     justify-content: center;
 `;
+
+export const LookingStoreCardsContainer = styled.div`
+    display: grid;
+    background-color: #fff;
+    padding: 5% 0;
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: center;
+`;
+
 export const StoreCardsbuildWrapper = styled.div`
     display: flex;
     justify-content: space-around;
@@ -147,6 +165,21 @@ export const StoreCardsbuildWrapper = styled.div`
         flex-direction: column ;
     }
 `;
+
+export const LookingForCardsbuildWrapper = styled.div`
+    display: grid;
+    /* grid-auto-columns: minmax(auto, 1fr);  */
+    grid-template-columns: repeat(6, 1fr);
+    align-items: center;
+    grid-template-areas: ${({imgStart}) => (imgStart ? `'col2 col1` : `'col1 col2'`)};
+    grid-gap: var(--auto-grid-gap, 0);
+    padding: 0;
+    @media screen and (max-width: 768px){
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: ${({imgStart}) => (imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`)};
+    }
+`;
+
 
 export const StoreCardContentH1 = styled.h1`
     color: #fff;
@@ -163,6 +196,19 @@ export const StoreCardContentH4 = styled.h1`
     max-width: 1100px;
     padding-top: 10px;
     font-size: 0.9rem;
+    letter-spacing: 0.16rem;
+    word-wrap: break-word;
+    margin-bottom: 16px;
+`;
+
+export const LookingForH4 = styled.h4`
+    cursor: default;
+    text-transform: uppercase;
+    color: #fff;
+    max-width: 1100px;
+    padding-top: 10px;
+    font-size: 0.7rem;
+    font-weight: 600;
     letter-spacing: 0.16rem;
     word-wrap: break-word;
     margin-bottom: 16px;
@@ -188,6 +234,39 @@ export const StoreImageContainer = styled.div`
     @media screen and (max-width: 480px){
         width: 300px;
         height: 300px;
+    }
+`;
+
+
+export const LookingStoreImageContainer = styled.div`
+    position: relative;
+    width: 200px;
+    height: 136px;
+    overflow: hidden;
+    &:hover {
+        & img{
+            transform: scale(1.08);
+            filter: grayscale(0%);
+        }
+        & span{
+            opacity: 1;
+        }
+
+    } 
+    @media screen and (max-width: 480px){
+        width: 300px;
+        height: 300px;
+    }
+`;
+
+
+export const LookingForIcon = styled.div`
+    padding-top: 20px;
+    color: #ffffff;
+    font-size: 2rem;
+
+    @media screen and (max-width: 768px){
+        padding-bottom: 20px;
     }
 `;
 
@@ -226,6 +305,12 @@ export const StorePosterCard = styled.div`
     height: 500px;
 `;
 
+export const LookingForCard = styled.a`
+    display: flex;
+    width: 200px;
+    height: 136px;
+`;
+
 
 export const OverlayViewAllWrapper = styled.div`
     display: flex;
@@ -243,9 +328,22 @@ export const StorePoster = styled.img`
     overflow: hidden;
     :hover{
         transform: scale(1.08);
+        filter: grayscale(0%);
     }
 `;
 
+export const LookingForStorePoster = styled.img`
+    object-fit: fill;
+    width: 100%;
+    max-height: 500px;
+    margin: 0%;
+    transition: transform 450ms;
+    overflow: hidden;
+    :hover{
+        transform: scale(1.08);
+        filter: grayscale(0%);
+    }
+`;
 
 export const TextOverlay = styled.span`
     display: flex;
@@ -264,6 +362,22 @@ export const TextWrapper = styled.div`
     top: 70%;
     padding-left: 20px;
     text-align: left;
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+    transition: .5s ease;
+
+    @media screen and (max-width: 480px){
+        padding-left: 5px;
+        top: 20px;
+        left: 20px;
+    }
+`;
+
+
+export const LookingForTextWrapper = styled.div`
+    position: relative;
+    text-align: center;
     height: 100%;
     width: 100%;
     opacity: 1;

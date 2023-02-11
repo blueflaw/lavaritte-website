@@ -1,5 +1,12 @@
 export const ArtData = [
     {
+        id: '022',
+        title: 'The Ravine',
+        path : 'https://cdna.artstation.com/p/assets/images/images/058/921/528/smaller_square/allard-lavaritte-the-ravine-f.jpg?1675252606',    
+        alt : 'The Ravine',
+        link : '/artwork/G8bzAz'
+    },
+    {
         id: '021',
         title: 'Darkness Devil',
         path : 'https://cdnb.artstation.com/p/assets/images/images/056/930/243/20221207093023/smaller_square/allard-lavaritte-darkness-demon-final.jpg?1670427024',    

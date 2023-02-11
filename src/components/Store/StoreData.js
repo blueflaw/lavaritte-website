@@ -1,3 +1,5 @@
+import React from 'react';
+import { FaTshirt, FaCog, FaFile, FaPaintBrush, FaCube, FaPhotoVideo } from "react-icons/fa";
 
 export const StoreDataCard = [
     {
@@ -29,19 +31,55 @@ export const StoreDataCard = [
     },
 ];
 
-export const Accessories = [
+export const LookingForStore = [
     {
-        id: "A001",
-        title: "BlueFlaws Basic Brush",
-        imagePath: 'https://upenandy.sirv.com/lavaritte.com/store/redbubble/brushset.jpg',
-        alt : "BlueFlaws Basic Brush",
-        author : "Allard Lavaritte",
-        type : "Brushes",
-        prize : "$2.00",
-        link : "https://artstn.co/m/n706y"
+        id: "LF001",
+        topline: "Clothing",
+        imagepath: 'https://upenandy.sirv.com/lavaritte.com/store/looking_for_something/LookingforClothing.jpg',
+        alt: 'Clothing',
+        icon: <FaTshirt/>
     },
     {
-        id: "A002",
+        id: "LF002",
+        topline: "Posters",
+        imagepath: 'https://upenandy.sirv.com/lavaritte.com/store/looking_for_something/LookingforPoster.jpg',
+        alt: 'Posters',
+        icon: <FaFile/>
+    },
+    {
+        id: "LF003",
+        topline: "Accessories",
+        imagepath: 'https://upenandy.sirv.com/lavaritte.com/store/looking_for_something/LookingforAccessories.jpg',
+        alt: 'Accessories',
+        icon: <FaCog/>
+    },
+    {
+        id: "LF004",
+        topline: "Software Brushes",
+        imagepath: 'https://upenandy.sirv.com/lavaritte.com/store/looking_for_something/LookingforBrushes.jpg',
+        alt: 'Software Brushes',
+        icon: <FaPaintBrush/>
+    },
+    {
+        id: "LF005",
+        topline: "3d Models",
+        imagepath: 'https://upenandy.sirv.com/lavaritte.com/store/looking_for_something/Lookingfor3dModels.jpg',
+        alt: '3d Models',
+        icon: <FaCube/>
+    },
+    {
+        id: "LF006",
+        topline: "Stock Photos",
+        imagepath: 'https://upenandy.sirv.com/lavaritte.com/store/looking_for_something/LookingforStockPhotos.jpg',
+        alt: 'Stock Photos',
+        icon: <FaPhotoVideo/>
+    },
+];
+
+export const Accessories = [
+    
+    {
+        id: "A001",
         title: "EVA 00 Mouse Pad",
         imagePath: 'https://upenandy.sirv.com/lavaritte.com/store/redbubble/eva00_desk-mat.jpg',
         alt : "EVA 00 Mouse Pad",
@@ -51,7 +89,7 @@ export const Accessories = [
         link : "https://www.redbubble.com/i/mouse-pad/EVA-00-by-blueflaw/112332813.GAP22?asc=u"
     },
     {
-        id: "A003",
+        id: "A002",
         title: "The Chronicles Mouse Pad",
         // imagePath: require('../../images/store/bb_desk-mat.jpg'),
         imagePath: 'https://upenandy.sirv.com/lavaritte.com/store/redbubble/bb_desk-mat.jpg',
@@ -60,6 +98,19 @@ export const Accessories = [
         type : "Mouse Pad",
         prize : "$36.00",
         link : "https://www.redbubble.com/i/mouse-pad/The-Chronicles-of-my-melancholic-existence-by-blueflaw/95867584.G1FH6?asc=u"
+    },
+];
+
+export const SoftwareBrushes = [
+    {
+        id: "A001",
+        title: "BlueFlaws Basic Brush",
+        imagePath: 'https://upenandy.sirv.com/lavaritte.com/store/redbubble/brushset.jpg',
+        alt : "BlueFlaws Basic Brush",
+        author : "Allard Lavaritte",
+        type : "Brushes",
+        prize : "$2.00",
+        link : "https://artstn.co/m/n706y"
     },
 ];
 
