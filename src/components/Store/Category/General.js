@@ -1,11 +1,10 @@
 import React, {useRef} from 'react';
 import { useIntersection } from 'react-use';
 import gsap from 'gsap';
-import { Accessories, WallArt, Newchic, Clothing, StoreDataCard, LookingForStore} from '../StoreData';
+import { Accessories, WallArt, Newchic, Clothing, StoreDataCard} from '../StoreData';
 import { StoreContaner, StoreQuotesTextWrapper, QuotesWrapper, Heading, Subtitle} from '../StoreElements/StoreElements';
 import StoreDataMapper from '../StoreComponents/StoreDataMapper';
 import { StoreCardMapper } from '../StoreComponents/StoreCardMapper';
-import { LookingFor } from '../StoreComponents/LookingFor';
 
 const General = () => {
     const treshold = 0.9;
@@ -77,7 +76,6 @@ const General = () => {
         <StoreDataMapper StoreData={Clothing}  GenLink={ClothingLink} ButtonLabel={'View All Product'}/>
 
         <StoreCardMapper CardData={StoreDataCard}/>
-        <LookingFor CardData={LookingForStore}/>
         
         <QuotesWrapper id='wallart'>
                 <StoreQuotesTextWrapper className="section2" ref={sectionRef2}>

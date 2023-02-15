@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from 'react-router-dom';
 
 export const ButtonDark = styled.a`
     color: #fff;
@@ -202,7 +203,6 @@ export const StoreCardContentH4 = styled.h1`
 `;
 
 export const LookingForH4 = styled.h4`
-    cursor: default;
     text-transform: uppercase;
     color: #fff;
     max-width: 1100px;
@@ -305,7 +305,7 @@ export const StorePosterCard = styled.div`
     height: 500px;
 `;
 
-export const LookingForCard = styled.a`
+export const LookingForCard = styled(Link)`
     display: flex;
     width: 200px;
     height: 136px;

@@ -4,6 +4,7 @@ import {LookingForCardsbuildWrapper, LookingForIcon,
     Subtitle, LookingForQuotesWrapper, LookingStoreCardsContainer} from '../StoreElements/StoreElements';
 
 export const LookingFor = ({CardData}) => {
+
   return (
       <LookingStoreCardsContainer>
         <LookingForQuotesWrapper>
@@ -15,7 +16,7 @@ export const LookingFor = ({CardData}) => {
         <LookingForCardsbuildWrapper>
         {CardData.map((StoreDetail) =>{
             return <React.Fragment key={StoreDetail.id}>
-                <LookingForCard href={StoreDetail.link} target="_blank">
+                <LookingForCard to={StoreDetail.link} smooth="true" duration={500} spy="true" exact="true" offset={-80}>
                     <LookingStoreImageContainer>
                     <LookingForStorePoster src={StoreDetail.imagepath} alt={StoreDetail.alt}/>
                         <TextOverlay>

@@ -37,42 +37,48 @@ export const LookingForStore = [
         topline: "Clothing",
         imagepath: 'https://upenandy.sirv.com/lavaritte.com/store/looking_for_something/LookingforClothing.jpg',
         alt: 'Clothing',
-        icon: <FaTshirt/>
+        icon: <FaTshirt/>,
+        link: "/store"
     },
     {
         id: "LF002",
         topline: "Posters",
         imagepath: 'https://upenandy.sirv.com/lavaritte.com/store/looking_for_something/LookingforPoster.jpg',
         alt: 'Posters',
-        icon: <FaFile/>
+        icon: <FaFile/>,
+        link: "/store"
     },
     {
         id: "LF003",
         topline: "Accessories",
         imagepath: 'https://upenandy.sirv.com/lavaritte.com/store/looking_for_something/LookingforAccessories.jpg',
         alt: 'Accessories',
-        icon: <FaCog/>
+        icon: <FaCog/>,
+        link: "/store"
     },
     {
         id: "LF004",
         topline: "Software Brushes",
         imagepath: 'https://upenandy.sirv.com/lavaritte.com/store/looking_for_something/LookingforBrushes.jpg',
         alt: 'Software Brushes',
-        icon: <FaPaintBrush/>
+        icon: <FaPaintBrush/>,
+        link: "/store"
     },
     {
         id: "LF005",
         topline: "3d Models",
         imagepath: 'https://upenandy.sirv.com/lavaritte.com/store/looking_for_something/Lookingfor3dModels.jpg',
         alt: '3d Models',
-        icon: <FaCube/>
+        icon: <FaCube/>,
+        link: "/store"
     },
     {
         id: "LF006",
         topline: "Stock Photos",
         imagepath: 'https://upenandy.sirv.com/lavaritte.com/store/looking_for_something/LookingforStockPhotos.jpg',
         alt: 'Stock Photos',
-        icon: <FaPhotoVideo/>
+        icon: <FaPhotoVideo/>,
+        link: "/store"
     },
 ];
 

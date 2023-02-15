@@ -22,6 +22,23 @@ export class Store extends Component {
         }
     }
 
+    // componentDidMount() {
+    //     window.addEventListener('load', this.handleLoad);
+    //  }
+    
+    //  componentWillUnmount() { 
+    //    window.removeEventListener('load', this.handleLoad)  
+    //  }
+    
+    //  handleLoad() {
+    //     window.isNavNFTActive = false;
+    //     window.isNavStoreActive = true;
+    //     window.isNavAboutActive = false;
+    //     window.isNavTutorialsActive = false;
+    //     window.isNavBlogctive = false;
+    //     window.isNavHomeActive = false;
+    //  }
+
     toggleMe = (value) =>{
         this.setState({
             category: value
