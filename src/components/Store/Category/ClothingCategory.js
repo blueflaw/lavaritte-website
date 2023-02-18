@@ -1,7 +1,8 @@
 import React, {useRef} from 'react';
 import { useIntersection } from 'react-use';
 import gsap from 'gsap';
-import { Newchic, Clothing, StoreDataCard} from '../StoreData';
+import { StoreDataCard } from '../StoreData/StoreData';
+import { Newchic, Clothing} from '../StoreData/ClothingData';
 import { StoreContaner, StoreQuotesTextWrapper, QuotesWrapper, Heading, Subtitle} from '../StoreElements/StoreElements';
 import StoreDataMapper from '../StoreComponents/StoreDataMapper';
 import { StoreCardMapper } from '../StoreComponents/StoreCardMapper';

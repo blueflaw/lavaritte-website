@@ -117,6 +117,18 @@ export const Subtitle = styled.p`
     margin-bottom: 16px;
 `;
 
+export const ChangeSubtitle = styled.span`
+    color: #000;
+    font-weight: bold;
+    max-width: 1100px;
+    padding-top: 10px;
+    font-size: 0.9rem;
+    letter-spacing: 0.16rem;
+    word-wrap: break-word;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+`;
+
 export const StoreQuotesTextWrapper = styled.div`
     opacity: 1;
     overflow: hidden;

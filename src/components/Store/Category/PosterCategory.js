@@ -1,7 +1,7 @@
 import React, {useRef} from 'react';
 import { useIntersection } from 'react-use';
 import gsap from 'gsap';
-import { WallArt} from '../StoreData';
+import { WallArt} from '../StoreData/StoreData';
 import { StoreContaner, StoreQuotesTextWrapper, QuotesWrapper, Heading, Subtitle} from '../StoreElements/StoreElements';
 import StoreDataMapper from '../StoreComponents/StoreDataMapper';
 

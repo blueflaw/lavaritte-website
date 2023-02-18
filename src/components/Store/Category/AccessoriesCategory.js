@@ -1,10 +1,11 @@
 import React, {useRef} from 'react';
 import { useIntersection } from 'react-use';
 import gsap from 'gsap';
-import { Accessories } from '../StoreData';
+import { Accessories } from '../StoreData/StoreData';
 import { StoreContaner, StoreQuotesTextWrapper, QuotesWrapper, Heading, Subtitle} from '../StoreElements/StoreElements';
 import StoreDataMapper from '../StoreComponents/StoreDataMapper';
-
+import { LookingFor } from '../StoreComponents/LookingFor';
+import { LookingForStore } from '../StoreData/StoreData';
 const AccessoriesCategory = () => {
     const treshold = 0.9;
     const sectionRef1 = useRef(null);
@@ -61,7 +62,7 @@ const AccessoriesCategory = () => {
                 </StoreQuotesTextWrapper>
         </QuotesWrapper>
         <StoreDataMapper StoreData={Accessories} GenLink={AccessoriesLink} ButtonLabel={'shop'}/>
-
+        <LookingFor CardData={LookingForStore}/>
         </StoreContaner>
     )
 }

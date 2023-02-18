@@ -1,10 +1,24 @@
 export const ArtData = [
     {
-        id: '022',
+        id: '024',
+        title: 'I am the Storm',
+        path : 'https://cdna.artstation.com/p/assets/images/images/059/592/118/smaller_square/allard-lavaritte-underthemoonlight.jpg?1676720721',    
+        alt : 'I am the Storm',
+        link : '/artwork/G9oD8n'
+    },
+    {
+        id: '023',
         title: 'The Ravine',
         path : 'https://cdna.artstation.com/p/assets/images/images/058/921/528/smaller_square/allard-lavaritte-the-ravine-f.jpg?1675252606',    
         alt : 'The Ravine',
         link : '/artwork/G8bzAz'
+    },
+    {
+        id: '022',
+        title: 'Eye of Winter',
+        path : 'https://cdna.artstation.com/p/assets/images/images/056/332/104/smaller_square/allard-lavaritte-eye-of-flykra.jpg?1669006416',    
+        alt : 'Eye of Winter',
+        link : '/artwork/B5Lzav'
     },
     {
         id: '021',

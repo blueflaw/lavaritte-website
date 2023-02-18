@@ -1,7 +1,8 @@
 import React, {useRef} from 'react';
 import { useIntersection } from 'react-use';
 import gsap from 'gsap';
-import { Accessories, WallArt, Newchic, Clothing, StoreDataCard} from '../StoreData';
+import { Accessories, WallArt, StoreDataCard} from '../StoreData/StoreData';
+import { Newchic, Clothing} from '../StoreData/ClothingData';
 import { StoreContaner, StoreQuotesTextWrapper, QuotesWrapper, Heading, Subtitle} from '../StoreElements/StoreElements';
 import StoreDataMapper from '../StoreComponents/StoreDataMapper';
 import { StoreCardMapper } from '../StoreComponents/StoreCardMapper';
@@ -15,7 +16,7 @@ const General = () => {
     const NewchicLink = '';
     const ClothingLink = 'https://www.redbubble.com/people/blueflaw/shop?asc=u&asc=u&iaCode=u-clothing';
     const AccessoriesLink = 'https://www.redbubble.com/people/blueflaw/shop?asc=u&asc=u&iaCode=u-accessories';
-    const WallAretLink = 'https://www.redbubble.com/people/blueflaw/shop?&asc=u&iaCode=u-prints';
+    const WallAretLink = 'https://www.redbubble.com/people/blueflaw/shop?artistUserName=blueflaw&asc=u&iaCode=u-prints&medium=digital&sortOrder=relevant';
 
     const intersection = useIntersection(sectionRef1,{
         root: null,
