@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 // import { Link as LinkPage} from 'react-router-dom';
 export const Nav = styled.nav `
     background: ${({ scrollNav}) => (scrollNav ? '#000000' : 'transparent')};
+    /* background: ${({ scrollNav}) => (scrollNav ? '#000000' : '#000000')}; */
     height: 80px;
     margin-top: -80px;
     display: flex;

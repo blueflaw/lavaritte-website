@@ -8,6 +8,7 @@ import { NFTContainer, NFTWrapper, Heading, Subtitle, NFTCollectionWrapper, Hero
          AuthorWrap, NFTTumbnailWrapper, AuthorDisplayPicture, AuthorName, NFTCollectionThumbnail, ButtonWrapper, ButtonViewCollection, ButtonDown } from './NFTElements';
 import { NFTsData1, NFTsData2 } from './NFTData';
 import { FaChevronDown} from 'react-icons/fa';
+import { Newsletter } from '../Newsletter/Newsletter';
 
 const NFTSection = () => {
     gsap.registerPlugin(ScrollTrigger);
@@ -127,6 +128,7 @@ const NFTSection = () => {
                         <Heading>{NFTsData2.headline}</Heading>
                 </NFTWrapper>
             </NFTContainer>
+            <Newsletter/>
         </React.Fragment>
     )
 }

@@ -18,6 +18,7 @@ const Home = () => {
         <React.Fragment>
             <Helmet>
                 <meta name='keywords' content='Allard, Lavaritte, Art, non-fungible token, blockchain, financial, art, sold and exchanged'/>
+                <meta property="og:image" content="https://cdnb.artstation.com/p/assets/images/images/019/381/053/large/allard-lavaritte-the-archer-square.jpg?1563235726" />
             </Helmet>
             <Sidebar isOpen={isOpen} toggle={toggle} />
             <Navbar toggle={toggle}/>

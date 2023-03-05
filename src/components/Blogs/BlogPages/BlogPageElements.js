@@ -66,6 +66,35 @@ export const ButtonOpenAccount = styled.a`
 `;
 
 
+export const ButtonWhite = styled(Link)`
+    color: #fff;;
+    background-image: linear-gradient(-90deg, #fff 50%, transparent 50%);
+    background-size: 300%;
+    transition: all 0.2s ease-in-out;
+    text-transform: uppercase;
+    position: relative;
+    text-decoration: none;
+    display: inline;
+    align-items: center;
+    justify-content: center;
+    border: 1.5px solid #fff;;
+    padding: 1rem 2rem;
+    font-size: ${({fontBig}) => (fontBig ? '1rem' : '0.9rem')};
+    transition: all 0.6s;
+
+    &:hover {
+        color: #00a2ff;
+        background-position: 99%;
+        overflow: hidden;
+        transform: translateX(0.5rem);
+    }
+
+    /* @media screen and (max-width: 768px){
+        max-width: 100%;
+    } */
+`;
+
+
 export const ShareWrapper = styled.div`
     width: 100%;
     max-width: 1100px;
