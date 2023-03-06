@@ -25,4 +25,4 @@ yarn-error.log*
 
 # keys
 /src/components/Firebase
-/components/App.config.js
+App.config.js
