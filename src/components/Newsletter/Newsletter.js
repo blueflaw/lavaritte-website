@@ -1,5 +1,6 @@
 import React, { useState} from 'react';
-import { FormContainer, NewsLetterContainer, NewsletterEmail, NewsletterSubmit, NewsLetterH4, NewsLetterTextWrapper, NewsLetterP, ThankyouTextWrapper, ThankyouText } from './NewsletterEllements';
+import { FormContainer, NewsLetterContainer, NewsletterEmail, NewsletterSubmit, NewsLetterH4, 
+        NewsLetterTextWrapper, NewsLetterP, ThankyouTextWrapper, ThankyouText, RecaptchaWrapper } from './NewsletterEllements';
 import firebase_DB from '../Firebase/firebase';
 import firebase from 'firebase/compat/app';
 import ReCAPTCHA from "react-google-recaptcha";
@@ -43,12 +44,12 @@ export const Newsletter = () => {
         </NewsLetterTextWrapper>
         <FormContainer onSubmit={submitHandler}>
           <NewsletterEmail placeholder="Your email address" type={'email'} onChange={inputHandler} value={input}/>
-          <ReCAPTCHA
-            sitekey={AppConfig.GOOGLE.ReCAPTCHA}
-            onChange={inputHandler}
-          />,
           <NewsletterSubmit type='submit'>Submit</NewsletterSubmit> 
         </FormContainer>
+        <RecaptchaWrapper><ReCAPTCHA
+            sitekey={AppConfig.GOOGLE.ReCAPTCHA}
+            onChange={inputHandler}
+          /></RecaptchaWrapper>
         {message && <ThankyouTextWrapper><ThankyouText>{message}</ThankyouText></ThankyouTextWrapper>}
       </NewsLetterContainer>
     </React.Fragment>

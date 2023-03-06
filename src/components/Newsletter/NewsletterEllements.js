@@ -116,6 +116,12 @@ export const ThankyouTextWrapper = styled.div`
     background-color: #00a2ff;
 `;
 
+export const RecaptchaWrapper = styled.div`
+    width: 30vw;
+    margin-top: 20px;
+    justify-content: center;
+`;
+
 export const ThankyouText = styled.p`
     font-size: .9rem;
     color: #fff;
