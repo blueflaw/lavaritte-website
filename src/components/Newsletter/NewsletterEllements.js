@@ -6,7 +6,7 @@ export const NewsLetterContainer = styled.div`
     justify-content: center;
     align-items: center;
     padding: 0 30px;
-    height: 30vh;
+    height: 40vh;
     /* background: #000000 url("https://cdna.artstation.com/p/assets/images/images/019/381/052/large/allard-lavaritte-the-archer-no-eyeglass.jpg") no-repeat fixed center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -104,6 +104,27 @@ export const NewsLetterP = styled.p`
     line-height: 24px;
     text-align: left;
     padding: 10px 0;
+    @media only screen and (max-width: 768px){
+        max-width: 90%;
+    }
+`;
+
+export const ThankyouTextWrapper = styled.div`
+    width: 30vw;
+    margin-top: 20px;
+    justify-content: center;
+    background-color: #00a2ff;
+`;
+
+export const ThankyouText = styled.p`
+    font-size: .9rem;
+    color: #fff;
+    letter-spacing: 0.16rem;
+    word-wrap: break-word;
+    line-height: 24px;
+    text-align: left;
+    padding: 10px 0;
+    margin-left: 20px;
     @media only screen and (max-width: 768px){
         max-width: 90%;
     }
