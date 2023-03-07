@@ -1,27 +1,15 @@
 import styled from 'styled-components';
 
 export const NewsLetterContainer = styled.div`
-    /* not sure yet about this color might change later */
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 0 30px;
     height: 40vh;
-    /* background: #000000 url("https://cdna.artstation.com/p/assets/images/images/019/381/052/large/allard-lavaritte-the-archer-no-eyeglass.jpg") no-repeat fixed center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover; */
     flex-direction: column;
-    ::before{
-        content: '';
-        top: 0%;
-        left: 0%;
-        right: 0%;
-        bottom: 0%;
-        background: linear-gradient(180deg, rgba(0,0,0,0.3) 2%, rgba(0,0,0,0.3) 100%),
-                    linear-gradient(180deg, rgba(0,0,0,0.3) 2%, transparent 20%);
-        z-index: 2;
+
+    @media screen and (max-width: 768px) {
+        height: 70vh;
     }
 `;
 
@@ -147,12 +135,40 @@ export const ThankyouTextWrapper = styled.div`
     margin-top: 20px;
     justify-content: center;
     background-color: #00a2ff;
+
+    @media screen and (max-width: 1024px) {
+        width: 864px;
+    }
+
+    @media screen and (max-width: 768px) {
+        width: 500px;
+        padding: 0;
+    }
+
+    @media screen and (max-width: 425px) {
+        width: 300px;
+        padding: 10px 0;
+    }
 `;
 
 export const RecaptchaWrapper = styled.div`
     width: 30vw;
     align-items: left;
     justify-content: left;
+
+    @media screen and (max-width: 1024px) {
+        width: 864px;
+    }
+
+    @media screen and (max-width: 768px) {
+        width: 500px;
+        padding: 0;
+    }
+
+    @media screen and (max-width: 425px) {
+        width: 300px;
+        padding: 10px 0;
+    }
 `;
 
 export const ThankyouText = styled.p`
