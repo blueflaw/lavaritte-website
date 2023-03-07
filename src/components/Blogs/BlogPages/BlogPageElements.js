@@ -67,7 +67,7 @@ export const ButtonOpenAccount = styled.a`
 
 
 export const ButtonWhite = styled(Link)`
-    color: #fff;;
+    color: #fff;
     background-image: linear-gradient(-90deg, #fff 50%, transparent 50%);
     background-size: 300%;
     transition: all 0.2s ease-in-out;
@@ -77,7 +77,7 @@ export const ButtonWhite = styled(Link)`
     display: inline;
     align-items: center;
     justify-content: center;
-    border: 1.5px solid #fff;;
+    border: 1.5px solid #fff;
     padding: 1rem 2rem;
     font-size: ${({fontBig}) => (fontBig ? '1rem' : '0.9rem')};
     transition: all 0.6s;

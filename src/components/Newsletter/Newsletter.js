@@ -1,14 +1,17 @@
-import React, { useState} from 'react';
+import React, { useState } from 'react';
+import ReCAPTCHA from "react-google-recaptcha";
 import { FormContainer, NewsLetterContainer, NewsletterEmail, NewsletterSubmit, NewsLetterH4, 
-        NewsLetterTextWrapper, NewsLetterP, ThankyouTextWrapper, ThankyouText } from './NewsletterEllements';
+        NewsLetterTextWrapper, NewsLetterP, ThankyouTextWrapper, ThankyouText, RecaptchaWrapper } from './NewsletterEllements';
 
 import firebase_DB from '../Firebase/firebase';
 import firebase from "firebase/compat/app";
+import appconfig from '../../App.config';
 
 export const Newsletter = () => {
-
   const [input, setInput] = useState("");
   const [message, setMessage] = useState("");
+  const [captchaIsDone, setCaptchaDone] = useState(false);
+
   const thankyou = 'Thank you for signing up to my newsletter! Stay tuned for exclusive updates, behind-the-scenes insights, and special promotions. Your support means the world to me!';
   const message2 = 'Stay connected with my art by signing up for my newsletter today! Get exclusive updates on new artwork releases, behind-the-scenes insights, and special promotions. Don\'t miss out, join now!';
   
@@ -16,14 +19,19 @@ export const Newsletter = () => {
     setInput(e.target.value);
   }
 
+  const onChange = () =>{
+    console.log('changed! ');
+    setCaptchaDone(true);
+  }
+
   const submitHandler = (e) => {
     e.preventDefault();
     if(input){
       // add to firebase
-        firebase_DB.collection("emails").add({
+      firebase_DB.collection("emails").add({
         email: input,
-        time: firebase.firestore.FieldValue.serverTimestamp()
-        });
+        time: firebase.firestore.FieldValue.serverTimestamp(),
+      });
 
       setInput('');
       setMessage(thankyou);
@@ -44,8 +52,12 @@ export const Newsletter = () => {
         </NewsLetterTextWrapper>
         <FormContainer onSubmit={submitHandler}>
           <NewsletterEmail placeholder="Your email address" type={'email'} onChange={inputHandler} value={input}/>
-          <NewsletterSubmit type='submit'>Submit</NewsletterSubmit> 
+          <NewsletterSubmit disabled={!captchaIsDone} type='submit'>Submit</NewsletterSubmit> 
         </FormContainer>
+        <RecaptchaWrapper >
+          <ReCAPTCHA sitekey={appconfig.GOOGLE.ReCAPTCHA} onChange={onChange}/>
+          {/* <ReCAPTCHA sitekey={'6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI'} onChange={onChange}/> */}
+        </RecaptchaWrapper>
         {message && <ThankyouTextWrapper><ThankyouText>{message}</ThankyouText></ThankyouTextWrapper>}
       </NewsLetterContainer>
     </React.Fragment>

@@ -1,7 +1,6 @@
 import React, {useState, useEffect,} from 'react';
 import {FaBars} from 'react-icons/fa';
 import { animateScroll as scroll } from 'react-scroll';
-// import { PromoBanner } from '../PromoBanner/PromoBanner';
 import ScrollUp from '../ScrollUp/Index';
 import {Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks} from './NavbarElements';
 
@@ -113,7 +112,6 @@ export const Navbar = ({ toggle }) => {
     
     return (
         <React.Fragment>
-            {/* <PromoBanner/> */}
             <Nav scrollNav={scrollNav}>
                 <NavbarContainer>
                     <NavLogo to='/' onClick={window.isNavHomeActive}>Allard Lavaritte</NavLogo>

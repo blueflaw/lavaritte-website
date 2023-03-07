@@ -17,6 +17,7 @@ export const TutorialsPage = () => {
     <>
         <Helmet>
             <meta name='description' content="Allard Lavaritte tutorials"/>
+            <meta property="og:image" content="https://cdnb.artstation.com/p/assets/images/images/019/381/053/large/allard-lavaritte-the-archer-square.jpg?1563235726" />
             <meta name='keywords' content='Allard, Lavaritte, tutorials, art, how to'/>
         </Helmet>
         <ScrollToTop />

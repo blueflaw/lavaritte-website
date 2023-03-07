@@ -6,6 +6,7 @@ import { ButtonDown } from '../NFT/NFTElements';
 import { FaChevronDown} from 'react-icons/fa';
 import { TutorialsData1, TutorialsData2, TutorialsDataMap } from './TutorialsData';
 import { DataMap } from '../DataMap/DataMap';
+import { Newsletter } from '../Newsletter/Newsletter';
 
 const TutorialSection = () => {
     const treshold = 0.9;
@@ -70,6 +71,7 @@ const TutorialSection = () => {
                     <DonateButton2 href={'https://www.paypal.com/donate/?hosted_button_id=ZB7H6RJ7UZSN8'} target="_blank">paypal</DonateButton2>
                 </TutorialWrapper>
             </TutorialContainer2>
+            <Newsletter/>
         </React.Fragment>
     )
 }

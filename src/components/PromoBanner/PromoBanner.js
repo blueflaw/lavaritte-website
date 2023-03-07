@@ -1,6 +1,5 @@
 import React, { useRef, useState } from 'react';
-import { ButtonWhite } from '../Blogs/BlogPages/BlogPageElements'
-import { BannerContainer, PromoBannerContainer, CloseBannerButton, BannerTextWrapper, BannerItem, BannerText} from './PromoBannerEllements'
+import { BannerContainer, PromoBannerContainer, CloseBannerButton, BannerTextWrapper, BannerItem, BannerText, PromoButton} from './PromoBannerEllements';
 
 export const PromoBanner = () => {
   const promoRef = useRef(null);
@@ -21,7 +20,7 @@ export const PromoBanner = () => {
                     <BannerText>Marketplace Sale</BannerText>
                 </BannerItem>
                 <BannerItem>
-                    <BannerText><ButtonWhite to='/store'>Shop Now</ButtonWhite></BannerText>
+                    <BannerText><PromoButton to='/store'>Shop Now</PromoButton></BannerText>
                 </BannerItem>
             </BannerTextWrapper>
             <BannerTextWrapper>
