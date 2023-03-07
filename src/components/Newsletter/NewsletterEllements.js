@@ -26,18 +26,34 @@ export const NewsLetterContainer = styled.div`
 `;
 
 export const FormContainer = styled.form`
+    display: flex;
+    flex-direction: row;
     position: relative;
     font-family: 'Roboto', sans-serif;
-    width: 50vw;
+    width: 1100px;
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding-top: 20px;
+    padding: 20px 48px;
+
+    @media screen and (max-width: 1024px) {
+        width: 864px;
+    }
+
+    @media screen and (max-width: 768px) {
+        width: 500px;
+        padding: 10px 0;
+    }
+
+    @media screen and (max-width: 425px) {
+        width: 300px;
+        padding: 10px 0;
+    }
 `;
 
 export const NewsletterEmail = styled.input`
     padding: 6px 10px;
-    width: 50%;
+    width: 100%;
     border: 1.5px solid #00a2ff;
     color: #000;
     padding: 14px;
@@ -72,6 +88,7 @@ export const NewsletterSubmit = styled.button`
     letter-spacing: 0.2rem;
     transition: all 0.6s;
     max-width: fit-content;
+    width: 100%;
     padding: 14px;
     &:hover {
         color: #00a2ff;
@@ -82,9 +99,23 @@ export const NewsletterSubmit = styled.button`
 `;
 
 export const NewsLetterTextWrapper = styled.div`
-    width: 50vw;
+    width: 1100px;
     justify-content: center;
-    padding: 0 10vw;
+    padding: 10px 48px;
+
+    @media screen and (max-width: 1024px) {
+        width: 864px;
+    }
+
+    @media screen and (max-width: 768px) {
+        width: 500px;
+        padding: 0;
+    }
+
+    @media screen and (max-width: 425px) {
+        width: 300px;
+        padding: 10px 0;
+    }
 `;
 
 export const NewsLetterH4 = styled.h4`

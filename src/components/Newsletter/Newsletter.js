@@ -1,10 +1,10 @@
 import React, { useState} from 'react';
 import { FormContainer, NewsLetterContainer, NewsletterEmail, NewsletterSubmit, NewsLetterH4, 
-        NewsLetterTextWrapper, NewsLetterP, ThankyouTextWrapper, ThankyouText, RecaptchaWrapper } from './NewsletterEllements';
+        NewsLetterTextWrapper, NewsLetterP, ThankyouTextWrapper, ThankyouText } from './NewsletterEllements';
+
 import firebase_DB from '../Firebase/firebase';
-import firebase from 'firebase/compat/app';
-import ReCAPTCHA from "react-google-recaptcha";
-import AppConfig from '../../App.config';
+import firebase from "firebase/compat/app";
+
 export const Newsletter = () => {
 
   const [input, setInput] = useState("");
@@ -20,16 +20,16 @@ export const Newsletter = () => {
     e.preventDefault();
     if(input){
       // add to firebase
-      firebase_DB.collection("emails").add({
+        firebase_DB.collection("emails").add({
         email: input,
-        time: firebase.firestore.FieldValue.serverTimestamp(),
-      });
+        time: firebase.firestore.FieldValue.serverTimestamp()
+        });
 
       setInput('');
       setMessage(thankyou);
       setTimeout(() => {
         setMessage('');
-      }, 3000)
+      }, 6000)
     }
   }
 
@@ -46,10 +46,6 @@ export const Newsletter = () => {
           <NewsletterEmail placeholder="Your email address" type={'email'} onChange={inputHandler} value={input}/>
           <NewsletterSubmit type='submit'>Submit</NewsletterSubmit> 
         </FormContainer>
-        <RecaptchaWrapper><ReCAPTCHA
-            sitekey={AppConfig.GOOGLE.ReCAPTCHA}
-            onChange={inputHandler}
-          /></RecaptchaWrapper>
         {message && <ThankyouTextWrapper><ThankyouText>{message}</ThankyouText></ThankyouTextWrapper>}
       </NewsLetterContainer>
     </React.Fragment>
