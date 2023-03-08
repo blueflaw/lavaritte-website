@@ -15,8 +15,22 @@ const AboutTheWebsite = () => {
     return (
         <>
             <Helmet>
-                <meta name='description' content="Allard Lavaritte Blog"/>
-                <meta name='keywords' content='Allard, Lavaritte, about, art, web design, UI/UX'/>
+                {/* Essential META Tags  */}
+                <meta property="og:title" content="About Allard Lavaritte"/>
+                <meta property="og:type" content="website" />
+                <meta property="og:image" content="https://cdna.artstation.com/p/assets/images/images/039/733/768/large/allard-lavaritte-valorant-female-breach.jpg?1626784012" />
+                <meta name='keywords' content='Allard, Lavaritte, About, art, how to, tutorial'/>
+                <meta property="og:url" content="https://lavaritte.com/about"/>
+                <meta name="twitter:card" content="summary_large_image"/>
+
+                {/* Non-Essential, But Recommended */}
+                <meta property="og:description" content="Allard Lavaritte Website"/>
+                <meta property="og:site_name" content="Allard Lavaritte"/>
+                <meta name="twitter:image:alt" content="The Archer by Allard Lavaritte"/>
+
+                {/* Non-Essential, But Required for Analytics */}
+                <meta property="fb:app_id" content="541481094638652" />
+                <meta name="twitter:site" content="@NotAllard"/>
             </Helmet>
             <Sidebar isOpen={isOpen} toggle={toggle} />
             <Navbar toggle={toggle}/>

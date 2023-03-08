@@ -61,9 +61,9 @@ export const NewsletterSubmit = styled.button`
     color: #fff;
     margin: 0;
     /* background-image: linear-gradient(90deg, #00a2ff 50%, transparent 50%); */
-    background-image: ${({ disabled}) => (disabled ? 'linear-gradient(90deg, #b9e5ff 20%, transparent 50%)' : 'linear-gradient(90deg, #00a2ff 50%, transparent 50%)')};
+    background-image: ${({ disabled}) => (disabled ? 'linear-gradient(90deg, #b9e5ff 20%, transparent 50%)' : 'linear-gradient(90deg, #00a2ff 50%, #fff 50%)')};
     background-size: 300%;
-    //transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
     text-transform: uppercase;
     position: relative;
     text-decoration: none;

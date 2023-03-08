@@ -17,9 +17,22 @@ const BlogPage = () => {
     return (
         <React.Fragment>
             <Helmet>
-                <meta name='description' content="Allard Lavaritte Blog"/>
-                <meta property="og:image" content="https://cdnb.artstation.com/p/assets/images/images/019/381/053/large/allard-lavaritte-the-archer-square.jpg?1563235726" />
+                {/* Essential META Tags  */}
+                <meta property="og:title" content="Allard Lavaritte Blog"/>
+                <meta property="og:type" content="website" />
+                <meta property="og:image" content="https://cdna.artstation.com/p/assets/images/images/039/733/768/large/allard-lavaritte-valorant-female-breach.jpg?1626784012" />
                 <meta name='keywords' content='Allard, Lavaritte, Blogs, art, how to, tutorial'/>
+                <meta property="og:url" content="https://lavaritte.com/blog"/>
+                <meta name="twitter:card" content="summary_large_image"/>
+
+                {/* Non-Essential, But Recommended */}
+                <meta property="og:description" content="Allard Lavaritte Website"/>
+                <meta property="og:site_name" content="Allard Lavaritte"/>
+                <meta name="twitter:image:alt" content="The Archer by Allard Lavaritte"/>
+
+                {/* Non-Essential, But Required for Analytics */}
+                <meta property="fb:app_id" content="541481094638652" />
+                <meta name="twitter:site" content="@NotAllard"/>
             </Helmet>
             <ScrollToTop/>
             <Sidebar isOpen={isOpen} toggle={toggle} />

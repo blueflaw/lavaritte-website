@@ -16,8 +16,22 @@ export const NFTPage = () => {
     return (
     <>
         <Helmet>
-            <meta name='description' content="Allard Lavaritte's NFT, A non-fungible token is a type of financial security made out of digital data kept on a blockchain, which is a type of distributed ledger. The blockchain records the ownership of an NFT, which can be transferred by the owner, allowing NFTs to be sold and exchanged."/>
-            <meta name='keywords' content='Allard, Lavaritte, NFT, non-fungible token, blockchain, financial, art, sold and exchanged'/>
+            {/* Essential META Tags  */}
+            <meta property="og:title" content="Allard Lavaritte"/>
+                <meta property="og:type" content="website" />
+                <meta property="og:image" content="https://cdnb.artstation.com/p/assets/images/images/019/381/053/large/allard-lavaritte-the-archer-square.jpg"/>
+                <meta name='keywords' content='Allard, Lavaritte, Art, non-fungible token, blockchain, financial, art, sold and exchanged'/>
+                <meta property="og:url" content="https://lavaritte.com/NFT"/>
+                <meta name="twitter:card" content="summary_large_image"/>
+
+                {/* Non-Essential, But Recommended */}
+                <meta property="og:description" content="Allard Lavaritte Website"/>
+                <meta property="og:site_name" content="Allard Lavaritte"/>
+                <meta name="twitter:image:alt" content="The Archer by Allard Lavaritte"/>
+
+                {/* Non-Essential, But Required for Analytics */}
+                <meta property="fb:app_id" content="541481094638652" />
+                <meta name="twitter:site" content="@NotAllard"/>
         </Helmet>
         <ScrollToTop />
         <Sidebar isOpen={isOpen} toggle={toggle} />
