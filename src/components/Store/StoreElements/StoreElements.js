@@ -97,7 +97,7 @@ export const StoreCard = styled.img`
     cursor: pointer;
 `;
 
-export const Heading = styled.h1`
+export const Heading = styled.p`
     color: #000;
     font-size: 1.5rem;
     letter-spacing: 0.3rem;
@@ -194,7 +194,7 @@ export const LookingForCardsbuildWrapper = styled.div`
 `;
 
 
-export const StoreCardContentH1 = styled.h1`
+export const StoreCardContentH1 = styled.p`
     color: #fff;
     font-size: 1.5rem;
     letter-spacing: 0.3rem;
@@ -204,7 +204,7 @@ export const StoreCardContentH1 = styled.h1`
     }
 `;
 
-export const StoreCardContentH4 = styled.h1`
+export const StoreCardContentH4 = styled.p`
     color: #fff;
     max-width: 1100px;
     padding-top: 10px;

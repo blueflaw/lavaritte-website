@@ -10,7 +10,7 @@ export const StoreCardMapper = ({CardData}) => {
             return <React.Fragment key={StoreDetail.id}>
                 <StorePosterCard>
                     <StoreImageContainer>
-                    <StorePoster src={StoreDetail.imagepath} alt={StoreDetail.alt}/>
+                    <StorePoster src={StoreDetail.imagepath} alt={StoreDetail.alt} title={StoreDetail.title} loading="lazy" width="auto" height="auto"/>
                         <TextOverlay>
                             <TextWrapper>
                             <StoreCardContentH4>{StoreDetail.topline}</StoreCardContentH4>

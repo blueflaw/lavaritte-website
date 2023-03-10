@@ -4,7 +4,7 @@ import Navbar from '../components/Navbar';
 import Sidebar from '../components/Sidebar';
 import Footer from '../components/Footer';
 import ScrollToTop from '../components/ScrollToTop';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 
 const AboutTheWebsite = () => {
     const [isOpen, setIsOpen] = useState(false)
@@ -14,7 +14,12 @@ const AboutTheWebsite = () => {
     }
     return (
         <>
-            <Helmet>
+            <Helmet htmlAttributes>
+                <title>About Allard Lavaritte</title>
+
+                <link rel="canonical" href="/about" />
+                <meta name="description" content="NFTs are digital assets on a blockchain representing unique ownership of art or music. They authenticate and monetize digital content transparently and securely."/>
+
                 {/* Essential META Tags  */}
                 <meta property="og:title" content="About Allard Lavaritte"/>
                 <meta property="og:type" content="website" />

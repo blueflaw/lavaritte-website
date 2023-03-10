@@ -130,7 +130,7 @@ export const DataMapThumbnail = styled.img`
     } */
 `;
 
-export const DataMapHeader = styled.h1`
+export const DataMapHeader = styled.p`
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: 500;
@@ -185,14 +185,14 @@ export const BlogInfoHeader = styled.div`
     justify-content: space-between;
 `;
 
-export const Category = styled.h6`
+export const Category = styled.p`
     font-size: 0.8rem;
     font-weight: 600;
     text-transform: uppercase;
     color: #878787;
 `;
 
-export const CardTime = styled.h6`
+export const CardTime = styled.p`
     font-style: italic;
     color: #707070;
     font-size: 11px;

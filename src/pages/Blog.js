@@ -5,7 +5,7 @@ import ScrollUp from '../components/ScrollUp/Index';
 import Footer from '../components/Footer';
 import ScrollToTop from '../components/ScrollToTop';
 import BlogsSection from '../components/Blogs';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 
 const BlogPage = () => {
     const [isOpen, setIsOpen] = useState(false)
@@ -16,7 +16,11 @@ const BlogPage = () => {
 
     return (
         <React.Fragment>
-            <Helmet>
+            <Helmet htmlAttributes>
+                <link rel="canonical" href="/blog" />
+                <meta name="description" content="Explore the world of art through our blog page. Get inspired by our latest posts on artists, trends, and creative ideas. Join the conversation today!"/>
+            
+                <title>Allard Lavaritte Blogs</title>
                 {/* Essential META Tags  */}
                 <meta property="og:title" content="Allard Lavaritte Blog"/>
                 <meta property="og:type" content="website" />

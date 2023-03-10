@@ -42,7 +42,7 @@ export const FooterQuoteContainer = styled.div`
     justify-content: center;
 `;
 
-export const FooterQuotes = styled.h1`
+export const FooterQuotes = styled.h2`
     display: block;
     color: #ffffff;
     text-align: center;
@@ -76,7 +76,7 @@ export const FooterLinkItems = styled.div`
     }
 `;
 
-export const FooterLinkTitle = styled.h1`
+export const FooterLinkTitle = styled.h3`
     font-size: 1rem;
     margin-bottom: 16px;
     color:  #909090;

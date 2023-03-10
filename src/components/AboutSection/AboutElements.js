@@ -139,7 +139,7 @@ export const WebsiteContentIlike = styled.div`
     }
 `;
 
-export const ContentH1 = styled.h1`
+export const ContentH1 = styled.p`
     color: #ffffff;
     font-size: 3rem;
     letter-spacing: 0.2rem;
@@ -153,7 +153,7 @@ export const DarkContentH1 = styled.h1`
     letter-spacing: 0.2rem;
 `;
 
-export const BlueContentH1 = styled.h1`
+export const BlueContentH1 = styled.h2`
     color: #00a2ff;
     font-size: 3rem;
     text-align: left;
@@ -169,7 +169,7 @@ export const ContentH3 = styled.h4`
     text-transform: uppercase;
 `;
 
-export const ContentH4 = styled.h4`
+export const ContentH4 = styled.h2`
     color: #00a2ff;
     font-size: 1.1rem;
     letter-spacing: 0.2rem;

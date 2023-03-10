@@ -53,7 +53,7 @@ export const Slider = ({slides}) => {
                         <SliderHeroSlide key={slide.id}>
                             {index === current && (
                                 <SliderHeroSlider>
-                                    <SliderHeroImage src={slide.image} alt={slide.alt}/>
+                                    <SliderHeroImage src={slide.image} alt={slide.alt} title={slide.title} loading="lazy" width="auto" height="auto"/>
                                     <SliderHeroContent>
                                         <SliderHeroP>{slide.topLine}</SliderHeroP>
                                         <SliderHeroH1>{slide.title}</SliderHeroH1>

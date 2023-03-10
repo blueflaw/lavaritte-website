@@ -1,6 +1,8 @@
 import React from 'react';
 import './App.css';
-import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+// import { Helmet } from 'react-helmet';
+
 import Home from './pages'
 import About from './pages/About';
 import NFT from './pages/NFT';
@@ -45,7 +47,6 @@ import { BestCryptoPlatforms } from './pages/BlogPages/BestCryptoPlatforms';
 
 import { CloudTutorialPage } from './pages/TutorialPages/CloudTutorial';
 import { MoonSurfacePage } from './pages/TutorialPages/MoonSurfacePage';
-import { Helmet } from 'react-helmet';
 
 import ReactGA from 'react-ga';
 import AppConfig from './App.config';
@@ -55,7 +56,7 @@ function App() {
   
   return (
     <Router>
-      <Helmet>
+      {/* <Helmet>
         <title>Allard Lavaritte</title>
         <meta name="theme-color" content="#000000" />
         <meta name="robots" content="index, follow, Allard, Lavaritte, UI, UX, Digital, Artist, awesome, gwapo, webdesign, web, designer" />
@@ -66,7 +67,7 @@ function App() {
         <meta property="og:title"         content="Allard Lavaritte" />
         <meta property="og:description"   content="Allard Lavaritte is a web designer / Freelance Artist Based in the Philippines. Allard has established his artistic style and process, merging cutting-edge 3D graphics with traditional art and animation aesthetics that result in a unique visual experience.His innovative approach to artistic medium expressed both in his works and educational materials have led a wave of artistic styles that quickly became mainstream in the entertainment industry." />
         <meta property="og:image"         content="https://cdnb.artstation.com/p/assets/images/images/019/380/861/20190715191058/smaller_square/allard-lavaritte-untitled-1.jpg?1563235858" />
-      </Helmet>
+      </Helmet> */}
       <Switch>
         <Route path="/" component={Home} exact/>
         <Route path="/NFT" component={NFT} exact/>
@@ -74,7 +75,6 @@ function App() {
         <Route path="/tutorial" component={TutorialsPage} exact/>
         <Route path="/blog" component={BlogPage} exact/>
         <Route path="/about" component={About} exact/>
-        <Route path="/faq" component={FAQ} exact/>
         <Route path="/faq" component={FAQ} exact/>
 
         <Route path="/artwork/Ga4ZRa" component={Ga4ZRaPage} exact/>

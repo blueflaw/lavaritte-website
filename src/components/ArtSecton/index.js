@@ -22,7 +22,7 @@ export const ArtSection = () => {
                             {ArtData.map((artDetail) =>{
                                 return <React.Fragment key={artDetail.id}>
                                     <ImageContainer to={artDetail.link} onClick={toggleArt()} smooth="true" duration={500} spy="true" exact="true" offset={-80}>
-                                    <Poster src={artDetail.path} alt={artDetail.alt}/>
+                                    <Poster src={artDetail.path} alt={artDetail.alt} title={artDetail.title} loading="lazy" width="auto" height="auto"/>
                                         <Overlay>
                                             <TextWrapper><OverlayTitile>{artDetail.title}</OverlayTitile></TextWrapper>
                                         </Overlay>

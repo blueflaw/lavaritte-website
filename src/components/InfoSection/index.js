@@ -31,7 +31,7 @@ const InfoSection = ({lightBg, imgStart, topLine, headline, description, buttonL
                             </TextWrapper>
                         </Column1>
                         <Column2>
-                            <ImgWrap><Img src={img} alt={alt}/></ImgWrap>
+                            <ImgWrap><Img src={img} alt={alt} title={'image'} loading="lazy" width="auto" height="auto"/></ImgWrap>
                         </Column2>
                     </InfoRow>
                 </InfoWrapper>

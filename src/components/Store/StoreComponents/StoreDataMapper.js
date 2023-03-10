@@ -12,7 +12,7 @@ export default function StoreDataMapper({StoreData, GenLink, ButtonLabel}) {
                     return <React.Fragment key={StoreDetail.id}>
                         <StorePostWrap href={StoreDetail.link} target="_blank">
                             <StorePost>
-                                <StoreTumbnailWrapper><StoreThumbnail src={StoreDetail.imagePath} alt={StoreDetail.alt}/></StoreTumbnailWrapper>
+                                <StoreTumbnailWrapper><StoreThumbnail src={StoreDetail.imagePath} alt={StoreDetail.alt} title={StoreDetail.title} loading="lazy" width="auto" height="auto"/></StoreTumbnailWrapper>
                                 <TextWrapper>
                                     <TextWrap>
                                     <StoreHeader>{StoreDetail.title}</StoreHeader>

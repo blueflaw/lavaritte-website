@@ -201,7 +201,7 @@ export const Type = styled.p`
     font-size: 0.9rem;
 `;
 
-export const Prize = styled.h1`
+export const Prize = styled.p`
     
     color: #fff;
     padding: 10px;

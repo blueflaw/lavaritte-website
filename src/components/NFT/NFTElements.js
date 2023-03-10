@@ -41,6 +41,7 @@ export const HeroH1 = styled.h1`
         padding-bottom: 10px;
     }
 `;
+
 export const HeroContent = styled.div`
     display: flex;
     height: 100vh;
@@ -142,7 +143,7 @@ export const NFTWrapper = styled.div`
     }
 `;
 
-export const Heading = styled.h1`
+export const Heading = styled.h2`
     color: #ffffff;
     font-size: 1.5rem;
     letter-spacing: 0.3rem;
@@ -323,21 +324,21 @@ export const NFTInfoHeader = styled.div`
 `;
 
 
-export const Category = styled.h6`
+export const Category = styled.h3`
     font-size: 1rem;
     font-weight: 600;
     text-transform: uppercase;
     color: #878787;
 `;
 
-export const PriceTag = styled.h6`
+export const PriceTag = styled.h4`
     font-weight: bold;
     color: #00a2ff;
     font-size: 1rem;
     position: relative;
 `;
 
-export const NFTCollectionHeader = styled.h1`
+export const NFTCollectionHeader = styled.h3`
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: 500;

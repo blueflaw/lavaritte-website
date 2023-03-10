@@ -107,7 +107,7 @@ export const NewsLetterTextWrapper = styled.div`
     }
 `;
 
-export const NewsLetterH4 = styled.h4`
+export const NewsLetterH4 = styled.h3`
     color: #00a2ff;
     font-size: 1.1rem;
     letter-spacing: 0.2rem;

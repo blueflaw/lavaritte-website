@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
+import { HelmetProvider } from 'react-helmet-async';
 import App from './App';
 
 window.isNavStoreActive = false;
@@ -12,9 +13,11 @@ window.isNavHomeActive = false;
 
 ReactDOM.render(
   <React.StrictMode>
-      <BrowserRouter>
-      <App />
-      </BrowserRouter>
+      <HelmetProvider>
+        <BrowserRouter>
+        <App />
+        </BrowserRouter>
+      </HelmetProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );

@@ -88,7 +88,7 @@ const NFTSection = () => {
                             return <React.Fragment key={NFTCollectionDetail.id}>
                                 <NFTCollectionPostWrap href={NFTCollectionDetail.link} target="_blank">
                                     <NFTCollectionPost >
-                                        <NFTTumbnailWrapper><NFTCollectionThumbnail src={NFTCollectionDetail.path} alt={NFTCollectionDetail.alt}/></NFTTumbnailWrapper>
+                                        <NFTTumbnailWrapper><NFTCollectionThumbnail src={NFTCollectionDetail.path} alt={NFTCollectionDetail.alt} title={NFTCollectionDetail.title} loading="lazy" width="auto" height="auto"/></NFTTumbnailWrapper>
                                         <NFTCollectionTextWrapper>
                                             <NFTCollectionTextWrap>
                                             <NFTCollectionInfoRow>
@@ -102,7 +102,7 @@ const NFTSection = () => {
                                             <NFTCollectionHeader>{NFTCollectionDetail.title}</NFTCollectionHeader>
                                             <NFTCollectionInfoRow>
                                                 <AuthorWrap>
-                                                    <AuthorDisplayPicture src={NFTCollectionDetail.authorDP} alt={NFTCollectionDetail.authorALT}/>
+                                                    <AuthorDisplayPicture src={NFTCollectionDetail.authorDP} alt={NFTCollectionDetail.authorALT} title={NFTCollectionDetail.author} loading="lazy" width="auto" height="auto"/>
                                                     <AuthorName>by {NFTCollectionDetail.author}</AuthorName>
                                                 </AuthorWrap>
                                             </NFTCollectionInfoRow>

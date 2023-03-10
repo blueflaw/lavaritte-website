@@ -141,7 +141,7 @@ export const TutorialWrapper = styled.div`
     }
 `;
 
-export const Heading = styled.h1`
+export const Heading = styled.h2`
     color: #ffffff;
     font-size: 1.5rem;
     letter-spacing: 0.3rem;

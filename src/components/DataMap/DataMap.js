@@ -24,7 +24,7 @@ export const DataMap = ({Data, Dark}) => {
                                 toggleBlog();
                             }} smooth="true" duration={500} spy="true" exact="true" offset={-80}>
                                 <DataMapPost>
-                                    <BlogTumbnailWrapper><DataMapThumbnail src={DataDetail.path} alt={DataDetail.alt}/></BlogTumbnailWrapper>
+                                    <BlogTumbnailWrapper><DataMapThumbnail src={DataDetail.path} alt={DataDetail.alt} title={DataDetail.title} loading="lazy" width="auto" height="auto"/></BlogTumbnailWrapper>
                                     <TextWrapper dark={Dark}>
                                         <TextWrap>
                                         <DataMapInfoRow>
@@ -38,7 +38,7 @@ export const DataMap = ({Data, Dark}) => {
                                         <DataMapHeader dark={Dark}>{DataDetail.title}</DataMapHeader>
                                         <DataMapInfoRow>
                                             <AuthorWrap>
-                                                <AuthorDisplayPicture src="https://cdnb.artstation.com/p/users/avatars/000/190/863/medium/02dbe259f43d1792bc174f3c536c8d4e.jpg" alt="author"/>
+                                                <AuthorDisplayPicture src="https://cdnb.artstation.com/p/users/avatars/000/190/863/medium/02dbe259f43d1792bc174f3c536c8d4e.jpg" alt="author"  title={DataDetail.author} loading="lazy" width="auto" height="auto"/>
                                                 <AuthorName>{DataDetail.author}</AuthorName>
                                             </AuthorWrap>
                                         </DataMapInfoRow>
