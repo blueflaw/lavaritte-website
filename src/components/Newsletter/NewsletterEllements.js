@@ -1,15 +1,53 @@
 import styled from 'styled-components';
 
+export const NLContainer = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    height: 50vh;
+    flex-direction: row;
+
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+        height: 60vh;
+    }
+`;
+
+export const NewsLetterContainerImage = styled.div`
+    width: 50vw;
+    height: 100%;
+    background: #000000 url("https://cdna.artstation.com/p/assets/images/images/056/332/104/large/allard-lavaritte-eye-of-flykra.jpg?1669006416") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    ::before{
+        content: '';
+        top: 0%;
+        left: 0%;
+        right: 0%;
+        bottom: 0%;
+        background: linear-gradient(180deg, rgba(0,0,0,0.3) 2%, rgba(0,0,0,0.3) 100%),
+                    linear-gradient(180deg, rgba(0,0,0,0.3) 2%, transparent 20%);
+        z-index: 2;
+    }
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
+`;
+
 export const NewsLetterContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0 30px;
-    height: 40vh;
+    padding: 0;
+    height: 50%;
+    width: 50vw;
     flex-direction: column;
-
     @media screen and (max-width: 768px) {
-        height: 70vh;
+        height: 100vh;
+        width: 100%;
     }
 `;
 
@@ -18,14 +56,15 @@ export const FormContainer = styled.form`
     flex-direction: row;
     position: relative;
     font-family: 'Roboto', sans-serif;
-    width: 1100px;
+    width: 100%;
     justify-content: center;
     align-items: center;
     text-align: center;
     padding: 20px 48px;
 
-    @media screen and (max-width: 1024px) {
-        width: 864px;
+    /* @media screen and (max-width: 1024px) {
+        height: 50%;
+        width: 50vw;
     }
 
     @media screen and (max-width: 768px) {
@@ -36,7 +75,7 @@ export const FormContainer = styled.form`
     @media screen and (max-width: 425px) {
         width: 300px;
         padding: 10px 0;
-    }
+    } */
 `;
 
 export const NewsletterEmail = styled.input`
@@ -88,22 +127,12 @@ export const NewsletterSubmit = styled.button`
 `;
 
 export const NewsLetterTextWrapper = styled.div`
-    width: 1100px;
+    width: 100%;
     justify-content: center;
     padding: 10px 48px;
 
-    @media screen and (max-width: 1024px) {
-        width: 864px;
-    }
-
     @media screen and (max-width: 768px) {
-        width: 500px;
-        padding: 0;
-    }
-
-    @media screen and (max-width: 425px) {
-        width: 300px;
-        padding: 10px 0;
+        width: 100%;
     }
 `;
 
@@ -130,8 +159,7 @@ export const NewsLetterP = styled.p`
 `;
 
 export const ThankyouTextWrapper = styled.div`
-    width: 52vw;
-    max-width: 1100px;
+    width: 90%;
     margin-top: 20px;
     justify-content: center;
     background-color: #00a2ff;
@@ -152,23 +180,9 @@ export const ThankyouTextWrapper = styled.div`
 `;
 
 export const RecaptchaWrapper = styled.div`
-    width: 30vw;
-    align-items: left;
-    justify-content: left;
-
-    @media screen and (max-width: 1024px) {
-        width: 864px;
-    }
-
-    @media screen and (max-width: 768px) {
-        width: 500px;
-        padding: 0;
-    }
-
-    @media screen and (max-width: 425px) {
-        width: 300px;
-        padding: 10px 0;
-    }
+    padding: 0 2vw;
+    align-items: center;
+    justify-content: center;
 `;
 
 export const ThankyouText = styled.p`
@@ -182,5 +196,6 @@ export const ThankyouText = styled.p`
     margin: 10px;
     @media only screen and (max-width: 768px){
         max-width: 90%;
+        width: 100%;
     }
 `;

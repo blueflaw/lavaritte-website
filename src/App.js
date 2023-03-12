@@ -11,6 +11,7 @@ import TutorialsPage from './pages/Tutorial';
 import BlogPage from './pages/Blog';
 import FAQ from './pages/FAQ';
 import PageNotFound from './pages/PageNotFound';
+import NewsLetterPage from './pages/NewsletterPage';
 
 import { Ga4ZRaPage } from './pages/ArtPages/Ga4ZRaPage';
 import { WKO6oNPage } from './pages/ArtPages/WKO6oNPage';
@@ -76,6 +77,7 @@ function App() {
         <Route path="/blog" component={BlogPage} exact/>
         <Route path="/about" component={About} exact/>
         <Route path="/faq" component={FAQ} exact/>
+        <Route path="/newsletter" component={NewsLetterPage} exact/>
 
         <Route path="/artwork/Ga4ZRa" component={Ga4ZRaPage} exact/>
         <Route path="/artwork/WKO6oN" component={WKO6oNPage} exact/>
