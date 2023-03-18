@@ -114,7 +114,7 @@ export const BlogPageContentH1 = styled.h1`
     letter-spacing: 0.2rem;
 `;
 
-export const BlogPageContentH4 = styled.h1`
+export const BlogPageContentH4 = styled.h4`
     padding-top: 2%;
     color: #fff;
     font-size: 1.6rem;
@@ -122,7 +122,7 @@ export const BlogPageContentH4 = styled.h1`
     letter-spacing: 0.2rem;
 `;
 
-export const BlogPageContentH6 = styled.h1`
+export const BlogPageContentH6 = styled.h6`
     padding-top: 2%;
     color: #fff;
     font-size: 1.2rem;

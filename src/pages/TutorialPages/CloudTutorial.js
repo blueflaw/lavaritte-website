@@ -6,6 +6,8 @@ import ScrollToTop from '../../components/ScrollToTop';
 import ScrollUp from '../../components/ScrollUp/Index';
 import { CloudTutorial } from '../../components/TutorialSection/TutorialPages/CloudTutorial'
 import { Helmet } from 'react-helmet';
+import { SEO } from '../../components/SEO/SEO';
+import { metaDescription, metaData } from '../../components/SEO/SEOMetaData';
 
 export const CloudTutorialPage = () => {
     const [isOpen, setIsOpen] = useState(false)
@@ -15,12 +17,14 @@ export const CloudTutorialPage = () => {
     }
   return (
       <React.Fragment>
-        <Helmet>
-          <meta name='description' content="Allard Lavaritte's Cloud Tutorial || Anime cloud painting tutorial using Photoshop"/>
-          <meta name='keywords'    content='Allard, Lavaritte, How to draw clouds'/>
-          <meta name="image"       content="https://cdnb.artstation.com/p/assets/images/images/051/387/003/20220706211424/smaller_square/allard-lavaritte-cloud-collection-01.jpg?1657160064" />
-          <meta name='keywords'    content='Allard, Lavaritte, Cloud, Best, Photoshop, Anime, anime clouds, how to draw,'/>
+        <Helmet htmlAttributes>
+            <link rel="canonical" href="/tutorials/cloudtutorials" />
         </Helmet>
+        <SEO title={'Lavaritte tutorials - cloudtutorials'} 
+            description={metaDescription} 
+            ogUrl={'https://lavaritte.com/blogs'} 
+            image={'https://cdnb.artstation.com/p/assets/images/images/051/387/003/large/allard-lavaritte-cloud-collection-01.jpg?1657160064'}
+            meta={metaData}/>
         <ScrollToTop/>
         <Sidebar isOpen={isOpen} toggle={toggle} />
         <Navbar toggle={toggle}/>
