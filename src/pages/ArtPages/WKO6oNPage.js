@@ -5,7 +5,6 @@ import Footer from '../../components/Footer';
 import ScrollToTop from '../../components/ScrollToTop';
 import ScrollUp from '../../components/ScrollUp/Index';
 import { WKO6oN } from '../../components/ArtSecton/ArtPages/WKO6oN';
-import ArtSection from '../../components/ArtSecton';
 
 export const WKO6oNPage = () => {
     const [isOpen, setIsOpen] = useState(false)
@@ -19,7 +18,6 @@ export const WKO6oNPage = () => {
             <Sidebar isOpen={isOpen} toggle={toggle} />
             <Navbar toggle={toggle}/>
             <WKO6oN/>
-            <ArtSection/>
             <ScrollUp/> 
             <Footer/>     
             

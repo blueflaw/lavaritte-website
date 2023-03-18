@@ -5,7 +5,6 @@ import Footer from '../../components/Footer';
 import ScrollToTop from '../../components/ScrollToTop';
 import ScrollUp from '../../components/ScrollUp/Index';
 import { D0ZmBe } from '../../components/ArtSecton/ArtPages/D0ZmBe';
-import ArtSection from '../../components/ArtSecton';
 
 export const D0ZmBePage = () => {
     const [isOpen, setIsOpen] = useState(false)
@@ -19,7 +18,6 @@ export const D0ZmBePage = () => {
             <Sidebar isOpen={isOpen} toggle={toggle} />
             <Navbar toggle={toggle}/>
             <D0ZmBe/>
-            <ArtSection/>
             <ScrollUp/> 
             <Footer/>     
             

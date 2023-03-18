@@ -1,10 +1,15 @@
 import React from 'react'
 import ReactYouTube from '../../ReactYoutube/ReactYoutube';
 import { ArtPageContentH1, ArtPageContentP, ArtPageImg, ArtPageImgWrap, ArtPagesContainer, ArtPagesContent, ArtsVidContainer } from './ArtPageElements';
+import {ArtContaner, ArtWrapper, RowPoster} from '../ArtElements';
+import {ArtData} from '../ArtData';
+import { ArtDataMapper } from '../ArtDataMapper';
+import Quotes from '../../Quotes/Quotes';
 
 export const Qq48Kg = () => {
   return (
-    <ArtPagesContainer>
+    <React.Fragment>
+      <ArtPagesContainer>
         <ArtPagesContent>
             <ArtPageContentH1>Sky Collection</ArtPageContentH1>
             <ArtPageContentP>
@@ -23,8 +28,16 @@ export const Qq48Kg = () => {
                     <ReactYouTube videoId='eqshrWlAkTw'/>
                 </ArtsVidContainer>
             </ArtPageImgWrap>
-            
         </ArtPagesContent>
-    </ArtPagesContainer>
+      </ArtPagesContainer>
+      <Quotes/>
+      <ArtContaner id="art">
+          <ArtWrapper>
+            <RowPoster>
+              <ArtDataMapper ArtData={ArtData} Hide={'018'}/>
+            </RowPoster>
+          </ArtWrapper>
+      </ArtContaner>
+    </React.Fragment>
   )
 }

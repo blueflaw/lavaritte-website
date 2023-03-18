@@ -49,18 +49,18 @@ export const ArtData = [
         link : '/artwork/Qq48Kg'
     },
     {
-        id: '018',
-        title: 'Error 404',
-        path : 'https://cdnb.artstation.com/p/assets/images/images/050/886/865/20220622131724/smaller_square/allard-lavaritte-into-the-404.jpg?1655921844',    
-        alt : 'Error 404',
-        link : '/artwork/ZeZGew'
-    },
-    {
         id: '017',
         title: 'Spitfire',
         path : 'https://cdnb.artstation.com/p/assets/images/images/043/819/981/smaller_square/allard-lavaritte-smoke.jpg?1638345208',    
         alt : 'Spitfire',
         link : '/artwork/F48Anq'
+    },
+    {
+        id: '025',
+        title: 'Error 404',
+        path : 'https://cdnb.artstation.com/p/assets/images/images/050/886/865/20220622131724/smaller_square/allard-lavaritte-into-the-404.jpg?1655921844',    
+        alt : 'Error 404',
+        link : '/artwork/ZeZGew'
     },
     {
         id: '016',

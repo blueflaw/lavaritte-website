@@ -1,9 +1,14 @@
 import React from 'react'
 import { ArtPageContentH1, ArtPageContentP, ArtPageImg, ArtPageImgWrap, ArtPagesContainer, ArtPagesContent } from './ArtPageElements';
+import {ArtContaner, ArtWrapper, RowPoster} from '../ArtElements';
+import {ArtData} from '../ArtData';
+import { ArtDataMapper } from '../ArtDataMapper';
+import Quotes from '../../Quotes/Quotes';
 
 export const Z5v2xZ = () => {
   return (
-    <ArtPagesContainer>
+    <React.Fragment>
+      <ArtPagesContainer>
         <ArtPagesContent>
             <ArtPageContentH1>Blue Demon</ArtPageContentH1>
             <ArtPageContentP>
@@ -14,6 +19,15 @@ export const Z5v2xZ = () => {
             </ArtPageImgWrap>
             
         </ArtPagesContent>
-    </ArtPagesContainer>
+      </ArtPagesContainer>
+      <Quotes/>
+      <ArtContaner id="art">
+          <ArtWrapper>
+            <RowPoster>
+              <ArtDataMapper ArtData={ArtData} Hide={'012'}/>
+            </RowPoster>
+          </ArtWrapper>
+      </ArtContaner>
+    </React.Fragment>
   )
 }

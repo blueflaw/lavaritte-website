@@ -5,7 +5,6 @@ import Footer from '../../components/Footer';
 import ScrollToTop from '../../components/ScrollToTop';
 import ScrollUp from '../../components/ScrollUp/Index';
 import { NGeZ6b } from '../../components/ArtSecton/ArtPages/NGeZ6b';
-import ArtSection from '../../components/ArtSecton';
 
 export const NGeZ6bPage = () => {
     const [isOpen, setIsOpen] = useState(false)
@@ -19,7 +18,6 @@ export const NGeZ6bPage = () => {
             <Sidebar isOpen={isOpen} toggle={toggle} />
             <Navbar toggle={toggle}/>
             <NGeZ6b/>
-            <ArtSection/>
             <ScrollUp/> 
             <Footer/>     
             

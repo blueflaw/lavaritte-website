@@ -1,9 +1,15 @@
 import React from 'react'
 import { ArtPageContentH1, ArtPageContentP, ArtPageImg, ArtPageImgWrap, ArtPagesContainer, ArtPagesContent } from './ArtPageElements';
+import {ArtContaner, ArtWrapper, RowPoster} from '../ArtElements';
+import {ArtData} from '../ArtData';
+import { ArtDataMapper } from '../ArtDataMapper';
+import Quotes from '../../Quotes/Quotes';
+
 
 export const VJYXRO = () => {
   return (
-    <ArtPagesContainer>
+    <React.Fragment>
+      <ArtPagesContainer>
         <ArtPagesContent>
             <ArtPageContentH1>Concept Art: The Chronicles of my Melancholic Existence <br/> [Classical クラッシク]</ArtPageContentH1>
             <ArtPageContentP>
@@ -23,6 +29,15 @@ export const VJYXRO = () => {
             </ArtPageImgWrap>
             
         </ArtPagesContent>
-    </ArtPagesContainer>
+      </ArtPagesContainer>
+      <Quotes/>
+      <ArtContaner id="art">
+          <ArtWrapper>
+            <RowPoster>
+              <ArtDataMapper ArtData={ArtData} Hide={'019'}/>
+            </RowPoster>
+          </ArtWrapper>
+      </ArtContaner>
+    </React.Fragment>
   )
 }

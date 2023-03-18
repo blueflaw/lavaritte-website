@@ -5,7 +5,6 @@ import Footer from '../../components/Footer';
 import ScrollToTop from '../../components/ScrollToTop';
 import ScrollUp from '../../components/ScrollUp/Index';
 import { Nx8ln5 } from '../../components/ArtSecton/ArtPages/Nx8ln5';
-import ArtSection from '../../components/ArtSecton';
 
 export const Nx8ln5Page = () => {
     const [isOpen, setIsOpen] = useState(false)
@@ -19,7 +18,6 @@ export const Nx8ln5Page = () => {
             <Sidebar isOpen={isOpen} toggle={toggle} />
             <Navbar toggle={toggle}/>
             <Nx8ln5/>
-            <ArtSection/>
             <ScrollUp/> 
             <Footer/>     
             

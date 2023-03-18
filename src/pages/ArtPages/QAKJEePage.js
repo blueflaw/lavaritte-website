@@ -5,7 +5,6 @@ import Footer from '../../components/Footer';
 import ScrollToTop from '../../components/ScrollToTop';
 import ScrollUp from '../../components/ScrollUp/Index';
 import { QAKJEe } from '../../components/ArtSecton/ArtPages/QAKJEe';
-import ArtSection from '../../components/ArtSecton';
 
 export const QAKJEePage = () => {
     const [isOpen, setIsOpen] = useState(false)
@@ -19,7 +18,6 @@ export const QAKJEePage = () => {
             <Sidebar isOpen={isOpen} toggle={toggle} />
             <Navbar toggle={toggle}/>
             <QAKJEe/>
-            <ArtSection/>
             <ScrollUp/> 
             <Footer/>     
             

@@ -1,9 +1,14 @@
 import React from 'react';
 import { ArtPageContentH1, ArtPageContentP, ArtPageImg, ArtPageImgWrap, ArtPagesContainer, ArtPagesContent } from './ArtPageElements';
+import {ArtContaner, ArtWrapper, RowPoster} from '../ArtElements';
+import {ArtData} from '../ArtData';
+import { ArtDataMapper } from '../ArtDataMapper';
+import Quotes from '../../Quotes/Quotes';
 
 export const NGeZ6b = () => {
   return (
-    <ArtPagesContainer>
+    <React.Fragment>
+      <ArtPagesContainer>
         <ArtPagesContent>
             <ArtPageContentH1>The Collector</ArtPageContentH1>
             <ArtPageContentP>
@@ -15,6 +20,15 @@ export const NGeZ6b = () => {
             </ArtPageImgWrap>
             
         </ArtPagesContent>
-    </ArtPagesContainer>
+      </ArtPagesContainer>
+      <Quotes/>
+      <ArtContaner id="art">
+          <ArtWrapper>
+            <RowPoster>
+              <ArtDataMapper ArtData={ArtData} Hide={'016'}/>
+            </RowPoster>
+          </ArtWrapper>
+      </ArtContaner>
+    </React.Fragment>
   )
 }

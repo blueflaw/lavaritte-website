@@ -5,7 +5,6 @@ import Footer from '../../components/Footer';
 import ScrollToTop from '../../components/ScrollToTop';
 import ScrollUp from '../../components/ScrollUp/Index';
 import { KlqrYd } from '../../components/ArtSecton/ArtPages/KlqrYd';
-import ArtSection from '../../components/ArtSecton';
 
 export const KlqrYdPage = () => {
     const [isOpen, setIsOpen] = useState(false)
@@ -19,7 +18,6 @@ export const KlqrYdPage = () => {
             <Sidebar isOpen={isOpen} toggle={toggle} />
             <Navbar toggle={toggle}/>
             <KlqrYd/>
-            <ArtSection/>
             <ScrollUp/> 
             <Footer/>     
             

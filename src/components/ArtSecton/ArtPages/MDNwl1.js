@@ -1,10 +1,15 @@
 import React from 'react'
 import ReactYouTube from '../../ReactYoutube/ReactYoutube';
 import { ArtPageContentH1, ArtPageContentP, ArtPageImg, ArtPageImgWrap, ArtPagesContainer, ArtPagesContent, ArtsVidContainer } from './ArtPageElements';
+import {ArtContaner, ArtWrapper, RowPoster} from '../ArtElements';
+import {ArtData} from '../ArtData';
+import { ArtDataMapper } from '../ArtDataMapper';
+import Quotes from '../../Quotes/Quotes';
 
 export const MDNwl1 = () => {
   return (
-    <ArtPagesContainer>
+    <React.Fragment>
+      <ArtPagesContainer>
         <ArtPagesContent>
             <ArtPageContentH1>Valorant Female Breach</ArtPageContentH1>
             <ArtPageContentP>
@@ -18,6 +23,15 @@ export const MDNwl1 = () => {
             </ArtPageImgWrap>
             
         </ArtPagesContent>
-    </ArtPagesContainer>
+      </ArtPagesContainer>
+      <Quotes/>
+      <ArtContaner id="art">
+          <ArtWrapper>
+            <RowPoster>
+              <ArtDataMapper ArtData={ArtData} Hide={'003'}/>
+            </RowPoster>
+          </ArtWrapper>
+      </ArtContaner>
+    </React.Fragment>
   )
 }

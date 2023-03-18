@@ -5,7 +5,6 @@ import Footer from '../../components/Footer';
 import ScrollToTop from '../../components/ScrollToTop';
 import ScrollUp from '../../components/ScrollUp/Index';
 import { F48ENol } from '../../components/ArtSecton/ArtPages/F48ENol';
-import ArtSection from '../../components/ArtSecton';
 
 export const F48ENolPage = () => {
     const [isOpen, setIsOpen] = useState(false)
@@ -19,7 +18,6 @@ export const F48ENolPage = () => {
             <Sidebar isOpen={isOpen} toggle={toggle} />
             <Navbar toggle={toggle}/>
             <F48ENol/>
-            <ArtSection/>
             <ScrollUp/> 
             <Footer/>     
             

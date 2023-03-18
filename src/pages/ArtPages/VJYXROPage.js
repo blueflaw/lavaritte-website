@@ -5,7 +5,6 @@ import Footer from '../../components/Footer';
 import ScrollToTop from '../../components/ScrollToTop';
 import ScrollUp from '../../components/ScrollUp/Index';
 import { VJYXRO } from '../../components/ArtSecton/ArtPages/VJYXRO';
-import ArtSection from '../../components/ArtSecton';
 
 export const VJYXROPage = () => {
     const [isOpen, setIsOpen] = useState(false)
@@ -19,7 +18,6 @@ export const VJYXROPage = () => {
             <Sidebar isOpen={isOpen} toggle={toggle} />
             <Navbar toggle={toggle}/>
             <VJYXRO/>
-            <ArtSection/>
             <ScrollUp/> 
             <Footer/>     
             

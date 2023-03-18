@@ -5,7 +5,6 @@ import Footer from '../../components/Footer';
 import ScrollToTop from '../../components/ScrollToTop';
 import ScrollUp from '../../components/ScrollUp/Index';
 import { ZeZGew } from '../../components/ArtSecton/ArtPages/ZeZGew';
-import ArtSection from '../../components/ArtSecton';
 
 export const ZeZGewPage = () => {
     const [isOpen, setIsOpen] = useState(false)
@@ -19,7 +18,6 @@ export const ZeZGewPage = () => {
             <Sidebar isOpen={isOpen} toggle={toggle} />
             <Navbar toggle={toggle}/>
             <ZeZGew/>
-            <ArtSection/>
             <ScrollUp/> 
             <Footer/>     
             

@@ -5,7 +5,6 @@ import Footer from '../../components/Footer';
 import ScrollToTop from '../../components/ScrollToTop';
 import ScrollUp from '../../components/ScrollUp/Index';
 import { MDNwl1 } from '../../components/ArtSecton/ArtPages/MDNwl1';
-import ArtSection from '../../components/ArtSecton';
 
 export const MDNwl1Page = () => {
     const [isOpen, setIsOpen] = useState(false)
@@ -19,7 +18,6 @@ export const MDNwl1Page = () => {
             <Sidebar isOpen={isOpen} toggle={toggle} />
             <Navbar toggle={toggle}/>
             <MDNwl1/>
-            <ArtSection/>
             <ScrollUp/> 
             <Footer/>     
             
