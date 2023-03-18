@@ -1,7 +1,8 @@
 import React from 'react';
 import { BlogPageContentH1, BlogPageContentP, BlogPagesContainer, BlogPagesContent, BlogPageContentAuthor, BlogPageSocialAuthor, ShareWrapper, BlogImageThumbail, BlogPageContentH4, BlogPageContentH6, LogoWrapper, BlogImageLogo, ButtonOpenAccount } from './BlogPageElements';
 import { animateScroll as scroll } from 'react-scroll';
-import { ReadMoreBlogs } from '../../ReadMore/ReadMoreBlogs';
+import { ReadMore } from '../../ReadMore/ReadMore';
+import { BlogsData } from '../BlogsData';
 import { FacebookShareButton, FacebookIcon, TwitterShareButton, TwitterIcon, EmailShareButton, EmailIcon, LinkedinShareButton, LinkedinIcon, PinterestShareButton, PinterestIcon} from 'react-share';
 
 import imageBIT from '../../../images/INTO_THE_BIT.jpg';
@@ -13,41 +14,7 @@ import eToroLogo from '../../../images/logos/Etoro_logo.svg';
 
 export const CryptoExchangesPlatforms = () => {
     const title = '5 Best Crypto Exchanges & Platforms Of ' + new Intl.DateTimeFormat('en-US', {month: "long"}).format(new Date())  + ' ' + new Date().getFullYear();
-    const BlogsData = [
-        {
-            id: "001",
-            title: "Jett from valorant",
-            path : "https://cdna.artstation.com/p/assets/images/images/040/077/016/20210801034343/smaller_square/allard-lavaritte-jetto.jpg",    
-            alt : "Jett from valorant",
-            category : "Digital Art",
-            time : "Painting Process",
-            author : "Allard Lavaritte",
-            link : "/blogs/PaintingJett",
-            preview: "This is my Fan Art of Jett from Valorant. I do claim that it's fan art and nothing else but I just posted it online because it turned out to look so amazing and I wanted to share it with everyone, hope you like it! 🤗"
-        },
-        {
-          id: "003",
-          title: "Valorant Female Breach",
-          path : "https://cdna.artstation.com/p/assets/images/images/039/733/768/20210720072652/smaller_square/allard-lavaritte-valorant-female-breach.jpg",    
-          alt : "Valorant Female Breach",
-          category : "Digital Art",
-          time : "Painting Process",
-          author : "Allard Lavaritte",
-          link : "/blogs/PaintingFemaleBreach",
-          preview : "Here's my fan art of the character Breach from Valorant. It was an absolute blast drawing this one and I'm always up for drawing some more if you guys have any requests 😊"
-      },
-      {
-            id : "001",
-            title: "変態を入らないで",
-            path : "https://cdnb.artstation.com/p/assets/images/images/042/229/393/20211011061443/smaller_square/allard-lavaritte-bb-small.jpg",    
-            alt : "変態を入らないで",
-            category : "Digital Art",
-            time : "Painting Process",
-            author : "Allard Lavaritte",
-            preview:"This project was created in collaboration with the animation director and animator of the show, who also happens to be a really smart guy.",
-            link : "/blogs/Painting変態を入らないで"
-        },
-    ];
+    
     const toggleHome = () => {
         scroll.scrollToTop();
         window.isNavStoreActive = false;
@@ -243,7 +210,7 @@ export const CryptoExchangesPlatforms = () => {
                 </BlogPageContentP>
             </BlogPagesContent>
         </BlogPagesContainer>
-        <ReadMoreBlogs Data={BlogsData} />
+        <ReadMore Data={BlogsData} Hide={'005'}/>
     </React.Fragment>
   )
 }

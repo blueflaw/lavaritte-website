@@ -4,6 +4,7 @@ import { BlogPageContentH1, BlogPageContentP, BlogPageImg, BlogPagesContainer, B
          BlogPageContentUnorderedList, ButtonOpenAccount, LogoWrapper, BlogPageContentH4, BlogPageContentOrderedList, BlogsVidContainer} from '../../Blogs/BlogPages/BlogPageElements';
 import { FacebookShareButton, FacebookIcon, TwitterShareButton, TwitterIcon, EmailShareButton, EmailIcon, LinkedinShareButton, 
          LinkedinIcon, PinterestShareButton, PinterestIcon} from 'react-share';
+import { TutorialsDataMap } from '../TutorialsData';
 
 import cloudCollection01 from '../../../images/Tutorials/CloudTutorial/Cloud-Collection-01.jpg';
 import cloudCollection02 from '../../../images/Tutorials/CloudTutorial/Cloud-Collection-02.jpg';
@@ -26,6 +27,7 @@ import cloudtutorial13 from '../../../images/Tutorials/CloudTutorial/cloudtutori
 
 import InfoSection from '../../InfoSection';
 import { CloudTutorial00,  CloudTutorial01, CloudTutorial02, CloudTutorial03} from '../TutorialPages/CloudTutorialsData';
+import { ReadMore } from '../../ReadMore/ReadMore';
 
 export const CloudTutorial = () => {
   const title = 'Cloud Tutorial';
@@ -335,6 +337,7 @@ export const CloudTutorial = () => {
           </ShareWrapper>
         </BlogPagesContent>
       </BlogPagesContainer>
+      <ReadMore Data={TutorialsDataMap} Hide={'001'}/>
     </React.Fragment>
   )
 }
