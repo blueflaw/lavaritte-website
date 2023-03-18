@@ -3,6 +3,7 @@ import { BlogsData } from './BlogsData';
 import { DataMap } from '../DataMap/DataMap';
 import { BlogsContaner } from './BlogsElements';
 import { Newsletter } from '../Newsletter/Newsletter';
+import Quotes from '../Quotes/Quotes';
 const BlogsSection = () => {
     
     return (
@@ -10,6 +11,7 @@ const BlogsSection = () => {
             <BlogsContaner id="blogs">
                     <DataMap Data={BlogsData} Dark={'Dark'}/>
             </BlogsContaner>
+            <Quotes/>
             <Newsletter/>
         </React.Fragment>
     )

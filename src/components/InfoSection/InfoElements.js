@@ -58,7 +58,7 @@ export const TopLine = styled.p`
     margin-bottom: 16px;
 `;
 
-export const Heading = styled.h1`
+export const Heading = styled.p`
     //color: #00a2ff;
     font-size: 3rem;
     text-align: left;

@@ -139,14 +139,14 @@ export const WebsiteContentIlike = styled.div`
     }
 `;
 
-export const ContentH1 = styled.p`
+export const ContentH1 = styled.h1`
     color: #ffffff;
     font-size: 3rem;
     letter-spacing: 0.2rem;
     padding-bottom: 20px;
 `;
 
-export const DarkContentH1 = styled.h1`
+export const DarkContentH1 = styled.p`
     color: #000;
     font-size: 3rem;
     text-align: left;

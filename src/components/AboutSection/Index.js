@@ -8,10 +8,10 @@ import {
     BtnWrap, DonateButton, GetInTouchLink, SocialWrapper, CreatedBy, SocialLogo, Gotinspired, GetInTouchRow, Column1, Column2, ImgWrap, ButtonDownload,
     Img, ImagelWrapper, DarkContentH1, IContainer, BlueContentH1, IbuildWrapper, ButtonAbout,
 } from './AboutElements';
-
 import InfoSection from '../InfoSection';
 import { About3, About4 } from './Data';
 import { Newsletter } from '../Newsletter/Newsletter';
+import Quotes from '../Quotes/Quotes';
 
 const TheWebsite = () => {
     const toggleHome = () => {
@@ -161,6 +161,7 @@ const TheWebsite = () => {
             <Gotinspired>Got inspired? Copied the theme? Or do you just like the website? <br/> No problem, just buy me a Burger and make me happy!</Gotinspired>
             <BtnWrap><DonateButton href={'https://www.paypal.com/donate/?hosted_button_id=ZB7H6RJ7UZSN8'} target="_blank" dark={'dark'} big={'big'}>Donate</DonateButton></BtnWrap>
         </AboutQuoteContainer>
+        <Quotes />
         <Newsletter/>
         </AboutContainer>
         

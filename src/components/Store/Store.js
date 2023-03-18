@@ -3,7 +3,7 @@ import { Slider } from '../Slider/Slider';
 import { SliderData } from '../Slider/SliderData';
 
 import General from './Category/General';
-import Clothing from './Category/ClothingCategory';
+import Clothing from './Category/Clothing/ClothingCategory';
 import PosterCategory from './Category/PosterCategory';
 import ThreeDModels from './Category/3dModels';
 import StockPhotos from './Category/StockPhotos';

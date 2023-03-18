@@ -63,6 +63,23 @@ export const StoreRow = styled.div`
     }
 `;
 
+export const NewChicStoreRow = styled.div`
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    grid-gap: var(--auto-grid-gap, 0);
+    padding: 0;
+
+    @media screen and (max-width: 768px){
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: var(--auto-grid-gap, 0);
+    }
+    @media screen and (max-width: 425px){
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: var(--auto-grid-gap, 0);
+    }
+`;
+
 export const StoreTitle = styled.h1`
     color: ${({lightText}) => (lightText ? '#ffffff' : '#000000')};
     font-size: 1.5rem;
@@ -105,7 +122,6 @@ export const StorePostWrap = styled.a`
     margin: 12px;
     text-decoration: none;
     color: #000000;
-    
     &:hover {
         //box-shadow: 0 4px 8px 0 rgba(0, 162, 255, 0.2), 0 6px 20px 0 rgba(0, 162, 255, 0.19);
          & span{
@@ -159,6 +175,15 @@ export const StoreHeader = styled.div`
     color: #fff;
 `;
 
+export const NewChicHeader = styled.p`
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    padding-top: 10px;
+    color: #fff;
+`;
+
 export const TextWrapper = styled.div`
     display: inline-block;
     position: relative;
@@ -187,6 +212,11 @@ export const AuthorWrap = styled.div`
     padding-top: 5px;
     justify-content: space-between;
 `;
+export const PriceWrap = styled.div`
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+`;
 
 export const AuthorDisplayPicture = styled.img`
     width: 26px;
@@ -202,8 +232,22 @@ export const Type = styled.p`
 `;
 
 export const Prize = styled.p`
-    
     color: #fff;
     padding: 10px;
     font-size: 1rem;
+`;
+
+export const NewChicPrize = styled.div`
+    /* color: #00a2ff; */
+    color: #fff;
+    padding: 0;
+    font-size: .8rem;
+    font-weight: bold;
+`;
+
+export const NewChicPrizeSale = styled.p`
+    color: #dc3545;
+    padding: 10px;
+    font-size: .8rem;
+    font-weight: bold;
 `;

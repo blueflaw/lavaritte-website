@@ -6,6 +6,8 @@ import TutorialSection from '../components/TutorialSection';
 import ScrollUp from '../components/ScrollUp/Index';
 import ScrollToTop from '../components/ScrollToTop';
 import { Helmet } from 'react-helmet-async';
+import { SEO } from '../components/SEO/SEO';
+import { metaDescription, metaData } from '../components/SEO/SEOMetaData';
 
 export const TutorialsPage = () => {
     const [isOpen, setIsOpen] = useState(false)
@@ -14,36 +16,22 @@ export const TutorialsPage = () => {
         setIsOpen (!isOpen)
     }
     return (
-    <>
+    <React.Fragment>
         <Helmet htmlAttributes>
-            <title>Allard Lavaritte Tutorial</title>
-
-            <link rel="canonical" href="/tutorial" />
-            {/* Essential META Tags  */}
-            <meta property="og:title" content="Allard Lavaritte"/>
-            <meta name="description" content="Learn from the experts on our tutorial page! Discover helpful tips and step-by-step guidance on a variety of topics, from art techniques to digital design."/>
-            <meta property="og:type" content="website" />
-            <meta property="og:image" content="https://cdnb.artstation.com/p/assets/images/images/019/381/053/large/allard-lavaritte-the-archer-square.jpg"/>
-            <meta name='keywords' content='Allard, Lavaritte, Art, non-fungible token, tutorial, how to, art, sold and exchanged'/>
-            <meta property="og:url" content="https://lavaritte.com/tutorial"/>
-            <meta name="twitter:card" content="summary_large_image"/>
-
-            {/* Non-Essential, But Recommended */}
-            <meta property="og:description" content="Allard Lavaritte Website"/>
-            <meta property="og:site_name" content="Allard Lavaritte"/>
-            <meta name="twitter:image:alt" content="The Archer by Allard Lavaritte"/>
-
-            {/* Non-Essential, But Required for Analytics */}
-            <meta property="fb:app_id" content="541481094638652" />
-            <meta name="twitter:site" content="@NotAllard"/>
-        </Helmet>
+                <link rel="canonical" href="/tutorial" />
+            </Helmet>
+            <SEO title={'Lavaritte Tutorial'} 
+                description={metaDescription} 
+                ogUrl={'https://lavaritte.com/tutorial'} 
+                image={'https://cdnb.artstation.com/p/assets/images/images/056/930/243/large/allard-lavaritte-darkness-demon-final.jpg?1670427024'}
+                meta={metaData}/>
         <ScrollToTop />
         <Sidebar isOpen={isOpen} toggle={toggle} />
         <Navbar toggle={toggle}/>
         <TutorialSection/>
         <Footer/>
         <ScrollUp/>        
-    </>
+    </React.Fragment>
     )
 }
 
