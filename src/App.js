@@ -48,6 +48,7 @@ import { BestCryptoPlatforms } from './pages/BlogPages/BestCryptoPlatforms';
 
 import { CloudTutorialPage } from './pages/TutorialPages/CloudTutorial';
 import { MoonSurfacePage } from './pages/TutorialPages/MoonSurfacePage';
+import { CreatingAWebsiteTutorial } from './pages/TutorialPages/CreatingAWebsiteTutorial';
 
 import ReactGA from 'react-ga';
 import AppConfig from './App.config';
@@ -114,6 +115,7 @@ function App() {
 
         <Route path="/tutorials/cloudtutorials" component={CloudTutorialPage} exact/>
         <Route path="/tutorials/moonsurfacetutorial" component={MoonSurfacePage} exact/>
+        <Route path="/tutorials/webdevelopment" component={CreatingAWebsiteTutorial} exact/>
 
         <Route path="/404" component={ PageNotFound } />
         <Route component={PageNotFound} />

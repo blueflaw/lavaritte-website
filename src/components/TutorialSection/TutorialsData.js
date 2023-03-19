@@ -1,4 +1,3 @@
-import cloudcover from '../../images/Tutorials/cloudtutorials_cover.jpg'
 export const TutorialsData1 = {
     topLine: 'Top Line Text',
     headline: 'tutorials I\'ve made over the years.',
@@ -14,26 +13,37 @@ export const TutorialsData2 = {
 
 export const TutorialsDataMap = [
     {
-        "id": "002",
-        "title": "Moon Surface Tutorial",
-        "path" : "https://cdnb.artstation.com/p/assets/images/images/056/930/243/20221207093023/smaller_square/allard-lavaritte-darkness-demon-final.jpg?1670427024",    
-        "alt" : "Moon Surface Tutorial",
-        "category" : "Blender",
-        "time" : "Tutorial",
-        "author" : "Allard Lavaritte",
-        "preview":"Today, we learn how to make the moon with only procedural textures in Blender!",
-        "link" : "/tutorials/moonsurfacetutorial"
+        id: "T003",
+        title: "How I created this Website",
+        path : "https://lavaritte.com/images/CreateAWebsite.jpg",    
+        alt : "How I created this Website",
+        category : "Web Development",
+        time : "Tutorial",
+        author : "Allard Lavaritte",
+        preview:"Creating a website can seem like a daunting task, especially if you're not familiar with coding.",
+        link : "/tutorials/webdevelopment"
     },
     {
-        "id": "001",
-        "title": "Cloud Tutorial",
-        "path" : cloudcover,    
-        "alt" : "Cloud Tutorial",
-        "category" : "General",
-        "time" : "Tutorial",
-        "author" : "Allard Lavaritte",
-        "preview":"Need some help to get started painting clouds? Follow these simple steps and we'll walk you through each step of the process, step-by-step.",
-        "link" : "/tutorials/cloudtutorials"
+        id: "T002",
+        title: "Moon Surface Tutorial",
+        path : "https://cdnb.artstation.com/p/assets/images/images/056/930/243/20221207093023/smaller_square/allard-lavaritte-darkness-demon-final.jpg?1670427024",    
+        alt : "Moon Surface Tutorial",
+        category : "Blender",
+        time : "Tutorial",
+        author : "Allard Lavaritte",
+        preview:"Today, we learn how to make the moon with only procedural textures in Blender!",
+        link : "/tutorials/moonsurfacetutorial"
+    },
+    {
+        id: "T001",
+        title: "Cloud Tutorial",
+        path :"https://cdnb.artstation.com/p/assets/images/images/051/387/003/20220706211424/smaller_square/allard-lavaritte-cloud-collection-01.jpg?1657160064",    
+        alt : "Cloud Tutorial",
+        category : "General",
+        time : "Tutorial",
+        author : "Allard Lavaritte",
+        preview:"Need some help to get started painting clouds? Follow these simple steps and we'll walk you through each step of the process, step-by-step.",
+        link : "/tutorials/cloudtutorials"
     },
     
 ];
