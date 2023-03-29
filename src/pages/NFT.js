@@ -22,7 +22,7 @@ export const NFTPage = () => {
         </Helmet>
         <SEO title={'Lavaritte NFT'} 
             description={metaDescription} 
-            ogUrl={'https://lavaritte.com/newsletter'} 
+            ogUrl={'https://lavaritte.com/NFT'} 
             image={'https://cdnb.artstation.com/p/assets/images/images/019/380/861/large/allard-lavaritte-untitled-1.jpg?1563235858'}
             meta={metaData}/>
         <ScrollToTop />

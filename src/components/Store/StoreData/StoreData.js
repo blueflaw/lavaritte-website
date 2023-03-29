@@ -90,6 +90,26 @@ export const LookingForStore = [
 
 export const Accessories = [
     {
+        id: "A005",
+        title: "Vagabond Classic Mouse Pad",
+        imagePath: 'https://upenandy.sirv.com/lavaritte.com/store/redbubble/Accessories/vagabond_desk-mat.jpg',
+        alt : "BlueFlaw Print Mouse Pad",
+        author : "Allard Lavaritte",
+        type : "Mouse Pad",
+        prize : "$36.00",
+        link : "https://www.redbubble.com/i/mouse-pad/Vagabond-Classic-by-blueflaw/143287189.GAP22?asc=u"
+    },
+    {
+        id: "A004",
+        title: "BlueFlaw Print Mouse Pad",
+        imagePath: 'https://upenandy.sirv.com/lavaritte.com/store/redbubble/Accessories/BlueFlaw-Print-Deskmat.jpg',
+        alt : "BlueFlaw Print Mouse Pad",
+        author : "Allard Lavaritte",
+        type : "Mouse Pad",
+        prize : "$36.00",
+        link : "https://www.redbubble.com/i/mouse-pad/BlueFlaw-Print-by-blueflaw/142969754.GAP22"
+    },
+    {
         id: "A003",
         title: "Eye of Winter Mouse Pad",
         imagePath: 'https://upenandy.sirv.com/lavaritte.com/store/redbubble/Accessories/eye-of-winter_desk-mat.jpg',
@@ -113,12 +133,12 @@ export const Accessories = [
         id: "A002",
         title: "The Chronicles Mouse Pad",
         // imagePath: require('../../images/store/bb_desk-mat.jpg'),
-        imagePath: 'https://upenandy.sirv.com/lavaritte.com/store/redbubble/Accessories/bb_desk-mat.jpg',
+        imagePath: 'https://upenandy.sirv.com/lavaritte.com/store/redbubble/Accessories/chronicles_desk-mat.jpg',
         alt : "EVA 00 Mouse Pad",
         author : "Allard Lavaritte",
         type : "Mouse Pad",
         prize : "$36.00",
-        link : "https://www.redbubble.com/i/mouse-pad/The-Chronicles-of-my-melancholic-existence-by-blueflaw/95867584.G1FH6?asc=u"
+        link : "https://www.redbubble.com/i/mouse-pad/The-Chronicles-of-my-melancholic-existence-by-blueflaw/95867584.GAP22?asc=u"
     },
 ];
 
@@ -137,14 +157,24 @@ export const SoftwareBrushes = [
 
 export const WallArt = [
     {
+        id: "WA003",
+        title: "Second Angel Canvas Print",
+        imagePath: 'https://upenandy.sirv.com/lavaritte.com/store/redbubble/Poster/poster3.jpg',
+        alt : "Second Angel Canvas Print",
+        author : "Allard Lavaritte",
+        type : "Framed Art Print",
+        prize : "$145.38",
+        link : "https://www.redbubble.com/i/canvas-print/Second-Angel-by-blueflaw/142998884.T8P6B"
+    },
+    {
         id: "WA002",
         title: "Eye of Winter Art Print",
         imagePath: 'https://upenandy.sirv.com/lavaritte.com/store/redbubble/Poster/poster2.jpg',
         alt : "Eye of Winter Art Print",
         author : "Allard Lavaritte",
         type : "Framed Art Print",
-        prize : "$57.78",
-        link : "https://www.redbubble.com/i/framed-print/EVA-00-by-blueflaw/112332813.AJ1A3?asc=u"
+        prize : "$221.84",
+        link : "https://www.redbubble.com/i/framed-print/EVA-00-by-blueflaw/112332813.L0LHG?asc=u"
     },
     {
         id: "WA001",
