@@ -2,7 +2,7 @@ import React, {useRef} from 'react';
 import { useIntersection } from 'react-use';
 import gsap from 'gsap';
 import { Accessories, WallArt, StoreDataCard} from '../StoreData/StoreData';
-import { Clothing} from '../StoreData/ClothingData';
+import { Clothing} from '../StoreData/ClothingData/ClothingData';
 import { StoreContaner, StoreQuotesTextWrapper, QuotesWrapper, Heading, Subtitle} from '../StoreElements/StoreElements';
 import StoreDataMapper from '../StoreComponents/StoreDataMapper';
 import { StoreCardMapper } from '../StoreComponents/StoreCardMapper';

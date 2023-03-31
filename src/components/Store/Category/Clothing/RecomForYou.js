@@ -2,7 +2,7 @@ import React, {useRef} from 'react';
 import gsap from 'gsap';
 import { useIntersection } from 'react-use';
 import NewChicDataMapperPreview from '../../StoreComponents/NewChicMapperPreview';
-import { RecommendationsForYou } from '../../StoreData/ClothingData';
+import { RecommendationsForYou } from '../../StoreData/ClothingData/ClothingData';
 import { StoreQuotesTextWrapper, QuotesWrapper, Heading, Subtitle} from '../../StoreElements/StoreElements';
 import NewChicDataMapper from '../../StoreComponents/NewChicMapper';
 

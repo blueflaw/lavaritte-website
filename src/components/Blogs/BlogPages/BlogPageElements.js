@@ -186,6 +186,29 @@ export const BlogPageContentP = styled.p`
     }
 `;
 
+export const Copied = styled.div`
+    background: #282a36;
+    padding: 1em;
+    margin: 0.5em 0;
+    overflow: auto;
+    color: #4ef478;
+    font-size: 1em;
+    text-align: left;
+`;
+
+export const BlogsCode = styled.code`
+    display: flex;
+    background: #282a36;
+    padding: 1em;
+    margin: 0.5em 0;
+    overflow: auto;
+    color: #ccc;
+    font-size: 1em;
+    text-align: left;
+    white-space: pre;
+    hyphens: none;
+`;
+
 export const BlogPageContentUnorderedList = styled.ul`
     font-size: 1rem;
     color: ${({ lightText }) => (lightText ? '#fff' : '#bbb')};

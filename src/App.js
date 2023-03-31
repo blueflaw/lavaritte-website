@@ -46,6 +46,7 @@ import { PaintingJettPage } from './pages/BlogPages/PaintingJett';
 import { PaintingFemaleBreachPage } from './pages/BlogPages/PaintingFemaleBreach';
 import { PaintingMemoriesPage } from './pages/BlogPages/PaintingMemoriesPage';
 import { BestCryptoPlatforms } from './pages/BlogPages/BestCryptoPlatforms';
+import { HowtoUpdateNpmPackagesPage } from './pages/BlogPages/HowtoUpdateNpmPackages';
 
 import { CloudTutorialPage } from './pages/TutorialPages/CloudTutorial';
 import { MoonSurfacePage } from './pages/TutorialPages/MoonSurfacePage';
@@ -114,6 +115,7 @@ function App() {
         <Route path="/blogs/PaintingFemaleBreach" component={PaintingFemaleBreachPage} exact/>
         <Route path="/blogs/memoriesofagoldenhour" component={PaintingMemoriesPage} exact/>
         <Route path="/blogs/bestcryptoplatforms" component={BestCryptoPlatforms} exact/>
+        <Route path="/blogs/HowtoUpdateNpmPackages" component={HowtoUpdateNpmPackagesPage} exact/>
 
         <Route path="/tutorials/cloudtutorials" component={CloudTutorialPage} exact/>
         <Route path="/tutorials/moonsurfacetutorial" component={MoonSurfacePage} exact/>
