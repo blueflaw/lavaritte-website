@@ -1,5 +1,12 @@
 export const ArtData = [
     {
+        id: '025',
+        title: 'Equal but Greater',
+        path : 'https://cdnb.artstation.com/p/assets/images/images/061/222/289/smaller_square/allard-lavaritte-equal-but-greater.jpg?1680271755',    
+        alt : 'Equal but Greater',
+        link : '/artwork/XggARY'
+    },
+    {
         id: '024',
         title: 'I am the Storm',
         path : 'https://cdna.artstation.com/p/assets/images/images/059/592/118/smaller_square/allard-lavaritte-underthemoonlight.jpg?1676720721',    
