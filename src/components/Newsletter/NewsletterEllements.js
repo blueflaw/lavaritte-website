@@ -45,6 +45,10 @@ export const NewsLetterContainer = styled.div`
     height: 50%;
     width: 50vw;
     flex-direction: column;
+    @media (max-width: 1024px) and (min-width: 768px) {
+        height: 100vh;
+        width: 100%;
+    }
     @media screen and (max-width: 768px) {
         height: 100vh;
         width: 100%;
@@ -147,6 +151,7 @@ export const NewsLetterH4 = styled.h3`
 
 export const NewsLetterP = styled.p`
     font-size: .9rem;
+    hyphens: none;
     color: ${({ dark}) => (dark ? '#121212' : '#f1f1f1')};
     letter-spacing: 0.16rem;
     word-wrap: break-word;

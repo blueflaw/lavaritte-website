@@ -46,9 +46,7 @@ export const Newsletter = () => {
   return (
     <React.Fragment>
       <NLContainer>
-        <NewsLetterContainerImage>
-
-        </NewsLetterContainerImage>
+        <NewsLetterContainerImage />
         <NewsLetterContainer>
           <NewsLetterTextWrapper>
             <NewsLetterH4>Newsletter</NewsLetterH4>
