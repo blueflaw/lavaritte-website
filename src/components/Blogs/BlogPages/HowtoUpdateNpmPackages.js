@@ -24,35 +24,35 @@ export const HowtoUpdateNpmPackages = () => {
         setIsAlertVisible1(true);
         setTimeout(() => {
             setIsAlertVisible1(false);
-        }, 3000);
+        }, 1000);
    }
 
    const handleButtonClick2 = () => {
         setIsAlertVisible2(true);
         setTimeout(() => {
             setIsAlertVisible2(false);
-        }, 3000);
+        }, 1000);
     }
 
     const handleButtonClick3 = () => {
         setIsAlertVisible3(true);
         setTimeout(() => {
             setIsAlertVisible3(false);
-        }, 3000);
+        }, 1000);
     }
 
     const handleButtonClick4 = () => {
         setIsAlertVisible4(true);
         setTimeout(() => {
             setIsAlertVisible4(false);
-        }, 3000);
+        }, 1000);
     }
 
     const handleButtonClick5 = () => {
         setIsAlertVisible5(true);
         setTimeout(() => {
             setIsAlertVisible5(false);
-        }, 3000);
+        }, 1000);
     }
 
     const toggleHome = () => {

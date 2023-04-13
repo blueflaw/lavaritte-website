@@ -42,7 +42,7 @@ export const PaintingFemaleBreach = () => {
             
         </BlogPagesContent>
     </BlogPagesContainer>
-    <ReadMore Data={BlogsData} />
+    <ReadMore Data={BlogsData} Hide={'B003'}/>
     </React.Fragment>
   )
 }

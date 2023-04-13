@@ -1,9 +1,10 @@
 import styled from "styled-components";
+import { TiArrowSortedDown } from 'react-icons/ti'
 
 export const ButtonDark = styled.a`
     color: #fff;
     margin: 16px;
-    background-image: linear-gradient(90deg, #000 50%, transparent 50%);
+    background-image: linear-gradient(90deg, #090a0e 50%, transparent 50%);
     background-size: 300%;
     //transition: all 0.2s ease-in-out;
     text-transform: uppercase;
@@ -12,7 +13,7 @@ export const ButtonDark = styled.a`
     text-align: center;
     align-items: center;
     justify-content: center;
-    border: 1.5px solid #000;
+    border: 1.5px solid #090a0e;
     font-size: 0.75rem;
     font-weight: 500;
     cursor: pointer;
@@ -21,11 +22,16 @@ export const ButtonDark = styled.a`
     max-width: fit-content;
     padding: 14px;
     &:hover {
-        color: #000000;
+        color: #090a0e;
         background-position: 99%;
         overflow: hidden;
         transform: translateX(0.5rem);
     }
+`;
+
+export const ArrowDown = styled(TiArrowSortedDown)`
+    margin-left: 8px;
+    font-size: '1rem';
 `;
 
 export const StoreWrapper = styled.div`
@@ -81,7 +87,7 @@ export const NewChicStoreRow = styled.div`
 `;
 
 export const StoreTitle = styled.h1`
-    color: ${({lightText}) => (lightText ? '#ffffff' : '#000000')};
+    color: ${({lightText}) => (lightText ? '#ffffff' : '#090a0e')};
     font-size: 1.5rem;
     text-align: center;
     letter-spacing: 0.2rem;
@@ -93,7 +99,7 @@ export const StoreTitle = styled.h1`
 `;
 
 export const RowTitle = styled.h2`
-    color: ${({lightText}) => (lightText ? '#ffffff' : '#000000')};
+    color: ${({lightText}) => (lightText ? '#ffffff' : '#090a0e')};
     font-size: 1.5rem;
     text-align: center;
     letter-spacing: 0.2rem;
@@ -121,7 +127,7 @@ export const StorePostWrap = styled.a`
     flex-direction: column;
     margin: 12px;
     text-decoration: none;
-    color: #000000;
+    color: #090a0e;
     &:hover {
         //box-shadow: 0 4px 8px 0 rgba(0, 162, 255, 0.2), 0 6px 20px 0 rgba(0, 162, 255, 0.19);
          & span{
@@ -133,6 +139,10 @@ export const StorePostWrap = styled.a`
             color: #00a2ff;
         }
     } 
+
+    @media only screen and (max-width: 1024px) {
+        width: 300px;
+    }
 `;
 
 export const RowPoster = styled.div`

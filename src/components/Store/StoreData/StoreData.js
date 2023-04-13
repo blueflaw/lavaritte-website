@@ -38,7 +38,7 @@ export const LookingForStore = [
         imagepath: 'https://upenandy.sirv.com/lavaritte.com/store/looking_for_something/LookingforClothing.jpg',
         alt: 'Clothing',
         icon: <FaTshirt/>,
-        link: "/store",
+        link: "/store/clothing",
         sub: "Clothing?"
     },
     {
@@ -47,7 +47,7 @@ export const LookingForStore = [
         imagepath: 'https://upenandy.sirv.com/lavaritte.com/store/looking_for_something/LookingforPoster.jpg',
         alt: 'Posters',
         icon: <FaFile/>,
-        link: "/store",
+        link: "/store/posters",
         sub: "Posters?"
     },
     {
@@ -56,7 +56,7 @@ export const LookingForStore = [
         imagepath: 'https://upenandy.sirv.com/lavaritte.com/store/looking_for_something/LookingforAccessories.jpg',
         alt: 'Accessories',
         icon: <FaCog/>,
-        link: "/store",
+        link: "/store/accessories",
         sub: "Accessories?"
     },
     {
@@ -65,7 +65,7 @@ export const LookingForStore = [
         imagepath: 'https://upenandy.sirv.com/lavaritte.com/store/looking_for_something/LookingforBrushes.jpg',
         alt: 'Software Brushes',
         icon: <FaPaintBrush/>,
-        link: "/store",
+        link: "/store/software-brushes",
         sub: "Software Brushes?"
     },
     {
@@ -74,7 +74,7 @@ export const LookingForStore = [
         imagepath: 'https://upenandy.sirv.com/lavaritte.com/store/looking_for_something/Lookingfor3dModels.jpg',
         alt: '3d Models',
         icon: <FaCube/>,
-        link: "/store",
+        link: "/store/3d-models",
         sub: "3d Models?"
     },
     {
@@ -83,7 +83,7 @@ export const LookingForStore = [
         imagepath: 'https://upenandy.sirv.com/lavaritte.com/store/looking_for_something/LookingforStockPhotos.jpg',
         alt: 'Stock Photos',
         icon: <FaPhotoVideo/>,
-        link: "/store",
+        link: "/store/stock-photos",
         sub: "Stock Photos?"
     },
 ];

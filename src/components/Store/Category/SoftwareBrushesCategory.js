@@ -4,6 +4,11 @@ import gsap from 'gsap';
 import { SoftwareBrushes } from '../StoreData/StoreData';
 import { StoreContaner, StoreQuotesTextWrapper, QuotesWrapper, Heading, Subtitle} from '../StoreElements/StoreElements';
 import StoreDataMapper from '../StoreComponents/StoreDataMapper';
+import { SliderData } from '../../Slider/SliderData';
+import { Slider } from '../../Slider/Slider';
+import { StoreMenu } from '../StoreMenu';
+import { LookingFor } from '../StoreComponents/LookingFor';
+import { LookingForStore } from '../StoreData/StoreData';
 
 const SoftwareBrushesCategory = () => {
     const treshold = 0.9;
@@ -54,14 +59,16 @@ const SoftwareBrushesCategory = () => {
 
     return (
         <StoreContaner id="store">
-        <QuotesWrapper id='SoftwareBrushes'>
-                <StoreQuotesTextWrapper className="section2" ref={sectionRef2}>
-                    <Subtitle>FEATURED COLLECTION</Subtitle>
-                    <Heading>Brushes</Heading>
-                </StoreQuotesTextWrapper>
-        </QuotesWrapper>
-        <StoreDataMapper StoreData={SoftwareBrushes} GenLink={AccessoriesLink} ButtonLabel={'shop'}/>
-
+            <Slider slides={SliderData}/>
+            <StoreMenu />
+            <QuotesWrapper id='SoftwareBrushes'>
+                    <StoreQuotesTextWrapper className="section2" ref={sectionRef2}>
+                        <Subtitle>FEATURED COLLECTION</Subtitle>
+                        <Heading>Brushes</Heading>
+                    </StoreQuotesTextWrapper>
+            </QuotesWrapper>
+            <StoreDataMapper StoreData={SoftwareBrushes} GenLink={AccessoriesLink} ButtonLabel={'shop'}/>
+            <LookingFor CardData={LookingForStore}/>
         </StoreContaner>
     )
 }

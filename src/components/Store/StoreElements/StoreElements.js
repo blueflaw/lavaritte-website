@@ -187,8 +187,16 @@ export const LookingForCardsbuildWrapper = styled.div`
     grid-template-areas: ${({imgStart}) => (imgStart ? `'col2 col1` : `'col1 col2'`)};
     grid-gap: var(--auto-grid-gap, 0);
     padding: 0;
+    @media screen and (max-width: 1440px){
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: ${({imgStart}) => (imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`)};
+    }
     @media screen and (max-width: 768px){
         grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: ${({imgStart}) => (imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`)};
+    }
+    @media screen and (max-width: 425px){
+        grid-template-columns: repeat(2, 1fr);
         grid-template-areas: ${({imgStart}) => (imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`)};
     }
 `;
@@ -231,8 +239,8 @@ export const StoreImageContainer = styled.div`
     width: 500px;
     height: 500px;
     margin-bottom: -4px;
-    margin-left: 10%;
     overflow: hidden;
+    margin: 0 20px;
     &:hover {
         & img{
             transform: scale(1.08);
@@ -243,6 +251,7 @@ export const StoreImageContainer = styled.div`
         }
 
     } 
+   
     @media screen and (max-width: 480px){
         width: 300px;
         height: 300px;
@@ -315,12 +324,32 @@ export const StorePosterCard = styled.div`
     display: flex;
     width: 500px;
     height: 500px;
+    @media (max-width: 1440px) and (min-width: 1024px){
+        width: 400px;
+        height: 400px;
+    }
+    @media (max-width: 1024px) and (min-width: 768px){
+        width: 300px;
+        height: 300px;
+    }
+    @media only screen and (max-width: 768px){
+        width: 500px;
+        height: 500px;
+        margin: 10px 0;
+    }
+    @media only screen and (max-width: 425px){
+        width: 370px;
+        height: 370px;
+    }
 `;
 
 export const LookingForCard = styled(Link)`
     display: flex;
     width: 200px;
     height: 136px;
+    @media only screen and (max-width: 425px){
+        padding: 0;
+    }
 `;
 
 
@@ -341,6 +370,18 @@ export const StorePoster = styled.img`
     :hover{
         transform: scale(1.08);
         filter: grayscale(0%);
+    }
+    @media (max-width: 1024px) and (min-width: 768px){
+        width: 300px;
+        height: 300px;
+    }
+    @media only screen and (max-width: 768px){
+        width: 500px;
+        height: 500px;
+    }
+    @media only screen and (max-width: 425px){
+        width: 370px;
+        height: 370px;
     }
 `;
 
@@ -366,6 +407,10 @@ export const TextOverlay = styled.span`
     opacity: 1;
     transition: .5s ease;
     background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.8));
+    @media screen and (max-width: 480px){
+        width: 200px;
+        height: 136px;
+    }
 `;
 
 
@@ -378,7 +423,21 @@ export const TextWrapper = styled.div`
     width: 100%;
     opacity: 1;
     transition: .5s ease;
-
+    @media (max-width: 1440px) and (min-width: 1024px){
+        padding-left: 5px;
+        top: 230px;
+        left: 20px;
+    }
+    @media (max-width: 1024px) and (min-width: 768px){
+        padding-left: 5px;
+        top: 110px;
+        left: 20px;
+    }
+    @media only screen and (max-width: 768px){
+        top: 310px;
+        left: 20px;
+        margin-top: 10px;
+    }
     @media screen and (max-width: 480px){
         padding-left: 5px;
         top: 20px;
@@ -397,7 +456,7 @@ export const LookingForTextWrapper = styled.div`
 
     @media screen and (max-width: 480px){
         padding-left: 5px;
-        top: 20px;
-        left: 20px;
+        top: 0px;
+        left: 0px;
     }
 `;

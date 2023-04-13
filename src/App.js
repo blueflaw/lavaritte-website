@@ -41,6 +41,13 @@ import { B5LzavPage } from './pages/ArtPages/B5LzavPage';
 import { G9oD8nPage } from './pages/ArtPages/G9oD8nPage';
 import { XggARYPage } from './pages/ArtPages/XggARYPage';
 
+import { ClothingPage } from './pages/StorePages/ClothingPage';
+import { PosterPage } from './pages/StorePages/PosterPage';
+import { AccessoriesPage } from './pages/StorePages/AccessoriesPage';
+import { BrushesPage } from './pages/StorePages/BrushesPage';
+import { ThreeDModelsPage } from './pages/StorePages/ThreeDModelsPage';
+import { StockPhotosPage } from './pages/StorePages/StockPhotosPage';
+
 import { Painting変態を入らないでPage } from './pages/BlogPages/Painting変態を入らないで';
 import { PaintingJettPage } from './pages/BlogPages/PaintingJett';
 import { PaintingFemaleBreachPage } from './pages/BlogPages/PaintingFemaleBreach';
@@ -60,18 +67,6 @@ function App() {
   
   return (
     <Router>
-      {/* <Helmet>
-        <title>Allard Lavaritte</title>
-        <meta name="theme-color" content="#000000" />
-        <meta name="robots" content="index, follow, Allard, Lavaritte, UI, UX, Digital, Artist, awesome, gwapo, webdesign, web, designer" />
-        <meta name="keywords" content="index, follow, Allard, Lavaritte, UI, UX, Digital, Artist, awesome, gwapo, webdesign, web, designer, Allard Lavaritte" />
-        <meta name='description' content="Allard Lavaritte is a creative director by day, and a freelance illustrator, graphic designer, UI/UX specialist, and cinematographer by night. I've worked with clients of all sizes to design and develop brand identities, print collateral, website interfaces and experiences, and more. I love working with people who want to bring their ideas to life—whether that means having me come up with the perfect logo or helping them come up with ideas for a video. You can contact me at me@lavaritte.com"/>
-        <meta property="og:url"           content="https://www.lavaritte.com/" />
-        <meta property="og:type"          content="website" />
-        <meta property="og:title"         content="Allard Lavaritte" />
-        <meta property="og:description"   content="Allard Lavaritte is a web designer / Freelance Artist Based in the Philippines. Allard has established his artistic style and process, merging cutting-edge 3D graphics with traditional art and animation aesthetics that result in a unique visual experience.His innovative approach to artistic medium expressed both in his works and educational materials have led a wave of artistic styles that quickly became mainstream in the entertainment industry." />
-        <meta property="og:image"         content="https://cdnb.artstation.com/p/assets/images/images/019/380/861/20190715191058/smaller_square/allard-lavaritte-untitled-1.jpg?1563235858" />
-      </Helmet> */}
       <Switch>
         <Route path="/" component={Home} exact/>
         <Route path="/NFT" component={NFT} exact/>
@@ -109,6 +104,13 @@ function App() {
         <Route path="/artwork/B5Lzav" component={B5LzavPage} exact/>
         <Route path="/artwork/G9oD8n" component={G9oD8nPage} exact/>
         <Route path="/artwork/XggARY" component={XggARYPage} exact/>
+
+        <Route path="/store/clothing" component={ClothingPage} exact/>
+        <Route path="/store/posters" component={PosterPage} exact/>
+        <Route path="/store/accessories" component={AccessoriesPage} exact/>
+        <Route path="/store/software-brushes" component={BrushesPage} exact/>
+        <Route path="/store/3d-models" component={ThreeDModelsPage} exact/>
+        <Route path="/store/stock-photos" component={StockPhotosPage} exact/>
 
         <Route path="/blogs/Painting変態を入らないで" component={Painting変態を入らないでPage} exact/>
         <Route path="/blogs/PaintingJett" component={PaintingJettPage} exact/>

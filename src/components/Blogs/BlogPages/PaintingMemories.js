@@ -44,7 +44,7 @@ export const PaintingMemories = () => {
             </BlogsVidContainer>
         </BlogPagesContent>
     </BlogPagesContainer>
-    <ReadMore Data={BlogsData} Hide={'004'}/>
+    <ReadMore Data={BlogsData} Hide={'B004'}/>
     </React.Fragment>
   )
 }

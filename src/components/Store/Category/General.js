@@ -7,6 +7,11 @@ import { StoreContaner, StoreQuotesTextWrapper, QuotesWrapper, Heading, Subtitle
 import StoreDataMapper from '../StoreComponents/StoreDataMapper';
 import { StoreCardMapper } from '../StoreComponents/StoreCardMapper';
 import { RecomForYou } from './Clothing/RecomForYou';
+import { Slider } from '../../Slider/Slider';
+import { SliderData } from '../../Slider/SliderData';
+import { StoreMenu } from '../StoreMenu';
+import { LookingForStore } from '../StoreData/StoreData';
+import { LookingFor } from '../StoreComponents/LookingFor';
 
 const General = () => {
     const treshold = 0.9;
@@ -53,8 +58,8 @@ const General = () => {
 
     return (
         <StoreContaner id="store">
-        
-        {/* <StoreDataMapper StoreData={Newchic}  GenLink={NewchicLink} ButtonLabel={'View All Product'}/> */}
+        <Slider slides={SliderData}/>
+        <StoreMenu/>
         <RecomForYou isPreview={true} />
 
         <QuotesWrapper id='clothing'>
@@ -83,7 +88,7 @@ const General = () => {
                 </StoreQuotesTextWrapper>
         </QuotesWrapper>
         <StoreDataMapper StoreData={Accessories} GenLink={AccessoriesLink} ButtonLabel={'shop'}/>
-
+        <LookingFor CardData={LookingForStore}/>
         </StoreContaner>
     )
 }

@@ -7,6 +7,12 @@ import { StoreContaner, StoreQuotesTextWrapper, QuotesWrapper, Heading, Subtitle
 import StoreDataMapper from '../../StoreComponents/StoreDataMapper';
 import { StoreCardMapper } from '../../StoreComponents/StoreCardMapper';
 import { RecomForYou } from './RecomForYou';
+import { Slider } from '../../../Slider/Slider';
+import { SliderData } from '../../../Slider/SliderData';
+import { StoreMenu } from '../../StoreMenu';
+import { LookingFor } from '../../StoreComponents/LookingFor';
+import { LookingForStore } from '../../StoreData/StoreData';
+import { SweatshirtsAndHoodies } from './SweatshirtsAndHoodies';
 
 const ClothingCategory = () => {
     const treshold = 0.9;
@@ -50,21 +56,22 @@ const ClothingCategory = () => {
 
     return (
         <StoreContaner id="store">
+            <Slider slides={SliderData}/>
+            <StoreMenu/>
+            <RecomForYou isPreview={false}/>
+            <SweatshirtsAndHoodies isPreview={false}/>
+            <QuotesWrapper id='clothing'>
+                    <StoreQuotesTextWrapper className="section1" ref={sectionRef1}>
+                        <Subtitle>FEATURED COLLECTION</Subtitle>
+                        <Heading>CLOTHING</Heading>
+                    </StoreQuotesTextWrapper>
+            </QuotesWrapper>
 
-        <RecomForYou isPreview={false}/>
+            <StoreDataMapper StoreData={Clothing}  GenLink={ClothingLink} ButtonLabel={'View All Product'}/>
+            
+            <StoreCardMapper CardData={StoreDataCard}/>
 
-
-        <QuotesWrapper id='clothing'>
-                <StoreQuotesTextWrapper className="section1" ref={sectionRef1}>
-                    <Subtitle>FEATURED COLLECTION</Subtitle>
-                    <Heading>CLOTHING</Heading>
-                </StoreQuotesTextWrapper>
-        </QuotesWrapper>
-
-        <StoreDataMapper StoreData={Clothing}  GenLink={ClothingLink} ButtonLabel={'View All Product'}/>
-        
-        <StoreCardMapper CardData={StoreDataCard}/>
-
+            <LookingFor CardData={LookingForStore}/>
         </StoreContaner>
     )
 }

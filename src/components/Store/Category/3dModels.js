@@ -2,6 +2,11 @@ import React, {useRef} from 'react';
 import { useIntersection } from 'react-use';
 import gsap from 'gsap';
 import { StoreContaner, StoreQuotesTextWrapper, QuotesWrapper, Heading, Subtitle} from '../StoreElements/StoreElements';
+import { SliderData } from '../../Slider/SliderData';
+import { Slider } from '../../Slider/Slider';
+import { StoreMenu } from '../StoreMenu';
+import { LookingForStore } from '../StoreData/StoreData';
+import { LookingFor } from '../StoreComponents/LookingFor';
 
 const ThreeDModels = () => {
     const treshold = 0.9;
@@ -50,14 +55,15 @@ const ThreeDModels = () => {
 
     return (
         <StoreContaner id="store">
-       
+        <Slider slides={SliderData}/>
+        <StoreMenu/>
         <QuotesWrapper id='wallart'>
                 <StoreQuotesTextWrapper className="section2" ref={sectionRef2}>
                     <Subtitle>3d Models</Subtitle>
                     <Heading>No Products yet</Heading>
                 </StoreQuotesTextWrapper>
         </QuotesWrapper>
-        
+        <LookingFor CardData={LookingForStore}/>
         </StoreContaner>
     )
 }

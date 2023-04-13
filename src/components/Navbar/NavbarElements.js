@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 // import { Link as LinkPage} from 'react-router-dom';
 export const Nav = styled.nav `
-    background: ${({ scrollNav}) => (scrollNav ? '#000000' : 'transparent')};
+    background: ${({ scrollNav}) => (scrollNav ? '#090a0e' : 'transparent')};
     /* background: ${({ scrollNav}) => (scrollNav ? '#000000' : '#000000')}; */
     height: 80px;
     margin-top: -80px;
@@ -145,6 +145,6 @@ export const NavBtnLink = styled(Link)`
     &:hover {
         transition: all 0.2s ease-in-out;
         background: #ffffff;
-        color: #000000;
+        color: #090a0e;
     }
 `;

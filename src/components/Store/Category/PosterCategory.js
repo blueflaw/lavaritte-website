@@ -4,6 +4,11 @@ import gsap from 'gsap';
 import { WallArt} from '../StoreData/StoreData';
 import { StoreContaner, StoreQuotesTextWrapper, QuotesWrapper, Heading, Subtitle} from '../StoreElements/StoreElements';
 import StoreDataMapper from '../StoreComponents/StoreDataMapper';
+import { SliderData } from '../../Slider/SliderData';
+import { Slider } from '../../Slider/Slider';
+import { StoreMenu } from '../StoreMenu';
+import { LookingFor } from '../StoreComponents/LookingFor';
+import { LookingForStore } from '../StoreData/StoreData';
 
 const PosterCategory = () => {
     const treshold = 0.9;
@@ -54,15 +59,16 @@ const PosterCategory = () => {
 
     return (
         <StoreContaner id="store">
-       
-        <QuotesWrapper id='wallart'>
-                <StoreQuotesTextWrapper className="section2" ref={sectionRef2}>
-                    <Subtitle>FEATURED COLLECTION</Subtitle>
-                    <Heading>Posters</Heading>
-                </StoreQuotesTextWrapper>
-        </QuotesWrapper>
-        <StoreDataMapper StoreData={WallArt}  GenLink={WallAretLink} ButtonLabel={'View All Wall Art'}/>
-
+            <Slider slides={SliderData}/>
+            <StoreMenu/>
+            <QuotesWrapper id='wallart'>
+                    <StoreQuotesTextWrapper className="section2" ref={sectionRef2}>
+                        <Subtitle>FEATURED COLLECTION</Subtitle>
+                        <Heading>Posters</Heading>
+                    </StoreQuotesTextWrapper>
+            </QuotesWrapper>
+            <StoreDataMapper StoreData={WallArt}  GenLink={WallAretLink} ButtonLabel={'View All Wall Art'}/>
+            <LookingFor CardData={LookingForStore}/>
         </StoreContaner>
     )
 }

@@ -210,7 +210,7 @@ export const CryptoExchangesPlatforms = () => {
                 </BlogPageContentP>
             </BlogPagesContent>
         </BlogPagesContainer>
-        <ReadMore Data={BlogsData} Hide={'005'}/>
+        <ReadMore Data={BlogsData} Hide={'B005'}/>
     </React.Fragment>
   )
 }

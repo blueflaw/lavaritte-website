@@ -44,7 +44,7 @@ export const PaintingJettfromValorant = () => {
             
         </BlogPagesContent>
         
-        <ReadMore Data={BlogsData} />
+        <ReadMore Data={BlogsData} Hide={'B002'}/>
     </BlogPagesContainer>
   )
 }

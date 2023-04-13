@@ -114,7 +114,7 @@ export const Navbar = ({ toggle }) => {
         <React.Fragment>
             <Nav scrollNav={scrollNav}>
                 <NavbarContainer>
-                    <NavLogo to='/' onClick={window.isNavHomeActive}>Allard Lavaritte</NavLogo>
+                    <NavLogo to='/' onClick={toggleHome}>Allard Lavaritte</NavLogo>
                     <MobileIcon onClick={toggle}>
                         <FaBars />
                     </MobileIcon>

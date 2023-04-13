@@ -2,7 +2,7 @@ import styled from "styled-components";
 import {Link} from 'react-router-dom';
 
 export const FooterConainer = styled.footer`
-    background: #000000;
+    background: #090a0e;
 `;
 
 export const FooterWrap = styled.div`
@@ -12,7 +12,6 @@ export const FooterWrap = styled.div`
     justify-content: center;
     max-width: 1100px;
     margin: 0 auto;
-    height: 90vh;
     @media screen and (max-width: 820px){
         height: 100%;
     }

@@ -47,7 +47,7 @@ export const PaintingBB = () => {
               </BlogPageImgWrap>
           </BlogPagesContent>
       </BlogPagesContainer>
-      <ReadMore Data={BlogsData} Hide={'001'}/>
+      <ReadMore Data={BlogsData} Hide={'B001'}/>
     </React.Fragment>
   )
 }

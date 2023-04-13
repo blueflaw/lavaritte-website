@@ -10,9 +10,9 @@ const PageNotFound = () => {
             <Helmet htmlAttributes>
                 <link rel="canonical" href="/error" />
             </Helmet>
-            <SEO title={'Lavaritte Newsletter'} 
+            <SEO title={'Error 404'} 
                 description={metaDescription} 
-                ogUrl={'https://lavaritte.com/newsletter'} 
+                ogUrl={'https://lavaritte.com/error'} 
                 image={'https://cdnb.artstation.com/p/assets/images/images/050/886/865/large/allard-lavaritte-into-the-404.jpg?1655921844'}
                 meta={metaData}/>
             <Error404/>  

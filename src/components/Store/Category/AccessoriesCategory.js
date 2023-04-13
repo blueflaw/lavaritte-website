@@ -6,6 +6,9 @@ import { StoreContaner, StoreQuotesTextWrapper, QuotesWrapper, Heading, Subtitle
 import StoreDataMapper from '../StoreComponents/StoreDataMapper';
 import { LookingFor } from '../StoreComponents/LookingFor';
 import { LookingForStore } from '../StoreData/StoreData';
+import { Slider } from '../../Slider/Slider';
+import { SliderData } from '../../Slider/SliderData';
+import { StoreMenu } from '../StoreMenu';
 const AccessoriesCategory = () => {
     const treshold = 0.9;
     const sectionRef1 = useRef(null);
@@ -55,14 +58,16 @@ const AccessoriesCategory = () => {
 
     return (
         <StoreContaner id="store">
-        <QuotesWrapper id='accessories'>
-                <StoreQuotesTextWrapper className="section2" ref={sectionRef2}>
-                    <Subtitle>FEATURED COLLECTION</Subtitle>
-                    <Heading>ACCESSORIES</Heading>
-                </StoreQuotesTextWrapper>
-        </QuotesWrapper>
-        <StoreDataMapper StoreData={Accessories} GenLink={AccessoriesLink} ButtonLabel={'shop'}/>
-        <LookingFor CardData={LookingForStore}/>
+            <Slider slides={SliderData}/>
+            <StoreMenu/>
+            <QuotesWrapper id='accessories'>
+                    <StoreQuotesTextWrapper className="section2" ref={sectionRef2}>
+                        <Subtitle>FEATURED COLLECTION</Subtitle>
+                        <Heading>ACCESSORIES</Heading>
+                    </StoreQuotesTextWrapper>
+            </QuotesWrapper>
+            <StoreDataMapper StoreData={Accessories} GenLink={AccessoriesLink} ButtonLabel={'shop'}/>
+            <LookingFor CardData={LookingForStore}/>
         </StoreContaner>
     )
 }
