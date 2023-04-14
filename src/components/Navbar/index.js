@@ -12,7 +12,7 @@ export const Navbar = ({ toggle }) => {
     var [loadTutorial, setTutorial] = useState(false);
     var [loadBlog, setBlog] = useState(false);
     var [loadAbout, setAbout] = useState(false);
-    const pathname = window.location.pathname;
+    
 
     const changeNav= () => {
         if(window.scrollY >= 80){
@@ -23,6 +23,7 @@ export const Navbar = ({ toggle }) => {
     }
 
     useEffect(() => {
+        const pathname = window.location.pathname;
         window.addEventListener('scroll', changeNav);
         
         if(pathname === '/' || pathname.indexOf('artwork/') !== -1){

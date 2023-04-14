@@ -2,7 +2,7 @@ import React, {useState, useEffect,} from 'react';
 import { StoreMenuContainer, MenuContainer, MenuListContainer, MenuItem, MenuLinks } from './StoreElements/StoreMenuElements';
 
 export const StoreMenu = () => {
-    const pathname = window.location.pathname;
+    
 
     var [loadGeneral, setGeneral] = useState(false);
     var [loadClothing, setClothing] = useState(false);
@@ -13,6 +13,7 @@ export const StoreMenu = () => {
     var [loadStockPhotos, setStockPhotos] = useState(false);
 
     useEffect(() => {
+        const pathname = window.location.pathname;
         if(pathname === '/store' || pathname.indexOf('store/') !== -1){
             setGeneral(true);
             setClothing(false);

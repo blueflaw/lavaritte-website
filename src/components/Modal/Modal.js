@@ -1,7 +1,6 @@
 import React, { useRef, useEffect, useCallback } from 'react';
-import Video from '../../videos/Eye-of-Winter.mp4';
 import Vimeo from '@u-wave/react-vimeo';
-import { CloseModalButton, ModalBackground, ModalWrapper, ShowReel } from './ModalElements'
+import { CloseModalButton, ModalBackground, ModalWrapper } from './ModalElements'
 
 
 export const Modal = ({ showModal, setShowModal }) => {
