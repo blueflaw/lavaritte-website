@@ -1,6 +1,12 @@
 https://lavaritte.com/
 https://lavaritte.com/NFT
 https://lavaritte.com/store
+https://lavaritte.com/store/clothing
+https://lavaritte.com/store/posters
+https://lavaritte.com/store/accessories
+https://lavaritte.com/store/software-brushes
+https://lavaritte.com/store/3d-models
+https://lavaritte.com/store/stock-photos
 http://lavaritte.com/tutorial
 http://lavaritte.com/blog
 http://lavaritte.com/about
@@ -8,11 +14,13 @@ https://lavaritte.com/faq
 https://lavaritte.com/newsletter
 https://lavaritte.com/tutorials/moonsurfacetutorial
 https://lavaritte.com/tutorials/cloudtutorials
+https://lavaritte.com/tutorials/webdevelopment
 https://lavaritte.com/blogs/Painting%E5%A4%89%E6%85%8B%E3%82%92%E5%85%A5%E3%82%89%E3%81%AA%E3%81%84%E3%81%A7
 https://lavaritte.com/blogs/PaintingJett
 https://lavaritte.com/blogs/PaintingFemaleBreach
 https://lavaritte.com/blogs/memoriesofagoldenhour
 https://lavaritte.com/blogs/bestcryptoplatforms
+https://lavaritte.com/blogs/HowtoUpdateNpmPackages
 https://lavaritte.com/artwork/G9oD8n
 https://lavaritte.com/artwork/G8bzAz
 https://lavaritte.com/artwork/B5Lzav

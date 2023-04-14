@@ -10,7 +10,7 @@ import binanceLogo from '../../../images/logos/Binance_logo.png';
 import coinbaseLogo from '../../../images/logos/Coinbase.png';
 import upholdLogo from '../../../images/logos/uphold_logo.png';
 import kucoinLogo from '../../../images/logos/Kucoin_Logo.png';
-import eToroLogo from '../../../images/logos/Etoro_logo.svg';
+import eToroLogo from '../../../images/logos/Etoro_logo.svg.png';
 
 export const CryptoExchangesPlatforms = () => {
     const title = '5 Best Crypto Exchanges & Platforms Of ' + new Intl.DateTimeFormat('en-US', {month: "long"}).format(new Date())  + ' ' + new Date().getFullYear();

@@ -6,12 +6,11 @@ import {
     AboutContainer, WebsiteContainer, WebsiteContent, ContentH1, ContentP, DP, ContentLocation, ContentLink, WebsiteContentBio, WebsiteContainerBio, IbuildContentLeft, 
     IbuildContentRight, ContentBio, WebsiteContentIlike, WebsiteContainerIlike, AboutQuoteContainer, ContentH4, 
     BtnWrap, DonateButton, GetInTouchLink, SocialWrapper, CreatedBy, SocialLogo, Gotinspired, GetInTouchRow, Column1, Column2, ImgWrap, ButtonDownload,
-    Img, ImagelWrapper, DarkContentH1, IContainer, BlueContentH1, IbuildWrapper, ButtonAbout,
+    Img, ImagelWrapper, DarkContentH1, IContainer, BlueContentH1, IbuildWrapper, ButtonAbout, ToolsRow, ToolsIcon
 } from './AboutElements';
-import InfoSection from '../InfoSection';
-import { About3, About4 } from './Data';
 import { Newsletter } from '../Newsletter/Newsletter';
 import Quotes from '../Quotes/Quotes';
+import { ToolsData } from './Data';
 
 const TheWebsite = () => {
     const toggleHome = () => {
@@ -41,58 +40,35 @@ const TheWebsite = () => {
             </WebsiteContent>
         </WebsiteContainer>
 
-        {/* <AboutQuoteContainer>
-            <AboutQuotes>“You can do anything you set your mind to.”</AboutQuotes>
-            <AboutQuotesWriter>- Benjamin Franklin</AboutQuotesWriter>
-        </AboutQuoteContainer> */}
-
         <WebsiteContainerBio id='bio'>
             <WebsiteContentBio>
                 <DarkContentH1>About Me</DarkContentH1>
                 <ContentH4>Summary</ContentH4>
-                {/* <ContentBio>
-                    <SocialLogo to="/" onClick={toggleHome}>Allard Lavaritte</SocialLogo> is a web designer / Freelance Artist Based in the Philippines. 
-                    Allard has established his artistic style and process, merging cutting-edge 3D graphics with traditional art and 
-                    animation aesthetics that result in a unique visual experience. His innovative approach to artistic medium expressed both in his works 
-                    and educational materials have led a wave of artistic styles that quickly became mainstream in the entertainment industry.
-                    <br/> <br/>
-                    As a self-taught artist, Allard brought unique visual styles that defined world. His innovative approach to concept art helped build the visual identity of 
-                    projects such as The Chronicles of my melancholic existence and Some other project.
-                </ContentBio> */}
                 <ContentBio>
-                    Meet <SocialLogo to="/" onClick={toggleHome}>Allard Lavaritte</SocialLogo>, a self-taught artist who has established himself as a multi-talented creative 
-                    professional. With a broad range of skills and experience in fields such as Creative Direction, Illustration, Graphic Design, UI/UX, and Web Development, 
-                    Allard is a true Renaissance man in the world of design.
-                    <br/> <br/>
-                    As a Creative Director, Allard has a keen eye for detail and a passion for developing unique and memorable brand identities. With a strong background in 
-                    branding and marketing, he understands how to create visual concepts that resonate with audiences and help businesses achieve their goals.
-                    <br/> <br/>
-                    As a Freelance Illustrator, Allard has developed a distinct style that is both whimsical and sophisticated. His illustrations are full of personality and 
-                    often feature intricate details that draw the viewer in. From editorial illustrations to children's books, Allard's work is always engaging and imaginative.
-                    <br/> <br/>
-                    As a Graphic Designer, Allard has a talent for creating clean, modern designs that communicate complex ideas in a simple, effective manner. 
-                    He is skilled in a wide range of design software and techniques, allowing him to take on any project with confidence and creativity.
-                    <br/> <br/>
-                    As a UI/UX Specialist, Allard understands the importance of creating user-friendly interfaces that provide an exceptional user experience. 
-                    His designs are intuitive, functional, and aesthetically pleasing, ensuring that users enjoy interacting with the digital products he creates.
-                    <br/> <br/>
-                    Finally, as a Web Developer, Allard has a strong technical background that allows him to bring his designs to life on the web. He is proficient in various coding 
-                    languages and platforms, and his websites are always responsive, secure, and visually appealing.
-                    <br/> <br/>
-                    In summary, Allard Lavaritte is a highly skilled and talented artist and designer with a passion for creating unique and memorable experiences for his clients. 
-                    Whether you need a Creative Director, Illustrator, Graphic Designer, UI/UX Specialist, or Web Developer, 
-                    Allard has the skills and expertise to bring your vision to life.
+                    Hi, my name is <SocialLogo to="/" onClick={toggleHome}>Allard Lavaritte</SocialLogo>. I am a self-taught artist with a wide range of skills in Creative Direction, 
+                    Illustration, Graphic Design, UI/UX, and Web Development. I am passionate about creating visually appealing designs that are both functional and user-friendly. 
+                    My unique approach to projects comes from my expertise in multiple fields, which allows me to bring innovative solutions to the table. 
+                    I am detail-oriented and imaginative, which enhances the quality of my work.
+                    <br/><br/>
+                    Recently, I created a website using React called lavaritte.com, which showcases my skills as a web developer. This platform allows me to share my artwork, 
+                    design projects, and insights into my creative process. I am eager to collaborate with other creative individuals and bring ideas to life.
                 </ContentBio>
+                
             </WebsiteContentBio>
         </WebsiteContainerBio>
 
         <WebsiteContainerIlike >
             <WebsiteContentIlike>
-                <DarkContentH1>Frontend Developer.</DarkContentH1>
-                <ContentH4>UI/UX</ContentH4>
+                <DarkContentH1>TOOLS I LOVE</DarkContentH1>
+                <ContentH4>Languages and Tools</ContentH4>
                 <ContentBio>
-                    Highly skilled at progressive enhancement, design systems &amp; UI Engineering. <br/> 
-                    Over a decade of experience building products for clients across several countries
+                    <ToolsRow>
+                        {ToolsData.map((toolsDetail) =>{
+                            return <React.Fragment key={toolsDetail.id}>
+                             <ToolsIcon src={toolsDetail.path} alt={toolsDetail.alt} title={toolsDetail.title} loading="lazy" width="auto" height="auto"/>
+                        </React.Fragment>
+                        })}
+                    </ToolsRow>
                 </ContentBio>
             </WebsiteContentIlike>
         </WebsiteContainerIlike>
@@ -132,9 +108,6 @@ const TheWebsite = () => {
                 </IbuildContentRight>
             </IbuildWrapper>
         </IContainer>
-
-        <InfoSection {...About3} />
-        <InfoSection {...About4} />
 
         <AboutQuoteContainer>
             <DarkContentH1>Think we're a good fit? get in touch ^-^</DarkContentH1>

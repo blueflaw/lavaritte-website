@@ -1,22 +1,22 @@
 {
   "name": "lavaritte-website",
-  "version": "0.1.0",
+  "version": "2.1.0",
   "private": true,
   "author": "Allard Lavaritte",
   "homepage": "https://lavaritte.com",
   "proxy": "https://lavaritte.com:8000/",
   "dependencies": {
-    "@babel/preset-env": "^7.20.2",
-
+    "@babel/preset-env": "^7.21.4",
     "@babel/preset-react": "^7.18.6",
     "@babel/register": "^7.21.0",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^14.0.0",
     "@testing-library/user-event": "^14.4.3",
-    "@use-gesture/react": "^10.2.24",
+    "@u-wave/react-vimeo": "^0.9.10",
+    "@use-gesture/react": "^10.2.26",
     "express": "^4.18.2",
-    "firebase": "^9.18.0",
-    "firebase-tools": "^11.24.1",
+    "firebase": "^9.19.1",
+    "firebase-tools": "^11.27.0",
     "gsap": "^3.11.5",
     "ignore-styles": "^5.0.1",
     "lodash-move": "^1.1.1",
@@ -29,7 +29,7 @@
     "react-helmet": "^6.1.0",
     "react-helmet-async": "^1.3.0",
     "react-icons": "^4.8.0",
-    "react-router-dom": "^6.9.0",
+    "react-router-dom": "^5.3.4",
     "react-scripts": "^5.0.1",
     "react-scroll": "^1.8.9",
     "react-scrollmagic": "^2.3.0",
@@ -37,8 +37,7 @@
     "react-use": "^17.4.0",
     "react-youtube": "^10.1.0",
     "styled-components": "^5.3.9",
-    "web-vitals": "^3.3.0",
-    "type": "module"
+    "web-vitals": "^3.3.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -47,7 +46,7 @@
     "eject": "react-scripts eject",
     "prod": "npm run-script build && serve build",
     "ssr": "node server/index.js",
-    "server" : "npm run build&&node server.js"
+    "server": "npm run build&&node server.js"
   },
   "eslintConfig": {
     "extends": [
@@ -66,5 +65,15 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).\r Be sure to install Node.js",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blueflaw/lavaritte-website.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/blueflaw/lavaritte-website/issues"
   }
 }

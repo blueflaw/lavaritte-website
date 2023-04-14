@@ -198,6 +198,25 @@ export const ContentBio = styled.p`
         max-width: 90%;
     }
 `;
+export const ToolsRow = styled.div`
+    display: grid;
+    /* grid-auto-columns: minmax(auto, 1fr);  */
+    grid-template-columns: repeat(10, 1fr);
+    align-items: center;
+    grid-template-areas: ${({imgStart}) => (imgStart ? `'col2 col1` : `'col1 col2'`)};
+    grid-gap: var(--auto-grid-gap, 0);
+    padding: 0;
+    @media screen and (max-width: 768px){
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-areas: ${({imgStart}) => (imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`)};
+    }
+`
+
+export const ToolsIcon = styled.img`
+    width: 50px;
+    padding-bottom: 10px;
+`
+
 export const ContentLocation = styled.p`
     padding-top: 5px;
     color: #ffffff;

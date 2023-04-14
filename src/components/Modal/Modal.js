@@ -1,5 +1,6 @@
 import React, { useRef, useEffect, useCallback } from 'react';
-import Video from '../../videos/Eye-of-Winter.mp4'
+import Video from '../../videos/Eye-of-Winter.mp4';
+import Vimeo from '@u-wave/react-vimeo';
 import { CloseModalButton, ModalBackground, ModalWrapper, ShowReel } from './ModalElements'
 
 
@@ -34,9 +35,19 @@ export const Modal = ({ showModal, setShowModal }) => {
             <ModalBackground onClick={closeModal} ref={modalRef}>
                 <ModalWrapper showModal={showModal}>
                     <CloseModalButton aria-label='Close Modal' onClick={() => setShowModal(prev => !prev)}/>
-                    <ShowReel controls autoPlay loop src={Video} type='video/mp4'/>
+                    {/* <ShowReel controls autoPlay loop src={Video} type='video/mp4'/> */}
+                    <Vimeo style={{
+                        width: '100%',
+                        height: '100%',
+                        objectFit: 'cover',
+                        background: '#000000',
+                    }}
+                    video="817390245"
+                    autoplay
+                    width={window.innerWidth - 150}
+                    />
                 </ModalWrapper>
-                
+                    
             </ModalBackground>
         ): null}
     </React.Fragment>
