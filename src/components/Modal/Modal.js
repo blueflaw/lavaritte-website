@@ -35,16 +35,18 @@ export const Modal = ({ showModal, setShowModal }) => {
                 <ModalWrapper showModal={showModal}>
                     <CloseModalButton aria-label='Close Modal' onClick={() => setShowModal(prev => !prev)}/>
                     {/* <ShowReel controls autoPlay loop src={Video} type='video/mp4'/> */}
-                    <Vimeo style={{
-                        width: '100%',
-                        height: '100%',
-                        objectFit: 'cover',
-                        background: '#000000',
-                    }}
-                    video="817390245"
-                    autoplay
-                    width={window.innerWidth - 150}
-                    />
+                    {
+                        setShowModal && <Vimeo style={{
+                            width: '100%',
+                            height: '100%',
+                            objectFit: 'cover',
+                            background: '#000000',
+                        }}
+                        video="817390245"
+                        autoplay
+                        width={window.innerWidth - 150}
+                        />
+                    }
                 </ModalWrapper>
                     
             </ModalBackground>

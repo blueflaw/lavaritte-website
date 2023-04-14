@@ -60,8 +60,11 @@ import { MoonSurfacePage } from './pages/TutorialPages/MoonSurfacePage';
 import { CreatingAWebsiteTutorial } from './pages/TutorialPages/CreatingAWebsiteTutorial';
 
 import ReactGA from 'react-ga';
-import AppConfig from './App.config';
-ReactGA.initialize(AppConfig.GOOGLE.GA_TRACKING_CODE);
+// import AppConfig from './App.config';
+// ReactGA.initialize(AppConfig.GOOGLE.GA_TRACKING_CODE);
+
+import { GA_TRACKING_CODE } from './App.config';
+ReactGA.initialize(GA_TRACKING_CODE);
 
 function App() {
   

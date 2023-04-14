@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 import ReCAPTCHA from "react-google-recaptcha";
+import { ReCAPTCHA_KEY } from '../../App.config';
 import { FormContainer, NewsLetterContainer, NewsletterEmail, NewsletterSubmit, NewsLetterH4, 
         NewsLetterTextWrapper, NewsLetterP, ThankyouTextWrapper, ThankyouText, RecaptchaWrapper, NLContainer, NewsLetterContainerImage } from './NewsletterEllements';
 
 import firebase_DB from '../Firebase/firebase';
 import firebase from "firebase/compat/app";
-import appconfig from '../../App.config';
+// import appconfig from '../../App.config';
 
 export const Newsletter = () => {
   const [input, setInput] = useState("");
@@ -57,7 +58,8 @@ export const Newsletter = () => {
             <NewsletterSubmit disabled={!captchaIsDone} type='submit'>Submit</NewsletterSubmit> 
           </FormContainer>
           <RecaptchaWrapper >
-            <ReCAPTCHA sitekey={appconfig.GOOGLE.ReCAPTCHA} onChange={onChange}/>
+            {/* <ReCAPTCHA sitekey={appconfig.GOOGLE.ReCAPTCHA} onChange={onChange}/> */}
+            <ReCAPTCHA sitekey={ReCAPTCHA_KEY} onChange={onChange}/>
             {/* <ReCAPTCHA sitekey={'6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI'} onChange={onChange}/> */}
           </RecaptchaWrapper>
           {message && <ThankyouTextWrapper><ThankyouText>{message}</ThankyouText></ThankyouTextWrapper>}
