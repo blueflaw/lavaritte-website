@@ -12,7 +12,7 @@ export const Navbar = ({ toggle }) => {
     var [loadTutorial, setTutorial] = useState(false);
     var [loadBlog, setBlog] = useState(false);
     var [loadAbout, setAbout] = useState(false);
-    
+    var [loadShowcase, setShowcase] = useState(false);
 
     const changeNav= () => {
         if(window.scrollY >= 80){
@@ -50,6 +50,10 @@ export const Navbar = ({ toggle }) => {
             toggleAbout()
             setAbout(true)
         }
+        if(pathname === '/showcase' || pathname.indexOf('UIUX') !== -1){
+            toggleShowcase()
+            setShowcase(true)
+        }
 
         return () => {
             setScrollNav(null);
@@ -64,6 +68,7 @@ export const Navbar = ({ toggle }) => {
         window.isNavTutorialsActive = false;
         window.isNavBlogctive = false;
         window.isNavHomeActive = true;
+        window.isNavShowcaseActive = false;
     };
 
     const toggleNFT = () => {
@@ -73,6 +78,7 @@ export const Navbar = ({ toggle }) => {
         window.isNavTutorialsActive = false;
         window.isNavBlogctive = false;
         window.isNavHomeActive = false;
+        window.isNavShowcaseActive = false;
     };
 
     const toggleStore = () => {
@@ -82,6 +88,7 @@ export const Navbar = ({ toggle }) => {
         window.isNavTutorialsActive = false;
         window.isNavBlogctive = false;
         window.isNavHomeActive = false;
+        window.isNavShowcaseActive = false;
     };
 
     const toggleTutorial = () => {
@@ -91,6 +98,7 @@ export const Navbar = ({ toggle }) => {
         window.isNavTutorialsActive = true;
         window.isNavBlogctive = false;
         window.isNavHomeActive = false;
+        window.isNavShowcaseActive = false;
     };
 
     const toggleBlog = () => {
@@ -100,6 +108,7 @@ export const Navbar = ({ toggle }) => {
         window.isNavTutorialsActive = false;
         window.isNavBlogctive = true;
         window.isNavHomeActive = false;
+        window.isNavShowcaseActive = false;
     };
 
     const toggleAbout = () => {
@@ -109,6 +118,17 @@ export const Navbar = ({ toggle }) => {
         window.isNavTutorialsActive = false;
         window.isNavBlogctive = false;
         window.isNavHomeActive = false;
+        window.isNavShowcaseActive = false;
+    };
+
+    const toggleShowcase = () => {
+        window.isNavNFTActive = false;
+        window.isNavStoreActive = false;
+        window.isNavAboutActive = false;
+        window.isNavTutorialsActive = false;
+        window.isNavBlogctive = false;
+        window.isNavHomeActive = false;
+        window.isNavShowcaseActive = true;
     };
     
     return (
@@ -122,6 +142,9 @@ export const Navbar = ({ toggle }) => {
                     <NavMenu>
                         <NavItem>
                             <NavLinks $activeNav={loadHome} onClick={toggleHome} to='/'>Art</NavLinks>
+                        </NavItem>
+                        <NavItem>
+                            <NavLinks $activeNav={loadShowcase} onClick={toggleShowcase} to="/showcase" smooth="true" duration={500} spy="true" exact="true" offset={-80} >Showcase</NavLinks>
                         </NavItem>
                         <NavItem>
                             <NavLinks $activeNav={loadNFT} onClick={toggleNFT} to="/NFT" smooth="true" duration={500} spy="true" exact="true" offset={-80} >NFT</NavLinks>

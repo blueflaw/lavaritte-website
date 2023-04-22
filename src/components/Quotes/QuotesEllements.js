@@ -6,7 +6,7 @@ export const QuotsContainer = styled.div`
     align-items: center;
     padding: 0;
     height: 35vh;
-    background-color: #000;
+    background-color: #090a0e;
 `;
 
 
@@ -21,7 +21,7 @@ export const QuotesTextWrapper = styled.div`
 `;
 
 export const QuotesH3 = styled.h3`
-    color: #ffffff;
+    color: #f5f5f7;
     text-align: center;
     letter-spacing: 0.16rem;
     font-size: 2rem;
@@ -31,7 +31,7 @@ export const QuotesH3 = styled.h3`
 `;
 
 export const QuotesAuthor = styled.p`
-    color: #ffffff;
+    color: #f5f5f7;
     font-size: .9rem;
     letter-spacing: 0.2rem;
     

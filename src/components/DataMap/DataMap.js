@@ -36,12 +36,14 @@ export const DataMap = ({Data, Dark, Hide}) => {
                                         </BlogInfoHeader>
                                     </DataMapInfoRow>
                                     <DataMapHeader dark={Dark}>{DataDetail.title}</DataMapHeader>
-                                    <DataMapInfoRow>
-                                        <AuthorWrap>
-                                            <AuthorDisplayPicture src="https://cdnb.artstation.com/p/users/avatars/000/190/863/medium/02dbe259f43d1792bc174f3c536c8d4e.jpg" alt="author"  title={DataDetail.author} loading="lazy" width="auto" height="auto"/>
-                                            <AuthorName>{DataDetail.author}</AuthorName>
-                                        </AuthorWrap>
-                                    </DataMapInfoRow>
+                                    {DataDetail.author ?
+                                        <DataMapInfoRow>
+                                            <AuthorWrap>
+                                                <AuthorDisplayPicture src="https://cdnb.artstation.com/p/users/avatars/000/190/863/medium/02dbe259f43d1792bc174f3c536c8d4e.jpg" alt="author"  title={DataDetail.author} loading="lazy" width="auto" height="auto"/>
+                                                <AuthorName>{DataDetail.author}</AuthorName>
+                                            </AuthorWrap>
+                                        </DataMapInfoRow>
+                                    : null}
                                     <DataMapInfoRow><Preview>{DataDetail.preview}</Preview></DataMapInfoRow>
                                     </TextWrap>
                                 </TextWrapper>

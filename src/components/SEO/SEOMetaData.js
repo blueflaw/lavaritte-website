@@ -1,4 +1,4 @@
-export const metaDescription = 'Allard Lavaritte is a self-taught multi-talented artist with skills in Creative Direction, Illustration, Graphic Design, UI/UX, and Web Development. He creates visually stunning designs with precision and imagination. Contact him at me@lavaritte.com.';
+export const metaDescription = 'Allard Lavaritte is a self-taught artist skilled in Creative Direction, Illustration, Graphic Design, UI/UX, and Web Development. Contact him at me@lavaritte.com for visually stunning designs.';
 export const metaData=[
     {
         property: "og:type",

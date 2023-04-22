@@ -12,6 +12,7 @@ import BlogPage from './pages/Blog';
 import FAQ from './pages/FAQ';
 import PageNotFound from './pages/PageNotFound';
 import NewsLetterPage from './pages/NewsletterPage';
+import ShowcasePage from './pages/Showcase';
 
 import { Ga4ZRaPage } from './pages/ArtPages/Ga4ZRaPage';
 import { WKO6oNPage } from './pages/ArtPages/WKO6oNPage';
@@ -59,6 +60,10 @@ import { CloudTutorialPage } from './pages/TutorialPages/CloudTutorial';
 import { MoonSurfacePage } from './pages/TutorialPages/MoonSurfacePage';
 import { CreatingAWebsiteTutorial } from './pages/TutorialPages/CreatingAWebsiteTutorial';
 
+import { UIUXPage } from './pages/ShowcasePage/UIUXPage'
+import { HospitalFormPage } from './pages/UIUX/HospitalFormPage';
+import { TestimonialsPage } from './pages/UIUX/TestimonialsPage';
+
 import ReactGA from 'react-ga';
 // import AppConfig from './App.config';
 // ReactGA.initialize(AppConfig.GOOGLE.GA_TRACKING_CODE);
@@ -79,6 +84,7 @@ function App() {
         <Route path="/about" component={About} exact/>
         <Route path="/faq" component={FAQ} exact/>
         <Route path="/newsletter" component={NewsLetterPage} exact/>
+        <Route path="/showcase" component={ShowcasePage} exact/>
 
         <Route path="/artwork/Ga4ZRa" component={Ga4ZRaPage} exact/>
         <Route path="/artwork/WKO6oN" component={WKO6oNPage} exact/>
@@ -125,6 +131,10 @@ function App() {
         <Route path="/tutorials/cloudtutorials" component={CloudTutorialPage} exact/>
         <Route path="/tutorials/moonsurfacetutorial" component={MoonSurfacePage} exact/>
         <Route path="/tutorials/webdevelopment" component={CreatingAWebsiteTutorial} exact/>
+
+        <Route path="/UIUX" component={UIUXPage} exact/>
+        <Route path="/UIUX/HospitalForm" component={HospitalFormPage} exact/>
+        <Route path="/UIUX/Testimonials" component={TestimonialsPage} exact/>
 
         <Route path="/404" component={ PageNotFound } />
         <Route component={PageNotFound} />

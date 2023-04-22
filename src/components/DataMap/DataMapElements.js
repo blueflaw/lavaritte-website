@@ -113,6 +113,10 @@ export const BlogTumbnailWrapper = styled.span`
 export const DataMapPost = styled.div`
     position: static;
     overflow: hidden;
+
+    @media screen and (max-width: 425px){
+        max-width: 400px;
+    }
 `;
 
 export const DataMapThumbnail = styled.img`
@@ -148,6 +152,10 @@ export const TextWrapper = styled.div`
     opacity: 1;
     transition: .5s ease;
     background: ${({dark}) => (dark ? '#222222' : '#ffffff')};
+
+    @media screen and (max-width: 425px){
+        max-width: 400px;
+    }
 `;
 
 export const TextWrap = styled.div`

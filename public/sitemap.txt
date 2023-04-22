@@ -12,6 +12,10 @@ http://lavaritte.com/blog
 http://lavaritte.com/about
 https://lavaritte.com/faq
 https://lavaritte.com/newsletter
+https://lavaritte.com/showcase
+https://lavaritte.com/UIUX/
+https://lavaritte.com/UIUX/HospitalForm
+https://lavaritte.com/UIUX/Testimonials
 https://lavaritte.com/tutorials/moonsurfacetutorial
 https://lavaritte.com/tutorials/cloudtutorials
 https://lavaritte.com/tutorials/webdevelopment

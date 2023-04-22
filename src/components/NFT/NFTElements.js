@@ -9,7 +9,7 @@ export const HeroContainer = styled.div`
     height: 100vh;
     width: 100%;
     position: relative;
-    background: #000000 url("https://cdnb.artstation.com/p/assets/images/images/056/930/265/large/allard-lavaritte-makima-f.jpg?1670427007") no-repeat fixed center top;;
+    background: #090a0e url("https://cdna.artstation.com/p/assets/images/images/059/592/118/large/allard-lavaritte-underthemoonlight.jpg?1676720721") no-repeat fixed center center;;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -17,7 +17,7 @@ export const HeroContainer = styled.div`
 `;
 
 export const ButtonDown = styled(LinkS)`
-    color: #ffffff;
+    color: #f5f5f7;
     font-size: 1.5rem;
     cursor: pointer;
     text-align: center;
@@ -29,7 +29,7 @@ export const ButtonDown = styled(LinkS)`
 `;
 
 export const HeroH1 = styled.h1`
-    color: #ffffff;
+    color: #f5f5f7;
     font-size: 1.5rem;
     text-align: center;
     letter-spacing: 0.2rem;
@@ -68,7 +68,7 @@ export const NFTContainer = styled.div`
 export const NFTVidContainer = styled.div`
     display: flex;
     flex-direction: row;
-    background: #000000;
+    background: #090a0e;
     padding: 0%;
     margin: 0%;
     overflow: hidden;
@@ -144,7 +144,7 @@ export const NFTWrapper = styled.div`
 `;
 
 export const Heading = styled.h2`
-    color: #ffffff;
+    color: #f5f5f7;
     font-size: 1.5rem;
     letter-spacing: 0.3rem;
     text-transform: uppercase;
@@ -205,8 +205,8 @@ export const ButtonWrapper = styled.div`
     padding: 10% 0;
 `;
 export const ButtonViewCollection = styled.a`
-    color: #ffffff;
-    background-image: linear-gradient(-90deg, #ffffff 50%, #000 50%);
+    color: #f5f5f7;
+    background-image: linear-gradient(-90deg, #f5f5f7 50%, #000 50%);
     background-size: 300%;
     transition: all 0.2s ease-in-out;
     text-transform: uppercase;
@@ -215,14 +215,14 @@ export const ButtonViewCollection = styled.a`
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1.5px solid #ffffff;
+    border: 1.5px solid #f5f5f7;
     padding: 1rem 2rem;
     cursor: pointer;
     font-size: ${({fontBig}) => (fontBig ? '1rem' : '0.9rem')};
     transition: all 0.6s;
 
     &:hover {
-        color: #000000;
+        color: #090a0e;
         background-position: 99%;
         overflow: hidden;
         transform: translateX(0.5rem);
@@ -253,7 +253,7 @@ export const NFTCollectionPostWrap = styled.a`
     overflow: hidden;
     flex-direction: column;
     text-decoration: none;
-    color: #000000;
+    color: #090a0e;
     border-radius: 15px;
     //border: 2px solid transparent;
     

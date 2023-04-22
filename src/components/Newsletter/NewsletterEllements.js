@@ -10,7 +10,7 @@ export const NLContainer = styled.div`
 
     @media screen and (max-width: 768px) {
         flex-direction: column;
-        height: 60vh;
+        height: 100vh;
     }
 `;
 
@@ -86,7 +86,7 @@ export const NewsletterEmail = styled.input`
     padding: 6px 10px;
     width: 100%;
     border: 1.5px solid #00a2ff;
-    color: #000;
+    color: #090a0e;
     padding: 14px;
     font-size: 0.75rem;
     letter-spacing: 0.2rem;
@@ -101,10 +101,10 @@ export const NewsletterEmail = styled.input`
 `;
 
 export const NewsletterSubmit = styled.button`
-    color: #fff;
+    color: #f5f5f7;
     margin: 0;
     /* background-image: linear-gradient(90deg, #00a2ff 50%, transparent 50%); */
-    background-image: ${({ disabled}) => (disabled ? 'linear-gradient(90deg, #b9e5ff 20%, transparent 50%)' : 'linear-gradient(90deg, #00a2ff 50%, #fff 50%)')};
+    background-image: ${({ disabled}) => (disabled ? 'linear-gradient(90deg, #b9e5ff 20%, transparent 50%)' : 'linear-gradient(90deg, #00a2ff 50%, #f5f5f7 50%)')};
     background-size: 300%;
     transition: all 0.2s ease-in-out;
     text-transform: uppercase;
@@ -192,7 +192,7 @@ export const RecaptchaWrapper = styled.div`
 
 export const ThankyouText = styled.p`
     font-size: .9rem;
-    color: #fff;
+    color: #f5f5f7;
     letter-spacing: 0.16rem;
     word-wrap: break-word;
     line-height: 24px;

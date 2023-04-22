@@ -3,7 +3,7 @@
   "version": "2.1.0",
   "private": true,
   "author": "Allard Lavaritte",
-  "homepage": ".",
+  "homepage": "/",
   "dependencies": {
     "@babel/preset-env": "^7.21.4",
     "@babel/preset-react": "^7.18.6",

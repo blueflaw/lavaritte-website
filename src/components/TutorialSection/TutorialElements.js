@@ -9,14 +9,14 @@ export const HeroContainer = styled.div`
     height: 100vh;
     position: relative;
     z-index: 1;
-    background: #000000 url("https://cdnb.artstation.com/p/assets/images/images/056/930/243/large/allard-lavaritte-darkness-demon-final.jpg?1670427024") no-repeat fixed center top;
+    background: #090a0e url("https://cdnb.artstation.com/p/assets/images/images/056/930/243/large/allard-lavaritte-darkness-demon-final.jpg?1670427024") no-repeat fixed center top;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
 `;
 export const HeroH1 = styled.h1`
-    color: #ffffff;
+    color: #f5f5f7;
     font-size: 1.5rem;
     text-align: center;
     letter-spacing: 0.2rem;
@@ -42,7 +42,7 @@ export const HeroContent = styled.div`
 
 export const TutorialContainer = styled.div`
     overflow: hidden;
-    background-color: #000;
+    background-color: #111;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -54,7 +54,7 @@ export const TutorialContainer = styled.div`
 
 export const TutorialContainer2 = styled.div`
     overflow: hidden;
-    background-color: #000;
+    background-color: #090a0e;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -67,7 +67,7 @@ export const TutorialContainer2 = styled.div`
 export const TutorialVidContainer = styled.div`
     display: flex;
     flex-direction: row;
-    background: #000000;
+    background: #090a0e;
     padding: 0%;
     margin: 0%;
     overflow: hidden;
@@ -142,7 +142,7 @@ export const TutorialWrapper = styled.div`
 `;
 
 export const Heading = styled.h2`
-    color: #ffffff;
+    color: #f5f5f7;
     font-size: 1.5rem;
     letter-spacing: 0.3rem;
     text-transform: uppercase;
@@ -153,7 +153,7 @@ export const Heading = styled.h2`
 `;
 
 export const Subtitle = styled.p`
-    color: #ffffff;
+    color: #f5f5f7;
     vertical-align: baseline;
     max-width: 1100px;
     padding-top: 10px;
@@ -168,8 +168,8 @@ export const Subtitle = styled.p`
 export const DonateButton2 = styled.a`
     background: ${({dark}) => (dark ? '#ffc439' : 'transparent')};
     white-space: nowrap;
-    color: ${({dark}) => (dark ? '#ffffff' : '#ffc439')};
-    border: 1px solid ${({dark}) => (dark ? '#ffffff' : '#ffc439')};
+    color: ${({dark}) => (dark ? '#f5f5f7' : '#ffc439')};
+    border: 1px solid ${({dark}) => (dark ? '#f5f5f7' : '#ffc439')};
     white-space: nowrap;
     padding: ${({big}) => (big ? '14px 48px' : '10px 22px')};
     border-radius: 30px;
@@ -194,7 +194,7 @@ export const DonateButton2 = styled.a`
 `;
 
 export const DonateButton = styled.a`
-    color: #ffffff;
+    color: #f5f5f7;
     text-decoration: none;
     font-weight: 900;
     vertical-align: baseline;

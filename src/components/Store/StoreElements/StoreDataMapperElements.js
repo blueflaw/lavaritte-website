@@ -141,7 +141,7 @@ export const StorePostWrap = styled.a`
     } 
 
     @media only screen and (max-width: 1024px) {
-        width: 300px;
+        max-width: 300px;
     }
 `;
 

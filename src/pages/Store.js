@@ -23,7 +23,7 @@ export const StorePage = () => {
             </Helmet>
             <SEO title={'Lavaritte Store'} 
                 description={metaDescription} 
-                ogUrl={'https://lavaritte.com/newsletter'} 
+                ogUrl={'https://lavaritte.com/store'} 
                 image={'https://upenandy.sirv.com/lavaritte.com/store/slider/store2.jpg'}
                 meta={metaData}/>
             <ScrollToTop />

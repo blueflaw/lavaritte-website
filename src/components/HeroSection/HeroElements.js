@@ -62,7 +62,7 @@ export const HeroContent = styled.div`
 `;
 
 export const HeroH1 = styled.h1`
-    color: #ffffff;
+    color: #f5f5f7;
     opacity: 0;
     transform: translateX(-50vw);
     font-size: 1.5rem;
@@ -75,7 +75,7 @@ export const HeroH1 = styled.h1`
 `;
 
 export const HeroP = styled.p`
-    color: #ffffff;
+    color: #f5f5f7;
     opacity: 1;
     transform: translateX(-50vw);
     font-size: 0.9rem;

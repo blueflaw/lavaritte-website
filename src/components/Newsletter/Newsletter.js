@@ -59,8 +59,8 @@ export const Newsletter = () => {
           </FormContainer>
           <RecaptchaWrapper >
             {/* <ReCAPTCHA sitekey={appconfig.GOOGLE.ReCAPTCHA} onChange={onChange}/> */}
-            <ReCAPTCHA sitekey={ReCAPTCHA_KEY} onChange={onChange}/>
-            {/* <ReCAPTCHA sitekey={'6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI'} onChange={onChange}/> */}
+            <ReCAPTCHA sitekey={ReCAPTCHA_KEY} onChange={onChange} theme='dark'/>
+            {/* <ReCAPTCHA sitekey={'6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI'} onChange={onChange} /> */}
           </RecaptchaWrapper>
           {message && <ThankyouTextWrapper><ThankyouText>{message}</ThankyouText></ThankyouTextWrapper>}
         </NewsLetterContainer>

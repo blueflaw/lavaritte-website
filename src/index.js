@@ -10,6 +10,7 @@ window.isNavAboutActive = false;
 window.isNavTutorialsActive = false;
 window.isNavBlogctive = false;
 window.isNavHomeActive = false;
+window.isNavShowcaseActive = false;
 
 ReactDOM.render(
   <React.StrictMode>

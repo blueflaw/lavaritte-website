@@ -1,6 +1,6 @@
-import React, {useRef, useState, useEffect} from 'react'
+import React, {useRef, useState, useEffect} from 'react';
 import { animateScroll as scroll } from 'react-scroll';
-import { TweenMax, Power3 } from 'gsap'
+import { TweenMax, Power3 } from 'gsap';
 import { ButtonShowreel } from '../ButtonElements'
 import Video from '../../videos/Eye-of-Winter.mp4'
 import { HeroContainer, HeroBg, VideoBg, HeroContent, HeroH1, HeroP, HeroBtnWrapper, ArrowForward, ArrowRight} from './HeroElements'
@@ -19,7 +19,7 @@ const HeroSection = () => {
     }, [])
 
     const [hover, setHover] = useState(false);
-    const [showModal, setShowModal] = useState(false)
+    const [showModal, setShowModal] = useState(false);
 
     const onHover = () => {
         setHover(!hover)
