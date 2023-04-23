@@ -27,6 +27,9 @@ export const HeroH1 = styled.h1`
         font-size: 1.3rem;
         padding-bottom: 10px;
     }
+    @media screen and (max-width: 425px){
+        font-size: .9rem;
+    }
 `;
 export const HeroContent = styled.div`
     z-index: 3;

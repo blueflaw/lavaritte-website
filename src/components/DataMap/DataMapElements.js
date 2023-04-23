@@ -115,7 +115,7 @@ export const DataMapPost = styled.div`
     overflow: hidden;
 
     @media screen and (max-width: 425px){
-        max-width: 400px;
+        max-width: 300px;
     }
 `;
 

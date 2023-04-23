@@ -32,6 +32,10 @@ export const FormsH3 = styled.h3`
     font-size: 4rem;
     padding: 20px;
     text-transform: capitalize;
+
+    @media only screen and (max-width: 768px){
+      font-size: 2rem;
+    }
 `;
 
 export const FormsAuthor = styled.p`
