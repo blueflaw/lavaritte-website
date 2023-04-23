@@ -27,6 +27,10 @@ export const HeroContent = styled.div`
     align-items: left;
     text-align: left;
     opacity: 1;
+
+    @media screen and (max-width: 425px) {
+        margin-left: 10%;
+    }
 `;
 
 export const ShowcaseHeroH1 = styled.h1`

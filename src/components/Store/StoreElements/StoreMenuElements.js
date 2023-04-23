@@ -3,50 +3,67 @@ import { Link } from 'react-router-dom';
 
 export const StoreMenuContainer = styled.nav `
     background: '#fff';
-    height: 80px;
     display: flex;
+    min-height: 80px;
     justify-content: center;
     align-items: center;
     font-size: 1rem;
     position: relative;
     transition: all 0.2s ease-in-out;
-    @media screen and (max-width: 960px) {
-        transition: 0.8s all ease;
-    }
+    
 `;
 
 export const MenuContainer = styled.div `
     display: flex;
     text-align: center;
     justify-content: space-around;
-    height: 80px;
+    height: auto;
     width: 100%;
     padding: 0 24px;
     max-width: 1100px;
-`;
 
-
-export const MenuListContainer = styled.ul `
-    display: flex;
-    align-items: center;
-    list-style: none;
-    text-align: center;
-    margin-right: -22px;
-    cursor: pointer;
-    @media screen and (max-width: 768px){
-        display: none;
+    @media screen and (max-width: 768px) {
+        max-width: 100%;
+        padding: 20px;
     }
 `;
 
-export const MenuItem = styled.li `
-    height: 80px;
+
+export const MenuListContainer = styled.div `
+     display: grid;
+    /* grid-auto-columns: minmax(auto, 1fr);  */
+    grid-template-columns: repeat(7, 1fr);
+    align-items: center;
+    list-style: none;
+    text-align: center;
+    cursor: pointer;
+    @media screen and (max-width: 768px){
+        grid-template-columns: repeat(4, 1fr);
+        margin: 20px;
+    }
+    @media screen and (max-width: 425px){
+        grid-template-columns: repeat(3, 1fr);
+        margin: 20px;
+    }
+    @media screen and (max-width: 375px){
+        grid-template-columns: repeat(2, 1fr);
+        margin: 20px;
+    }
+`;
+
+export const MenuItem = styled.div `
+    height: auto;
+    width: 100%;
+    padding: 10px 0;
 `;
 
 
 export const MenuLinks = styled(Link)`
     color: ${({ $activeStoreMenu}) => ($activeStoreMenu ? '#00a2ff' : '#7e8993')};
+    width: max-content;
     display: flex;
     align-items: center;
+    text-align: center;
     text-decoration: none;
     padding: 0 1rem;
     height: 100%;
@@ -59,5 +76,9 @@ export const MenuLinks = styled(Link)`
     &:hover{
         transition: 0.8s all ease;
         color: #00a2ff;
+    }
+
+    @media screen and (max-width: 768px){
+        width: min-content;
     }
 `;

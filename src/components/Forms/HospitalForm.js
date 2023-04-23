@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { FormContainer, Form, Input, Label, Button, Colapsable, ColapsableContent, ColapsableContentWapper, FirstLastNameContent, ColapsableHeader, ColapsableIcon, 
          CircleMinus, CirclePlus, FormP, RadioLabel, RadioWrapper, RadioInput, ColapsableContentWapper2col, TermsLink } from './FormsElement';
 import { FormHeader } from './FormHeader';
+import { MoreDesign } from '../ReadMore/MoreDesign';
+import { UIUXData } from '../Showcase/UIUXData';
 
 export const HospitalForm = () => {
 
@@ -47,7 +49,9 @@ export const HospitalForm = () => {
   };
   return (
     <React.Fragment>
-      <FormHeader Header={'Hospital Admission Form'}/>
+      <FormHeader Header={'Patient Admission Form'} 
+                  Subitle={'Providing us with accurate information helps us ensure the best possible care for you.'}
+                  BgURL={'https://lavaritte.com/images/codioful-formerly-gradienta-bKESVqfxass-unsplash.jpg'} />
         <FormContainer>
             <Form onSubmit={handleSubmit}>
               <ColapsableContentWapper2col>
@@ -249,47 +253,44 @@ export const HospitalForm = () => {
                 openContactPerson &&
                 <ColapsableContentWapper>
                   <ColapsableContentWapper2col>
-                  <ColapsableContent>
-                    <Label htmlFor='CPName'>Name</Label>
-                    <FirstLastNameContent>
-                    <Input type="text" name="CPFName" placeholder="First Name" value={formData.name} onChange={handleChange} required />
-                    <Input style={{marginRight: '0'}} type="text" name="CPLName" placeholder="Last Name" value={formData.name} onChange={handleChange} required />
-                    </FirstLastNameContent>
-                  </ColapsableContent>
-                  <ColapsableContent>
-                    <Label htmlFor='Relationship'>Relationship to Patient</Label>
-                    <FirstLastNameContent >
-                    <Input style={{marginRight: '0'}} type="text" name="Relationship" placeholder="Mother, Father, Son, Daugther, etc" value={formData.name} onChange={handleChange} required />
-                    </FirstLastNameContent>
-                  </ColapsableContent>
-                 
+                    <ColapsableContent>
+                      <Label htmlFor='DoctorsName'>Name</Label>
+                      <FirstLastNameContent>
+                      <Input type="text" name="ContactFName" placeholder="First Name" value={formData.name} onChange={handleChange} required />
+                      <Input style={{marginRight: '0'}} type="text" name="ContactLName" placeholder="Last Name" value={formData.name} onChange={handleChange} required />
+                      </FirstLastNameContent>
+                    </ColapsableContent>
+                    <ColapsableContent>
+                      <Label htmlFor='Relationship'>Relationship to Patient</Label>
+                      <Input type="text" name="Relationship" placeholder="Mother, Father, Son, Daugther, etc." value={formData.name} onChange={handleChange} required />
+                    </ColapsableContent>
                   </ColapsableContentWapper2col>
-                 
+                  
                   <ColapsableContentWapper2col>
-                    <div style={{marginLeft: '10px'}}>
+                    <div style={{marginRight: '10px'}}>
                     <Label htmlFor="phone">Phone</Label>
                     <Input type="tel" name="phone" placeholder="(000) 000-0000" value={formData.phone} onChange={handleChange} required />
                     </div>
-                    <div style={{marginLeft: '10px'}}>
+                    <div>
                     <Label htmlFor="email">Email</Label>
                     <Input style={{marginRight: '0px'}} type="email" name="email" placeholder="Enter your email" value={formData.email} onChange={handleChange} required />
                     </div>
                   </ColapsableContentWapper2col>
-                  <ColapsableContent style={{margin: '10px'}}>
+                  <ColapsableContent>
                     <Label htmlFor="address">Address</Label>
                     <Input type="text" name="address" placeholder="Enter your street address" value={formData.address} onChange={handleChange} required />
                   </ColapsableContent>
-                  <ColapsableContentWapper2col style={{padding: 0, margin: '10px'}}>
+                  <ColapsableContentWapper2col style={{padding: 0}}>
                     <ColapsableContent>
                       <Label htmlFor="city">City</Label>
                       <Input type="text" name="city" placeholder="Enter your city" value={formData.city} onChange={handleChange} required />
                     </ColapsableContent>
-                    <ColapsableContent style={{marginRight: '0'}}>
+                    <ColapsableContent>
                       <Label htmlFor="state">State</Label>
-                      <Input style={{width: '380px'}} type="text" name="state" placeholder="Enter your state" value={formData.state} onChange={handleChange} required />
+                      <Input type="text" name="state" placeholder="Enter your state" value={formData.state} onChange={handleChange} required />
                     </ColapsableContent>
                   </ColapsableContentWapper2col>
-                  <ColapsableContent style={{margin: '10px'}}>
+                  <ColapsableContent>
                     <Label htmlFor="zip">Zip Code</Label>
                     <Input type="text" name="zip" placeholder="Enter your zip code" value={formData.zip} onChange={handleChange} required />
                   </ColapsableContent>
@@ -318,6 +319,7 @@ export const HospitalForm = () => {
           <Button type="submit">Submit</Button>
         </Form>
       </FormContainer>
+      <MoreDesign Data={UIUXData} Hide={'UI001'} />
     </React.Fragment>
   )
 }

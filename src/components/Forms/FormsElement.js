@@ -7,10 +7,10 @@ export const FormsHeaderContainer = styled.div`
     justify-content: center;
     align-items: center;
     padding: 0;
-    height: 35vh;
+    height: 70vh;
     background-color: #111;
-    background: url(${props => props.bgUrl}) no-repeat center center #111;
-    border-bottom: solid #f5f5f7 1px;
+    background: url(${props => props.bgUrl}) #111 no-repeat center center / cover;
+    background-size: cover; /*for safari we can add this sperately*/
 `;
 
 
@@ -18,10 +18,14 @@ export const FormsHeaderContainer = styled.div`
 export const FormsTextWrapper = styled.div`
     width: 100%;
     justify-content: left;
-    padding: 10px 48px;
+    padding-left: 28px;
+    padding-top: 20%;
     max-width: 1100px;
     @media screen and (max-width: 768px) {
         width: 100%;
+    }
+    @media screen and (max-width: 425px) {
+        padding: 20px;
     }
 `;
 
@@ -37,6 +41,17 @@ export const FormsH3 = styled.h3`
       font-size: 2rem;
     }
 `;
+
+
+export const FormSubtitle = styled.p`
+    color: #f5f5f7;
+    font-size: .9rem;
+    letter-spacing: 0.2rem;
+    text-align: left;
+    padding-left: 20px;
+    padding-bottom: 20px;
+`;
+
 
 export const FormsAuthor = styled.p`
     color: #f5f5f7;

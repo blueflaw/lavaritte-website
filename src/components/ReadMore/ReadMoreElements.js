@@ -9,7 +9,7 @@ export const ReadMoreContainer = styled.div`
     align-self: center;
     flex-direction: column;
     padding: 4% 40px;
-    background-color: #171717;
+    background-color: ${({dark}) => (dark ? '#171717' : '#eeeeee')};
 `;
 
 export const ReadMoreContent = styled.div`
@@ -30,7 +30,7 @@ export const TextWrapper = styled.div`
     width: 100%;
     opacity: 1;
     transition: .5s ease;
-    background: ${({dark}) => (dark ? '#222222' : '#ffffff')};
+    background: ${({dark}) => (dark ? '#222222' : '#f5f5f7')};
 `;
 
 export const TextWrap = styled.div`
@@ -103,13 +103,13 @@ export const ReadMoreHeaderH1 = styled.h1`
     font-weight: 500;
     padding-top: 10px;
     font-size: 1rem;
-    color: ${({dark}) => (dark ? '#ffffff' : '#222222')};
+    color: ${({dark}) => (dark ? '#f5f5f7' : '#222222')};
 `;
 
 
 export const ReadMoreContentH1 = styled.h1`
     padding-top: 10%;
-    color: #fff;
+    color: #f5f5f7;
     font-size: 3rem;
     text-align: left;
     letter-spacing: 0.2rem;
@@ -188,7 +188,7 @@ export const ReadMorePosterCard = styled(Link)`
 
 export const ReadMoreContentH4 = styled.h1`
     padding-top: 2%;
-    color: #fff;
+    color: ${({dark}) => (dark ? '#f5f5f7' : '#171717')};
     font-size: 1.6rem;
     text-align: left;
     letter-spacing: 0.2rem;
@@ -196,7 +196,7 @@ export const ReadMoreContentH4 = styled.h1`
 
 export const ReadMoreContentH6 = styled.h1`
     padding-top: 2%;
-    color: #fff;
+    color: #f5f5f7;
     font-size: 1.2rem;
     text-align: left;
     letter-spacing: 0.2rem;
@@ -209,7 +209,7 @@ export const LogoWrapper = styled.div`
 
 export const ReadMoreocialAuthor = styled(Link)`
     font-size: 1rem;
-    color: #fff;
+    color: #f5f5f7;
     letter-spacing: 0.16rem;
     word-wrap: break-word;
     line-height: 24px;
@@ -223,7 +223,7 @@ export const ReadMoreocialAuthor = styled(Link)`
 
 export const ReadMoreContentAuthor = styled.p`
     font-size: 1rem;
-    color: #fff;
+    color: #f5f5f7;
     letter-spacing: 0.16rem;
     word-wrap: break-word;
     line-height: 24px;

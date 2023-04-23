@@ -13,7 +13,7 @@ export const UIUX = () => {
             <Subtitle>A collection of <span style={{color: '#00a2ff'}}>UI/UX</span> designs that simplify user interactions and enhance user satisfaction</Subtitle>
           </TutorialWrapper>
         </TutorialContainer>
-        <DataMap Data={UIUXData} Dark={'dark'}/>
+        <DataMap Data={UIUXData} Dark={'dark'} Hide={''}/>
         <Contact/>
     </React.Fragment>
   )

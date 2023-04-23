@@ -81,31 +81,31 @@ export const StoreMenu = () => {
     }, []);
   return (
     <StoreMenuContainer>
-                <MenuContainer>
-                    <MenuListContainer>
-                        <MenuItem>
-                            <MenuLinks $activeStoreMenu={loadGeneral} to={'/store'}>Browse all</MenuLinks>
-                        </MenuItem>
-                        <MenuItem>
-                            <MenuLinks $activeStoreMenu={loadClothing} to={'/store/clothing'}>Clothing</MenuLinks>
-                        </MenuItem>
-                        <MenuItem>
-                            <MenuLinks $activeStoreMenu={loadPoster} to={'/store/posters'}>Posters</MenuLinks>
-                        </MenuItem>
-                        <MenuItem>
-                            <MenuLinks $activeStoreMenu={loadAccessories} to={'/store/accessories'}>Accessories</MenuLinks>
-                        </MenuItem>
-                        <MenuItem>
-                            <MenuLinks $activeStoreMenu={loadBrushes} to={'/store/software-brushes'}>Software Brushes</MenuLinks>
-                        </MenuItem>
-                        <MenuItem>
-                            <MenuLinks $activeStoreMenu={load3dModels} to={'/store/3d-models'}>3D Models</MenuLinks>
-                        </MenuItem>
-                        <MenuItem>
-                            <MenuLinks $activeStoreMenu={loadStockPhotos} to={'/store/stock-photos'}>Stock Photos</MenuLinks>
-                        </MenuItem>
-                    </MenuListContainer>
-                </MenuContainer>
-          </StoreMenuContainer>
+        <MenuContainer>
+            <MenuListContainer>
+                <MenuItem>
+                    <MenuLinks $activeStoreMenu={loadGeneral} to={'/store'}>Browse all</MenuLinks>
+                </MenuItem>
+                <MenuItem>
+                    <MenuLinks $activeStoreMenu={loadClothing} to={'/store/clothing'}>Clothing</MenuLinks>
+                </MenuItem>
+                <MenuItem>
+                    <MenuLinks $activeStoreMenu={loadPoster} to={'/store/posters'}>Posters</MenuLinks>
+                </MenuItem>
+                <MenuItem>
+                    <MenuLinks $activeStoreMenu={loadAccessories} to={'/store/accessories'}>Accessories</MenuLinks>
+                </MenuItem>
+                <MenuItem>
+                    <MenuLinks $activeStoreMenu={loadBrushes} to={'/store/software-brushes'}>Software Brushes</MenuLinks>
+                </MenuItem>
+                <MenuItem>
+                    <MenuLinks $activeStoreMenu={load3dModels} to={'/store/3d-models'}>3D Models</MenuLinks>
+                </MenuItem>
+                <MenuItem>
+                    <MenuLinks $activeStoreMenu={loadStockPhotos} to={'/store/stock-photos'}>Stock Photos</MenuLinks>
+                </MenuItem>
+            </MenuListContainer>
+        </MenuContainer>
+    </StoreMenuContainer>
   )
 }

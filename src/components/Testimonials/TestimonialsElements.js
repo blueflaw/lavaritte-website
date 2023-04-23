@@ -6,6 +6,9 @@ export const TestimonialsHeader = styled.p`
     padding: 20px;
     font-size: 4rem;
     text-align: center;
+    @media screen and (max-width: 425px){
+        font-size: 2.3rem;
+    }
 `;
 
 export const TestimonialSubtitle = styled.p`
@@ -99,11 +102,21 @@ export const TestimonialPost = styled.div`
     overflow: hidden;
     justify-content: center;
     text-align: center;
-    min-height: 680px;
+    max-height: 680px;
     /* background: url(${props => props.bgUrl}) no-repeat center center #111; */
     background: ${props => props.bgColor};
     border-radius: 10px;
     margin: 30px 20px;
+
+    @media (max-width: 1440px) and (min-width: 768px){
+        min-height: 780px;
+    }
+    @media screen and (max-width: 768px){
+        min-height: 640px;
+    }
+    @media screen and (max-width: 425px){
+        margin: 30px;
+    }
 `;
 
 export const ClientTumbnailWrapper = styled.span`
@@ -118,8 +131,8 @@ export const ClientTumbnailWrapper = styled.span`
 export const ClientImage = styled.img`
     object-fit: contain;
     width: auto;
-    height: 250px;
-    width:  250px;
+    height: 150px;
+    width:  150px;
     margin: 0%;
     transition: transform 450ms;
     overflow: hidden;

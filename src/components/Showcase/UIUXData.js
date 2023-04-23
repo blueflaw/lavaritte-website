@@ -7,7 +7,7 @@ export const UIUXData = [
         category : "UI/UX",
         time : "Testimonials",
         preview:"Fantastic UI/UX design! Highly recommend for an exceptional user experience.",
-        link : "UIUX/Testimonials"
+        link : "/UIUX/Testimonials"
     },
     {
         id: "UI001",
@@ -17,7 +17,7 @@ export const UIUXData = [
         category : "UI/UX",
         time : "Forms",
         preview:"Our Hospital Form's UI/UX design provides a user-friendly experience for medical personnel and patients. It's customizable, mobile-friendly, and ensures an efficient patient experience.",
-        link : "UIUX/HospitalForm"
+        link : "/UIUX/HospitalForm"
     },
     
 ];
