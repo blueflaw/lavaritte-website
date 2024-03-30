@@ -7,12 +7,10 @@ import {Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks} f
 export const Navbar = ({ toggle }) => {
     const [scrollNav, setScrollNav] = useState(false);
     var [loadHome, setHome] = useState(false);
-    var [loadNFT, setNFT] = useState(false);
-    var [loadStore, setStore] = useState(false);
+    var [loadportfolio, setPortfolio] = useState(false);
     var [loadTutorial, setTutorial] = useState(false);
     var [loadBlog, setBlog] = useState(false);
     var [loadAbout, setAbout] = useState(false);
-    var [loadShowcase, setShowcase] = useState(false);
 
     const changeNav= () => {
         if(window.scrollY >= 80){
@@ -30,13 +28,9 @@ export const Navbar = ({ toggle }) => {
             toggleHome()
             setHome(true)
         }
-        if(pathname === '/NFT' || pathname.indexOf('NFT/') !== -1){
-            toggleNFT()
-            setNFT(true)
-        }
-        if(pathname === '/store' || pathname.indexOf('store/') !== -1){
-            toggleStore()
-            setStore(true)
+        if(pathname === '/portfolio' || pathname.indexOf('portfolio/') !== -1){
+            togglePortfolio()
+            setPortfolio(true)
         }
         if(pathname === '/tutorial' || pathname.indexOf('tutorials/') !== -1){
             toggleTutorial()
@@ -50,10 +44,6 @@ export const Navbar = ({ toggle }) => {
             toggleAbout()
             setAbout(true)
         }
-        if(pathname === '/showcase' || pathname.indexOf('UIUX') !== -1){
-            toggleShowcase()
-            setShowcase(true)
-        }
 
         return () => {
             setScrollNav(null);
@@ -63,7 +53,7 @@ export const Navbar = ({ toggle }) => {
     const toggleHome = () => {
         scroll.scrollToTop();
         window.isNavNFTActive = false;
-        window.isNavStoreActive = false;
+        window.isNavportfolioActive = false;
         window.isNavAboutActive = false;
         window.isNavTutorialsActive = false;
         window.isNavBlogctive = false;
@@ -71,19 +61,9 @@ export const Navbar = ({ toggle }) => {
         window.isNavShowcaseActive = false;
     };
 
-    const toggleNFT = () => {
-        window.isNavNFTActive = true;
-        window.isNavStoreActive = false;
-        window.isNavAboutActive = false;
-        window.isNavTutorialsActive = false;
-        window.isNavBlogctive = false;
-        window.isNavHomeActive = false;
-        window.isNavShowcaseActive = false;
-    };
-
-    const toggleStore = () => {
+    const togglePortfolio = () => {
         window.isNavNFTActive = false;
-        window.isNavStoreActive = true;
+        window.isNavportfolioActive = true;
         window.isNavAboutActive = false;
         window.isNavTutorialsActive = false;
         window.isNavBlogctive = false;
@@ -93,7 +73,7 @@ export const Navbar = ({ toggle }) => {
 
     const toggleTutorial = () => {
         window.isNavNFTActive = false;
-        window.isNavStoreActive = false;
+        window.isNavportfolioActive = false;
         window.isNavAboutActive = false;
         window.isNavTutorialsActive = true;
         window.isNavBlogctive = false;
@@ -103,7 +83,7 @@ export const Navbar = ({ toggle }) => {
 
     const toggleBlog = () => {
         window.isNavNFTActive = false;
-        window.isNavStoreActive = false;
+        window.isNavportfolioActive = false;
         window.isNavAboutActive = false;
         window.isNavTutorialsActive = false;
         window.isNavBlogctive = true;
@@ -113,22 +93,12 @@ export const Navbar = ({ toggle }) => {
 
     const toggleAbout = () => {
         window.isNavNFTActive = false;
-        window.isNavStoreActive = false;
+        window.isNavportfolioActive = false;
         window.isNavAboutActive = true;
         window.isNavTutorialsActive = false;
         window.isNavBlogctive = false;
         window.isNavHomeActive = false;
         window.isNavShowcaseActive = false;
-    };
-
-    const toggleShowcase = () => {
-        window.isNavNFTActive = false;
-        window.isNavStoreActive = false;
-        window.isNavAboutActive = false;
-        window.isNavTutorialsActive = false;
-        window.isNavBlogctive = false;
-        window.isNavHomeActive = false;
-        window.isNavShowcaseActive = true;
     };
     
     return (
@@ -141,22 +111,22 @@ export const Navbar = ({ toggle }) => {
                     </MobileIcon>
                     <NavMenu>
                         <NavItem>
-                            <NavLinks $activeNav={loadHome} onClick={toggleHome} to='/'>Art</NavLinks>
+                            <NavLinks $activeNav={loadHome} onClick={toggleHome} to='/'>Home</NavLinks>
                         </NavItem>
-                        <NavItem>
+                        {/* <NavItem>
                             <NavLinks $activeNav={loadShowcase} onClick={toggleShowcase} to="/showcase" smooth="true" duration={500} spy="true" exact="true" offset={-80} >Showcase</NavLinks>
-                        </NavItem>
-                        <NavItem>
+                        </NavItem> */}
+                        {/* <NavItem>
                             <NavLinks $activeNav={loadNFT} onClick={toggleNFT} to="/NFT" smooth="true" duration={500} spy="true" exact="true" offset={-80} >NFT</NavLinks>
-                        </NavItem>
+                        </NavItem> */}
                         <NavItem>
-                            <NavLinks $activeNav={loadStore} onClick={toggleStore} to="/store" smooth="true" duration={500} spy="true" exact="true" offset={-80} >Store</NavLinks>
+                            <NavLinks $activeNav={loadportfolio} onClick={togglePortfolio} to="/portfolio" smooth="true" duration={500} spy="true" exact="true" offset={-80} >Portfolio</NavLinks>
                         </NavItem>
                         <NavItem>
                             <NavLinks $activeNav={loadTutorial} onClick={toggleTutorial} to="/tutorial" smooth="true" duration={500} spy="true" exact="true" offset={-80}>Tutorial</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks $activeNav={loadBlog} onClick={toggleBlog} to="/blog" smooth="true" duration={500} spy="true" exact="true" offset={-80}>Blog</NavLinks>
+                            <NavLinks $activeNav={loadBlog} onClick={toggleBlog} to="blogs.lavaritte.com" smooth="true" duration={500} spy="true" exact="true" offset={-80}>Blog</NavLinks>
                         </NavItem>
                         <NavItem>
                             <NavLinks $activeNav={loadAbout} onClick={toggleAbout} to='/about' smooth="true" duration={500} spy="true" exact="true" offset={-80}>About</NavLinks>

@@ -1,15 +1,15 @@
 import React from 'react';
 import './App.css';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
-// import { Helmet } from 'react-helmet';
 
 import Home from './pages'
 import About from './pages/About';
-import NFT from './pages/NFT';
+import Art from './pages/Art';
 import Store from './pages/Store';
 import TutorialsPage from './pages/Tutorial';
 import BlogPage from './pages/Blog';
 import FAQ from './pages/FAQ';
+import PrivacyPolicyPage from './pages/PrivacyPolicyPage';
 import PageNotFound from './pages/PageNotFound';
 import NewsLetterPage from './pages/NewsletterPage';
 import ShowcasePage from './pages/Showcase';
@@ -41,6 +41,7 @@ import { G8bzAzPage } from './pages/ArtPages/G8bzAzPage';
 import { B5LzavPage } from './pages/ArtPages/B5LzavPage';
 import { G9oD8nPage } from './pages/ArtPages/G9oD8nPage';
 import { XggARYPage } from './pages/ArtPages/XggARYPage';
+import { Qq2bYoPage } from './pages/ArtPages/Qq2bYoPage';
 
 import { ClothingPage } from './pages/StorePages/ClothingPage';
 import { PosterPage } from './pages/StorePages/PosterPage';
@@ -77,12 +78,13 @@ function App() {
     <Router>
       <Switch>
         <Route path="/" component={Home} exact/>
-        <Route path="/NFT" component={NFT} exact/>
+        <Route path="/portfolio" component={Art} exact/>
         <Route path="/store" component={Store} exact/>
         <Route path="/tutorial" component={TutorialsPage} exact/>
-        <Route path="/blog" component={BlogPage} exact/>
+        <Route path="blogs.lavaritte.com" component={BlogPage} exact/>
         <Route path="/about" component={About} exact/>
         <Route path="/faq" component={FAQ} exact/>
+        <Route path="/privacy-policy" component={PrivacyPolicyPage} exact/>
         <Route path="/newsletter" component={NewsLetterPage} exact/>
         <Route path="/showcase" component={ShowcasePage} exact/>
 
@@ -113,6 +115,7 @@ function App() {
         <Route path="/artwork/B5Lzav" component={B5LzavPage} exact/>
         <Route path="/artwork/G9oD8n" component={G9oD8nPage} exact/>
         <Route path="/artwork/XggARY" component={XggARYPage} exact/>
+        <Route path="/artwork/Qq2bYo" component={Qq2bYoPage} exact/>
 
         <Route path="/store/clothing" component={ClothingPage} exact/>
         <Route path="/store/posters" component={PosterPage} exact/>

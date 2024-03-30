@@ -1,5 +1,12 @@
 export const ArtData = [
     {
+        id: '026',
+        title: 'Shinsetsu 親切 - Katana Design',
+        path : 'https://cdna.artstation.com/p/assets/images/images/055/122/216/smaller_square/allard-lavaritte-sword-of-blueflaw6.jpg?1666175225',    
+        alt : 'Shinsetsu 親切 - Katana Design',
+        link : '/artwork/Qq2bYo'
+    },
+    {
         id: '025',
         title: 'Equal but Greater',
         path : 'https://cdnb.artstation.com/p/assets/images/images/061/222/289/smaller_square/allard-lavaritte-equal-but-greater.jpg?1680271755',    

@@ -1,10 +1,10 @@
 import styled from 'styled-components'
 import {Link} from 'react-scroll';
 
-export const Button = styled.a`
-    background: ${({dark}) => (dark ? 'transparent' : 'transparent')};
+export const Button = styled(Link)`
+    background: ${({primary}) => (primary ? '#00a2ff' : '#010606')};
     white-space: nowrap;
-    color: ${({dark}) => (dark ? '#000000' : '#ffffff')};
+    color: ${({dark}) => (dark ? '#ffffff' : '#ffffff')};
     border: 1px solid ${({dark}) => (dark ? '#000000' : '#ffffff')};
     white-space: nowrap;
     padding: ${({big}) => (big ? '14px 48px' : '10px 22px')};
@@ -36,6 +36,58 @@ export const ButtonShowreel = styled(Link)`
     text-decoration: none;
     display: flex;
     align-items: center;
+    justify-content: center;
+    border: 1.5px solid #ffffff;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    font-size: ${({fontBig}) => (fontBig ? '1rem' : '0.9rem')};
+    transition: all 0.6s;
+
+    &:hover {
+        color: #000000;
+        background-position: 99%;
+        overflow: hidden;
+        transform: translateX(0.5rem);
+    }
+`;
+
+export const ButtonStartProject = styled(Link)`
+    color: #00a2ff;
+    background-image: linear-gradient(-90deg, transparent 50%, #ffffff 50%);
+    background-size: 300%;
+    transition: all 0.2s ease-in-out;
+    text-transform: uppercase;
+    position: relative;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1.5px solid #ffffff;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    font-size: ${({fontBig}) => (fontBig ? '1rem' : '0.9rem')};
+    transition: all 0.6s;
+
+    &:hover {
+        color: #00a2ff;
+        background-position: 99%;
+        overflow: hidden;
+        transform: translateX(0.5rem);
+        border: 1.5px solid #00a2ff;
+    }
+`;
+
+export const ButtonService = styled(Link)`
+    color: #ffffff;
+    background-image: linear-gradient(-90deg, #fff 50%, transparent 50%);
+    background-size: 300%;
+    transition: all 0.2s ease-in-out;
+    text-transform: uppercase;
+    position: relative;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
     justify-content: center;
     border: 1.5px solid #ffffff;
     padding: 1rem 2rem;

@@ -1,8 +1,8 @@
 import React, {useRef, useState, useEffect} from 'react';
 import { animateScroll as scroll } from 'react-scroll';
 import { TweenMax, Power3 } from 'gsap';
-import { ButtonShowreel } from '../ButtonElements'
-import Video from '../../videos/Eye-of-Winter.mp4'
+import { ButtonShowreel } from '../ButtonElements';
+import Video from '../../videos/Eye-of-Winter.mp4';
 import { HeroContainer, HeroBg, VideoBg, HeroContent, HeroH1, HeroP, HeroBtnWrapper, ArrowForward, ArrowRight} from './HeroElements'
 import { Modal } from '../Modal/Modal'
 
@@ -40,7 +40,8 @@ const HeroSection = () => {
                 <HeroContent>
                     <HeroH1 ref={el =>{refHeroH1 = el}}>TRANSLATING THOUGHTS TO ART</HeroH1>
                     {/* <HeroH1>Welcome to A.L. Creative</HeroH1> */}
-                    <HeroP ref={el =>{refHeroP = el}}>the world of abstract meets reality.</HeroP>
+                    {/* <HeroP ref={el =>{refHeroP = el}}>the world of abstract meets reality.</HeroP> */}
+                    <HeroP ref={el =>{refHeroP = el}}>The World of abstract meets reality</HeroP>
                     <HeroBtnWrapper ref={el =>{refHeroButton = el}}>
                         <ButtonShowreel to='showreel' 
                                 onClick={openModal}

@@ -2,7 +2,7 @@ import React from 'react';
 import { DataMap } from '../DataMap/DataMap';
 import { ReadMoreCardsContainer, ReadMoreCardWrapper, ReadMoreContainer, ReadMoreContent, ReadMoreContentH4 } from './ReadMoreElements';
 
-export const ReadMore = ({Data, Hide}) => {
+export const ReadMore = ({Data, Hide, Dark}) => {
 
   return (
     <React.Fragment>
@@ -12,7 +12,7 @@ export const ReadMore = ({Data, Hide}) => {
             </ReadMoreContent>
             <ReadMoreCardsContainer>
                 <ReadMoreCardWrapper>
-                    <DataMap Data={Data} Dark={'dark'} Hide={Hide}/>
+                    <DataMap Data={Data} Dark={Dark} Hide={Hide}/>
                 </ReadMoreCardWrapper>
             </ReadMoreCardsContainer>
         </ReadMoreContainer>

@@ -50,6 +50,7 @@ const Footer = () => {
                                 toAbout();
                             }}>The Creation of this website</FooterLink>
                             <FooterLink to="/faq">FAQ</FooterLink>
+                            <FooterLink to="/privacy-policy">Privacy Policy</FooterLink>
                         </FooterLinkItems>
                     </FooterLinksWrapper>
                     <FooterLinksWrapper>

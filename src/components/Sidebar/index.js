@@ -18,12 +18,10 @@ export const Sidebar = ({isOpen, toggle}) => {
             </Icon>
             <SidebarWrapper>
                 <SidebarMenu>
-                    <SidebarLink to='/' onClick={toggle}>Art</SidebarLink>
-                    <SidebarLink to='/showcase' onClick={toggle}>Showcase</SidebarLink>
-                    <SidebarLink to='/NFT' onClick={toggle}>NFT</SidebarLink>
-                    <SidebarLink to='/Store' onClick={toggle}>Store</SidebarLink>
+                    <SidebarLink to='/' onClick={toggle}>Home</SidebarLink>
+                    <SidebarLink to='/portfolio' onClick={toggle}>Portfolio</SidebarLink>
                     <SidebarLink to='/tutorial' onClick={toggle}>Tutorials</SidebarLink>
-                    <SidebarLink to='/blog' onClick={toggle}>Blogs</SidebarLink>
+                    <SidebarLink to='blog.lavaritte.com' onClick={toggle}>Blogs</SidebarLink>
                     <SidebarLink to='/about' onClick={toggle}>About</SidebarLink>
                 </SidebarMenu>
                 {/* <SideBtnWrap>

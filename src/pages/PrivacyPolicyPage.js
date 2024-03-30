@@ -1,36 +1,39 @@
-import React, {useState} from 'react'
+import React, {useState} from 'react';
 import Navbar from '../components/Navbar';
 import Sidebar from '../components/Sidebar';
 import Footer from '../components/Footer';
+import ScrollToTop from '../components/ScrollToTop';
+import { PrivacyPolicy } from '../components/PrivacyPolicy/PrivacyPolicy';
 import ScrollUp from '../components/ScrollUp/Index';
 import { Helmet } from 'react-helmet';
 import { SEO } from '../components/SEO/SEO';
 import { metaDescription, metaData } from '../components/SEO/SEOMetaData';
-import { Webdevelopment } from '../components/Webdevelopment/Webdevelopment';
-const Home = () => {
+
+const PrivacyPolicyPage = () => {
     const [isOpen, setIsOpen] = useState(false)
 
     const toggle = () => {
         setIsOpen (!isOpen)
     }
-
     return (
-        <React.Fragment>
+        <>
             <Helmet htmlAttributes>
-                <link rel="canonical" href="/" />
+                <link rel="canonical" href="/PrivacyPolicy" />
             </Helmet>
-            <SEO title={'Allard Lavaritte'} 
+            <SEO title={'Allard Lavaritte PrivacyPolicy'} 
                 description={metaDescription} 
-                ogUrl={'https://lavaritte.com'} 
-                image={'https://lavaritte.com/images/Eye-of-Winter-mini.jpg'}
+                ogUrl={'https://lavaritte.com/PrivacyPolicy'} 
                 meta={metaData}/>
+            <ScrollToTop/>
+            <ScrollToTop/>
             <Sidebar isOpen={isOpen} toggle={toggle} />
             <Navbar toggle={toggle}/>
-            <Webdevelopment/>
-            <Footer/>
-            <ScrollUp/>        
-        </React.Fragment>
-    );
-};
+            <PrivacyPolicy/>
+            <ScrollUp/> 
+            <Footer/>     
+            
+        </>
+    )
+}
 
-export default Home;
+export default PrivacyPolicyPage

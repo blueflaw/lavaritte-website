@@ -7,6 +7,10 @@ export const QuotsContainer = styled.div`
     padding: 0;
     height: 35vh;
     background-color: #090a0e;
+
+    @media screen and (max-width: 768px){
+        height: 80vh;
+    }
 `;
 
 

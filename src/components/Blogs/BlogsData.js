@@ -10,17 +10,17 @@ export const BlogsData = [
         link : "/blogs/HowtoUpdateNpmPackages",
         preview : "When you come back to an old web dev project, it's important to update your packages to get new features, bug fixes, and security patches."
     },
-    {
-        id: "B005",
-        title: "Best Crypto Exchanges",
-        path : 'https://upenandy.sirv.com/lavaritte.com/blog/INTO_THE_BIT.jpg',    
-        alt : "Best Crypto Exchanges & Platforms Of 2022",
-        category : "Finance",
-        time : "Cryptocurrency",
-        author : "Allard Lavaritte",
-        link : "/blogs/bestcryptoplatforms",
-        preview : "Here is our list of the top ten cryptocurrency exchanges and trading platforms. The cryptocurrency deals on this website are provided by firms from whom The College Investor gets income. "
-    },
+    // {
+    //     id: "B005",
+    //     title: "Best Crypto Exchanges",
+    //     path : 'https://upenandy.sirv.com/lavaritte.com/blog/INTO_THE_BIT.jpg',    
+    //     alt : "Best Crypto Exchanges & Platforms Of 2022",
+    //     category : "Finance",
+    //     time : "Cryptocurrency",
+    //     author : "Allard Lavaritte",
+    //     link : "/blogs/bestcryptoplatforms",
+    //     preview : "Here is our list of the top ten cryptocurrency exchanges and trading platforms. The cryptocurrency deals on this website are provided by firms from whom The College Investor gets income. "
+    // },
     {
         id: "B004",
         title: "Memories of a Golden Hour",
@@ -46,7 +46,7 @@ export const BlogsData = [
     {
         id: "B002",
         title: "Jett from valorant",
-        path : "https://cdna.artstation.com/p/assets/images/images/040/077/016/20210801034343/smaller_square/allard-lavaritte-jetto.jpg",    
+        path : "https://cdna.artstation.com/p/assets/images/images/040/077/016/20210801034343/smaller_square/allard-lavaritte-jetto.jpg?1627807423",    
         alt : "Jett from valorant",
         category : "Digital Art",
         time : "Painting Process",

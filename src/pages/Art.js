@@ -1,13 +1,16 @@
-import React, {useState} from 'react'
+import React, {useState} from 'react';
+import HeroSection from '../components/HeroSection';
 import Navbar from '../components/Navbar';
 import Sidebar from '../components/Sidebar';
+import ArtSection from '../components/ArtSecton';
 import Footer from '../components/Footer';
 import ScrollUp from '../components/ScrollUp/Index';
+// import InfoSection from '../components/InfoSection';
 import { Helmet } from 'react-helmet';
 import { SEO } from '../components/SEO/SEO';
 import { metaDescription, metaData } from '../components/SEO/SEOMetaData';
-import { Webdevelopment } from '../components/Webdevelopment/Webdevelopment';
-const Home = () => {
+// import { homeObjOne } from '../components/InfoSection/Data';
+const Art = () => {
     const [isOpen, setIsOpen] = useState(false)
 
     const toggle = () => {
@@ -26,11 +29,13 @@ const Home = () => {
                 meta={metaData}/>
             <Sidebar isOpen={isOpen} toggle={toggle} />
             <Navbar toggle={toggle}/>
-            <Webdevelopment/>
+            <HeroSection/>
+            {/* <InfoSection {...homeObjOne}/> */}
+            <ArtSection/>
             <Footer/>
             <ScrollUp/>        
         </React.Fragment>
     );
 };
 
-export default Home;
+export default Art;
