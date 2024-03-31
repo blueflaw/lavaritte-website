@@ -14,25 +14,13 @@ const Footer = () => {
 
     const toggleHome = () => {
         scroll.scrollToTop();
-        window.isNavNFTActive = false;
-        window.isNavStoreActive = false;
-        window.isNavAboutActive = false;
-        window.isNavTutorialsActive = false;
-        window.isNavBlogctive = false;
-        window.isNavHomeActive = true;
     };
     const toAbout = () => {
-        window.isNavNFTActive = false;
-        window.isNavStoreActive = false;
-        window.isNavAboutActive = true;
-        window.isNavTutorialsActive = false;
-        window.isNavBlogctive = false;
-        window.isNavHomeActive = false;
     };
     return (
         <FooterConainer>
             <FooterWrap>
-                <FooterQuoteContainer><FooterQuotes>Stay curious. Stay humble.</FooterQuotes></FooterQuoteContainer>
+                <FooterQuoteContainer><FooterQuotes>Constantly Learning. Constantly Evolving.</FooterQuotes></FooterQuoteContainer>
                 <FooterLinksContainer>
                     <FooterLinksWrapper>
                         <FooterLinkItems>
@@ -56,13 +44,12 @@ const Footer = () => {
                     <FooterLinksWrapper>
                         <FooterLinkItems>
                             <FooterLinkTitle>Services</FooterLinkTitle>
-                            <FooterServices >Creative Direction</FooterServices>
-                            <FooterServices >Concept Art</FooterServices>
-                            <FooterServices >Graphic Design</FooterServices>
+                            <FooterServices >Web Application</FooterServices>
                             <FooterServices >UI/UX</FooterServices>
-                            <FooterServices >Illustration</FooterServices>
-                            <FooterServices >Cinematography</FooterServices>
-                            <FooterServices >Animation</FooterServices>
+                            <FooterServices >Marketing Strategies</FooterServices>
+                            <FooterServices >Web Development</FooterServices>
+                            <FooterServices >Design</FooterServices>
+                            <FooterServices >SEO Optimization</FooterServices>
                         </FooterLinkItems>
                         <FooterLinkItems>
                             <FooterLinkTitle>Director</FooterLinkTitle>

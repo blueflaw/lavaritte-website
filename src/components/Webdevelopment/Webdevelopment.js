@@ -3,7 +3,10 @@ import { TweenMax, Power3 } from 'gsap';
 import { ButtonService, ButtonStartProject } from '../ButtonElements';
 import Video from '../../videos/webdev-animation-bg.mp4';
 import { ArrowForward, ArrowRight, HeroBg, VideoBg } from '../HeroSection/HeroElements';
-import { WebDevContainer, WebDevHeroBtnWrapper, WebDevHeroContent, WebDevHeroH1, WebDevHeroP } from './WebdevElements';
+import { WebDevContainer, WebDevHeroBtnWrapper, WebDevHeroContent, WebDevHeroH1, WebDevHeroP, } from './WebdevElements';
+import { ServicesMini } from '../Services/ServicesMini';
+import { AboutTheDev } from '../WebsiteDeveloper/AboutTheDev';
+import { OurServices } from '../Services/OurServices';
 
 export const Webdevelopment = () => {
   let refHeroH1 = useRef(null);
@@ -38,6 +41,9 @@ export const Webdevelopment = () => {
             </WebDevHeroBtnWrapper>
         </WebDevHeroContent>
       </WebDevContainer>
+      <ServicesMini/>
+      <AboutTheDev/>
+      <OurServices/>
     </React.Fragment>
   )
 }

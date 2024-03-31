@@ -53,7 +53,7 @@ export const ButtonShowreel = styled(Link)`
 
 export const ButtonStartProject = styled(Link)`
     color: #00a2ff;
-    background-image: linear-gradient(-90deg, transparent 50%, #ffffff 50%);
+    background-image: linear-gradient(-90deg, #00a2ff 50%, transparent 50%);
     background-size: 300%;
     transition: all 0.2s ease-in-out;
     text-transform: uppercase;
@@ -62,14 +62,14 @@ export const ButtonStartProject = styled(Link)`
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1.5px solid #ffffff;
+    border: 1.5px solid #00a2ff;
     padding: 1rem 2rem;
     cursor: pointer;
     font-size: ${({fontBig}) => (fontBig ? '1rem' : '0.9rem')};
     transition: all 0.6s;
 
     &:hover {
-        color: #00a2ff;
+        color: #fff;
         background-position: 99%;
         overflow: hidden;
         transform: translateX(0.5rem);
@@ -88,6 +88,31 @@ export const ButtonService = styled(Link)`
     display: flex;
     align-items: center;
     margin-left: 20px;
+    justify-content: center;
+    border: 1.5px solid #ffffff;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    font-size: ${({fontBig}) => (fontBig ? '1rem' : '0.9rem')};
+    transition: all 0.6s;
+
+    &:hover {
+        color: #000000;
+        background-position: 99%;
+        overflow: hidden;
+        transform: translateX(0.5rem);
+    }
+`;
+
+export const ButtonService2 = styled(Link)`
+    color: #ffffff;
+    background-image: linear-gradient(-90deg, #fff 50%, transparent 50%);
+    background-size: 300%;
+    transition: all 0.2s ease-in-out;
+    text-transform: uppercase;
+    position: relative;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
     justify-content: center;
     border: 1.5px solid #ffffff;
     padding: 1rem 2rem;
