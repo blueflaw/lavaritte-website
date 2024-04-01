@@ -35,7 +35,7 @@ export const OurServices = () => {
                     <TableCell>
                     <OurServicesIcon src={require('../../images/OurServices/WebApp.png')} alt='web application' title='web application'>
                     </OurServicesIcon>
-                    <OurServicesHeaderH3>Web Application</OurServicesHeaderH3>
+                    <OurServicesHeaderH3 id='web-app'>Web Application</OurServicesHeaderH3>
                     <OurServicesDescription> Transform your ideas into powerful web applications tailored to your specific needs.</OurServicesDescription>
                     </TableCell>
                     <TableCell>

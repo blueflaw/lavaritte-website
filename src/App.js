@@ -7,7 +7,7 @@ import About from './pages/About';
 import Art from './pages/Art';
 import Store from './pages/Store';
 import TutorialsPage from './pages/Tutorial';
-import BlogPage from './pages/Blog';
+// import BlogPage from './pages/Blog';
 import FAQ from './pages/FAQ';
 import PrivacyPolicyPage from './pages/PrivacyPolicyPage';
 import PageNotFound from './pages/PageNotFound';
@@ -81,7 +81,7 @@ function App() {
         <Route path="/portfolio" component={Art} exact/>
         <Route path="/store" component={Store} exact/>
         <Route path="/tutorial" component={TutorialsPage} exact/>
-        <Route path="blogs.lavaritte.com" component={BlogPage} exact/>
+        {/* <Route href="/blogs" component={BlogPage} exact/> */}
         <Route path="/about" component={About} exact/>
         <Route path="/faq" component={FAQ} exact/>
         <Route path="/privacy-policy" component={PrivacyPolicyPage} exact/>

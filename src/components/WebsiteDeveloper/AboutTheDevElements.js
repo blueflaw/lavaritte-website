@@ -5,6 +5,10 @@ export const AboutTheDevContainer = styled.div`
     flex-wrap: wrap;
     padding: 30px 20%;
     background-color: #090a0e;
+
+    @media only screen and (max-width: 425px) {
+        padding: 30px;
+    }
 `;
 
 export const  AboutTheDevColumnLeft = styled.div`
@@ -16,6 +20,7 @@ export const  AboutTheDevColumnLeft = styled.div`
         flex: 0 0 auto; 
         max-width: 100%;
     }
+    
 `;
 
 export const  AboutTheDevColumnRight = styled.div`
@@ -40,6 +45,10 @@ export const  AboutTheDevImageWrapper = styled.div`
     @media (max-width: 768px) {
         padding: 30px;
     }
+
+     @media only screen and (max-width: 425px) {
+        padding: 10px;
+    }
 `;
 
 export const  AboutTheDevImage = styled.img`
@@ -52,6 +61,10 @@ export const AboutTheDevTextWrapper = styled.div`
     text-align: left;
     justify-content: center;
     padding: 30px;
+
+    @media only screen and (max-width: 425px) {
+        padding: 10px;
+    }
 `;
 
 export const  AboutTheDevTopLine = styled.h6`

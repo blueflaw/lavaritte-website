@@ -119,6 +119,25 @@ export const NavLinks = styled(Link)`
     }
 `;
 
+export const NavLinks2 = styled.a`
+    color: ${({ $activeNav}) => ($activeNav ? '#00a2ff' : '#ffffff')};
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0 1rem;
+    height: 100%;
+    font-size: 0.9rem;
+    font-weight: 300;
+    cursor: pointer;
+    letter-spacing: 0.16rem;
+    text-transform: uppercase;
+    border-bottom: ${({ $activeNav}) => ($activeNav ? '3px solid #00a2ff' : '0px solid #00a2ff')};
+    &:hover{
+        transition: 0.8s all ease;
+        color: #00a2ff;
+    }
+`;
+
 export const NavBtn = styled.nav`
     display: flex;
     align-items: center;

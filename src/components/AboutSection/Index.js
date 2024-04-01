@@ -45,15 +45,16 @@ const TheWebsite = () => {
                 <DarkContentH1>About Me</DarkContentH1>
                 <ContentH4>Summary</ContentH4>
                 <ContentBio>
-                    Hi, my name is <SocialLogo to="/" onClick={toggleHome}>Allard Lavaritte</SocialLogo>. I am a self-taught artist with a wide range of skills in Creative Direction, 
-                    Illustration, Graphic Design, UI/UX, and Web Development. I am passionate about creating visually appealing designs that are both functional and user-friendly. 
-                    My unique approach to projects comes from my expertise in multiple fields, which allows me to bring innovative solutions to the table. 
-                    I am detail-oriented and imaginative, which enhances the quality of my work.
-                    <br/><br/>
-                    Recently, I created a website using React called lavaritte.com, which showcases my skills as a web developer. This platform allows me to share my artwork, 
-                    design projects, and insights into my creative process. I am eager to collaborate with other creative individuals and bring ideas to life.
+                    Hi, my name is <SocialLogo to="/" onClick={toggleHome}>Allard Lavaritte</SocialLogo>. the driving force behind lavaritte.com. As a solo entrepreneur, I bring a unique blend of passion, expertise, and creativity to every project I undertake. With a focus on web application development, UI/UX design, marketing strategies, web development, design, and SEO, I'm dedicated to helping businesses like yours succeed in the digital world.
                 </ContentBio>
-                
+                <ContentH4>PROFESSIONAL WEBSITE DEVELOPER</ContentH4>
+                <ContentBio>
+                With a keen eye for detail and a commitment to delivering excellence, I work closely with my clients to understand their goals and bring their visions to life. Whether you're a startup looking to establish your online presence or an established business seeking to enhance your digital strategy, I'm here to provide personalized solutions that drive results.
+                <br/><br/>
+                Recently, I created a website using React called lavaritte.com, which showcases my skills as a web developer. This platform allows me to share my artwork, design projects, and insights into my creative process. I am eager to collaborate with other creative individuals and bring ideas to life.
+                <br/><br/>
+                Join me on this journey, and let's transform your ideas into reality together.
+                </ContentBio>
             </WebsiteContentBio>
         </WebsiteContainerBio>
 

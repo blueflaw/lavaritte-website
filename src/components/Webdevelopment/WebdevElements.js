@@ -76,6 +76,10 @@ export const OurServicesContainer = styled.div`
     flex-wrap: wrap;
     padding: 24px 20%;
     background-color: #090a0e;
+
+    @media only screen and (max-width: 425px) {
+        padding: 30px;
+    }
 `;
 
 export const OurServicesContent = styled.div`
@@ -112,7 +116,7 @@ export const HorizontalLine = styled.hr`
 `;
 
 export const OurServicesColumnLeft = styled.div`
-     flex: 0 0 60%;
+    flex: 0 0 60%;
     display: flex;
     flex-direction: column;
 
@@ -144,6 +148,10 @@ export const WebDevContentImageWrapper = styled.div`
     @media (max-width: 768px) {
         padding: 30px;
     }
+
+    @media only screen and (max-width: 425px) {
+        padding: 10px;
+    }
 `;
 
 export const OurservicesImage = styled.img`
@@ -160,6 +168,12 @@ export const WebDevContentTextWrapper = styled.div`
     @media (max-width: 768px) {
         flex-direction: column;
     }
+
+    @media (max-width: 425px) {
+        padding: 10px;
+    }
+
+    
     
 `;
 
@@ -167,6 +181,10 @@ export const OurservicesButtomContent = styled.div`
     display: flex;
     flex-direction: row;
     padding: 0 30px;
+
+    @media only screen and (max-width: 425px) {
+        padding: 10px;
+    }
 `;
 
 export const OurservicesButtomContentTextWrapper = styled.div`

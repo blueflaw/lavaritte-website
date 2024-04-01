@@ -7,6 +7,7 @@ import { WebDevContainer, WebDevHeroBtnWrapper, WebDevHeroContent, WebDevHeroH1,
 import { ServicesMini } from '../Services/ServicesMini';
 import { AboutTheDev } from '../WebsiteDeveloper/AboutTheDev';
 import { OurServices } from '../Services/OurServices';
+import { WhyChooseUs } from '../WhyChooseUs/WhyChooseUs';
 
 export const Webdevelopment = () => {
   let refHeroH1 = useRef(null);
@@ -44,6 +45,7 @@ export const Webdevelopment = () => {
       <ServicesMini/>
       <AboutTheDev/>
       <OurServices/>
+      <WhyChooseUs/>
     </React.Fragment>
   )
 }

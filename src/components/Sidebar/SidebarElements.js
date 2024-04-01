@@ -60,7 +60,25 @@ export const SidebarLink = styled(LinkRouter)`
     color: #f5f5f7;
     cursor: pointer;
     text-decoration: none;
-    &::hover{
+    &:hover{
+        color: #f5f5f7;
+        transition: 0.2s ease-in-out;
+    }
+`;
+
+export const SidebarLink2 = styled.a`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    text-decoration: none;
+    list-style: none;
+    transition: 0.2s ease-in-out;
+    color: #f5f5f7;
+    cursor: pointer;
+    text-decoration: none;
+    &:hover{
         color: #f5f5f7;
         transition: 0.2s ease-in-out;
     }

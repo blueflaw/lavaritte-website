@@ -5,8 +5,7 @@ import {
     CloseIcon, 
     SidebarWrapper,  
     SidebarLink, 
-    // SideBtnWrap,
-    // SidebarRoute,
+    SidebarLink2,
     SidebarMenu
 } from './SidebarElements'
 
@@ -21,12 +20,9 @@ export const Sidebar = ({isOpen, toggle}) => {
                     <SidebarLink to='/' onClick={toggle}>Home</SidebarLink>
                     <SidebarLink to='/portfolio' onClick={toggle}>Portfolio</SidebarLink>
                     <SidebarLink to='/tutorial' onClick={toggle}>Tutorials</SidebarLink>
-                    <SidebarLink to='blog.lavaritte.com' onClick={toggle}>Blogs</SidebarLink>
+                    <SidebarLink2 href="https://blogs.lavaritte.com">Blogs</SidebarLink2>
                     <SidebarLink to='/about' onClick={toggle}>About</SidebarLink>
                 </SidebarMenu>
-                {/* <SideBtnWrap>
-                    <SidebarRoute to='/signin'>Sign In</SidebarRoute>
-                </SideBtnWrap> */}
             </SidebarWrapper>
         </SidebarContainer>
     )

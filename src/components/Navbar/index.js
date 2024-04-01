@@ -2,7 +2,7 @@ import React, {useState, useEffect,} from 'react';
 import {FaBars} from 'react-icons/fa';
 import { animateScroll as scroll } from 'react-scroll';
 import ScrollUp from '../ScrollUp/Index';
-import {Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks} from './NavbarElements';
+import {Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, NavLinks2} from './NavbarElements';
 
 export const Navbar = ({ toggle }) => {
     const [scrollNav, setScrollNav] = useState(false);
@@ -126,7 +126,7 @@ export const Navbar = ({ toggle }) => {
                             <NavLinks $activeNav={loadTutorial} onClick={toggleTutorial} to="/tutorial" smooth="true" duration={500} spy="true" exact="true" offset={-80}>Tutorial</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks $activeNav={loadBlog} onClick={toggleBlog} to="blogs.lavaritte.com" smooth="true" duration={500} spy="true" exact="true" offset={-80}>Blog</NavLinks>
+                            <NavLinks2 $activeNav={loadBlog} href="https://blogs.lavaritte.com">Blog</NavLinks2>
                         </NavItem>
                         <NavItem>
                             <NavLinks $activeNav={loadAbout} onClick={toggleAbout} to='/about' smooth="true" duration={500} spy="true" exact="true" offset={-80}>About</NavLinks>

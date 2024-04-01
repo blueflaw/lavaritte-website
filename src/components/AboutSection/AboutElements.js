@@ -146,7 +146,7 @@ export const ContentH1 = styled.h1`
     padding-bottom: 20px;
 `;
 
-export const DarkContentH1 = styled.p`
+export const DarkContentH1 = styled.h1`
     color: #000;
     font-size: 3rem;
     text-align: left;
